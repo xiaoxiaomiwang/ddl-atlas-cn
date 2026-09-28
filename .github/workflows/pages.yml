@@ -26,7 +26,8 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
+    # 显式版本：ubuntu-latest 是最拥挤的免费队列，显式版本排队通常更快
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
         with:
