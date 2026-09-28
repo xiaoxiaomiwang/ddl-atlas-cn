@@ -4,6 +4,11 @@ require "date"
 
 ROOT = File.expand_path("ccf-deadlines/conference", __dir__)
 OUT = File.expand_path("../app/conferences.json", __dir__)
+META_OUT = File.expand_path("../app/data-meta.json", __dir__)
+
+# 年份窗口随时间滚动：当前年起的 4 个年份，无需每年手动调整
+MIN_YEAR = Date.today.year
+MAX_YEAR = MIN_YEAR + 3
 
 records = []
 
@@ -19,6 +24,18 @@ def conference_start_date(label, year)
 rescue Date::Error
   ""
 end
+
+# 读取上游 ccf-deadlines 仓库的最近提交信息，写入数据元信息供前端展示真实数据新鲜度
+def upstream_info
+  repo = File.expand_path("ccf-deadlines", __dir__)
+  return { sha: nil, time: nil } unless File.directory?(repo)
+  sha = `git -C "#{repo}" rev-parse HEAD`.to_s.strip
+  time = `git -C "#{repo}" log -1 --format=%cI`.to_s.strip
+  { sha: sha.empty? ? nil : sha, time: time.empty? ? nil : time }
+rescue StandardError
+  { sha: nil, time: nil }
+end
+
 Dir.glob(File.join(ROOT, "**", "*.yml")).sort.each do |path|
   begin
     entries = YAML.safe_load(File.read(path), permitted_classes: [Date, Time], aliases: true) || []
@@ -30,7 +47,7 @@ Dir.glob(File.join(ROOT, "**", "*.yml")).sort.each do |path|
     next unless entry.is_a?(Hash)
     Array(entry["confs"]).each do |conf|
       year = conf["year"].to_i
-      next unless year >= 2025 && year <= 2028
+      next unless year >= MIN_YEAR && year <= MAX_YEAR
       timeline = Array(conf["timeline"]).map do |item|
         next unless item.is_a?(Hash)
         deadline = item["deadline"].to_s
@@ -61,3 +78,13 @@ end
 
 File.write(OUT, JSON.pretty_generate(records.sort_by { |r| [r[:year], r[:title]] }))
 puts "Wrote #{records.length} conference editions to #{OUT}"
+
+info = upstream_info
+meta = {
+  upstreamSha: info[:sha],
+  upstreamTime: info[:time],
+  generatedAt: Time.now.utc.strftime("%Y-%m-%dT%H:%M:%SZ"),
+  recordCount: records.length
+}
+File.write(META_OUT, JSON.pretty_generate(meta))
+puts "Wrote data meta to #{META_OUT} (upstream #{info[:sha] || 'unknown'})"

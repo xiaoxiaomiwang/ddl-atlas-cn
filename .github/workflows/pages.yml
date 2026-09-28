@@ -4,17 +4,19 @@ on:
   push:
     branches: [main]
   schedule:
-    - cron: "17 */6 * * *"
+    # 每小时检查一次上游 CCFDDL 数据，有变化才重新构建部署
+    - cron: "17 * * * *"
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
 concurrency:
   group: pages
-  cancel-in-progress: true
+  # 不允许取消进行中的部署，保护 push 触发的发布不被定时任务打断
+  cancel-in-progress: false
 
 jobs:
   deploy:
@@ -24,6 +26,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # 完整历史，便于数据变更后 rebase 回推
+          fetch-depth: 0
       - uses: pnpm/action-setup@v4
         with:
           version: 10
@@ -33,16 +38,55 @@ jobs:
           cache: pnpm
       - name: Pull latest CCFDDL data
         run: git clone --depth 1 https://github.com/ccfddl/ccf-deadlines.git work/ccf-deadlines
+      - name: Check whether upstream data changed
+        id: upstream
+        run: |
+          NEW_SHA=$(git -C work/ccf-deadlines rev-parse HEAD)
+          OLD_SHA=$(jq -r '.upstreamSha // empty' app/data-meta.json 2>/dev/null || true)
+          echo "new_sha=$NEW_SHA" >> "$GITHUB_OUTPUT"
+          if [ "${{ github.event_name }}" != "schedule" ] || [ -z "$OLD_SHA" ] || [ "$OLD_SHA" != "$NEW_SHA" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "Upstream changed ($OLD_SHA -> $NEW_SHA); rebuilding."
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "Upstream unchanged ($OLD_SHA); skipping scheduled rebuild."
+          fi
       - name: Generate browser data
+        if: steps.upstream.outputs.changed == 'true'
         run: |
           ruby work/build_conference_data.rb
           cp app/conferences.json public/conferences.json
+          cp app/data-meta.json public/data-meta.json
       - run: pnpm install --frozen-lockfile
+        if: steps.upstream.outputs.changed == 'true'
       - run: pnpm run build:github
+        if: steps.upstream.outputs.changed == 'true'
       - uses: actions/configure-pages@v5
+        if: steps.upstream.outputs.changed == 'true'
       - uses: actions/upload-pages-artifact@v3
+        if: steps.upstream.outputs.changed == 'true'
         with:
           path: dist-github
       - name: Deploy to GitHub Pages
         id: deployment
+        if: steps.upstream.outputs.changed == 'true'
         uses: actions/deploy-pages@v4
+      - name: Commit refreshed data back to main
+        # 定时/手动触发的数据同步才回推；[skip ci] 防止触发新的部署。
+        # 回推本身也是仓库活动，可防止 GitHub 因 60 天无活动自动暂停定时任务。
+        if: steps.upstream.outputs.changed == 'true' && github.event_name != 'push'
+        run: |
+          git config user.name "ddl-atlas-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add app/conferences.json app/data-meta.json public/conferences.json public/data-meta.json
+          if git diff --staged --quiet; then
+            echo "No data change to commit."
+          else
+            git commit -m "chore(data): sync CCFDDL upstream ${{ steps.upstream.outputs.new_sha }} [skip ci]"
+            if ! git push origin HEAD:main; then
+              echo "Push rejected, rebasing and retrying..."
+              git fetch origin main
+              git rebase origin/main
+              git push origin HEAD:main
+            fi
+          fi

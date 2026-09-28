@@ -2,8 +2,10 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import rawData from "./conferences.json";
+import builtInMeta from "./data-meta.json";
 import { arrCycles, officialSupplements, type SupplementalEvent } from "./supplemental";
 
+type DataMeta = { upstreamSha: string | null; upstreamTime: string | null; generatedAt: string | null; recordCount: number };
 type Milestone = { date: string; abstractDate: string; comment: string };
 type Conference = {
   id: string; title: string; description: string; category: string; rank: string;
@@ -33,6 +35,21 @@ const categories: Record<string, string> = {
 };
 const months = ["1 月", "2 月", "3 月", "4 月", "5 月", "6 月", "7 月", "8 月", "9 月", "10 月", "11 月", "12 月"];
 const rankColors: Record<string, string> = { A: "rank-a", B: "rank-b", C: "rank-c", N: "rank-n" };
+
+// 以运行当天为准动态计算"今天"与年份，避免硬编码随时间过期
+const TODAY = (() => {
+  const now = new Date();
+  return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
+})();
+const CURRENT_YEAR = new Date().getFullYear();
+const YEAR_OPTIONS = [CURRENT_YEAR - 1, CURRENT_YEAR, CURRENT_YEAR + 1];
+
+function formatMetaTime(iso: string | null | undefined) {
+  if (!iso) return "";
+  const value = new Date(iso);
+  if (Number.isNaN(value.getTime())) return "";
+  return value.toLocaleString("zh-CN", { year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" });
+}
 
 function dayPosition(date: string, year: number) {
   const start = Date.UTC(year, 0, 1);
@@ -115,8 +132,9 @@ function inferredReviewEvents(conf: Conference, year: number): SupplementalEvent
 
 export default function Home() {
   const [data, setData] = useState<Conference[]>(builtInData);
-  const [syncStatus, setSyncStatus] = useState("正在检查更新…");
-  const [year, setYear] = useState(2026);
+  const [meta, setMeta] = useState<DataMeta>(builtInMeta as DataMeta);
+  const [syncFailed, setSyncFailed] = useState(false);
+  const [year, setYear] = useState(CURRENT_YEAR);
   const [rank, setRank] = useState("A");
   const [selectedCategories, setSelectedCategories] = useState<string[]>(["AI", "DB"]);
   const [query, setQuery] = useState("");
@@ -132,16 +150,22 @@ export default function Home() {
 
   useEffect(() => {
     const controller = new AbortController();
-    const url = new URL("conferences.json", window.location.href);
-    url.searchParams.set("refresh", Date.now().toString());
-    fetch(url, { cache: "no-store", signal: controller.signal })
-      .then((response) => { if (!response.ok) throw new Error(String(response.status)); return response.json(); })
+    const fetchJson = (name: string) => {
+      const url = new URL(name, window.location.href);
+      url.searchParams.set("refresh", Date.now().toString());
+      return fetch(url, { cache: "no-store", signal: controller.signal })
+        .then((response) => { if (!response.ok) throw new Error(String(response.status)); return response.json(); });
+    };
+    // 拉取数据源元信息（上游 CCFDDL 提交时间 / 本站构建时间），用于展示真实数据新鲜度
+    fetchJson("data-meta.json")
+      .then((fresh: unknown) => { if (fresh && typeof fresh === "object") setMeta(fresh as DataMeta); })
+      .catch(() => {});
+    fetchJson("conferences.json")
       .then((records: Conference[]) => {
         if (!Array.isArray(records) || records.length === 0) throw new Error("empty data");
         setData(enrichConferenceData(records));
-        setSyncStatus(`已同步最新数据 · ${new Date().toLocaleTimeString("zh-CN", { hour: "2-digit", minute: "2-digit" })}`);
       })
-      .catch((error) => { if (error.name !== "AbortError") setSyncStatus("远程更新失败 · 已使用内置数据"); });
+      .catch((error) => { if (error.name !== "AbortError") setSyncFailed(true); });
     return () => controller.abort();
   }, []);
 
@@ -168,7 +192,7 @@ export default function Home() {
       if (!current || (hasSubmissionThisYear && !currentHasSubmission) || (hasSubmissionThisYear === currentHasSubmission && conf.year > current.year)) unique.set(conf.title, conf);
     }
     return [...unique.values()].sort((a, b) => {
-      const baseline = year === 2026 ? "2026-07-18" : `${year}-01-01`;
+      const baseline = year === CURRENT_YEAR ? TODAY : `${year}-01-01`;
       const nextDeadline = (conf: Conference) => [
         ...conf.timeline.map((item) => item.date),
         ...(conf.supplementalEvents || []).filter((event) => event.type === "submission" || event.type === "commit" || event.type === "abstract").map((event) => event.date),
@@ -181,12 +205,13 @@ export default function Home() {
 
   const visible = filtered.slice(0, limit);
   const ganttViewportRef = useRef<HTMLDivElement>(null);
-  const todayPosition = year <= 2026 && year + 1 >= 2026 ? dayPosition("2026-07-18", year) : null;
+  const todayInWindow = inTwoYearWindow(TODAY, year);
+  const todayPosition = todayInWindow ? dayPosition(TODAY, year) : null;
   const axisMonths = Array.from({ length: 24 }, (_, index) => ({ label: months[index % 12], year: year + Math.floor(index / 12), index }));
   useEffect(() => {
     const viewport = ganttViewportRef.current;
     if (!viewport) return;
-    const anchor = inTwoYearWindow("2026-07-18", year) ? dayPosition("2026-07-18", year) / 100 : 0;
+    const anchor = inTwoYearWindow(TODAY, year) ? dayPosition(TODAY, year) / 100 : 0;
     viewport.scrollTop = Math.max(0, anchor * viewport.scrollHeight - 110);
     viewport.scrollLeft = 0;
   }, [year, rank, selectedCategories, query, arrMode]);
@@ -241,6 +266,14 @@ export default function Home() {
     setSelectedEvent(null);
   };
 
+  const syncStatusText = syncFailed
+    ? `线上更新失败 · 正在使用内置数据${builtInMeta.generatedAt ? `（生成于 ${formatMetaTime(builtInMeta.generatedAt)}）` : ""}`
+    : meta.upstreamTime
+      ? `数据更新于 ${formatMetaTime(meta.upstreamTime)} · 来源 CCFDDL`
+      : meta.generatedAt
+        ? `数据生成于 ${formatMetaTime(meta.generatedAt)}`
+        : "正在检查数据更新…";
+
   return (
     <main>
       <header className="topbar">
@@ -250,16 +283,16 @@ export default function Home() {
 
       <section className="hero" id="top">
         <div className="hero-copy">
-          <p className="eyebrow">CCF CONFERENCE INTELLIGENCE · 2026</p>
+          <p className="eyebrow">CCF CONFERENCE INTELLIGENCE · {CURRENT_YEAR}</p>
           <h1>把一整年的<br/><em>投稿节奏</em>看清楚。</h1>
           <p className="intro">开源 CCFDDL 数据的年度甘特视图。摘要、各轮投稿与会议举办时间，在同一条轴上排布。</p>
         </div>
-        <div className="hero-stat"><strong>{filtered.length}</strong><span>场会议 / 当前筛选</span><small>{syncStatus}</small></div>
+        <div className="hero-stat"><strong>{filtered.length}</strong><span>场会议 / 当前筛选</span><small>{syncStatusText}</small></div>
       </section>
 
       <section className="filters" aria-label="会议筛选">
         <div className="filter-group wide"><label htmlFor="search">搜索会议</label><div className="search-wrap"><span>⌕</span><input id="search" value={query} onChange={(e) => { setQuery(e.target.value); setLimit(32); }} placeholder="SIGMOD、NeurIPS、Shanghai…"/></div></div>
-        <div className="filter-group"><label>年份</label><div className="segmented">{[2025, 2026, 2027].map((y) => <button key={y} className={year === y ? "active" : ""} onClick={() => { setYear(y); setLimit(32); }}>{y}</button>)}</div></div>
+        <div className="filter-group"><label>年份</label><div className="segmented">{YEAR_OPTIONS.map((y) => <button key={y} className={year === y ? "active" : ""} onClick={() => { setYear(y); setLimit(32); }}>{y}</button>)}</div></div>
         <div className="filter-group"><label>CCF 等级</label><div className="segmented">{["ALL", "A", "B", "C"].map((r) => <button key={r} className={rank === r ? "active" : ""} onClick={() => { setRank(r); setLimit(32); }}>{r === "ALL" ? "全部" : r}</button>)}</div></div>
         <div className="filter-group arr-filter"><label>ARR 时间线</label><div className="arr-modes"><button className={arrMode === "include" ? "active" : ""} onClick={() => { setArrMode("include"); setLimit(32); }}>含 ARR</button><button className={arrMode === "exclude" ? "active" : ""} onClick={() => { setArrMode("exclude"); setLimit(32); }}>不含</button><button className={arrMode === "only" ? "active" : ""} onClick={() => { setArrMode("only"); setLimit(32); }}>仅 ARR</button></div></div>
         <div className="filter-group category-group"><label>研究领域 · 可多选</label><div className="category-buttons"><button className={selectedCategories.length === 0 ? "active" : ""} onClick={() => { setSelectedCategories([]); setLimit(32); }}>全部领域</button>{Object.entries(categories).filter(([key]) => key !== "ALL").map(([key, value]) => <button key={key} className={selectedCategories.includes(key) ? "active" : ""} aria-pressed={selectedCategories.includes(key)} onClick={() => toggleCategory(key)}>{value}</button>)}</div></div>
@@ -272,7 +305,7 @@ export default function Home() {
           {visible.length === 0 && <div className="empty"><b>没有匹配的会议</b><span>换一个等级、领域或搜索词试试。</span></div>}
           {visible.length > 0 && <div className="vertical-gantt" style={{ "--column-count": visible.length } as React.CSSProperties}>
             <div className="sticky-gantt-head"><div className="corner"><b>{year}</b><span>时间 / 日期</span></div><div className="conference-heads">{visible.map((conf, index) => { const hasReviewSchedule = (conf.supplementalEvents || []).some((event) => ["rebuttal", "result", "camera", "reject"].includes(event.type)) || inferredReviewEvents(conf, year).length > 0; return <div className="conference-head" key={`head-${conf.id}-${conf.year}`}><div className="column-number">{String(index + 1).padStart(2, "0")}</div><div className="venue-top"><h3 title={`${conf.title} ${conf.year}`}>{conf.title} <small>{conf.year}</small></h3><span className={`rank ${rankColors[conf.rank] || "rank-n"}`}>{conf.isARR ? "ARR" : conf.rank === "N" || !conf.rank ? "—" : `CCF ${conf.rank}`}</span></div><p title={conf.description}>{conf.description}</p><div className="meta"><span>⌖ {conf.place || "地点待定"}</span><span>◷ {conf.conferenceDate || "时间待定"}</span>{conf.rank === "A" && <span className={hasReviewSchedule ? "schedule-ok" : "schedule-pending"}>{hasReviewSchedule ? "✓ 评审日程已核验" : "! 评审日程待核验"}</span>}{conf.commitVenues?.map((venue) => <span className="commit-venue" key={venue}>→ {venue}</span>)}</div><a href={conf.link} target="_blank" rel="noreferrer">会议官网 ↗</a></div>})}</div></div>
-            <div className="gantt-body"><div className="date-axis">{axisMonths.map((month) => <div className="axis-month" key={`${month.year}-${month.index}`} style={{ top: `${monthPosition(month.index, year)}%` }}><b>{month.label}</b><span>{month.year}/{String((month.index % 12) + 1).padStart(2, "0")}/01</span></div>)}{todayPosition !== null && <div className="axis-today" style={{ top: `${todayPosition}%` }}>今天 · 2026/07/18</div>}</div>
+            <div className="gantt-body"><div className="date-axis">{axisMonths.map((month) => <div className="axis-month" key={`${month.year}-${month.index}`} style={{ top: `${monthPosition(month.index, year)}%` }}><b>{month.label}</b><span>{month.year}/{String((month.index % 12) + 1).padStart(2, "0")}/01</span></div>)}{todayPosition !== null && <div className="axis-today" style={{ top: `${todayPosition}%` }}>今天 · {TODAY.replace(/-/g, "/")}</div>}</div>
             <div className="conference-columns">
           {transferPoint && inTwoYearWindow(transferPoint.event.date, year) && <div className="transfer-line" style={{ top: `${dayPosition(transferPoint.event.date, year)}%` }}><span>转投基准 · {transferPoint.event.date} · {transferPoint.conf.title}</span></div>}
           {visible.map((conf) => {
