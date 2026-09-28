@@ -29,4 +29,4 @@ ruby work/build_conference_data.rb
 pnpm run build:github
 ```
 
-数据由 CCFDDL 社区维护，仅供参考；所有日期应以会议官网为准。
+数据由 CCFDDL 社区维护，仅供参考；所有日期应以会议官网为准。  
