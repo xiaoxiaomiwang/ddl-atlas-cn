@@ -7,6 +7,9 @@ on:
     # 每小时检查一次上游 CCFDDL 数据，有变化才重新构建部署
     - cron: "17 * * * *"
   workflow_dispatch:
+  # 允许通过 REST API 随时手动触发一次同步（POST /repos/xiaoxiaomiwang/ddl-atlas-cn/dispatches）
+  repository_dispatch:
+    types: [sync-now]
 
 permissions:
   contents: write
