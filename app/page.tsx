@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import rawData from "./conferences.json";
 import builtInMeta from "./data-meta.json";
+import autoSupplementsRaw from "./auto-supplements.json";
 import { arrCycles, officialSupplements, type SupplementalEvent } from "./supplemental";
 
 type DataMeta = { upstreamSha: string | null; upstreamTime: string | null; generatedAt: string | null; recordCount: number };
@@ -14,8 +15,17 @@ type Conference = {
   supplementalEvents?: SupplementalEvent[]; commitVenues?: string[]; isARR?: boolean;
 };
 
+// 自动抓取的官网评审日程（CI 从会议官网解析，未经人工核验，人工核验数据优先）
+type AutoSupplements = { conferences?: Record<string, { source: string; events: SupplementalEvent[] }> };
+const autoSupplements = (autoSupplementsRaw as AutoSupplements).conferences || {};
+
 function enrichConferenceData(records: Conference[]) {
-  const sourceData = records.map((conf) => ({ ...conf, supplementalEvents: officialSupplements[`${conf.title}-${conf.year}`] || [] }));
+  const sourceData = records.map((conf) => {
+    const key = `${conf.title}-${conf.year}`;
+    const official = officialSupplements[key];
+    const auto = official ? [] : (autoSupplements[key]?.events || []).map((event) => ({ ...event, autoFetched: true as const, source: event.source || autoSupplements[key].source }));
+    return { ...conf, supplementalEvents: (official || auto) as SupplementalEvent[] };
+  });
   const visionProjections = [
     { title: "CVPR", sourceYear: 2026, targetYear: 2027, shift: 1 },
     { title: "ICCV", sourceYear: 2025, targetYear: 2027, shift: 2 },
@@ -338,7 +348,7 @@ export default function Home() {
         <div className="gantt-viewport" ref={ganttViewportRef}>
           {visible.length === 0 && <div className="empty"><b>没有匹配的会议</b><span>换一个等级、领域或搜索词试试。</span></div>}
           {visible.length > 0 && <div className="vertical-gantt" style={{ "--column-count": visible.length } as React.CSSProperties}>
-            <div className="sticky-gantt-head"><div className="corner"><b>{year}</b><span>时间 / 日期</span></div><div className="conference-heads">{visible.map((conf, index) => { const hasReviewSchedule = (conf.supplementalEvents || []).some((event) => ["rebuttal", "result", "camera", "reject"].includes(event.type)) || inferredReviewEvents(conf, year).length > 0; return <div className="conference-head" key={`head-${conf.id}-${conf.year}`}><div className="column-number">{String(index + 1).padStart(2, "0")}</div><div className="venue-top"><h3 title={`${conf.title} ${conf.year}`}>{conf.title} <small>{conf.year}</small></h3><span className={`rank ${rankColors[conf.rank] || "rank-n"}`}>{conf.isARR ? "ARR" : conf.rank === "N" || !conf.rank ? "—" : `CCF ${conf.rank}`}</span></div><p title={conf.description}>{conf.description}</p><div className="meta"><span>⌖ {conf.place || "地点待定"}</span><span>◷ {conf.conferenceDate || "时间待定"}</span>{conf.rank === "A" && <span className={hasReviewSchedule ? "schedule-ok" : "schedule-pending"}>{hasReviewSchedule ? "✓ 评审日程已核验" : "! 评审日程待核验"}</span>}{conf.commitVenues?.map((venue) => <span className="commit-venue" key={venue}>→ {venue}</span>)}</div><a href={conf.link} target="_blank" rel="noreferrer">会议官网 ↗</a></div>})}</div></div>
+            <div className="sticky-gantt-head"><div className="corner"><b>{year}</b><span>时间 / 日期</span></div><div className="conference-heads">{visible.map((conf, index) => { const supplementalAll = conf.supplementalEvents || []; const officialReview = supplementalAll.some((event) => !event.autoFetched && !event.inferred && ["rebuttal", "result", "camera", "reject"].includes(event.type)); const autoReview = supplementalAll.some((event) => event.autoFetched && ["rebuttal", "result", "camera", "reject"].includes(event.type)); const hasReviewSchedule = officialReview || autoReview || inferredReviewEvents(conf, year).length > 0; const scheduleBadge = officialReview ? <span className="schedule-ok">✓ 评审日程已核验</span> : autoReview ? <span className="schedule-auto">≈ 官网日程自动抓取</span> : hasReviewSchedule ? <span className="schedule-ok">✓ 评审日程已核验</span> : <span className="schedule-pending">! 评审日程待核验</span>; return <div className="conference-head" key={`head-${conf.id}-${conf.year}`}><div className="column-number">{String(index + 1).padStart(2, "0")}</div><div className="venue-top"><h3 title={`${conf.title} ${conf.year}`}>{conf.title} <small>{conf.year}</small></h3><span className={`rank ${rankColors[conf.rank] || "rank-n"}`}>{conf.isARR ? "ARR" : conf.rank === "N" || !conf.rank ? "—" : `CCF ${conf.rank}`}</span></div><p title={conf.description}>{conf.description}</p><div className="meta"><span>⌖ {conf.place || "地点待定"}</span><span>◷ {conf.conferenceDate || "时间待定"}</span>{conf.rank === "A" && scheduleBadge}{conf.commitVenues?.map((venue) => <span className="commit-venue" key={venue}>→ {venue}</span>)}</div><a href={conf.link} target="_blank" rel="noreferrer">会议官网 ↗</a></div>})}</div></div>
             <div className="gantt-body"><div className="date-axis">{axisMonths.map((month) => <div className="axis-month" key={`${month.year}-${month.index}`} style={{ top: `${monthPosition(month.index, year)}%` }}><b>{month.label}</b><span>{month.year}/{String((month.index % 12) + 1).padStart(2, "0")}/01</span></div>)}{todayPosition !== null && <div className="axis-today" style={{ top: `${todayPosition}%` }}>今天 · {TODAY.replace(/-/g, "/")}</div>}</div>
             <div className="conference-columns">
           {transferPoint && inTwoYearWindow(transferPoint.event.date, year) && <div className="transfer-line" style={{ top: `${dayPosition(transferPoint.event.date, year)}%` }}><span>转投基准 · {transferPoint.event.date} · {transferPoint.conf.title}</span></div>}
@@ -367,7 +377,7 @@ export default function Home() {
         {limit < filtered.length && <button className="load-more" onClick={() => setLimit((n) => n + 32)}>加载更多会议 <span>{visible.length} / {filtered.length}</span></button>}
       </section>
 
-      {selectedEvent && <div className="event-popover" role="dialog" aria-modal="true" aria-label="日期节点详情"><button className="popover-close" onClick={() => setSelectedEvent(null)} aria-label="关闭">×</button><p>{selectedEvent.conf.title} · {selectedEvent.conf.year} {selectedEvent.event.inferred ? "· 往届官网节奏平移 *" : "· 官方核验"}</p><h3>{selectedEvent.event.label}</h3><time>{selectedEvent.event.date} · {selectedEvent.conf.timezone || "以官网为准"}</time>{selectedEvent.event.detail && <div>{selectedEvent.event.detail}</div>}<a href={selectedEvent.event.source} target="_blank" rel="noreferrer">{selectedEvent.event.inferred ? "查看所依据的往届官网 ↗" : "查看官方来源 ↗"}</a></div>}
+      {selectedEvent && <div className="event-popover" role="dialog" aria-modal="true" aria-label="日期节点详情"><button className="popover-close" onClick={() => setSelectedEvent(null)} aria-label="关闭">×</button><p>{selectedEvent.conf.title} · {selectedEvent.conf.year} {selectedEvent.event.inferred ? "· 往届官网节奏平移 *" : selectedEvent.event.autoFetched ? "· 官网自动抓取（未核验）" : "· 官方核验"}</p><h3>{selectedEvent.event.label}</h3><time>{selectedEvent.event.date} · {selectedEvent.conf.timezone || "以官网为准"}</time>{selectedEvent.event.detail && <div>{selectedEvent.event.detail}</div>}{selectedEvent.event.autoFetched && <div>该节点由程序从会议官网自动解析，未经人工核验，请以官网为准。</div>}<a href={selectedEvent.event.source} target="_blank" rel="noreferrer">{selectedEvent.event.inferred ? "查看所依据的往届官网 ↗" : "查看官方来源 ↗"}</a></div>}
 
       {transferPoint && <aside className="transfer-panel" aria-label="转投候选会议">
         <div className="transfer-panel-head"><div><p>TRANSFER PLANNER</p><h3>从 {transferPoint.event.date.slice(5).replace("-", "/")} 之后转投</h3><span>{transferPoint.conf.title} · {transferPoint.event.label}</span></div><button onClick={() => setTransferPoint(null)} aria-label="关闭转投规划">×</button></div>

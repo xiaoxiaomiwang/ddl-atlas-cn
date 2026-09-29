@@ -5,6 +5,7 @@ export type SupplementalEvent = {
   detail?: string;
   source: string;
   inferred?: boolean;
+  autoFetched?: boolean;
 };
 
 export type SupplementalConference = {

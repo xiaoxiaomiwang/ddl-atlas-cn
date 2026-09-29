@@ -61,6 +61,17 @@ jobs:
           ruby work/build_conference_data.rb
           cp app/conferences.json public/conferences.json
           cp app/data-meta.json public/data-meta.json
+      - name: Scrape review schedules from conference sites
+        # 仅对 CCF A 类中缺人工核验日程的会议，自动解析官网评审节点（标注"未核验"）
+        if: steps.upstream.outputs.changed == 'true'
+        run: |
+          if [ -f work/scrape_review_schedule.rb ]; then
+            ruby work/scrape_review_schedule.rb || echo "scrape failed, keep existing data"
+            cp app/auto-supplements.json public/auto-supplements.json
+          else
+            echo '{}' > app/auto-supplements.json
+            cp app/auto-supplements.json public/auto-supplements.json
+          fi
       - run: pnpm install --frozen-lockfile
         if: steps.upstream.outputs.changed == 'true'
       - run: pnpm run build:github
@@ -82,7 +93,7 @@ jobs:
         run: |
           git config user.name "ddl-atlas-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add app/conferences.json app/data-meta.json public/conferences.json public/data-meta.json
+          git add app/conferences.json app/data-meta.json app/auto-supplements.json public/conferences.json public/data-meta.json public/auto-supplements.json
           if git diff --staged --quiet; then
             echo "No data change to commit."
           else

@@ -3961,7 +3961,9 @@
     "conferenceDate": "June 17-19, 2026",
     "conferenceStart": "2026-06-17",
     "place": "Florence, Italy",
-    "timeline": []
+    "timeline": [
+
+    ]
   },
   {
     "id": "iiswc2026",
@@ -4325,7 +4327,9 @@
     "conferenceDate": "June 23-26, 2026",
     "conferenceStart": "2026-06-23",
     "place": "Vilamoura, Algarve, Portugal",
-    "timeline": []
+    "timeline": [
+
+    ]
   },
   {
     "id": "isit26",
@@ -6193,26 +6197,6 @@
     ]
   },
   {
-    "id": "sec2026",
-    "title": "SEC",
-    "description": "ACM/IEEE Symposium on Edge Computing",
-    "category": "DS",
-    "rank": "C",
-    "year": 2026,
-    "link": "https://acm-ieee-sec.org/2026/",
-    "timezone": "AoE",
-    "conferenceDate": "Oct 13-16, 2026",
-    "conferenceStart": "2026-10-13",
-    "place": "Santa Clara University, CA, USA",
-    "timeline": [
-      {
-        "date": "2026-05-08",
-        "abstractDate": "2026-05-08",
-        "comment": ""
-      }
-    ]
-  },
-  {
     "id": "sec26",
     "title": "SEC",
     "description": "IFIP International Information Security Conference",
@@ -6229,6 +6213,26 @@
         "date": "2025-12-19",
         "abstractDate": "",
         "comment": "Submission deadline"
+      }
+    ]
+  },
+  {
+    "id": "sec2026",
+    "title": "SEC",
+    "description": "ACM/IEEE Symposium on Edge Computing",
+    "category": "DS",
+    "rank": "C",
+    "year": 2026,
+    "link": "https://acm-ieee-sec.org/2026/",
+    "timezone": "AoE",
+    "conferenceDate": "Oct 13-16, 2026",
+    "conferenceStart": "2026-10-13",
+    "place": "Santa Clara University, CA, USA",
+    "timeline": [
+      {
+        "date": "2026-05-08",
+        "abstractDate": "2026-05-08",
+        "comment": ""
       }
     ]
   },
@@ -7444,7 +7448,9 @@
     "conferenceDate": "August 17-22, 2027",
     "conferenceStart": "2027-08-17",
     "place": "Kyoto, Japan",
-    "timeline": []
+    "timeline": [
+
+    ]
   },
   {
     "id": "siggraph27",
@@ -7458,7 +7464,9 @@
     "conferenceDate": "August 8 - 12, 2027",
     "conferenceStart": "2027-08-08",
     "place": "Anaheim, California",
-    "timeline": []
+    "timeline": [
+
+    ]
   },
   {
     "id": "siggrapha27",
@@ -7472,7 +7480,9 @@
     "conferenceDate": "November 30 - December 3, 2027",
     "conferenceStart": "2027-11-30",
     "place": "Tokyo International Forum, Tokyo, Japan",
-    "timeline": []
+    "timeline": [
+
+    ]
   },
   {
     "id": "acns27",
@@ -7681,7 +7691,9 @@
     "conferenceDate": "June 7-11, 2027",
     "conferenceStart": "2027-06-07",
     "place": "Seville, Spain",
-    "timeline": []
+    "timeline": [
+
+    ]
   },
   {
     "id": "ccc27",
@@ -7695,7 +7707,9 @@
     "conferenceDate": "July 19-22, 2027",
     "conferenceStart": "2027-07-19",
     "place": "Seattle, Washington, USA",
-    "timeline": []
+    "timeline": [
+
+    ]
   },
   {
     "id": "ccgrid27",
@@ -7729,7 +7743,9 @@
     "conferenceDate": "October 11-15, 2027",
     "conferenceStart": "2027-10-11",
     "place": "Atlanta, USA",
-    "timeline": []
+    "timeline": [
+
+    ]
   },
   {
     "id": "cgi27",
@@ -7883,7 +7899,9 @@
     "conferenceDate": "June 28 - July 2, 2027",
     "conferenceStart": "2027-06-28",
     "place": "Tokyo, Japan",
-    "timeline": []
+    "timeline": [
+
+    ]
   },
   {
     "id": "compsac27",
@@ -8297,7 +8315,9 @@
     "conferenceDate": "September 20-24, 2027",
     "conferenceStart": "2027-09-20",
     "place": "Eindhoven, The Netherlands",
-    "timeline": []
+    "timeline": [
+
+    ]
   },
   {
     "id": "ecoop27",
@@ -8411,7 +8431,9 @@
     "conferenceDate": "May 24-28, 2027",
     "conferenceStart": "2027-05-24",
     "place": "London, UK",
-    "timeline": []
+    "timeline": [
+
+    ]
   },
   {
     "id": "eurocrypt27",
@@ -8675,7 +8697,9 @@
     "conferenceDate": "October 18-22, 2027",
     "conferenceStart": "2027-10-18",
     "place": "Athens, Greece",
-    "timeline": []
+    "timeline": [
+
+    ]
   },
   {
     "id": "fpga2027",
@@ -8709,7 +8733,29 @@
     "conferenceDate": "August 23-26, 2027",
     "conferenceStart": "2027-08-23",
     "place": "Nijmegen, Netherlands",
-    "timeline": []
+    "timeline": [
+
+    ]
+  },
+  {
+    "id": "fse27",
+    "title": "FSE",
+    "description": "ACM International Conference on the Foundations of Software Engineering",
+    "category": "SE",
+    "rank": "A",
+    "year": 2027,
+    "link": "https://conf.researchr.org/home/fse-2027",
+    "timezone": "AoE",
+    "conferenceDate": "July 12-16, 2027",
+    "conferenceStart": "2027-07-12",
+    "place": "Shenzhen, China",
+    "timeline": [
+      {
+        "date": "2026-10-02",
+        "abstractDate": "",
+        "comment": ""
+      }
+    ]
   },
   {
     "id": "iacr-fse27",
@@ -8737,26 +8783,6 @@
     ]
   },
   {
-    "id": "fse27",
-    "title": "FSE",
-    "description": "ACM International Conference on the Foundations of Software Engineering",
-    "category": "SE",
-    "rank": "A",
-    "year": 2027,
-    "link": "https://conf.researchr.org/home/fse-2027",
-    "timezone": "AoE",
-    "conferenceDate": "July 12-16, 2027",
-    "conferenceStart": "2027-07-12",
-    "place": "Shenzhen, China",
-    "timeline": [
-      {
-        "date": "2026-10-02",
-        "abstractDate": "",
-        "comment": ""
-      }
-    ]
-  },
-  {
     "id": "gecco27",
     "title": "GECCO",
     "description": "Genetic and Evolutionary Computation Conference",
@@ -8768,7 +8794,9 @@
     "conferenceDate": "July 12-16, 2027",
     "conferenceStart": "2027-07-12",
     "place": "Kraków, Poland",
-    "timeline": []
+    "timeline": [
+
+    ]
   },
   {
     "id": "gi27",
@@ -8782,7 +8810,9 @@
     "conferenceDate": "June 15-18, 2027",
     "conferenceStart": "2027-06-15",
     "place": "Winnipeg, Canada",
-    "timeline": []
+    "timeline": [
+
+    ]
   },
   {
     "id": "gmp27",
@@ -8921,7 +8951,9 @@
     "conferenceDate": "May 24-26, 2027",
     "conferenceStart": "2027-05-24",
     "place": "Burghausen, Bavaria, Germany",
-    "timeline": []
+    "timeline": [
+
+    ]
   },
   {
     "id": "icalp27",
@@ -9015,7 +9047,9 @@
     "conferenceDate": "October 2-8, 2027",
     "conferenceStart": "2027-10-02",
     "place": "Hong Kong, China",
-    "timeline": []
+    "timeline": [
+
+    ]
   },
   {
     "id": "icdar2027",
@@ -9049,7 +9083,9 @@
     "conferenceDate": "July 5-8, 2027",
     "conferenceStart": "2027-07-05",
     "place": "Melbourne, Australia",
-    "timeline": []
+    "timeline": [
+
+    ]
   },
   {
     "id": "icde27",
@@ -9173,7 +9209,9 @@
     "conferenceDate": "July 13-17, 2027",
     "conferenceStart": "2027-07-13",
     "place": "Xiamen, China",
-    "timeline": []
+    "timeline": [
+
+    ]
   },
   {
     "id": "icmr27",
@@ -9247,7 +9285,9 @@
     "conferenceDate": "TBD",
     "conferenceStart": "",
     "place": "Atlanta, Georgia, USA",
-    "timeline": []
+    "timeline": [
+
+    ]
   },
   {
     "id": "icse27",
@@ -9351,7 +9391,9 @@
     "conferenceDate": "June 21-24, 2027",
     "conferenceStart": "2027-06-21",
     "place": "Seattle, Washington, USA",
-    "timeline": []
+    "timeline": [
+
+    ]
   },
   {
     "id": "cec2027",
@@ -9475,7 +9517,9 @@
     "conferenceDate": "August 7-13 and August 15-17, 2027",
     "conferenceStart": "2027-08-07",
     "place": "Kyoto, Japan and Hengqin, China",
-    "timeline": []
+    "timeline": [
+
+    ]
   },
   {
     "id": "ijcnn2027",
@@ -9509,7 +9553,9 @@
     "conferenceDate": "TBD",
     "conferenceStart": "",
     "place": "Atlanta, GA, USA",
-    "timeline": []
+    "timeline": [
+
+    ]
   },
   {
     "id": "infocom27",
@@ -9583,7 +9629,9 @@
     "conferenceDate": "September 26 - October 1, 2027",
     "conferenceStart": "2027-09-26",
     "place": "Florence, Italy",
-    "timeline": []
+    "timeline": [
+
+    ]
   },
   {
     "id": "isca27",
@@ -9597,7 +9645,9 @@
     "conferenceDate": "TBD",
     "conferenceStart": "",
     "place": "Atlanta, Georgia, USA",
-    "timeline": []
+    "timeline": [
+
+    ]
   },
   {
     "id": "iscas27",
@@ -9651,7 +9701,9 @@
     "conferenceDate": "July 18-22, 2027",
     "conferenceStart": "2027-07-18",
     "place": "Copenhagen, Denmark",
-    "timeline": []
+    "timeline": [
+
+    ]
   },
   {
     "id": "ispd27",
@@ -9685,7 +9737,9 @@
     "conferenceDate": "October 19-22, 2027",
     "conferenceStart": "2027-10-19",
     "place": "Taipa, Macao SAR, China",
-    "timeline": []
+    "timeline": [
+
+    ]
   },
   {
     "id": "issta27",
@@ -9759,7 +9813,9 @@
     "conferenceDate": "TBD",
     "conferenceStart": "",
     "place": "Buenos Aires, Argentina",
-    "timeline": []
+    "timeline": [
+
+    ]
   },
   {
     "id": "lics27",
@@ -9773,7 +9829,9 @@
     "conferenceDate": "June 21-24, 2027",
     "conferenceStart": "2027-06-21",
     "place": "Montréal, Canada",
-    "timeline": []
+    "timeline": [
+
+    ]
   },
   {
     "id": "miccai27",
@@ -9787,7 +9845,9 @@
     "conferenceDate": "September 26 - October 1, 2027",
     "conferenceStart": "2027-09-26",
     "place": "Auckland, New Zealand",
-    "timeline": []
+    "timeline": [
+
+    ]
   },
   {
     "id": "mlsys27",
@@ -9886,7 +9946,9 @@
     "conferenceDate": "May 17-21, 2027",
     "conferenceStart": "2027-05-17",
     "place": "TBD",
-    "timeline": []
+    "timeline": [
+
+    ]
   },
   {
     "id": "mobicom27",
@@ -10030,7 +10092,9 @@
     "conferenceDate": "TBD",
     "conferenceStart": "",
     "place": "Ghent, Belgium",
-    "timeline": []
+    "timeline": [
+
+    ]
   },
   {
     "id": "nsdi27",
@@ -10334,7 +10398,9 @@
     "conferenceDate": "August 23-27, 2027",
     "conferenceStart": "2027-08-23",
     "place": "Milan, Italy",
-    "timeline": []
+    "timeline": [
+
+    ]
   },
   {
     "id": "recomb27",
@@ -10428,7 +10494,9 @@
     "conferenceDate": "August 23-27, 2027",
     "conferenceStart": "2027-08-23",
     "place": "Honolulu, O‘ahu, Hawaii, USA",
-    "timeline": []
+    "timeline": [
+
+    ]
   },
   {
     "id": "sp27",
@@ -10557,7 +10625,9 @@
     "conferenceDate": "TBD",
     "conferenceStart": "",
     "place": "Linköping, Sweden",
-    "timeline": []
+    "timeline": [
+
+    ]
   },
   {
     "id": "secon27",
@@ -10591,7 +10661,9 @@
     "conferenceDate": "June 21-25, 2027",
     "conferenceStart": "2027-06-21",
     "place": "Singapore",
-    "timeline": []
+    "timeline": [
+
+    ]
   },
   {
     "id": "sigcomm27",
@@ -10605,7 +10677,9 @@
     "conferenceDate": "August 8 - 12, 2027",
     "conferenceStart": "2027-08-08",
     "place": "Bangkok, Thailand",
-    "timeline": []
+    "timeline": [
+
+    ]
   },
   {
     "id": "sigcse27",
@@ -10744,7 +10818,9 @@
     "conferenceDate": "June 21-25, 2027",
     "conferenceStart": "2027-06-21",
     "place": "Singapore",
-    "timeline": []
+    "timeline": [
+
+    ]
   },
   {
     "id": "socg27",
@@ -10758,7 +10834,9 @@
     "conferenceDate": "June 21-25, 2027",
     "conferenceStart": "2027-06-21",
     "place": "Bengaluru, India",
-    "timeline": []
+    "timeline": [
+
+    ]
   },
   {
     "id": "soda27",
@@ -10792,7 +10870,9 @@
     "conferenceDate": "August 8-10, 2027",
     "conferenceStart": "2027-08-08",
     "place": "Denver, Colorado, USA",
-    "timeline": []
+    "timeline": [
+
+    ]
   },
   {
     "id": "spaa27",
@@ -10831,7 +10911,9 @@
     "conferenceDate": "June 21-25, 2027",
     "conferenceStart": "2027-06-21",
     "place": "Singapore",
-    "timeline": []
+    "timeline": [
+
+    ]
   },
   {
     "id": "stoc27",
@@ -11065,7 +11147,9 @@
     "conferenceDate": "April 5-8, 2027",
     "conferenceStart": "2027-04-05",
     "place": "Panama City, Panama",
-    "timeline": []
+    "timeline": [
+
+    ]
   },
   {
     "id": "whc27",
@@ -11159,7 +11243,9 @@
     "conferenceDate": "May 28-June 2, 2028",
     "conferenceStart": "2028-05-28",
     "place": "Tokyo, Japan",
-    "timeline": []
+    "timeline": [
+
+    ]
   },
   {
     "id": "miccai28",
@@ -11173,6 +11259,8 @@
     "conferenceDate": "Oct 16-20, 2028",
     "conferenceStart": "2028-10-16",
     "place": "São Paulo, Brazil",
-    "timeline": []
+    "timeline": [
+
+    ]
   }
 ]
