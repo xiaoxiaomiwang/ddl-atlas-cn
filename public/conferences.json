@@ -18,9 +18,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "aaai26",
@@ -127,9 +125,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "acisp26",
@@ -514,9 +510,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "aistats26",
@@ -611,9 +605,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "aplas26",
@@ -680,9 +672,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "appt2026",
@@ -703,9 +693,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "apsec26",
@@ -726,9 +714,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "apsys2026",
@@ -749,9 +735,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "apweb26",
@@ -777,9 +761,7 @@
         "comment": "second round"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "asap2026",
@@ -800,9 +782,7 @@
         "comment": "Regular paper deadlines (extended)"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "ase26",
@@ -897,9 +877,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "asplos26",
@@ -953,9 +931,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "ats2026",
@@ -976,9 +952,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "atva26",
@@ -1050,9 +1024,7 @@
         "comment": "2nd round Deadline"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "bibm26",
@@ -1073,9 +1045,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "bis2026",
@@ -1096,9 +1066,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "bmvc26",
@@ -1119,9 +1087,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "bigdata26",
@@ -1142,9 +1108,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "blocksys2026",
@@ -1165,9 +1129,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "casa2026",
@@ -1188,9 +1150,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "cav26",
@@ -1349,9 +1309,7 @@
         "comment": "Submission Deadline"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "ccgrid26",
@@ -1372,9 +1330,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "ccs26",
@@ -1428,9 +1384,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "cgi26",
@@ -1451,9 +1405,7 @@
         "comment": "Regular conference papers (LNCS proceedings track)"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "ches26",
@@ -1489,9 +1441,7 @@
         "comment": "Schedule for TCHES Volume 2026/4"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "chi26",
@@ -1558,9 +1508,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "cidr26",
@@ -1581,9 +1529,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "cikm26",
@@ -1632,9 +1578,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "cocoon26",
@@ -1701,9 +1645,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "codesisss26",
@@ -1724,9 +1666,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "colm26",
@@ -1747,9 +1687,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "colt26",
@@ -1816,9 +1754,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "concur26",
@@ -1885,9 +1821,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "cpal26",
@@ -1908,9 +1842,7 @@
         "comment": "Proceedings Track"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "crypto26",
@@ -2005,9 +1937,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "cscloud2026",
@@ -2028,9 +1958,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "csfw26",
@@ -2061,9 +1989,7 @@
         "comment": "Winter"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "ct-rsa26",
@@ -2130,9 +2056,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "cvpr26",
@@ -2199,9 +2123,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "conext26",
@@ -2227,9 +2149,7 @@
         "comment": "June Cycle"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "conll26",
@@ -2296,9 +2216,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "cogsci26",
@@ -2319,9 +2237,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "collaboratecom26",
@@ -2342,9 +2258,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "dac26",
@@ -2365,9 +2279,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "dai2026",
@@ -2388,9 +2300,7 @@
         "comment": "Regular research papers"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "dasfaa26",
@@ -2457,9 +2367,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "dfrws26",
@@ -2480,9 +2388,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "dfrws-apac26",
@@ -2503,9 +2409,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "dimva26",
@@ -2577,9 +2481,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "dsn26",
@@ -2697,9 +2599,7 @@
         "comment": "Research Papers"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "ecai26",
@@ -2816,9 +2716,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "ecoop26",
@@ -2872,9 +2770,7 @@
         "comment": "Conference Papers"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "edbt26",
@@ -2905,9 +2801,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "egsr2026",
@@ -2928,9 +2822,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "emnlp26",
@@ -3002,9 +2894,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "esa2026",
@@ -3071,9 +2961,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "esem26",
@@ -3094,9 +2982,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "esorics26",
@@ -3173,9 +3059,7 @@
         "comment": "Submission deadline ESOP round 2"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "ets2026",
@@ -3196,9 +3080,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "eurocrypt26",
@@ -3305,9 +3187,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "euro-par26",
@@ -3328,9 +3208,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "eurogp26",
@@ -3351,9 +3229,7 @@
         "comment": "Regular papers; extended deadline"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "eurosp26",
@@ -3374,9 +3250,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "eurosys2026",
@@ -3430,9 +3304,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "eg26",
@@ -3453,9 +3325,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "evoapps26",
@@ -3476,9 +3346,7 @@
         "comment": "Regular papers; extended deadline"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "evocop26",
@@ -3499,9 +3367,7 @@
         "comment": "Regular papers; extended deadline"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "evomusart26",
@@ -3522,9 +3388,7 @@
         "comment": "Regular papers; extended deadline"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "fast26",
@@ -3642,9 +3506,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "fg26",
@@ -3670,9 +3532,7 @@
         "comment": "Round 2 (paper deadline extended)"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "fm26",
@@ -3825,9 +3685,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "fpga2026",
@@ -3848,9 +3706,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "fpt2026",
@@ -3876,9 +3732,7 @@
         "comment": "Submission Due (Conference Track)"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "fscd26",
@@ -4016,9 +3870,7 @@
         "comment": "Full papers (traditional category) "
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "globecom26",
@@ -4067,9 +3919,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "gmp26",
@@ -4090,9 +3940,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "hpca26",
@@ -4141,9 +3989,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "hpdc2026",
@@ -4169,9 +4015,7 @@
         "comment": "paper submission deadline"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "hscc26",
@@ -4192,9 +4036,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "hcs2026",
@@ -4215,9 +4057,7 @@
         "comment": "Extended submission deadline"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "hotnets26",
@@ -4238,9 +4078,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "hotstorage2026",
@@ -4261,9 +4099,7 @@
         "comment": "Regular paper submission (extended)"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "ica3pp26",
@@ -4284,9 +4120,7 @@
         "comment": "Paper Submission Due"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "icaif2026",
@@ -4307,9 +4141,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "icalp26",
@@ -4422,9 +4254,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "icassp26",
@@ -4473,9 +4303,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "iccad26",
@@ -4496,9 +4324,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "iccbr2026",
@@ -4565,9 +4391,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "iccd26",
@@ -4588,9 +4412,7 @@
         "comment": "abstract and full paper deadline"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "icdar2026",
@@ -4611,9 +4433,7 @@
         "comment": "Conference papers"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "icdcs26",
@@ -4634,9 +4454,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "icde26",
@@ -4702,9 +4520,7 @@
         "comment": "Main track"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "icdm2026",
@@ -4764,9 +4580,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "iceccs26",
@@ -4787,9 +4601,7 @@
         "comment": "Abstract and full paper submission"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "icfem26",
@@ -4872,9 +4684,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "icics26",
@@ -5054,9 +4864,7 @@
         "comment": "Paper deadline extended to Apr 23, 23:59 AoE; normalized to UTC-7"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "icml26",
@@ -5145,9 +4953,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "iconip2026",
@@ -5196,9 +5002,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "icpc26",
@@ -5219,9 +5023,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "icpp26",
@@ -5242,9 +5044,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "icpr26",
@@ -5265,9 +5065,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "icra26",
@@ -5321,9 +5119,7 @@
         "comment": "Cycle 2"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "icse26",
@@ -5377,9 +5173,7 @@
         "comment": "Research Papers Track"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "icsoc26",
@@ -5451,9 +5245,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "ictai26",
@@ -5474,9 +5266,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "icvrv26",
@@ -5497,9 +5287,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "icws26",
@@ -5520,9 +5308,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "icwsm2026",
@@ -5553,9 +5339,7 @@
         "comment": "3rd Full-paper Deadline"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "cec2026",
@@ -5576,9 +5360,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "cog26",
@@ -5604,9 +5386,7 @@
         "comment": "Auxiliary Paper"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "vis26",
@@ -5627,9 +5407,7 @@
         "comment": "Regular full papers; mandatory abstract and initial submission"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "vr26",
@@ -5650,9 +5428,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "cgo2026",
@@ -5678,9 +5454,7 @@
         "comment": "Second Submission"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "ifip119'26",
@@ -5701,9 +5475,7 @@
         "comment": "Submission Deadline"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "ih&mmsec26",
@@ -5717,9 +5489,7 @@
     "conferenceDate": "June 17-19, 2026",
     "conferenceStart": "2026-06-17",
     "place": "Florence, Italy",
-    "timeline": [
-
-    ],
+    "timeline": [],
     "acceptRates": [
       {
         "year": 2025,
@@ -5748,9 +5518,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "ijcai26",
@@ -5845,9 +5613,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "ijcnlp2026",
@@ -5868,9 +5634,7 @@
         "comment": "ARR Submission; commitment deadline: 2026-08-07; second-round commitment: 2026-08-25; AACL-IJCNLP 2026 (the 5th AACL & 15th IJCNLP)"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "ijcnn2026",
@@ -6090,9 +5854,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "iros26",
@@ -6193,9 +5955,7 @@
         "comment": "Extended submission deadline"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "isc26",
@@ -6316,12 +6076,8 @@
     "conferenceDate": "June 23-26, 2026",
     "conferenceStart": "2026-06-23",
     "place": "Vilamoura, Algarve, Portugal",
-    "timeline": [
-
-    ],
-    "acceptRates": [
-
-    ]
+    "timeline": [],
+    "acceptRates": []
   },
   {
     "id": "isit26",
@@ -6376,9 +6132,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "ispa26",
@@ -6399,9 +6153,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "ispass26",
@@ -6422,9 +6174,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "iss26",
@@ -6460,9 +6210,7 @@
         "comment": "Summer round"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "issre26",
@@ -6483,9 +6231,7 @@
         "comment": "Extended Research Track deadlines"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "issta26",
@@ -6580,9 +6326,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "itc-asia2026",
@@ -6603,9 +6347,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "iui26",
@@ -6626,9 +6368,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "iwqos26",
@@ -6649,9 +6389,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "interspeech26",
@@ -6711,9 +6449,7 @@
         "comment": "Round 2"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "jcc2026",
@@ -6734,9 +6470,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "krd26",
@@ -6757,9 +6491,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "ksem26",
@@ -6780,9 +6512,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "lcn26",
@@ -6803,9 +6533,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "lctes26",
@@ -6826,9 +6554,7 @@
         "comment": "Extended deadlines"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "lics26",
@@ -6883,9 +6609,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "miccai26",
@@ -6992,9 +6716,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "mmasia26",
@@ -7015,9 +6737,7 @@
         "comment": "Regular Paper"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "mmm26",
@@ -7038,9 +6758,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "mmsys26",
@@ -7089,9 +6807,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "msr26",
@@ -7112,9 +6828,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "msst2026",
@@ -7135,9 +6849,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "mswim26",
@@ -7158,9 +6870,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "middleware26",
@@ -7186,9 +6896,7 @@
         "comment": "Round 2"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "models26",
@@ -7209,9 +6917,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "mobicom26",
@@ -7339,9 +7045,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "ndss26",
@@ -7401,9 +7105,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "nlpcc2026",
@@ -7424,9 +7126,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "noms26",
@@ -7447,9 +7147,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "nossdav26",
@@ -7470,9 +7168,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "nsdi26",
@@ -7544,9 +7240,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "networking26",
@@ -7567,9 +7261,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "nips26",
@@ -7715,9 +7407,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "pakdd26",
@@ -7784,9 +7474,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "pdcat2026",
@@ -7812,9 +7500,7 @@
         "comment": "Second Cycle"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "pets26",
@@ -7896,9 +7582,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "pkc26",
@@ -7993,9 +7677,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "pods26",
@@ -8021,9 +7703,7 @@
         "comment": "Second submission cycle"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "popl26",
@@ -8140,9 +7820,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "pricai2026",
@@ -8163,9 +7841,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "pacificvis26",
@@ -8186,9 +7862,7 @@
         "comment": "Conference track"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "percom26",
@@ -8209,9 +7883,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "performance26",
@@ -8232,9 +7904,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "probml2026",
@@ -8255,9 +7925,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "qrs26",
@@ -8278,9 +7946,7 @@
         "comment": "Regular papers (extended)"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "raid26",
@@ -8301,9 +7967,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "re26",
@@ -8324,9 +7988,7 @@
         "comment": "Research Papers"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "recomb26",
@@ -8375,9 +8037,7 @@
         "comment": "Regular research papers; abstract submission is optional"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "rss26",
@@ -8398,9 +8058,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "rtas2026",
@@ -8477,9 +8135,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "recsys26",
@@ -8546,9 +8202,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "sp26",
@@ -8574,9 +8228,7 @@
         "comment": "Second Paper submission deadline"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "sac26",
@@ -8653,9 +8305,7 @@
         "comment": "Second Cycle"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "saner2026",
@@ -8676,9 +8326,7 @@
         "comment": "Regular research papers; abstract submission is mandatory"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "sas26",
@@ -8791,9 +8439,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "sc26",
@@ -8814,9 +8460,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "sca26",
@@ -8837,9 +8481,7 @@
         "comment": "Submission deadline (papers)"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "scam26",
@@ -8860,9 +8502,7 @@
         "comment": "co-located with ICSME 2026"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "sdm2026",
@@ -8893,29 +8533,6 @@
     ]
   },
   {
-    "id": "sec26",
-    "title": "SEC",
-    "description": "IFIP International Information Security Conference",
-    "category": "SC",
-    "rank": "C",
-    "year": 2026,
-    "link": "https://ifipsec.org/index.html",
-    "timezone": "AoE",
-    "conferenceDate": "June 09 - 11, 2026",
-    "conferenceStart": "2026-06-09",
-    "place": "Perth, Australia",
-    "timeline": [
-      {
-        "date": "2025-12-19",
-        "abstractDate": "",
-        "comment": "Submission deadline"
-      }
-    ],
-    "acceptRates": [
-
-    ]
-  },
-  {
     "id": "sec2026",
     "title": "SEC",
     "description": "ACM/IEEE Symposium on Edge Computing",
@@ -8934,9 +8551,28 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
+  },
+  {
+    "id": "sec26",
+    "title": "SEC",
+    "description": "IFIP International Information Security Conference",
+    "category": "SC",
+    "rank": "C",
+    "year": 2026,
+    "link": "https://ifipsec.org/index.html",
+    "timezone": "AoE",
+    "conferenceDate": "June 09 - 11, 2026",
+    "conferenceStart": "2026-06-09",
+    "place": "Perth, Australia",
+    "timeline": [
+      {
+        "date": "2025-12-19",
+        "abstractDate": "",
+        "comment": "Submission deadline"
+      }
+    ],
+    "acceptRates": []
   },
   {
     "id": "secon26",
@@ -8957,9 +8593,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "seke26",
@@ -8980,9 +8614,7 @@
         "comment": "Regular papers; midnight EST"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "setta26",
@@ -9059,9 +8691,7 @@
         "comment": "Second round"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "sigcomm26",
@@ -9116,9 +8746,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "sigir26",
@@ -9305,9 +8933,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "sigspatial26",
@@ -9328,9 +8954,7 @@
         "comment": "Extended Research Track deadlines"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "slt26",
@@ -9351,9 +8975,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "smc26",
@@ -9374,9 +8996,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "smi26",
@@ -9397,9 +9017,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "socg26",
@@ -9592,9 +9210,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "spm26",
@@ -9615,9 +9231,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "srds26",
@@ -9638,9 +9252,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "sse26",
@@ -9661,9 +9273,7 @@
         "comment": "Extended and firm paper submission deadline"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "stoc26",
@@ -9712,9 +9322,7 @@
         "comment": "Regular full papers"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "securecomm26",
@@ -9740,9 +9348,7 @@
         "comment": "Cycle 2"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "sensys26",
@@ -9801,9 +9407,7 @@
         "comment": "Second round"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "tase26",
@@ -9824,9 +9428,7 @@
         "comment": "Extended deadlines"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "tcc26",
@@ -9933,9 +9535,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "uist2026",
@@ -10057,9 +9657,7 @@
         "comment": "fourth round"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "vinci2026",
@@ -10080,9 +9678,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "vldb26",
@@ -10255,9 +9851,7 @@
         "comment": "Second round"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "wasa26",
@@ -10278,9 +9872,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "wcnc26",
@@ -10301,9 +9893,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "wine2026",
@@ -10324,9 +9914,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "wisa2026",
@@ -10347,9 +9935,7 @@
         "comment": "Regular papers; final abstract and paper cutoffs from the official submission-platform API"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "wise26",
@@ -10484,9 +10070,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "wisec26",
@@ -10552,9 +10136,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "3dv2027",
@@ -10575,9 +10157,7 @@
         "comment": "Regular-paper abstract registration and paper submission are both due Aug 28."
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "aaai27",
@@ -10728,9 +10308,7 @@
     "conferenceDate": "August 17-22, 2027",
     "conferenceStart": "2027-08-17",
     "place": "Kyoto, Japan",
-    "timeline": [
-
-    ],
+    "timeline": [],
     "acceptRates": [
       {
         "year": 2026,
@@ -10770,9 +10348,7 @@
     "conferenceDate": "August 8 - 12, 2027",
     "conferenceStart": "2027-08-08",
     "place": "Anaheim, California",
-    "timeline": [
-
-    ],
+    "timeline": [],
     "acceptRates": [
       {
         "year": 2024,
@@ -10806,9 +10382,7 @@
     "conferenceDate": "November 30 - December 3, 2027",
     "conferenceStart": "2027-11-30",
     "place": "Tokyo International Forum, Tokyo, Japan",
-    "timeline": [
-
-    ],
+    "timeline": [],
     "acceptRates": [
       {
         "year": 2024,
@@ -10962,9 +10536,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "asplos27",
@@ -11023,9 +10595,7 @@
         "comment": "2nd round Deadline"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "bis2027",
@@ -11046,9 +10616,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "cade27",
@@ -11148,9 +10716,7 @@
     "conferenceDate": "June 7-11, 2027",
     "conferenceStart": "2027-06-07",
     "place": "Seville, Spain",
-    "timeline": [
-
-    ],
+    "timeline": [],
     "acceptRates": [
       {
         "year": 2026,
@@ -11190,9 +10756,7 @@
     "conferenceDate": "July 19-22, 2027",
     "conferenceStart": "2027-07-19",
     "place": "Seattle, Washington, USA",
-    "timeline": [
-
-    ],
+    "timeline": [],
     "acceptRates": [
       {
         "year": 2026,
@@ -11239,9 +10803,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "ccs27",
@@ -11255,9 +10817,7 @@
     "conferenceDate": "October 11-15, 2027",
     "conferenceStart": "2027-10-11",
     "place": "Atlanta, USA",
-    "timeline": [
-
-    ],
+    "timeline": [],
     "acceptRates": [
       {
         "year": 2021,
@@ -11286,9 +10846,7 @@
         "comment": "Regular conference papers (LNCS proceedings track)"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "ches27",
@@ -11324,9 +10882,7 @@
         "comment": "Schedule for TCHES Volume 2027/4"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "chi27",
@@ -11393,9 +10949,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "codaspy2027",
@@ -11416,9 +10970,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "coling27",
@@ -11477,9 +11029,7 @@
     "conferenceDate": "June 28 - July 2, 2027",
     "conferenceStart": "2027-06-28",
     "place": "Tokyo, Japan",
-    "timeline": [
-
-    ],
+    "timeline": [],
     "acceptRates": [
       {
         "year": 2026,
@@ -11526,9 +11076,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "cpal27",
@@ -11549,9 +11097,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "cscwd27",
@@ -11572,9 +11118,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "csfw27",
@@ -11605,9 +11149,7 @@
         "comment": "Winter"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "ct-rsa27",
@@ -11679,9 +11221,7 @@
         "comment": "Round 2"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "cvm27",
@@ -11702,9 +11242,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "cvpr27",
@@ -11771,9 +11309,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "dasfaa27",
@@ -11840,9 +11376,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "dcc2027",
@@ -11863,9 +11397,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "dfrws27",
@@ -11886,9 +11418,7 @@
         "comment": "Extended deadlines"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "dis27",
@@ -11909,9 +11439,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "dsn27",
@@ -12029,9 +11557,7 @@
         "comment": "Research Papers"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "ecai27",
@@ -12107,12 +11633,8 @@
     "conferenceDate": "September 20-24, 2027",
     "conferenceStart": "2027-09-20",
     "place": "Eindhoven, The Netherlands",
-    "timeline": [
-
-    ],
-    "acceptRates": [
-
-    ]
+    "timeline": [],
+    "acceptRates": []
   },
   {
     "id": "ecoop27",
@@ -12176,9 +11698,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "esann27",
@@ -12199,9 +11719,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "etaps27",
@@ -12227,9 +11745,7 @@
         "comment": "ESOP round 2, FoSSaCS, TACAS, iFS"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "ets2027",
@@ -12243,12 +11759,8 @@
     "conferenceDate": "May 24-28, 2027",
     "conferenceStart": "2027-05-24",
     "place": "London, UK",
-    "timeline": [
-
-    ],
-    "acceptRates": [
-
-    ]
+    "timeline": [],
+    "acceptRates": []
   },
   {
     "id": "eurocrypt27",
@@ -12355,9 +11867,7 @@
         "comment": "Full papers"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "eurosp27",
@@ -12378,9 +11888,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "eurosys2027",
@@ -12434,9 +11942,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "evoapps27",
@@ -12457,9 +11963,7 @@
         "comment": "Full papers"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "evocop27",
@@ -12480,9 +11984,7 @@
         "comment": "Full papers"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "evomusart27",
@@ -12503,9 +12005,7 @@
         "comment": "Full papers"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "fast27",
@@ -12623,9 +12123,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "fm27",
@@ -12639,9 +12137,7 @@
     "conferenceDate": "October 18-22, 2027",
     "conferenceStart": "2027-10-18",
     "place": "Athens, Greece",
-    "timeline": [
-
-    ],
+    "timeline": [],
     "acceptRates": [
       {
         "year": 2024,
@@ -12682,9 +12178,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "fscd27",
@@ -12698,9 +12192,7 @@
     "conferenceDate": "August 23-26, 2027",
     "conferenceStart": "2027-08-23",
     "place": "Nijmegen, Netherlands",
-    "timeline": [
-
-    ],
+    "timeline": [],
     "acceptRates": [
       {
         "year": 2026,
@@ -12725,34 +12217,6 @@
         "rate": 52.5,
         "submitted": 59,
         "accepted": 31
-      }
-    ]
-  },
-  {
-    "id": "fse27",
-    "title": "FSE",
-    "description": "ACM International Conference on the Foundations of Software Engineering",
-    "category": "SE",
-    "rank": "A",
-    "year": 2027,
-    "link": "https://conf.researchr.org/home/fse-2027",
-    "timezone": "AoE",
-    "conferenceDate": "July 12-16, 2027",
-    "conferenceStart": "2027-07-12",
-    "place": "Shenzhen, China",
-    "timeline": [
-      {
-        "date": "2026-10-02",
-        "abstractDate": "",
-        "comment": ""
-      }
-    ],
-    "acceptRates": [
-      {
-        "year": 2021,
-        "rate": 23.8,
-        "submitted": 407,
-        "accepted": 97
       }
     ]
   },
@@ -12790,6 +12254,34 @@
     ]
   },
   {
+    "id": "fse27",
+    "title": "FSE",
+    "description": "ACM International Conference on the Foundations of Software Engineering",
+    "category": "SE",
+    "rank": "A",
+    "year": 2027,
+    "link": "https://conf.researchr.org/home/fse-2027",
+    "timezone": "AoE",
+    "conferenceDate": "July 12-16, 2027",
+    "conferenceStart": "2027-07-12",
+    "place": "Shenzhen, China",
+    "timeline": [
+      {
+        "date": "2026-10-02",
+        "abstractDate": "",
+        "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2021,
+        "rate": 23.8,
+        "submitted": 407,
+        "accepted": 97
+      }
+    ]
+  },
+  {
     "id": "gecco27",
     "title": "GECCO",
     "description": "Genetic and Evolutionary Computation Conference",
@@ -12801,12 +12293,8 @@
     "conferenceDate": "July 12-16, 2027",
     "conferenceStart": "2027-07-12",
     "place": "Kraków, Poland",
-    "timeline": [
-
-    ],
-    "acceptRates": [
-
-    ]
+    "timeline": [],
+    "acceptRates": []
   },
   {
     "id": "gi27",
@@ -12820,12 +12308,8 @@
     "conferenceDate": "June 15-18, 2027",
     "conferenceStart": "2027-06-15",
     "place": "Winnipeg, Canada",
-    "timeline": [
-
-    ],
-    "acceptRates": [
-
-    ]
+    "timeline": [],
+    "acceptRates": []
   },
   {
     "id": "gmp27",
@@ -12846,9 +12330,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "group27",
@@ -12874,9 +12356,7 @@
         "comment": "Full Paper Second Wave Submissions (extended)"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "hicss27",
@@ -12897,9 +12377,7 @@
         "comment": "Paper Submission Deadline"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "hpca27",
@@ -12948,9 +12426,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "hipeac27",
@@ -12971,9 +12447,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "hotos27",
@@ -12987,12 +12461,8 @@
     "conferenceDate": "May 24-26, 2027",
     "conferenceStart": "2027-05-24",
     "place": "Burghausen, Bavaria, Germany",
-    "timeline": [
-
-    ],
-    "acceptRates": [
-
-    ]
+    "timeline": [],
+    "acceptRates": []
   },
   {
     "id": "icalp27",
@@ -13059,9 +12529,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "icassp27",
@@ -13110,9 +12578,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "iccv27",
@@ -13126,9 +12592,7 @@
     "conferenceDate": "October 2-8, 2027",
     "conferenceStart": "2027-10-02",
     "place": "Hong Kong, China",
-    "timeline": [
-
-    ],
+    "timeline": [],
     "acceptRates": [
       {
         "year": 2023,
@@ -13157,9 +12621,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "icdcs27",
@@ -13173,12 +12635,8 @@
     "conferenceDate": "July 5-8, 2027",
     "conferenceStart": "2027-07-05",
     "place": "Melbourne, Australia",
-    "timeline": [
-
-    ],
-    "acceptRates": [
-
-    ]
+    "timeline": [],
+    "acceptRates": []
   },
   {
     "id": "icde27",
@@ -13244,9 +12702,7 @@
         "comment": "Full Paper Submission deadline"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "icdt27",
@@ -13272,9 +12728,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "icfp27",
@@ -13362,9 +12816,7 @@
     "conferenceDate": "July 13-17, 2027",
     "conferenceStart": "2027-07-13",
     "place": "Xiamen, China",
-    "timeline": [
-
-    ],
+    "timeline": [],
     "acceptRates": [
       {
         "year": 2024,
@@ -13427,9 +12879,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "icra27",
@@ -13471,12 +12921,8 @@
     "conferenceDate": "TBD",
     "conferenceStart": "",
     "place": "Atlanta, Georgia, USA",
-    "timeline": [
-
-    ],
-    "acceptRates": [
-
-    ]
+    "timeline": [],
+    "acceptRates": []
   },
   {
     "id": "icse27",
@@ -13525,9 +12971,7 @@
         "comment": "Research Papers Track"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "icst2027",
@@ -13548,9 +12992,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "icwsm2027",
@@ -13581,9 +13023,7 @@
         "comment": "3rd Full-paper Deadline"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "idc27",
@@ -13597,12 +13037,8 @@
     "conferenceDate": "June 21-24, 2027",
     "conferenceStart": "2027-06-21",
     "place": "Seattle, Washington, USA",
-    "timeline": [
-
-    ],
-    "acceptRates": [
-
-    ]
+    "timeline": [],
+    "acceptRates": []
   },
   {
     "id": "cec2027",
@@ -13623,9 +13059,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "cog27",
@@ -13651,9 +13085,7 @@
         "comment": "Auxiliary Paper"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "vr27",
@@ -13674,9 +13106,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "cgo2027",
@@ -13702,9 +13132,7 @@
         "comment": "Second Submission"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "ifip119'27",
@@ -13725,9 +13153,7 @@
         "comment": "Submission Deadline"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "ijcai27",
@@ -13741,9 +13167,7 @@
     "conferenceDate": "August 7-13 and August 15-17, 2027",
     "conferenceStart": "2027-08-07",
     "place": "Kyoto, Japan and Hengqin, China",
-    "timeline": [
-
-    ],
+    "timeline": [],
     "acceptRates": [
       {
         "year": 2024,
@@ -13811,9 +13235,7 @@
     "conferenceDate": "TBD",
     "conferenceStart": "",
     "place": "Atlanta, GA, USA",
-    "timeline": [
-
-    ],
+    "timeline": [],
     "acceptRates": [
       {
         "year": 2024,
@@ -13876,9 +13298,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "ipdps27",
@@ -13899,9 +13319,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "iros27",
@@ -13915,9 +13333,7 @@
     "conferenceDate": "September 26 - October 1, 2027",
     "conferenceStart": "2027-09-26",
     "place": "Florence, Italy",
-    "timeline": [
-
-    ],
+    "timeline": [],
     "acceptRates": [
       {
         "year": 2026,
@@ -13945,9 +13361,7 @@
     "conferenceDate": "TBD",
     "conferenceStart": "",
     "place": "Atlanta, Georgia, USA",
-    "timeline": [
-
-    ],
+    "timeline": [],
     "acceptRates": [
       {
         "year": 2023,
@@ -14031,12 +13445,8 @@
     "conferenceDate": "July 18-22, 2027",
     "conferenceStart": "2027-07-18",
     "place": "Copenhagen, Denmark",
-    "timeline": [
-
-    ],
-    "acceptRates": [
-
-    ]
+    "timeline": [],
+    "acceptRates": []
   },
   {
     "id": "ispd27",
@@ -14057,9 +13467,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "issre27",
@@ -14073,12 +13481,8 @@
     "conferenceDate": "October 19-22, 2027",
     "conferenceStart": "2027-10-19",
     "place": "Taipa, Macao SAR, China",
-    "timeline": [
-
-    ],
-    "acceptRates": [
-
-    ]
+    "timeline": [],
+    "acceptRates": []
   },
   {
     "id": "issta27",
@@ -14127,9 +13531,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "interspeech27",
@@ -14177,12 +13579,8 @@
     "conferenceDate": "TBD",
     "conferenceStart": "",
     "place": "Buenos Aires, Argentina",
-    "timeline": [
-
-    ],
-    "acceptRates": [
-
-    ]
+    "timeline": [],
+    "acceptRates": []
   },
   {
     "id": "lics27",
@@ -14196,9 +13594,7 @@
     "conferenceDate": "June 21-24, 2027",
     "conferenceStart": "2027-06-21",
     "place": "Montréal, Canada",
-    "timeline": [
-
-    ],
+    "timeline": [],
     "acceptRates": [
       {
         "year": 2026,
@@ -14226,9 +13622,7 @@
     "conferenceDate": "September 26 - October 1, 2027",
     "conferenceStart": "2027-09-26",
     "place": "Auckland, New Zealand",
-    "timeline": [
-
-    ],
+    "timeline": [],
     "acceptRates": [
       {
         "year": 2026,
@@ -14275,9 +13669,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "mmm27",
@@ -14298,9 +13690,7 @@
         "comment": "Regular papers; extended deadline"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "mmsys27",
@@ -14354,9 +13744,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "msst2027",
@@ -14370,12 +13758,8 @@
     "conferenceDate": "May 17-21, 2027",
     "conferenceStart": "2027-05-17",
     "place": "TBD",
-    "timeline": [
-
-    ],
-    "acceptRates": [
-
-    ]
+    "timeline": [],
+    "acceptRates": []
   },
   {
     "id": "mobicom27",
@@ -14464,9 +13848,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "naacl27",
@@ -14565,9 +13947,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "nossdav27",
@@ -14581,12 +13961,8 @@
     "conferenceDate": "TBD",
     "conferenceStart": "",
     "place": "Ghent, Belgium",
-    "timeline": [
-
-    ],
-    "acceptRates": [
-
-    ]
+    "timeline": [],
+    "acceptRates": []
   },
   {
     "id": "nsdi27",
@@ -14783,9 +14159,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "pets27",
@@ -14946,9 +14320,7 @@
         "comment": "Second Submission Cycle"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "popl27",
@@ -15025,9 +14397,7 @@
         "comment": "Conference track"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "percom27",
@@ -15048,9 +14418,7 @@
         "comment": "Extended deadlines"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "re27",
@@ -15064,12 +14432,8 @@
     "conferenceDate": "August 23-27, 2027",
     "conferenceStart": "2027-08-23",
     "place": "Milan, Italy",
-    "timeline": [
-
-    ],
-    "acceptRates": [
-
-    ]
+    "timeline": [],
+    "acceptRates": []
   },
   {
     "id": "recomb27",
@@ -15118,9 +14482,7 @@
         "comment": "Regular research papers; abstract submission is optional"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "rss27",
@@ -15141,9 +14503,7 @@
         "comment": "Stage 1: initial 6-page extended abstract submission"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "rtas2027",
@@ -15185,9 +14545,7 @@
     "conferenceDate": "August 23-27, 2027",
     "conferenceStart": "2027-08-23",
     "place": "Honolulu, O‘ahu, Hawaii, USA",
-    "timeline": [
-
-    ],
+    "timeline": [],
     "acceptRates": [
       {
         "year": 2025,
@@ -15239,9 +14597,7 @@
         "comment": "Second Paper submission deadline"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "sacmat27",
@@ -15267,9 +14623,7 @@
         "comment": "Second Cycle"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "computing27",
@@ -15295,9 +14649,7 @@
         "comment": "Round 2"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "saner2027",
@@ -15318,9 +14670,7 @@
         "comment": "Research Track Paper submission deadline"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "satml27",
@@ -15341,9 +14691,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "sec27",
@@ -15357,12 +14705,8 @@
     "conferenceDate": "TBD",
     "conferenceStart": "",
     "place": "Linköping, Sweden",
-    "timeline": [
-
-    ],
-    "acceptRates": [
-
-    ]
+    "timeline": [],
+    "acceptRates": []
   },
   {
     "id": "secon27",
@@ -15383,9 +14727,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "sgp27",
@@ -15399,12 +14741,8 @@
     "conferenceDate": "June 21-25, 2027",
     "conferenceStart": "2027-06-21",
     "place": "Singapore",
-    "timeline": [
-
-    ],
-    "acceptRates": [
-
-    ]
+    "timeline": [],
+    "acceptRates": []
   },
   {
     "id": "sigcomm27",
@@ -15418,9 +14756,7 @@
     "conferenceDate": "August 8 - 12, 2027",
     "conferenceStart": "2027-08-08",
     "place": "Bangkok, Thailand",
-    "timeline": [
-
-    ],
+    "timeline": [],
     "acceptRates": [
       {
         "year": 2024,
@@ -15455,9 +14791,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "sigir27",
@@ -15632,12 +14966,8 @@
     "conferenceDate": "June 21-25, 2027",
     "conferenceStart": "2027-06-21",
     "place": "Singapore",
-    "timeline": [
-
-    ],
-    "acceptRates": [
-
-    ]
+    "timeline": [],
+    "acceptRates": []
   },
   {
     "id": "socg27",
@@ -15651,9 +14981,7 @@
     "conferenceDate": "June 21-25, 2027",
     "conferenceStart": "2027-06-21",
     "place": "Bengaluru, India",
-    "timeline": [
-
-    ],
+    "timeline": [],
     "acceptRates": [
       {
         "year": 2026,
@@ -15739,9 +15067,7 @@
     "conferenceDate": "August 8-10, 2027",
     "conferenceStart": "2027-08-08",
     "place": "Denver, Colorado, USA",
-    "timeline": [
-
-    ],
+    "timeline": [],
     "acceptRates": [
       {
         "year": 2025,
@@ -15793,9 +15119,7 @@
         "comment": "Cycle 2"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "spm27",
@@ -15809,12 +15133,8 @@
     "conferenceDate": "June 21-25, 2027",
     "conferenceStart": "2027-06-21",
     "place": "Singapore",
-    "timeline": [
-
-    ],
-    "acceptRates": [
-
-    ]
+    "timeline": [],
+    "acceptRates": []
   },
   {
     "id": "stoc27",
@@ -15868,9 +15188,7 @@
         "comment": "Full Paper Submission deadline (Cycle 2)"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "sensys27",
@@ -16132,9 +15450,7 @@
         "comment": "Second round"
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "wcnc27",
@@ -16148,12 +15464,8 @@
     "conferenceDate": "April 5-8, 2027",
     "conferenceStart": "2027-04-05",
     "place": "Panama City, Panama",
-    "timeline": [
-
-    ],
-    "acceptRates": [
-
-    ]
+    "timeline": [],
+    "acceptRates": []
   },
   {
     "id": "whc27",
@@ -16174,9 +15486,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "wsdm27",
@@ -16265,9 +15575,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [
-
-    ]
+    "acceptRates": []
   },
   {
     "id": "icassp28",
@@ -16281,9 +15589,7 @@
     "conferenceDate": "May 28-June 2, 2028",
     "conferenceStart": "2028-05-28",
     "place": "Tokyo, Japan",
-    "timeline": [
-
-    ],
+    "timeline": [],
     "acceptRates": [
       {
         "year": 2024,
@@ -16305,9 +15611,7 @@
     "conferenceDate": "Oct 16-20, 2028",
     "conferenceStart": "2028-10-16",
     "place": "São Paulo, Brazil",
-    "timeline": [
-
-    ],
+    "timeline": [],
     "acceptRates": [
       {
         "year": 2026,
