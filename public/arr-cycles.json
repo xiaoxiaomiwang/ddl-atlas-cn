@@ -1,0 +1,149 @@
+[
+  {
+    "id": "arr-may-2026",
+    "title": "ARR MAY",
+    "description": "ACL Rolling Review · May 2026 cycle",
+    "category": "ARR",
+    "rank": "N",
+    "year": 2026,
+    "link": "https://aclrollingreview.org/dates",
+    "timezone": "AoE",
+    "conferenceDate": "Cycle ends August 2, 2026",
+    "conferenceStart": "",
+    "place": "OpenReview · Online",
+    "timeline": [
+
+    ],
+    "isARR": true,
+    "supplementalEvents": [
+      {
+        "date": "2026-05-25",
+        "label": "ARR 投稿",
+        "type": "submission",
+        "source": "https://aclrollingreview.org/dates"
+      },
+      {
+        "date": "2026-07-02",
+        "label": "Reviews 截止",
+        "type": "result",
+        "source": "https://aclrollingreview.org/dates"
+      },
+      {
+        "date": "2026-07-08",
+        "label": "Author Response 开始",
+        "type": "rebuttal",
+        "source": "https://aclrollingreview.org/dates"
+      },
+      {
+        "date": "2026-07-14",
+        "label": "Author Response 截止",
+        "type": "rebuttal",
+        "source": "https://aclrollingreview.org/dates"
+      },
+      {
+        "date": "2026-07-30",
+        "label": "Meta-review 发布",
+        "type": "result",
+        "source": "https://aclrollingreview.org/dates"
+      }
+    ]
+  },
+  {
+    "id": "arr-aug-2026",
+    "title": "ARR AUG",
+    "description": "ACL Rolling Review · August 2026 cycle",
+    "category": "ARR",
+    "rank": "N",
+    "year": 2026,
+    "link": "https://aclrollingreview.org/dates",
+    "timezone": "AoE",
+    "conferenceDate": "Cycle ends October 11, 2026",
+    "conferenceStart": "",
+    "place": "OpenReview · Online",
+    "timeline": [
+
+    ],
+    "isARR": true,
+    "supplementalEvents": [
+      {
+        "date": "2026-08-03",
+        "label": "ARR 投稿",
+        "type": "submission",
+        "source": "https://aclrollingreview.org/dates"
+      },
+      {
+        "date": "2026-09-07",
+        "label": "Reviews 截止",
+        "type": "result",
+        "source": "https://aclrollingreview.org/dates"
+      },
+      {
+        "date": "2026-09-14",
+        "label": "Author Response 开始",
+        "type": "rebuttal",
+        "source": "https://aclrollingreview.org/dates"
+      },
+      {
+        "date": "2026-09-24",
+        "label": "Author Response 截止",
+        "type": "rebuttal",
+        "source": "https://aclrollingreview.org/dates"
+      },
+      {
+        "date": "2026-10-08",
+        "label": "Meta-review 发布",
+        "type": "result",
+        "source": "https://aclrollingreview.org/dates"
+      }
+    ]
+  },
+  {
+    "id": "arr-oct-2026",
+    "title": "ARR OCT",
+    "description": "ACL Rolling Review · October 2026 cycle",
+    "category": "ARR",
+    "rank": "N",
+    "year": 2026,
+    "link": "https://aclrollingreview.org/dates",
+    "timezone": "AoE",
+    "conferenceDate": "Cycle ends December 20, 2026",
+    "conferenceStart": "",
+    "place": "OpenReview · Online",
+    "timeline": [
+
+    ],
+    "isARR": true,
+    "supplementalEvents": [
+      {
+        "date": "2026-10-12",
+        "label": "ARR 投稿",
+        "type": "submission",
+        "source": "https://aclrollingreview.org/dates"
+      },
+      {
+        "date": "2026-11-16",
+        "label": "Reviews 截止",
+        "type": "result",
+        "source": "https://aclrollingreview.org/dates"
+      },
+      {
+        "date": "2026-11-24",
+        "label": "Author Response 开始",
+        "type": "rebuttal",
+        "source": "https://aclrollingreview.org/dates"
+      },
+      {
+        "date": "2026-11-30",
+        "label": "Author Response 截止",
+        "type": "rebuttal",
+        "source": "https://aclrollingreview.org/dates"
+      },
+      {
+        "date": "2026-12-17",
+        "label": "Meta-review 发布",
+        "type": "result",
+        "source": "https://aclrollingreview.org/dates"
+      }
+    ]
+  }
+]

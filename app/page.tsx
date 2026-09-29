@@ -5,6 +5,7 @@ import rawData from "./conferences.json";
 import builtInMeta from "./data-meta.json";
 import autoSupplementsRaw from "./auto-supplements.json";
 import { arrCycles, officialSupplements, type SupplementalEvent } from "./supplemental";
+import arrCyclesAutoRaw from "./arr-cycles.json";
 import { placeZh } from "./place-names";
 
 type DataMeta = { upstreamSha: string | null; upstreamTime: string | null; generatedAt: string | null; recordCount: number };
@@ -22,6 +23,15 @@ type Conference = {
 type AutoSupplements = { conferences?: Record<string, { source: string; events: SupplementalEvent[] }> };
 const autoSupplements = (autoSupplementsRaw as AutoSupplements).conferences || {};
 
+// ARR 周期：优先用自动抓取的官网数据（保持最新），回退静态数据；静态中的 commitment 信息按周期合并
+type ArrCycle = typeof arrCycles[number];
+const arrCyclesLive: ArrCycle[] = (arrCyclesAutoRaw as ArrCycle[]).length > 0
+  ? (arrCyclesAutoRaw as ArrCycle[]).map((cycle) => {
+      const staticCycle = arrCycles.find((item) => item.id === cycle.id);
+      return { ...cycle, commitVenues: staticCycle?.commitVenues };
+    })
+  : arrCycles;
+
 function enrichConferenceData(records: Conference[]) {
   const sourceData = records.map((conf) => {
     const key = `${conf.title}-${conf.year}`;
@@ -38,7 +48,7 @@ function enrichConferenceData(records: Conference[]) {
     const shiftDate = (date: string) => date && date !== "TBD" ? `${Number(date.slice(0, 4)) + spec.shift}${date.slice(4)}` : date;
     return [{ ...source, id: `${source.id}-projection-${spec.targetYear}`, year: spec.targetYear, conferenceDate: `* 参考 ${spec.sourceYear} 届次顺延`, conferenceStart: shiftDate(source.conferenceStart), place: "地点待官方公布", timeline: source.timeline.map((item) => ({ ...item, date: shiftDate(item.date), abstractDate: shiftDate(item.abstractDate) })), supplementalEvents: (source.supplementalEvents || []).map((event) => ({ ...event, date: shiftDate(event.date), label: `* 下一届预计 · ${event.label}`, detail: `依据 ${spec.title} ${spec.sourceYear} 官方日程顺延 ${spec.shift} 年；${spec.targetYear} 届官网日期公布后将替换。`, inferred: true })) }];
   });
-  return [...sourceData, ...visionProjections, ...arrCycles] as Conference[];
+  return [...sourceData, ...visionProjections, ...arrCyclesLive] as Conference[];
 }
 const builtInData = enrichConferenceData(rawData as Conference[]);
 const categories: Record<string, string> = {

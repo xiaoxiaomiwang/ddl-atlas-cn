@@ -72,6 +72,15 @@ jobs:
             echo '{}' > app/auto-supplements.json
             cp app/auto-supplements.json public/auto-supplements.json
           fi
+      - name: Scrape ARR cycles
+        # 自动抓取 ACL Rolling Review 官方评审周期（aclrollingreview.org/dates）
+        if: steps.upstream.outputs.changed == 'true'
+        run: |
+          if [ -f work/scrape_arr_cycles.rb ]; then
+            ruby work/scrape_arr_cycles.rb || echo "arr scrape failed, keep existing data"
+          fi
+          if [ ! -f app/arr-cycles.json ]; then echo '[]' > app/arr-cycles.json; fi
+          cp app/arr-cycles.json public/arr-cycles.json
       - run: pnpm install --frozen-lockfile
         if: steps.upstream.outputs.changed == 'true'
       - run: pnpm run build:github
@@ -93,7 +102,7 @@ jobs:
         run: |
           git config user.name "ddl-atlas-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add app/conferences.json app/data-meta.json app/auto-supplements.json public/conferences.json public/data-meta.json public/auto-supplements.json
+          git add app/conferences.json app/data-meta.json app/auto-supplements.json app/arr-cycles.json public/conferences.json public/data-meta.json public/auto-supplements.json public/arr-cycles.json
           if git diff --staged --quiet; then
             echo "No data change to commit."
           else
