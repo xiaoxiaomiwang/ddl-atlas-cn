@@ -44,6 +44,13 @@ const TODAY = (() => {
 const CURRENT_YEAR = new Date().getFullYear();
 const YEAR_OPTIONS = [CURRENT_YEAR - 1, CURRENT_YEAR, CURRENT_YEAR + 1];
 
+// 记住用户上次选择的筛选条件（年份/等级/领域/ARR 模式），下次访问自动恢复
+const FILTER_STORAGE_KEY = "ddl-atlas-filters";
+type SavedFilters = { year?: number; rank?: string; categories?: string[]; arrMode?: "include" | "exclude" | "only" };
+function loadSavedFilters(): SavedFilters {
+  try { return JSON.parse(localStorage.getItem(FILTER_STORAGE_KEY) || "{}") as SavedFilters; } catch { return {}; }
+}
+
 function formatMetaTime(iso: string | null | undefined) {
   if (!iso) return "";
   const value = new Date(iso);
@@ -134,12 +141,16 @@ export default function Home() {
   const [data, setData] = useState<Conference[]>(builtInData);
   const [meta, setMeta] = useState<DataMeta>(builtInMeta as DataMeta);
   const [syncFailed, setSyncFailed] = useState(false);
-  const [year, setYear] = useState(CURRENT_YEAR);
-  const [rank, setRank] = useState("A");
-  const [selectedCategories, setSelectedCategories] = useState<string[]>(["AI", "DB"]);
+  const [savedFilters] = useState(loadSavedFilters);
+  const savedCategories = (Array.isArray(savedFilters.categories) ? savedFilters.categories : []).filter((key) => key in categories && key !== "ALL");
+  const [year, setYear] = useState(YEAR_OPTIONS.includes(Number(savedFilters.year)) ? Number(savedFilters.year) : CURRENT_YEAR);
+  const [rank, setRank] = useState(["ALL", "A", "B", "C"].includes(String(savedFilters.rank)) ? String(savedFilters.rank) : "A");
+  const [selectedCategories, setSelectedCategories] = useState<string[]>(savedCategories);
   const [query, setQuery] = useState("");
   const [limit, setLimit] = useState(32);
-  const [arrMode, setArrMode] = useState<"include" | "exclude" | "only">("include");
+  const [arrMode, setArrMode] = useState<"include" | "exclude" | "only">(
+    savedFilters.arrMode === "exclude" || savedFilters.arrMode === "only" ? savedFilters.arrMode : "include",
+  );
   const [selectedEvent, setSelectedEvent] = useState<{ conf: Conference; event: SupplementalEvent } | null>(null);
   const [transferPoint, setTransferPoint] = useState<{ conf: Conference; event: SupplementalEvent } | null>(null);
   const [plannerCategories, setPlannerCategories] = useState<string[]>([]);
@@ -205,6 +216,24 @@ export default function Home() {
 
   const visible = filtered.slice(0, limit);
   const ganttViewportRef = useRef<HTMLDivElement>(null);
+
+  // 筛选条件持久化：变化时写入 localStorage
+  useEffect(() => {
+    try { localStorage.setItem(FILTER_STORAGE_KEY, JSON.stringify({ year, rank, categories: selectedCategories, arrMode })); } catch { /* 忽略存储异常（如隐私模式） */ }
+  }, [year, rank, selectedCategories, arrMode]);
+
+  // 每个领域的会议数量（按会议名去重，用于领域按钮徽章）
+  const categoryCounts = useMemo(() => {
+    const counts: Record<string, number> = {};
+    const seen = new Set<string>();
+    for (const conf of data) {
+      const key = `${conf.category}:${conf.title}`;
+      if (conf.isARR || seen.has(key)) continue;
+      seen.add(key);
+      counts[conf.category] = (counts[conf.category] || 0) + 1;
+    }
+    return counts;
+  }, [data]);
   const todayInWindow = inTwoYearWindow(TODAY, year);
   const todayPosition = todayInWindow ? dayPosition(TODAY, year) : null;
   const axisMonths = Array.from({ length: 24 }, (_, index) => ({ label: months[index % 12], year: year + Math.floor(index / 12), index }));
@@ -295,7 +324,7 @@ export default function Home() {
         <div className="filter-group"><label>年份</label><div className="segmented">{YEAR_OPTIONS.map((y) => <button key={y} className={year === y ? "active" : ""} onClick={() => { setYear(y); setLimit(32); }}>{y}</button>)}</div></div>
         <div className="filter-group"><label>CCF 等级</label><div className="segmented">{["ALL", "A", "B", "C"].map((r) => <button key={r} className={rank === r ? "active" : ""} onClick={() => { setRank(r); setLimit(32); }}>{r === "ALL" ? "全部" : r}</button>)}</div></div>
         <div className="filter-group arr-filter"><label>ARR 时间线</label><div className="arr-modes"><button className={arrMode === "include" ? "active" : ""} onClick={() => { setArrMode("include"); setLimit(32); }}>含 ARR</button><button className={arrMode === "exclude" ? "active" : ""} onClick={() => { setArrMode("exclude"); setLimit(32); }}>不含</button><button className={arrMode === "only" ? "active" : ""} onClick={() => { setArrMode("only"); setLimit(32); }}>仅 ARR</button></div></div>
-        <div className="filter-group category-group"><label>研究领域 · 可多选</label><div className="category-buttons"><button className={selectedCategories.length === 0 ? "active" : ""} onClick={() => { setSelectedCategories([]); setLimit(32); }}>全部领域</button>{Object.entries(categories).filter(([key]) => key !== "ALL").map(([key, value]) => <button key={key} className={selectedCategories.includes(key) ? "active" : ""} aria-pressed={selectedCategories.includes(key)} onClick={() => toggleCategory(key)}>{value}</button>)}</div></div>
+        <div className="filter-group category-group"><label>研究领域 · 可多选</label><div className="category-buttons"><button className={selectedCategories.length === 0 ? "active" : ""} onClick={() => { setSelectedCategories([]); setLimit(32); }}>全部领域</button>{Object.entries(categories).filter(([key]) => key !== "ALL").map(([key, value]) => <button key={key} className={selectedCategories.includes(key) ? "active" : ""} aria-pressed={selectedCategories.includes(key)} onClick={() => toggleCategory(key)}>{value}<small>{categoryCounts[key] || 0}</small></button>)}</div></div>
       </section>
 
       <section className="timeline-section" id="timeline">
