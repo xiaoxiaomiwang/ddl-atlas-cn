@@ -187,7 +187,8 @@ export default function Home() {
   const [plannerDays, setPlannerDays] = useState(365);
   const [plannerSameOnly, setPlannerSameOnly] = useState(false);
   const [plannerTarget, setPlannerTarget] = useState<"all" | "submission" | "commit">("all");
-  const [plannerSort, setPlannerSort] = useState<"recommended" | "soonest" | "rank">("recommended");
+  const [plannerSort, setPlannerSort] = useState<"recommended" | "soonest" | "rank">("soonest");
+  const [sortMenuOpen, setSortMenuOpen] = useState(false);
 
   useEffect(() => {
     const controller = new AbortController();
@@ -400,7 +401,14 @@ export default function Home() {
           <label>候选领域 · 可多选</label><div className="mini-buttons"><button className={plannerCategories.length === 0 ? "active" : ""} onClick={() => setPlannerCategories([])}>全部</button>{Object.entries(categories).filter(([key]) => key !== "ALL").map(([key, value]) => <button key={key} title={value} className={plannerCategories.includes(key) ? "active" : ""} onClick={() => setPlannerCategories((current) => current.includes(key) ? current.filter((item) => item !== key) : [...current, key])}>{key}</button>)}</div>
           <label>CCF 等级 · 可多选</label><div className="mini-buttons">{["A", "B", "C"].map((item) => <button key={item} className={plannerRanks.includes(item) ? "active" : ""} onClick={() => setPlannerRanks((current) => current.includes(item) ? current.filter((rankItem) => rankItem !== item) : [...current, item])}>{item}</button>)}</div>
           <div className="planner-selects"><label>最长等待<select value={plannerDays} onChange={(e) => setPlannerDays(Number(e.target.value))}><option value={30}>30 天</option><option value={60}>60 天</option><option value={120}>120 天</option><option value={240}>240 天</option><option value={365}>365 天</option><option value={540}>18 个月</option><option value={730}>2 年</option></select></label><label>目标类型<select value={plannerTarget} onChange={(e) => setPlannerTarget(e.target.value as "all" | "submission" | "commit")}><option value="all">投稿 + Commit</option><option value="submission">仅普通投稿</option><option value="commit">仅 ARR Commit</option></select></label></div>
-          <label>排序方式</label><div className="mini-buttons"><button title="综合评分：截止临近度 + CCF 等级 + 同领域 + 节点类型" className={plannerSort === "recommended" ? "active" : ""} onClick={() => setPlannerSort("recommended")}>推荐</button><button title="按距截止的天数升序，最快可投的排最前" className={plannerSort === "soonest" ? "active" : ""} onClick={() => setPlannerSort("soonest")}>最近截止</button><button title="CCF 等级从高到低，同级按截止临近排序" className={plannerSort === "rank" ? "active" : ""} onClick={() => setPlannerSort("rank")}>等级优先</button></div>
+          <div className="sort-toggle-row">
+            <button className="sort-toggle" onClick={() => setSortMenuOpen((open) => !open)} title="切换候选排序方式">排序：{plannerSort === "soonest" ? "最近截止" : plannerSort === "rank" ? "等级优先" : "综合推荐"} ▾</button>
+            {sortMenuOpen && <div className="sort-menu">
+              <button className={plannerSort === "soonest" ? "active" : ""} onClick={() => { setPlannerSort("soonest"); setSortMenuOpen(false); }}>最近截止 · 最快可投在前</button>
+              <button className={plannerSort === "rank" ? "active" : ""} onClick={() => { setPlannerSort("rank"); setSortMenuOpen(false); }}>等级优先 · CCF A→C</button>
+              <button className={plannerSort === "recommended" ? "active" : ""} onClick={() => { setPlannerSort("recommended"); setSortMenuOpen(false); }}>综合推荐 · 紧迫度+等级+同领域</button>
+            </div>}
+          </div>
           <label className="same-toggle"><input type="checkbox" checked={plannerSameOnly} onChange={(e) => setPlannerSameOnly(e.target.checked)}/> 只看同领域</label><small>候选结果实时按当前条件重新计算</small>
         </div>
         <div className="candidate-list">{transferCandidates.length === 0 && <p className="no-candidate">当前条件下没有可用投稿节点，可放宽领域、等级或最长等待时间。</p>}{transferCandidates.map(({ conf, event, days, sameField }, index) => <a href={conf.link} target="_blank" rel="noreferrer" className={`candidate ${event.inferred ? "projected" : ""}`} key={`${conf.id}-${event.date}-${event.label}`}><b>{String(index + 1).padStart(2, "0")}</b><div><h4>{conf.title} <em>{conf.isARR ? "ARR" : conf.rank ? `CCF ${conf.rank}` : ""}</em></h4><p>{event.date} · {event.label}</p><small>{event.inferred ? "* 根据本届日期顺延一年 · " : "官网已公布 · "}{sameField ? "同领域 · " : ""}{conf.place || conf.description}</small></div><strong>+{days} 天</strong></a>)}</div>
