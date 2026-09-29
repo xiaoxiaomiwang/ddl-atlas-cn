@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-29T07:21:36Z",
+    "generatedAt": "2026-09-29T07:51:21Z",
     "targetCount": 53,
     "scrapedCount": 32
   },
@@ -31,23 +31,6 @@
           "label": "Camera-ready deadline",
           "type": "camera",
           "source": "https://conferences.i-cav.org/2026/cfp"
-        }
-      ]
-    },
-    "FOCS-2026": {
-      "source": "https://sanjeevkhanna.org/FOCS2026_CFP.html",
-      "events": [
-        {
-          "date": "2026-04-01",
-          "label": "FOCS 2026 – Call for Papers 67th Annual Sy",
-          "type": "submission",
-          "source": "https://sanjeevkhanna.org/FOCS2026_CFP.html"
-        },
-        {
-          "date": "2026-07-03",
-          "label": "Paper notification",
-          "type": "result",
-          "source": "https://sanjeevkhanna.org/FOCS2026_CFP.html"
         }
       ]
     },
@@ -92,14 +75,20 @@
         }
       ]
     },
-    "IEEE VIS-2026": {
-      "source": "https://ieeevis.org/year/2026/info/call-participation/shortpapers",
+    "FOCS-2026": {
+      "source": "https://sanjeevkhanna.org/FOCS2026_CFP.html",
       "events": [
         {
-          "date": "2026-06-17",
-          "label": "(no separate abstract deadline) on PCS Not",
+          "date": "2026-04-01",
+          "label": "FOCS 2026 – Call for Papers 67th Annual Sy",
+          "type": "submission",
+          "source": "https://sanjeevkhanna.org/FOCS2026_CFP.html"
+        },
+        {
+          "date": "2026-07-03",
+          "label": "Paper notification",
           "type": "result",
-          "source": "https://ieeevis.org/year/2026/info/call-participation/shortpapers"
+          "source": "https://sanjeevkhanna.org/FOCS2026_CFP.html"
         }
       ]
     },
@@ -185,69 +174,6 @@
         }
       ]
     },
-    "STOC-2026": {
-      "source": "https://acm-stoc.org/stoc2026/stoc2026-cfp.html",
-      "events": [
-        {
-          "date": "2025-11-04",
-          "label": "Salt Lake City, Utah, USA https://acm-stoc",
-          "type": "submission",
-          "source": "https://acm-stoc.org/stoc2026/stoc2026-cfp.html"
-        },
-        {
-          "date": "2026-02-01",
-          "label": "There is no separate abstract submission d",
-          "type": "result",
-          "source": "https://acm-stoc.org/stoc2026/stoc2026-cfp.html"
-        },
-        {
-          "date": "2026-03-31",
-          "label": "Camera-ready deadline for accepted papers:",
-          "type": "camera",
-          "source": "https://acm-stoc.org/stoc2026/stoc2026-cfp.html"
-        }
-      ]
-    },
-    "UIST-2026": {
-      "source": "https://uist.acm.org/2026/cfp",
-      "events": [
-        {
-          "date": "2026-08-07",
-          "label": "Acceptance notification Friday,",
-          "type": "result",
-          "source": "https://uist.acm.org/2026/cfp"
-        },
-        {
-          "date": "2026-08-08",
-          "label": "Acceptance notification Friday,",
-          "type": "result",
-          "source": "https://uist.acm.org/2026/cfp"
-        },
-        {
-          "date": "2026-08-14",
-          "label": "Acceptance notification Friday,",
-          "type": "result",
-          "source": "https://uist.acm.org/2026/cfp"
-        },
-        {
-          "date": "2026-08-21",
-          "label": "Camera-ready versions due Friday,",
-          "type": "camera",
-          "source": "https://uist.acm.org/2026/cfp"
-        }
-      ]
-    },
-    "ISSTA-2026": {
-      "source": "https://conf.researchr.org/track/issta-2026/issta-2026-research-papers",
-      "events": [
-        {
-          "date": "2026-07-23",
-          "label": "ACM FAQ which describes in what situations",
-          "type": "camera",
-          "source": "https://conf.researchr.org/track/issta-2026/issta-2026-research-papers"
-        }
-      ]
-    },
     "SIGOPS ATC-2026": {
       "source": "https://sigops.org/s/conferences/atc/2026/cfp.html",
       "events": [
@@ -280,6 +206,179 @@
           "label": "Camera ready due",
           "type": "camera",
           "source": "https://sigops.org/s/conferences/atc/2026/cfp.html"
+        }
+      ]
+    },
+    "IEEE VIS-2026": {
+      "source": "https://ieeevis.org/year/2026/info/call-participation/shortpapers",
+      "events": [
+        {
+          "date": "2026-06-17",
+          "label": "(no separate abstract deadline) on PCS Not",
+          "type": "result",
+          "source": "https://ieeevis.org/year/2026/info/call-participation/shortpapers"
+        }
+      ]
+    },
+    "SOSP-2026": {
+      "source": "https://sigops.org/s/conferences/sosp/2026/cfp.html",
+      "events": [
+        {
+          "date": "2026-04-01",
+          "label": "HotCRP Submission Site Submission deadline",
+          "type": "submission",
+          "source": "https://sigops.org/s/conferences/sosp/2026/cfp.html"
+        },
+        {
+          "date": "2026-06-22",
+          "label": "HotCRP Submission Site Reviews available f",
+          "type": "rebuttal",
+          "source": "https://sigops.org/s/conferences/sosp/2026/cfp.html"
+        },
+        {
+          "date": "2026-06-24",
+          "label": "Author response due",
+          "type": "rebuttal",
+          "source": "https://sigops.org/s/conferences/sosp/2026/cfp.html"
+        },
+        {
+          "date": "2026-08-25",
+          "label": "Author notification July 3rd, 2026 Artifac",
+          "type": "result",
+          "source": "https://sigops.org/s/conferences/sosp/2026/cfp.html"
+        },
+        {
+          "date": "2026-08-28",
+          "label": "Sysartifacts website Camera ready due",
+          "type": "camera",
+          "source": "https://sigops.org/s/conferences/sosp/2026/cfp.html"
+        }
+      ]
+    },
+    "UIST-2026": {
+      "source": "https://uist.acm.org/2026/cfp",
+      "events": [
+        {
+          "date": "2026-08-07",
+          "label": "Acceptance notification Friday,",
+          "type": "result",
+          "source": "https://uist.acm.org/2026/cfp"
+        },
+        {
+          "date": "2026-08-08",
+          "label": "Acceptance notification Friday,",
+          "type": "result",
+          "source": "https://uist.acm.org/2026/cfp"
+        },
+        {
+          "date": "2026-08-14",
+          "label": "Acceptance notification Friday,",
+          "type": "result",
+          "source": "https://uist.acm.org/2026/cfp"
+        },
+        {
+          "date": "2026-08-21",
+          "label": "Camera-ready versions due Friday,",
+          "type": "camera",
+          "source": "https://uist.acm.org/2026/cfp"
+        }
+      ]
+    },
+    "STOC-2026": {
+      "source": "https://acm-stoc.org/stoc2026/stoc2026-cfp.html",
+      "events": [
+        {
+          "date": "2025-11-04",
+          "label": "Salt Lake City, Utah, USA https://acm-stoc",
+          "type": "submission",
+          "source": "https://acm-stoc.org/stoc2026/stoc2026-cfp.html"
+        },
+        {
+          "date": "2026-02-01",
+          "label": "There is no separate abstract submission d",
+          "type": "result",
+          "source": "https://acm-stoc.org/stoc2026/stoc2026-cfp.html"
+        },
+        {
+          "date": "2026-03-31",
+          "label": "Camera-ready deadline for accepted papers:",
+          "type": "camera",
+          "source": "https://acm-stoc.org/stoc2026/stoc2026-cfp.html"
+        }
+      ]
+    },
+    "OOPSLA-2026": {
+      "source": "https://2026.splashcon.org/track/oopsla-2026",
+      "events": [
+        {
+          "date": "2026-05-22",
+          "label": "Author Notification (Round 2) Tue 19 - Fri",
+          "type": "result",
+          "source": "https://2026.splashcon.org/track/oopsla-2026"
+        },
+        {
+          "date": "2026-06-10",
+          "label": "Revision Due (Round 2) Wed",
+          "type": "rebuttal",
+          "source": "https://2026.splashcon.org/track/oopsla-2026"
+        },
+        {
+          "date": "2026-07-21",
+          "label": "Author Notification Revision (Round 2) Tue",
+          "type": "result",
+          "source": "https://2026.splashcon.org/track/oopsla-2026"
+        },
+        {
+          "date": "2026-08-07",
+          "label": "Camera Ready (Round 2) Fri",
+          "type": "camera",
+          "source": "https://2026.splashcon.org/track/oopsla-2026"
+        }
+      ]
+    },
+    "ISSTA-2026": {
+      "source": "https://conf.researchr.org/track/issta-2026/issta-2026-research-papers",
+      "events": [
+        {
+          "date": "2026-07-23",
+          "label": "ACM FAQ which describes in what situations",
+          "type": "camera",
+          "source": "https://conf.researchr.org/track/issta-2026/issta-2026-research-papers"
+        }
+      ]
+    },
+    "CAV-2027": {
+      "source": "https://conferences.i-cav.org/2027/cfp/",
+      "events": [
+        {
+          "date": "2027-01-20",
+          "label": "Venue KIT , formerly the Royal Tropical In",
+          "type": "submission",
+          "source": "https://conferences.i-cav.org/2027/cfp/"
+        },
+        {
+          "date": "2027-03-04",
+          "label": "Early rejection notification Thu,",
+          "type": "result",
+          "source": "https://conferences.i-cav.org/2027/cfp/"
+        },
+        {
+          "date": "2027-04-08",
+          "label": "Author response period Mon, 5 Thu,",
+          "type": "rebuttal",
+          "source": "https://conferences.i-cav.org/2027/cfp/"
+        },
+        {
+          "date": "2027-04-23",
+          "label": "Author notification Fri,",
+          "type": "result",
+          "source": "https://conferences.i-cav.org/2027/cfp/"
+        },
+        {
+          "date": "2027-05-18",
+          "label": "Camera-ready deadline Tue,",
+          "type": "camera",
+          "source": "https://conferences.i-cav.org/2027/cfp/"
         }
       ]
     },
@@ -330,105 +429,6 @@
         }
       ]
     },
-    "SOSP-2026": {
-      "source": "https://sigops.org/s/conferences/sosp/2026/cfp.html",
-      "events": [
-        {
-          "date": "2026-04-01",
-          "label": "HotCRP Submission Site Submission deadline",
-          "type": "submission",
-          "source": "https://sigops.org/s/conferences/sosp/2026/cfp.html"
-        },
-        {
-          "date": "2026-06-22",
-          "label": "HotCRP Submission Site Reviews available f",
-          "type": "rebuttal",
-          "source": "https://sigops.org/s/conferences/sosp/2026/cfp.html"
-        },
-        {
-          "date": "2026-06-24",
-          "label": "Author response due",
-          "type": "rebuttal",
-          "source": "https://sigops.org/s/conferences/sosp/2026/cfp.html"
-        },
-        {
-          "date": "2026-08-25",
-          "label": "Author notification July 3rd, 2026 Artifac",
-          "type": "result",
-          "source": "https://sigops.org/s/conferences/sosp/2026/cfp.html"
-        },
-        {
-          "date": "2026-08-28",
-          "label": "Sysartifacts website Camera ready due",
-          "type": "camera",
-          "source": "https://sigops.org/s/conferences/sosp/2026/cfp.html"
-        }
-      ]
-    },
-    "OOPSLA-2026": {
-      "source": "https://2026.splashcon.org/track/oopsla-2026",
-      "events": [
-        {
-          "date": "2026-05-22",
-          "label": "Author Notification (Round 2) Tue 19 - Fri",
-          "type": "result",
-          "source": "https://2026.splashcon.org/track/oopsla-2026"
-        },
-        {
-          "date": "2026-06-10",
-          "label": "Revision Due (Round 2) Wed",
-          "type": "rebuttal",
-          "source": "https://2026.splashcon.org/track/oopsla-2026"
-        },
-        {
-          "date": "2026-07-21",
-          "label": "Author Notification Revision (Round 2) Tue",
-          "type": "result",
-          "source": "https://2026.splashcon.org/track/oopsla-2026"
-        },
-        {
-          "date": "2026-08-07",
-          "label": "Camera Ready (Round 2) Fri",
-          "type": "camera",
-          "source": "https://2026.splashcon.org/track/oopsla-2026"
-        }
-      ]
-    },
-    "CAV-2027": {
-      "source": "https://conferences.i-cav.org/2027/cfp/",
-      "events": [
-        {
-          "date": "2027-01-20",
-          "label": "Venue KIT , formerly the Royal Tropical In",
-          "type": "submission",
-          "source": "https://conferences.i-cav.org/2027/cfp/"
-        },
-        {
-          "date": "2027-03-04",
-          "label": "Early rejection notification Thu,",
-          "type": "result",
-          "source": "https://conferences.i-cav.org/2027/cfp/"
-        },
-        {
-          "date": "2027-04-08",
-          "label": "Author response period Mon, 5 Thu,",
-          "type": "rebuttal",
-          "source": "https://conferences.i-cav.org/2027/cfp/"
-        },
-        {
-          "date": "2027-04-23",
-          "label": "Author notification Fri,",
-          "type": "result",
-          "source": "https://conferences.i-cav.org/2027/cfp/"
-        },
-        {
-          "date": "2027-05-18",
-          "label": "Camera-ready deadline Tue,",
-          "type": "camera",
-          "source": "https://conferences.i-cav.org/2027/cfp/"
-        }
-      ]
-    },
     "DAC-2027": {
       "source": "https://dac.com/2027/program/research-manuscript-submissions",
       "events": [
@@ -455,29 +455,6 @@
           "label": "Accept/Reject Notifications Sent",
           "type": "result",
           "source": "https://dac.com/2027/program/research-manuscript-submissions"
-        }
-      ]
-    },
-    "ASPLOS-2027": {
-      "source": "https://www.asplos-conference.org/asplos2027/cfp/",
-      "events": [
-        {
-          "date": "2026-09-09",
-          "label": "September Cycle Full paper submission —",
-          "type": "submission",
-          "source": "https://www.asplos-conference.org/asplos2027/cfp/"
-        },
-        {
-          "date": "2026-12-04",
-          "label": "Author response — December 1 —",
-          "type": "rebuttal",
-          "source": "https://www.asplos-conference.org/asplos2027/cfp/"
-        },
-        {
-          "date": "2026-12-21",
-          "label": "Notification —",
-          "type": "result",
-          "source": "https://www.asplos-conference.org/asplos2027/cfp/"
         }
       ]
     },
@@ -537,6 +514,29 @@
           "label": "(to be confirmed) Camera-ready deadline: F",
           "type": "camera",
           "source": "https://2027.eurosys.org/cfp.html"
+        }
+      ]
+    },
+    "ASPLOS-2027": {
+      "source": "https://www.asplos-conference.org/asplos2027/cfp/",
+      "events": [
+        {
+          "date": "2026-09-09",
+          "label": "September Cycle Full paper submission —",
+          "type": "submission",
+          "source": "https://www.asplos-conference.org/asplos2027/cfp/"
+        },
+        {
+          "date": "2026-12-04",
+          "label": "Author response — December 1 —",
+          "type": "rebuttal",
+          "source": "https://www.asplos-conference.org/asplos2027/cfp/"
+        },
+        {
+          "date": "2026-12-21",
+          "label": "Notification —",
+          "type": "result",
+          "source": "https://www.asplos-conference.org/asplos2027/cfp/"
         }
       ]
     },
@@ -621,6 +621,23 @@
         }
       ]
     },
+    "ICLR-2027": {
+      "source": "https://iclr.cc/Conferences/2027/CallForPapers",
+      "events": [
+        {
+          "date": "2026-11-05",
+          "label": "Reviews released",
+          "type": "rebuttal",
+          "source": "https://iclr.cc/Conferences/2027/CallForPapers"
+        },
+        {
+          "date": "2026-12-16",
+          "label": "Final decisions ",
+          "type": "result",
+          "source": "https://iclr.cc/Conferences/2027/CallForPapers"
+        }
+      ]
+    },
     "HPCA-2027": {
       "source": "https://2027.cgo.org/track/cgo-2027-papers",
       "events": [
@@ -653,23 +670,6 @@
           "label": "Author Response R2 Mon",
           "type": "rebuttal",
           "source": "https://2027.cgo.org/track/cgo-2027-papers"
-        }
-      ]
-    },
-    "ICLR-2027": {
-      "source": "https://iclr.cc/Conferences/2027/CallForPapers",
-      "events": [
-        {
-          "date": "2026-11-05",
-          "label": "Reviews released",
-          "type": "rebuttal",
-          "source": "https://iclr.cc/Conferences/2027/CallForPapers"
-        },
-        {
-          "date": "2026-12-16",
-          "label": "Final decisions ",
-          "type": "result",
-          "source": "https://iclr.cc/Conferences/2027/CallForPapers"
         }
       ]
     },
@@ -935,53 +935,6 @@
         }
       ]
     },
-    "PPoPP-2027": {
-      "source": "https://ppopp27.sigplan.org/track/PPoPP-2027-papers",
-      "events": [
-        {
-          "date": "2026-08-03",
-          "label": "Location: Salt Lake City, Utah, USA Co-loc",
-          "type": "submission",
-          "source": "https://ppopp27.sigplan.org/track/PPoPP-2027-papers"
-        },
-        {
-          "date": "2026-10-06",
-          "label": "Submission website: https://ppopp27-summer",
-          "type": "rebuttal",
-          "source": "https://ppopp27.sigplan.org/track/PPoPP-2027-papers"
-        },
-        {
-          "date": "2026-10-10",
-          "label": "Author response period Thursday, October 8",
-          "type": "rebuttal",
-          "source": "https://ppopp27.sigplan.org/track/PPoPP-2027-papers"
-        },
-        {
-          "date": "2026-10-26",
-          "label": "Author notification Monday,",
-          "type": "result",
-          "source": "https://ppopp27.sigplan.org/track/PPoPP-2027-papers"
-        },
-        {
-          "date": "2026-10-26",
-          "label": "Author response period Mon",
-          "type": "rebuttal",
-          "source": "https://ppopp27.sigplan.org/track/PPoPP-2027-papers"
-        },
-        {
-          "date": "2026-12-14",
-          "label": "Artifact notification by AE committee Mond",
-          "type": "result",
-          "source": "https://ppopp27.sigplan.org/track/PPoPP-2027-papers"
-        },
-        {
-          "date": "2026-12-18",
-          "label": "Final paper due Friday,",
-          "type": "camera",
-          "source": "https://ppopp27.sigplan.org/track/PPoPP-2027-papers"
-        }
-      ]
-    },
     "POPL-2027": {
       "source": "https://popl27.sigplan.org/dates",
       "events": [
@@ -1044,6 +997,53 @@
           "label": "FRIDA Submission Deadline Sat",
           "type": "submission",
           "source": "https://popl27.sigplan.org/dates"
+        }
+      ]
+    },
+    "PPoPP-2027": {
+      "source": "https://ppopp27.sigplan.org/track/PPoPP-2027-papers",
+      "events": [
+        {
+          "date": "2026-08-03",
+          "label": "Location: Salt Lake City, Utah, USA Co-loc",
+          "type": "submission",
+          "source": "https://ppopp27.sigplan.org/track/PPoPP-2027-papers"
+        },
+        {
+          "date": "2026-10-06",
+          "label": "Submission website: https://ppopp27-summer",
+          "type": "rebuttal",
+          "source": "https://ppopp27.sigplan.org/track/PPoPP-2027-papers"
+        },
+        {
+          "date": "2026-10-10",
+          "label": "Author response period Thursday, October 8",
+          "type": "rebuttal",
+          "source": "https://ppopp27.sigplan.org/track/PPoPP-2027-papers"
+        },
+        {
+          "date": "2026-10-26",
+          "label": "Author notification Monday,",
+          "type": "result",
+          "source": "https://ppopp27.sigplan.org/track/PPoPP-2027-papers"
+        },
+        {
+          "date": "2026-10-26",
+          "label": "Author response period Mon",
+          "type": "rebuttal",
+          "source": "https://ppopp27.sigplan.org/track/PPoPP-2027-papers"
+        },
+        {
+          "date": "2026-12-14",
+          "label": "Artifact notification by AE committee Mond",
+          "type": "result",
+          "source": "https://ppopp27.sigplan.org/track/PPoPP-2027-papers"
+        },
+        {
+          "date": "2026-12-18",
+          "label": "Final paper due Friday,",
+          "type": "camera",
+          "source": "https://ppopp27.sigplan.org/track/PPoPP-2027-papers"
         }
       ]
     }
