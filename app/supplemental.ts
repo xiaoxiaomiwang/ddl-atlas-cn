@@ -313,6 +313,15 @@ export const officialSupplements: Record<string, SupplementalEvent[]> = {
     { date: "2026-01-13", label: "最终录用结果", type: "result", detail: "Research、Industry 和 Short Papers notification。", source: "https://www2026.thewebconf.org/important-dates.html" },
     { date: "2026-01-25", label: "Camera-ready", type: "camera", source: "https://www2026.thewebconf.org/important-dates.html" },
   ],
+  "WWW-2027": [
+    { date: "2026-11-09", label: "Short Papers 摘要截止", type: "abstract", source: "https://www2027.thewebconf.org/important-dates/" },
+    { date: "2026-11-16", label: "Short Papers 投稿截止", type: "submission", source: "https://www2027.thewebconf.org/important-dates/" },
+    { date: "2026-12-15", label: "Phase 1 结果（Result Release）", type: "result", detail: "Research Track 长文第一阶段结果发布。", source: "https://www2027.thewebconf.org/important-dates/" },
+    { date: "2026-12-15", label: "Rebuttal 开始", type: "rebuttal", detail: "Research Track Rebuttal Period：12 月 15 日至 20 日。", source: "https://www2027.thewebconf.org/important-dates/" },
+    { date: "2026-12-20", label: "Rebuttal 截止", type: "rebuttal", source: "https://www2027.thewebconf.org/important-dates/" },
+    { date: "2027-01-04", label: "最终录用结果", type: "result", detail: "Research / Short / Demo Papers Notification。", source: "https://www2027.thewebconf.org/important-dates/" },
+    { date: "2027-01-31", label: "Camera-ready", type: "camera", detail: "Final Version Deadline。", source: "https://www2027.thewebconf.org/important-dates/" },
+  ],
   "ICML-2026": [
     { date: "2026-03-24", label: "Reviews / Rebuttal 开始", type: "rebuttal", detail: "Reviewer–Author discussion period starts。", source: "https://icml.cc/Conferences/2026/ReviewerInstructions" },
     { date: "2026-03-30", label: "首轮 Rebuttal 截止", type: "rebuttal", detail: "作者对正式评审的回复截止。", source: "https://icml.cc/Conferences/2026/PeerReviewFAQ" },
