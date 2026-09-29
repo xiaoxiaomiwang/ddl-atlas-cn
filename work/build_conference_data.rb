@@ -3,6 +3,7 @@ require "json"
 require "date"
 
 ROOT = File.expand_path("ccf-deadlines/conference", __dir__)
+RATES_ROOT = File.expand_path("ccf-deadlines/accept_rates", __dir__)
 OUT = File.expand_path("../app/conferences.json", __dir__)
 META_OUT = File.expand_path("../app/data-meta.json", __dir__)
 
@@ -34,6 +35,28 @@ def upstream_info
   { sha: sha.empty? ? nil : sha, time: time.empty? ? nil : time }
 rescue StandardError
   { sha: nil, time: nil }
+end
+
+# 解析上游录用率数据：title → 近 4 届录用率（year 降序）
+accept_rates_by_title = {}
+if File.directory?(RATES_ROOT)
+  Dir.glob(File.join(RATES_ROOT, "**", "*.yml")).sort.each do |path|
+    begin
+      entries = YAML.safe_load(File.read(path), permitted_classes: [Date, Time], aliases: true) || []
+    rescue StandardError => error
+      warn "Skipping rate #{path}: #{error.message}"
+      next
+    end
+    Array(entries).each do |entry|
+      next unless entry.is_a?(Hash)
+      title = entry["title"].to_s
+      rates = Array(entry["accept_rates"]).map do |r|
+        next unless r.is_a?(Hash) && r["year"] && r["rate"]
+        { year: r["year"].to_i, rate: (r["rate"].to_f * 100).round(1), submitted: r["submitted"].to_i, accepted: r["accepted"].to_i }
+      end.compact.sort_by { |r| -r[:year] }.first(4)
+      accept_rates_by_title[title] = rates unless rates.empty?
+    end
+  end
 end
 
 Dir.glob(File.join(ROOT, "**", "*.yml")).sort.each do |path|
@@ -70,7 +93,8 @@ Dir.glob(File.join(ROOT, "**", "*.yml")).sort.each do |path|
         conferenceDate: conf["date"].to_s,
         conferenceStart: conference_start_date(conf["date"], year),
         place: conf["place"].to_s,
-        timeline: timeline
+        timeline: timeline,
+        acceptRates: accept_rates_by_title[entry["title"].to_s] || []
       }
     end
   end

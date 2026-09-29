@@ -169,7 +169,16 @@ export function placeZh(place: string | null | undefined): string {
   );
   const groups: string[] = [];
   for (const parts of segments) {
-    const translated = parts.map((seg) => PLACE_ZH[seg]).filter(Boolean);
+    const translated = parts.map((seg, index) => {
+      // "georgia" 歧义：同地点含美国州（含 GA/USA 等）→ 佐治亚州；否则视为国家格鲁吉亚
+      if (seg === "georgia") {
+        const isUsState = parts.some((other, i) =>
+          i !== index && (other === "usa" || other === "u.s.a" || other === "us" || other === "united states" || other === "ga"),
+        );
+        return isUsState ? "佐治亚" : "格鲁吉亚";
+      }
+      return PLACE_ZH[seg];
+    }).filter(Boolean);
     if (translated.length > 0) groups.push(translated.join("，"));
   }
   if (groups.length === 0) return "";

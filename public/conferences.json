@@ -17,6 +17,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -36,6 +39,26 @@
         "date": "2025-08-01",
         "abstractDate": "2025-07-25",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 17.6,
+        "submitted": 23680,
+        "accepted": 4167
+      },
+      {
+        "year": 2025,
+        "rate": 23.4,
+        "submitted": 12957,
+        "accepted": 3032
+      },
+      {
+        "year": 2024,
+        "rate": 23.7,
+        "submitted": 9862,
+        "accepted": 2342
       }
     ]
   },
@@ -57,6 +80,32 @@
         "abstractDate": "2025-10-01",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 24.9,
+        "submitted": 1359,
+        "accepted": 338
+      },
+      {
+        "year": 2025,
+        "rate": 24.5,
+        "submitted": 1021,
+        "accepted": 250
+      },
+      {
+        "year": 2024,
+        "rate": 27.2,
+        "submitted": 847,
+        "accepted": 230
+      },
+      {
+        "year": 2023,
+        "rate": 23.3,
+        "submitted": 1015,
+        "accepted": 237
+      }
     ]
   },
   {
@@ -77,6 +126,9 @@
         "abstractDate": "2026-07-03",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -102,6 +154,32 @@
         "abstractDate": "",
         "comment": "2nd round Deadline"
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 26.5,
+        "submitted": 260,
+        "accepted": 69
+      },
+      {
+        "year": 2025,
+        "rate": 33.1,
+        "submitted": 181,
+        "accepted": 60
+      },
+      {
+        "year": 2024,
+        "rate": 30.2,
+        "submitted": 232,
+        "accepted": 70
+      },
+      {
+        "year": 2023,
+        "rate": 31.0,
+        "submitted": 87,
+        "accepted": 27
+      }
     ]
   },
   {
@@ -121,6 +199,32 @@
         "date": "2026-01-05",
         "abstractDate": "",
         "comment": "ARR submission; ACL commitment deadline: March 14, 2026."
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 18.9,
+        "submitted": 12148,
+        "accepted": 2296
+      },
+      {
+        "year": 2025,
+        "rate": 20.3,
+        "submitted": 8360,
+        "accepted": 1699
+      },
+      {
+        "year": 2024,
+        "rate": 21.3,
+        "submitted": 4407,
+        "accepted": 940
+      },
+      {
+        "year": 2023,
+        "rate": 22.1,
+        "submitted": 4864,
+        "accepted": 1074
       }
     ]
   },
@@ -142,6 +246,14 @@
         "abstractDate": "2026-03-25",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2023,
+        "rate": 24.6,
+        "submitted": 3669,
+        "accepted": 902
+      }
     ]
   },
   {
@@ -161,6 +273,26 @@
         "date": "2026-01-22",
         "abstractDate": "2026-01-15",
         "comment": "Regular conference papers; submission form registration and initial full paper"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 29.9,
+        "submitted": 844,
+        "accepted": 252
+      },
+      {
+        "year": 2023,
+        "rate": 34.7,
+        "submitted": 611,
+        "accepted": 212
+      },
+      {
+        "year": 2022,
+        "rate": 21.8,
+        "submitted": 610,
+        "accepted": 133
       }
     ]
   },
@@ -182,6 +314,14 @@
         "abstractDate": "2026-05-05",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 29.5,
+        "submitted": 899,
+        "accepted": 265
+      }
     ]
   },
   {
@@ -201,6 +341,32 @@
         "date": "2026-07-05",
         "abstractDate": "",
         "comment": "Conference Track"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 29.0,
+        "submitted": 272,
+        "accepted": 79
+      },
+      {
+        "year": 2024,
+        "rate": 26.1,
+        "submitted": 353,
+        "accepted": 92
+      },
+      {
+        "year": 2022,
+        "rate": 33.5,
+        "submitted": 248,
+        "accepted": 83
+      },
+      {
+        "year": 2021,
+        "rate": 30.4,
+        "submitted": 378,
+        "accepted": 115
       }
     ]
   },
@@ -227,6 +393,32 @@
         "abstractDate": "",
         "comment": "Cycle 2 Submission deadline"
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 20.9,
+        "submitted": 282,
+        "accepted": 59
+      },
+      {
+        "year": 2025,
+        "rate": 22.8,
+        "submitted": 241,
+        "accepted": 55
+      },
+      {
+        "year": 2024,
+        "rate": 23.5,
+        "submitted": 230,
+        "accepted": 54
+      },
+      {
+        "year": 2023,
+        "rate": 20.2,
+        "submitted": 263,
+        "accepted": 53
+      }
     ]
   },
   {
@@ -246,6 +438,14 @@
         "date": "2026-05-26",
         "abstractDate": "",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 18.8,
+        "submitted": 446,
+        "accepted": 84
       }
     ]
   },
@@ -267,6 +467,32 @@
         "abstractDate": "",
         "comment": "Main Track"
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 45.0,
+        "submitted": 327,
+        "accepted": 147
+      },
+      {
+        "year": 2024,
+        "rate": 37.7,
+        "submitted": 422,
+        "accepted": 159
+      },
+      {
+        "year": 2023,
+        "rate": 42.9,
+        "submitted": 503,
+        "accepted": 216
+      },
+      {
+        "year": 2022,
+        "rate": 36.4,
+        "submitted": 198,
+        "accepted": 72
+      }
     ]
   },
   {
@@ -287,6 +513,9 @@
         "abstractDate": "2026-05-20",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -306,6 +535,14 @@
         "date": "2025-10-02",
         "abstractDate": "2025-09-25",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 27.6,
+        "submitted": 1980,
+        "accepted": 546
       }
     ]
   },
@@ -327,6 +564,32 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 35.4,
+        "submitted": 144,
+        "accepted": 51
+      },
+      {
+        "year": 2024,
+        "rate": 35.5,
+        "submitted": 124,
+        "accepted": 44
+      },
+      {
+        "year": 2023,
+        "rate": 36.1,
+        "submitted": 133,
+        "accepted": 48
+      },
+      {
+        "year": 2022,
+        "rate": 36.5,
+        "submitted": 115,
+        "accepted": 42
+      }
     ]
   },
   {
@@ -347,6 +610,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -366,6 +632,32 @@
         "date": "2026-06-22",
         "abstractDate": "",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 46.4,
+        "submitted": 28,
+        "accepted": 13
+      },
+      {
+        "year": 2024,
+        "rate": 48.6,
+        "submitted": 37,
+        "accepted": 18
+      },
+      {
+        "year": 2023,
+        "rate": 46.9,
+        "submitted": 32,
+        "accepted": 15
+      },
+      {
+        "year": 2022,
+        "rate": 45.5,
+        "submitted": 22,
+        "accepted": 10
       }
     ]
   },
@@ -387,6 +679,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -407,6 +702,9 @@
         "abstractDate": "2026-04-03",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -427,6 +725,9 @@
         "abstractDate": "2026-07-13",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -447,6 +748,9 @@
         "abstractDate": "2026-05-13",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -472,6 +776,9 @@
         "abstractDate": "",
         "comment": "second round"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -492,6 +799,9 @@
         "abstractDate": "2026-04-03",
         "comment": "Regular paper deadlines (extended)"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -511,6 +821,14 @@
         "date": "2026-03-26",
         "abstractDate": "",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2022,
+        "rate": 21.8,
+        "submitted": 531,
+        "accepted": 116
       }
     ]
   },
@@ -532,6 +850,32 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 26.8,
+        "submitted": 533,
+        "accepted": 143
+      },
+      {
+        "year": 2024,
+        "rate": 29.3,
+        "submitted": 433,
+        "accepted": 127
+      },
+      {
+        "year": 2023,
+        "rate": 28.3,
+        "submitted": 375,
+        "accepted": 106
+      },
+      {
+        "year": 2022,
+        "rate": 26.9,
+        "submitted": 364,
+        "accepted": 98
+      }
     ]
   },
   {
@@ -552,6 +896,9 @@
         "abstractDate": "2025-07-04",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -577,6 +924,14 @@
         "abstractDate": "2025-08-13",
         "comment": "Summer Submission Deadline"
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2023,
+        "rate": 25.3,
+        "submitted": 598,
+        "accepted": 151
+      }
     ]
   },
   {
@@ -597,6 +952,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -617,6 +975,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -636,6 +997,32 @@
         "date": "2026-05-21",
         "abstractDate": "2026-05-19",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 35.6,
+        "submitted": 59,
+        "accepted": 21
+      },
+      {
+        "year": 2024,
+        "rate": 32.9,
+        "submitted": 73,
+        "accepted": 24
+      },
+      {
+        "year": 2023,
+        "rate": 24.7,
+        "submitted": 150,
+        "accepted": 37
+      },
+      {
+        "year": 2022,
+        "rate": 32.1,
+        "submitted": 81,
+        "accepted": 26
       }
     ]
   },
@@ -662,6 +1049,9 @@
         "abstractDate": "",
         "comment": "2nd round Deadline"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -682,6 +1072,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -702,6 +1095,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -722,6 +1118,9 @@
         "abstractDate": "2026-05-22",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -742,6 +1141,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -762,6 +1164,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -782,6 +1187,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -801,6 +1209,32 @@
         "date": "2026-01-28",
         "abstractDate": "",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 25.4,
+        "submitted": 319,
+        "accepted": 81
+      },
+      {
+        "year": 2025,
+        "rate": 25.9,
+        "submitted": 305,
+        "accepted": 79
+      },
+      {
+        "year": 2024,
+        "rate": 21.8,
+        "submitted": 317,
+        "accepted": 69
+      },
+      {
+        "year": 2023,
+        "rate": 25.7,
+        "submitted": 261,
+        "accepted": 67
       }
     ]
   },
@@ -822,6 +1256,32 @@
         "abstractDate": "2025-11-21",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 13.9,
+        "submitted": 331,
+        "accepted": 46
+      },
+      {
+        "year": 2025,
+        "rate": 15.3,
+        "submitted": 229,
+        "accepted": 35
+      },
+      {
+        "year": 2024,
+        "rate": 20.0,
+        "submitted": 180,
+        "accepted": 36
+      },
+      {
+        "year": 2023,
+        "rate": 22.4,
+        "submitted": 161,
+        "accepted": 36
+      }
     ]
   },
   {
@@ -841,6 +1301,32 @@
         "date": "2026-02-06",
         "abstractDate": "",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 33.9,
+        "submitted": 124,
+        "accepted": 42
+      },
+      {
+        "year": 2025,
+        "rate": 39.6,
+        "submitted": 91,
+        "accepted": 36
+      },
+      {
+        "year": 2024,
+        "rate": 34.3,
+        "submitted": 105,
+        "accepted": 36
+      },
+      {
+        "year": 2023,
+        "rate": 48.6,
+        "submitted": 74,
+        "accepted": 36
       }
     ]
   },
@@ -862,6 +1348,9 @@
         "abstractDate": "",
         "comment": "Submission Deadline"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -882,6 +1371,9 @@
         "abstractDate": "2025-12-21",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -907,6 +1399,14 @@
         "abstractDate": "",
         "comment": "Second Review Cycle"
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2021,
+        "rate": 22.3,
+        "submitted": 880,
+        "accepted": 196
+      }
     ]
   },
   {
@@ -927,6 +1427,9 @@
         "abstractDate": "2026-02-01",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -947,6 +1450,9 @@
         "abstractDate": "",
         "comment": "Regular conference papers (LNCS proceedings track)"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -982,6 +1488,9 @@
         "abstractDate": "",
         "comment": "Schedule for TCHES Volume 2026/4"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -1001,6 +1510,32 @@
         "date": "2025-09-11",
         "abstractDate": "2025-09-04",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 25.3,
+        "submitted": 6730,
+        "accepted": 1705
+      },
+      {
+        "year": 2025,
+        "rate": 24.9,
+        "submitted": 5014,
+        "accepted": 1249
+      },
+      {
+        "year": 2024,
+        "rate": 26.3,
+        "submitted": 4028,
+        "accepted": 1060
+      },
+      {
+        "year": 2023,
+        "rate": 27.6,
+        "submitted": 3180,
+        "accepted": 879
       }
     ]
   },
@@ -1022,6 +1557,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -1042,6 +1580,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -1061,6 +1602,14 @@
         "date": "2026-05-23",
         "abstractDate": "2026-05-16",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2023,
+        "rate": 24.0,
+        "submitted": 1472,
+        "accepted": 354
       }
     ]
   },
@@ -1082,6 +1631,9 @@
         "abstractDate": "2026-05-07",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -1101,6 +1653,32 @@
         "date": "2026-03-04",
         "abstractDate": "",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 31.2,
+        "submitted": 109,
+        "accepted": 34
+      },
+      {
+        "year": 2025,
+        "rate": 28.3,
+        "submitted": 191,
+        "accepted": 54
+      },
+      {
+        "year": 2024,
+        "rate": 32.5,
+        "submitted": 277,
+        "accepted": 90
+      },
+      {
+        "year": 2023,
+        "rate": 41.1,
+        "submitted": 146,
+        "accepted": 60
       }
     ]
   },
@@ -1122,6 +1700,9 @@
         "abstractDate": "2025-12-26",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -1142,6 +1723,9 @@
         "abstractDate": "2026-03-23",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -1162,6 +1746,9 @@
         "abstractDate": "2026-03-26",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -1181,6 +1768,32 @@
         "date": "2026-02-04",
         "abstractDate": "",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 29.1,
+        "submitted": 657,
+        "accepted": 191
+      },
+      {
+        "year": 2024,
+        "rate": 35.7,
+        "submitted": 448,
+        "accepted": 160
+      },
+      {
+        "year": 2023,
+        "rate": 34.6,
+        "submitted": 474,
+        "accepted": 164
+      },
+      {
+        "year": 2022,
+        "rate": 33.0,
+        "submitted": 470,
+        "accepted": 155
       }
     ]
   },
@@ -1202,6 +1815,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -1221,6 +1837,32 @@
         "date": "2026-04-27",
         "abstractDate": "2026-04-20",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 37.7,
+        "submitted": 114,
+        "accepted": 43
+      },
+      {
+        "year": 2025,
+        "rate": 43.4,
+        "submitted": 83,
+        "accepted": 36
+      },
+      {
+        "year": 2024,
+        "rate": 46.3,
+        "submitted": 80,
+        "accepted": 37
+      },
+      {
+        "year": 2023,
+        "rate": 37.8,
+        "submitted": 98,
+        "accepted": 37
       }
     ]
   },
@@ -1242,6 +1884,9 @@
         "abstractDate": "2026-03-02",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -1262,6 +1907,9 @@
         "abstractDate": "",
         "comment": "Proceedings Track"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -1281,6 +1929,32 @@
         "date": "2026-02-12",
         "abstractDate": "",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 24.3,
+        "submitted": 643,
+        "accepted": 156
+      },
+      {
+        "year": 2024,
+        "rate": 27.2,
+        "submitted": 526,
+        "accepted": 143
+      },
+      {
+        "year": 2023,
+        "rate": 25.9,
+        "submitted": 479,
+        "accepted": 124
+      },
+      {
+        "year": 2022,
+        "rate": 21.8,
+        "submitted": 455,
+        "accepted": 99
       }
     ]
   },
@@ -1302,6 +1976,14 @@
         "abstractDate": "",
         "comment": "MAY 2025 SUBMISSION CYCLE (12:00 EDT)"
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2018,
+        "rate": 26.1,
+        "submitted": 1107,
+        "accepted": 289
+      }
     ]
   },
   {
@@ -1322,6 +2004,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -1342,6 +2027,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -1372,6 +2060,9 @@
         "abstractDate": "",
         "comment": "Winter"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -1391,6 +2082,32 @@
         "date": "2025-10-24",
         "abstractDate": "",
         "comment": "Paper submission deadline"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 30.8,
+        "submitted": 39,
+        "accepted": 12
+      },
+      {
+        "year": 2025,
+        "rate": 33.3,
+        "submitted": 51,
+        "accepted": 17
+      },
+      {
+        "year": 2024,
+        "rate": 38.3,
+        "submitted": 47,
+        "accepted": 18
+      },
+      {
+        "year": 2023,
+        "rate": 34.2,
+        "submitted": 76,
+        "accepted": 26
       }
     ]
   },
@@ -1412,6 +2129,9 @@
         "abstractDate": "2025-10-10",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -1431,6 +2151,32 @@
         "date": "2025-11-13",
         "abstractDate": "2025-11-07",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 25.4,
+        "submitted": 16092,
+        "accepted": 4090
+      },
+      {
+        "year": 2025,
+        "rate": 22.1,
+        "submitted": 13008,
+        "accepted": 2878
+      },
+      {
+        "year": 2024,
+        "rate": 23.6,
+        "submitted": 11532,
+        "accepted": 2719
+      },
+      {
+        "year": 2023,
+        "rate": 25.8,
+        "submitted": 9155,
+        "accepted": 2360
       }
     ]
   },
@@ -1452,6 +2198,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -1477,6 +2226,9 @@
         "abstractDate": "2026-05-29",
         "comment": "June Cycle"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -1496,6 +2248,32 @@
         "date": "2026-02-19",
         "abstractDate": "",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 18.3,
+        "submitted": 257,
+        "accepted": 47
+      },
+      {
+        "year": 2025,
+        "rate": 18.4,
+        "submitted": 217,
+        "accepted": 40
+      },
+      {
+        "year": 2024,
+        "rate": 41.2,
+        "submitted": 97,
+        "accepted": 40
+      },
+      {
+        "year": 2023,
+        "rate": 28.0,
+        "submitted": 143,
+        "accepted": 40
       }
     ]
   },
@@ -1517,6 +2295,9 @@
         "abstractDate": "2026-05-25",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -1537,6 +2318,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -1557,6 +2341,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -1577,6 +2364,9 @@
         "abstractDate": "2025-11-11",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -1597,6 +2387,9 @@
         "abstractDate": "",
         "comment": "Regular research papers"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -1616,6 +2409,32 @@
         "date": "2025-10-27",
         "abstractDate": "2025-10-20",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 27.3,
+        "submitted": 834,
+        "accepted": 228
+      },
+      {
+        "year": 2025,
+        "rate": 18.6,
+        "submitted": 731,
+        "accepted": 136
+      },
+      {
+        "year": 2024,
+        "rate": 20.4,
+        "submitted": 722,
+        "accepted": 147
+      },
+      {
+        "year": 2023,
+        "rate": 19.2,
+        "submitted": 652,
+        "accepted": 125
       }
     ]
   },
@@ -1637,6 +2456,9 @@
         "abstractDate": "2025-09-07",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -1657,6 +2479,9 @@
         "abstractDate": "2025-09-19",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -1677,6 +2502,9 @@
         "abstractDate": "2026-05-29",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -1702,6 +2530,32 @@
         "abstractDate": "",
         "comment": "Cycle 2 submission deadline"
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 24.3,
+        "submitted": 103,
+        "accepted": 25
+      },
+      {
+        "year": 2023,
+        "rate": 30.2,
+        "submitted": 43,
+        "accepted": 13
+      },
+      {
+        "year": 2022,
+        "rate": 28.2,
+        "submitted": 39,
+        "accepted": 11
+      },
+      {
+        "year": 2021,
+        "rate": 29.2,
+        "submitted": 65,
+        "accepted": 19
+      }
     ]
   },
   {
@@ -1722,6 +2576,9 @@
         "abstractDate": "2026-01-09",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -1741,6 +2598,32 @@
         "date": "2025-12-04",
         "abstractDate": "2025-11-27",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 19.8,
+        "submitted": 329,
+        "accepted": 65
+      },
+      {
+        "year": 2025,
+        "rate": 20.2,
+        "submitted": 277,
+        "accepted": 56
+      },
+      {
+        "year": 2024,
+        "rate": 20.6,
+        "submitted": 204,
+        "accepted": 42
+      },
+      {
+        "year": 2023,
+        "rate": 19.6,
+        "submitted": 240,
+        "accepted": 47
       }
     ]
   },
@@ -1767,6 +2650,32 @@
         "abstractDate": "",
         "comment": "Commitment deadline for papers reviewed by ARR"
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 20.2,
+        "submitted": 2200,
+        "accepted": 445
+      },
+      {
+        "year": 2024,
+        "rate": 20.3,
+        "submitted": 1114,
+        "accepted": 226
+      },
+      {
+        "year": 2023,
+        "rate": 24.1,
+        "submitted": 1166,
+        "accepted": 281
+      },
+      {
+        "year": 2021,
+        "rate": 23.3,
+        "submitted": 1400,
+        "accepted": 326
+      }
     ]
   },
   {
@@ -1787,6 +2696,9 @@
         "abstractDate": "2026-01-16",
         "comment": "Research Papers"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -1806,6 +2718,20 @@
         "date": "2026-01-19",
         "abstractDate": "2026-01-12",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 23.3,
+        "submitted": 2344,
+        "accepted": 547
+      },
+      {
+        "year": 2023,
+        "rate": 24.0,
+        "submitted": 1631,
+        "accepted": 391
       }
     ]
   },
@@ -1827,6 +2753,20 @@
         "abstractDate": "2026-02-26",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 27.9,
+        "submitted": 8585,
+        "accepted": 2395
+      },
+      {
+        "year": 2022,
+        "rate": 28.3,
+        "submitted": 5804,
+        "accepted": 1645
+      }
     ]
   },
   {
@@ -1846,6 +2786,14 @@
         "date": "2025-10-02",
         "abstractDate": "2025-09-25",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 24.8,
+        "submitted": 230,
+        "accepted": 57
       }
     ]
   },
@@ -1867,6 +2815,9 @@
         "abstractDate": "2026-03-05",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -1892,6 +2843,14 @@
         "abstractDate": "",
         "comment": "Submission R2"
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2023,
+        "rate": 45.4,
+        "submitted": 97,
+        "accepted": 44
+      }
     ]
   },
   {
@@ -1912,6 +2871,9 @@
         "abstractDate": "",
         "comment": "Conference Papers"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -1942,6 +2904,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -1962,6 +2927,9 @@
         "abstractDate": "2026-04-08",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -1987,6 +2955,32 @@
         "abstractDate": "",
         "comment": "Commitment deadline for papers with ARR reviews and meta-reviews"
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 22.2,
+        "submitted": 8174,
+        "accepted": 1811
+      },
+      {
+        "year": 2024,
+        "rate": 20.8,
+        "submitted": 6105,
+        "accepted": 1271
+      },
+      {
+        "year": 2023,
+        "rate": 21.3,
+        "submitted": 4909,
+        "accepted": 1047
+      },
+      {
+        "year": 2022,
+        "rate": 19.8,
+        "submitted": 4190,
+        "accepted": 829
+      }
     ]
   },
   {
@@ -2007,6 +3001,9 @@
         "abstractDate": "2026-03-23",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -2026,6 +3023,32 @@
         "date": "2026-04-23",
         "abstractDate": "2026-04-21",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 32.4,
+        "submitted": 487,
+        "accepted": 158
+      },
+      {
+        "year": 2025,
+        "rate": 30.9,
+        "submitted": 372,
+        "accepted": 115
+      },
+      {
+        "year": 2024,
+        "rate": 30.9,
+        "submitted": 333,
+        "accepted": 103
+      },
+      {
+        "year": 2023,
+        "rate": 27.8,
+        "submitted": 370,
+        "accepted": 103
       }
     ]
   },
@@ -2047,6 +3070,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -2067,6 +3093,9 @@
         "abstractDate": "2026-05-11",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -2091,6 +3120,32 @@
         "date": "2026-04-21",
         "abstractDate": "",
         "comment": "Second Submission deadline"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 16.7,
+        "submitted": 600,
+        "accepted": 100
+      },
+      {
+        "year": 2024,
+        "rate": 16.1,
+        "submitted": 535,
+        "accepted": 86
+      },
+      {
+        "year": 2023,
+        "rate": 19.5,
+        "submitted": 478,
+        "accepted": 93
+      },
+      {
+        "year": 2022,
+        "rate": 18.5,
+        "submitted": 562,
+        "accepted": 104
       }
     ]
   },
@@ -2117,6 +3172,9 @@
         "abstractDate": "",
         "comment": "Submission deadline ESOP round 2"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -2137,6 +3195,9 @@
         "abstractDate": "2025-12-15",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -2156,6 +3217,32 @@
         "date": "2025-10-02",
         "abstractDate": "",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 21.0,
+        "submitted": 675,
+        "accepted": 142
+      },
+      {
+        "year": 2025,
+        "rate": 20.4,
+        "submitted": 602,
+        "accepted": 123
+      },
+      {
+        "year": 2024,
+        "rate": 21.0,
+        "submitted": 500,
+        "accepted": 105
+      },
+      {
+        "year": 2023,
+        "rate": 26.3,
+        "submitted": 415,
+        "accepted": 109
       }
     ]
   },
@@ -2177,6 +3264,26 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2020,
+        "rate": 60.2,
+        "submitted": 829,
+        "accepted": 499
+      },
+      {
+        "year": 2018,
+        "rate": 57.7,
+        "submitted": 709,
+        "accepted": 409
+      },
+      {
+        "year": 2017,
+        "rate": 63.2,
+        "submitted": 730,
+        "accepted": 461
+      }
     ]
   },
   {
@@ -2197,6 +3304,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -2217,6 +3327,9 @@
         "abstractDate": "2026-03-06",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -2237,6 +3350,9 @@
         "abstractDate": "",
         "comment": "Regular papers; extended deadline"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -2257,6 +3373,9 @@
         "abstractDate": "2025-11-13",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -2282,6 +3401,14 @@
         "abstractDate": "2025-09-18",
         "comment": "Fall Submission Deadline"
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2022,
+        "rate": 28.0,
+        "submitted": 161,
+        "accepted": 45
+      }
     ]
   },
   {
@@ -2302,6 +3429,9 @@
         "abstractDate": "2025-11-26",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -2322,6 +3452,9 @@
         "abstractDate": "2025-09-22",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -2342,6 +3475,9 @@
         "abstractDate": "",
         "comment": "Regular papers; extended deadline"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -2362,6 +3498,9 @@
         "abstractDate": "",
         "comment": "Regular papers; extended deadline"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -2382,6 +3521,9 @@
         "abstractDate": "",
         "comment": "Regular papers; extended deadline"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -2407,6 +3549,32 @@
         "abstractDate": "",
         "comment": "Fall deadline"
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 17.4,
+        "submitted": 253,
+        "accepted": 44
+      },
+      {
+        "year": 2025,
+        "rate": 21.6,
+        "submitted": 167,
+        "accepted": 36
+      },
+      {
+        "year": 2024,
+        "rate": 17.9,
+        "submitted": 123,
+        "accepted": 22
+      },
+      {
+        "year": 2023,
+        "rate": 23.0,
+        "submitted": 122,
+        "accepted": 28
+      }
     ]
   },
   {
@@ -2426,6 +3594,32 @@
         "date": "2025-09-20",
         "abstractDate": "",
         "comment": "Submission deadline"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 15.3,
+        "submitted": 300,
+        "accepted": 46
+      },
+      {
+        "year": 2024,
+        "rate": 21.1,
+        "submitted": 199,
+        "accepted": 42
+      },
+      {
+        "year": 2023,
+        "rate": 22.5,
+        "submitted": 182,
+        "accepted": 41
+      },
+      {
+        "year": 2022,
+        "rate": 22.6,
+        "submitted": 159,
+        "accepted": 36
       }
     ]
   },
@@ -2447,6 +3641,9 @@
         "abstractDate": "2026-01-10",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -2472,6 +3669,9 @@
         "abstractDate": "2026-01-09",
         "comment": "Round 2 (paper deadline extended)"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -2491,6 +3691,26 @@
         "date": "2025-12-02",
         "abstractDate": "2025-11-25",
         "comment": "Optional abstract registration"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 24.7,
+        "submitted": 178,
+        "accepted": 44
+      },
+      {
+        "year": 2023,
+        "rate": 29.5,
+        "submitted": 95,
+        "accepted": 28
+      },
+      {
+        "year": 2021,
+        "rate": 26.7,
+        "submitted": 131,
+        "accepted": 35
       }
     ]
   },
@@ -2512,6 +3732,32 @@
         "abstractDate": "2026-05-04",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 31.7,
+        "submitted": 224,
+        "accepted": 71
+      },
+      {
+        "year": 2025,
+        "rate": 42.2,
+        "submitted": 64,
+        "accepted": 27
+      },
+      {
+        "year": 2024,
+        "rate": 51.8,
+        "submitted": 56,
+        "accepted": 29
+      },
+      {
+        "year": 2023,
+        "rate": 42.5,
+        "submitted": 73,
+        "accepted": 31
+      }
     ]
   },
   {
@@ -2531,6 +3777,32 @@
         "date": "2026-04-01",
         "abstractDate": "",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 25.1,
+        "submitted": 546,
+        "accepted": 137
+      },
+      {
+        "year": 2024,
+        "rate": 28.7,
+        "submitted": 463,
+        "accepted": 133
+      },
+      {
+        "year": 2022,
+        "rate": 37.2,
+        "submitted": 296,
+        "accepted": 110
+      },
+      {
+        "year": 2021,
+        "rate": 34.4,
+        "submitted": 340,
+        "accepted": 117
       }
     ]
   },
@@ -2552,6 +3824,9 @@
         "abstractDate": "2026-02-13",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -2572,6 +3847,9 @@
         "abstractDate": "2025-09-24",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -2597,6 +3875,9 @@
         "abstractDate": "",
         "comment": "Submission Due (Conference Track)"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -2616,6 +3897,32 @@
         "date": "2026-01-30",
         "abstractDate": "2026-01-23",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 42.1,
+        "submitted": 76,
+        "accepted": 32
+      },
+      {
+        "year": 2025,
+        "rate": 40.3,
+        "submitted": 77,
+        "accepted": 31
+      },
+      {
+        "year": 2024,
+        "rate": 52.6,
+        "submitted": 57,
+        "accepted": 30
+      },
+      {
+        "year": 2022,
+        "rate": 52.5,
+        "submitted": 59,
+        "accepted": 31
       }
     ]
   },
@@ -2652,6 +3959,14 @@
         "abstractDate": "",
         "comment": "ToSC, Volume 2026, Issue 1 Submission deadline"
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2021,
+        "rate": 23.8,
+        "submitted": 407,
+        "accepted": 97
+      }
     ]
   },
   {
@@ -2671,6 +3986,14 @@
         "date": "2025-09-11",
         "abstractDate": "2025-09-04",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2021,
+        "rate": 23.8,
+        "submitted": 407,
+        "accepted": 97
       }
     ]
   },
@@ -2692,6 +4015,9 @@
         "abstractDate": "2026-01-19",
         "comment": "Full papers (traditional category) "
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -2711,6 +4037,14 @@
         "date": "2026-05-03",
         "abstractDate": "",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 39.7,
+        "submitted": 2295,
+        "accepted": 911
       }
     ]
   },
@@ -2732,6 +4066,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -2752,6 +4089,9 @@
         "abstractDate": "2025-12-16",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -2771,6 +4111,14 @@
         "date": "2025-08-01",
         "abstractDate": "2025-07-25",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2023,
+        "rate": 25.3,
+        "submitted": 360,
+        "accepted": 91
       }
     ]
   },
@@ -2792,6 +4140,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -2817,6 +4168,9 @@
         "abstractDate": "",
         "comment": "paper submission deadline"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -2837,6 +4191,9 @@
         "abstractDate": "2025-11-06",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -2857,6 +4214,9 @@
         "abstractDate": "",
         "comment": "Extended submission deadline"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -2877,6 +4237,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -2897,6 +4260,9 @@
         "abstractDate": "",
         "comment": "Regular paper submission (extended)"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -2917,6 +4283,9 @@
         "abstractDate": "",
         "comment": "Paper Submission Due"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -2937,6 +4306,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -2956,6 +4328,32 @@
         "date": "2026-02-06",
         "abstractDate": "",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 30.3,
+        "submitted": 628,
+        "accepted": 190
+      },
+      {
+        "year": 2025,
+        "rate": 30.2,
+        "submitted": 563,
+        "accepted": 170
+      },
+      {
+        "year": 2024,
+        "rate": 29.5,
+        "submitted": 519,
+        "accepted": 153
+      },
+      {
+        "year": 2023,
+        "rate": 29.8,
+        "submitted": 443,
+        "accepted": 132
       }
     ]
   },
@@ -2977,6 +4375,32 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 45.3,
+        "submitted": 375,
+        "accepted": 170
+      },
+      {
+        "year": 2023,
+        "rate": 45.0,
+        "submitted": 947,
+        "accepted": 426
+      },
+      {
+        "year": 2022,
+        "rate": 45.5,
+        "submitted": 561,
+        "accepted": 255
+      },
+      {
+        "year": 2021,
+        "rate": 53.4,
+        "submitted": 496,
+        "accepted": 265
+      }
     ]
   },
   {
@@ -2997,6 +4421,9 @@
         "abstractDate": "2025-12-02",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -3016,6 +4443,14 @@
         "date": "2025-09-17",
         "abstractDate": "",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 48.5,
+        "submitted": 5796,
+        "accepted": 2812
       }
     ]
   },
@@ -3037,6 +4472,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -3057,6 +4495,9 @@
         "abstractDate": "2026-04-07",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -3076,6 +4517,32 @@
         "date": "2026-03-27",
         "abstractDate": "2026-03-20",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 42.4,
+        "submitted": 85,
+        "accepted": 36
+      },
+      {
+        "year": 2025,
+        "rate": 37.0,
+        "submitted": 81,
+        "accepted": 30
+      },
+      {
+        "year": 2024,
+        "rate": 31.9,
+        "submitted": 91,
+        "accepted": 29
+      },
+      {
+        "year": 2023,
+        "rate": 32.9,
+        "submitted": 79,
+        "accepted": 26
       }
     ]
   },
@@ -3097,6 +4564,9 @@
         "abstractDate": "2026-03-07",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -3117,6 +4587,9 @@
         "abstractDate": "2026-06-03",
         "comment": "abstract and full paper deadline"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -3137,6 +4610,9 @@
         "abstractDate": "2026-02-13",
         "comment": "Conference papers"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -3157,6 +4633,9 @@
         "abstractDate": "2026-01-21",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -3182,6 +4661,26 @@
         "abstractDate": "",
         "comment": "second round"
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 25.4,
+        "submitted": 1481,
+        "accepted": 376
+      },
+      {
+        "year": 2023,
+        "rate": 30.6,
+        "submitted": 748,
+        "accepted": 229
+      },
+      {
+        "year": 2022,
+        "rate": 27.1,
+        "submitted": 780,
+        "accepted": 211
+      }
     ]
   },
   {
@@ -3202,6 +4701,9 @@
         "abstractDate": "",
         "comment": "Main track"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -3221,6 +4723,20 @@
         "date": "2026-06-06",
         "abstractDate": "",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2023,
+        "rate": 21.6,
+        "submitted": 926,
+        "accepted": 200
+      },
+      {
+        "year": 2021,
+        "rate": 9.9,
+        "submitted": 990,
+        "accepted": 98
       }
     ]
   },
@@ -3247,6 +4763,9 @@
         "abstractDate": "2025-09-03",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -3267,6 +4786,9 @@
         "abstractDate": "",
         "comment": "Abstract and full paper submission"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -3286,6 +4808,20 @@
         "date": "2026-06-22",
         "abstractDate": "",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 42.6,
+        "submitted": 47,
+        "accepted": 20
+      },
+      {
+        "year": 2024,
+        "rate": 44.0,
+        "submitted": 50,
+        "accepted": 22
       }
     ]
   },
@@ -3307,6 +4843,14 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2023,
+        "rate": 36.7,
+        "submitted": 90,
+        "accepted": 33
+      }
     ]
   },
   {
@@ -3327,6 +4871,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -3352,6 +4899,32 @@
         "abstractDate": "",
         "comment": "Second round"
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 25.5,
+        "submitted": 357,
+        "accepted": 91
+      },
+      {
+        "year": 2024,
+        "rate": 26.0,
+        "submitted": 123,
+        "accepted": 32
+      },
+      {
+        "year": 2023,
+        "rate": 21.0,
+        "submitted": 210,
+        "accepted": 44
+      },
+      {
+        "year": 2022,
+        "rate": 22.7,
+        "submitted": 150,
+        "accepted": 34
+      }
     ]
   },
   {
@@ -3371,6 +4944,14 @@
         "date": "2026-02-04",
         "abstractDate": "",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2023,
+        "rate": 44.4,
+        "submitted": 1647,
+        "accepted": 732
       }
     ]
   },
@@ -3392,6 +4973,32 @@
         "abstractDate": "2025-09-19",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 27.4,
+        "submitted": 19525,
+        "accepted": 5355
+      },
+      {
+        "year": 2025,
+        "rate": 31.9,
+        "submitted": 11603,
+        "accepted": 3704
+      },
+      {
+        "year": 2024,
+        "rate": 31.1,
+        "submitted": 7262,
+        "accepted": 2260
+      },
+      {
+        "year": 2023,
+        "rate": 31.9,
+        "submitted": 4938,
+        "accepted": 1574
+      }
     ]
   },
   {
@@ -3411,6 +5018,20 @@
         "date": "2025-12-31",
         "abstractDate": "",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 32.5,
+        "submitted": 2049,
+        "accepted": 666
+      },
+      {
+        "year": 2023,
+        "rate": 34.5,
+        "submitted": 1415,
+        "accepted": 488
       }
     ]
   },
@@ -3432,6 +5053,9 @@
         "abstractDate": "2026-04-13",
         "comment": "Paper deadline extended to Apr 23, 23:59 AoE; normalized to UTC-7"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -3451,6 +5075,26 @@
         "date": "2026-01-29",
         "abstractDate": "2026-01-24",
         "comment": "Paper Submissions Open on OpenReview Jan 08 2026 12:00AM UTC-0"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 26.6,
+        "submitted": 24661,
+        "accepted": 6552
+      },
+      {
+        "year": 2024,
+        "rate": 27.5,
+        "submitted": 9473,
+        "accepted": 2609
+      },
+      {
+        "year": 2023,
+        "rate": 27.9,
+        "submitted": 6538,
+        "accepted": 1827
       }
     ]
   },
@@ -3472,6 +5116,14 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 41.6,
+        "submitted": 281,
+        "accepted": 117
+      }
     ]
   },
   {
@@ -3492,6 +5144,9 @@
         "abstractDate": "2026-05-15",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -3511,6 +5166,14 @@
         "date": "2026-05-31",
         "abstractDate": "",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 60.7,
+        "submitted": 1301,
+        "accepted": 790
       }
     ]
   },
@@ -3532,6 +5195,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -3552,6 +5218,9 @@
         "abstractDate": "2025-10-19",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -3572,6 +5241,9 @@
         "abstractDate": "2026-04-24",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -3592,6 +5264,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -3611,6 +5286,14 @@
         "date": "2025-09-15",
         "abstractDate": "",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2022,
+        "rate": 43.1,
+        "submitted": 3313,
+        "accepted": 1428
       }
     ]
   },
@@ -3637,6 +5320,9 @@
         "abstractDate": "2026-02-02",
         "comment": "Cycle 2"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -3662,6 +5348,14 @@
         "abstractDate": "2025-07-11",
         "comment": "Second Cycle: Submission; optional abstract registration"
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 22.3,
+        "submitted": 1051,
+        "accepted": 234
+      }
     ]
   },
   {
@@ -3682,6 +5376,9 @@
         "abstractDate": "2026-02-27",
         "comment": "Research Papers Track"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -3707,6 +5404,32 @@
         "abstractDate": "2026-07-12",
         "comment": "Regular papers"
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 28.8,
+        "submitted": 219,
+        "accepted": 63
+      },
+      {
+        "year": 2024,
+        "rate": 22.4,
+        "submitted": 255,
+        "accepted": 57
+      },
+      {
+        "year": 2023,
+        "rate": 21.6,
+        "submitted": 208,
+        "accepted": 45
+      },
+      {
+        "year": 2022,
+        "rate": 21.7,
+        "submitted": 221,
+        "accepted": 48
+      }
     ]
   },
   {
@@ -3727,6 +5450,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -3747,6 +5473,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -3767,6 +5496,9 @@
         "abstractDate": "2026-08-15",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -3787,6 +5519,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -3817,6 +5552,9 @@
         "abstractDate": "",
         "comment": "3rd Full-paper Deadline"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -3837,6 +5575,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -3862,6 +5603,9 @@
         "abstractDate": "",
         "comment": "Auxiliary Paper"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -3882,6 +5626,9 @@
         "abstractDate": "2026-03-21",
         "comment": "Regular full papers; mandatory abstract and initial submission"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -3902,6 +5649,9 @@
         "abstractDate": "2025-09-05",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -3927,6 +5677,9 @@
         "abstractDate": "",
         "comment": "Second Submission"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -3947,6 +5700,9 @@
         "abstractDate": "",
         "comment": "Submission Deadline"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -3961,7 +5717,17 @@
     "conferenceDate": "June 17-19, 2026",
     "conferenceStart": "2026-06-17",
     "place": "Florence, Italy",
-    "timeline": []
+    "timeline": [
+
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 50.0,
+        "submitted": 40,
+        "accepted": 20
+      }
+    ]
   },
   {
     "id": "iiswc2026",
@@ -3981,6 +5747,9 @@
         "abstractDate": "2026-05-14",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -4000,6 +5769,20 @@
         "date": "2026-01-19",
         "abstractDate": "2026-01-12",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 14.0,
+        "submitted": 5651,
+        "accepted": 791
+      },
+      {
+        "year": 2022,
+        "rate": 15.0,
+        "submitted": 4537,
+        "accepted": 679
       }
     ]
   },
@@ -4021,6 +5804,26 @@
         "abstractDate": "2026-02-06",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 43.8,
+        "submitted": 112,
+        "accepted": 49
+      },
+      {
+        "year": 2024,
+        "rate": 39.1,
+        "submitted": 115,
+        "accepted": 45
+      },
+      {
+        "year": 2022,
+        "rate": 48.2,
+        "submitted": 85,
+        "accepted": 41
+      }
     ]
   },
   {
@@ -4041,6 +5844,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -4061,6 +5867,9 @@
         "abstractDate": "",
         "comment": "ARR Submission; commitment deadline: 2026-08-07; second-round commitment: 2026-08-25; AACL-IJCNLP 2026 (the 5th AACL & 15th IJCNLP)"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -4080,6 +5889,26 @@
         "date": "2026-01-31",
         "abstractDate": "",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 38.9,
+        "submitted": 5526,
+        "accepted": 2152
+      },
+      {
+        "year": 2024,
+        "rate": 52.0,
+        "submitted": 1701,
+        "accepted": 3272
+      },
+      {
+        "year": 2023,
+        "rate": 54.8,
+        "submitted": 1888,
+        "accepted": 1034
       }
     ]
   },
@@ -4106,6 +5935,20 @@
         "abstractDate": "2026-04-22",
         "comment": "Cycle 2 Deadline"
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 21.7,
+        "submitted": 253,
+        "accepted": 55
+      },
+      {
+        "year": 2022,
+        "rate": 26.6,
+        "submitted": 143,
+        "accepted": 38
+      }
     ]
   },
   {
@@ -4125,6 +5968,32 @@
         "date": "2026-08-27",
         "abstractDate": "",
         "comment": "Extended submission deadline"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 22.9,
+        "submitted": 83,
+        "accepted": 19
+      },
+      {
+        "year": 2024,
+        "rate": 32.3,
+        "submitted": 96,
+        "accepted": 31
+      },
+      {
+        "year": 2023,
+        "rate": 31.4,
+        "submitted": 86,
+        "accepted": 27
+      },
+      {
+        "year": 2022,
+        "rate": 35.2,
+        "submitted": 88,
+        "accepted": 31
       }
     ]
   },
@@ -4146,6 +6015,14 @@
         "abstractDate": "2025-07-24",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 19.6,
+        "submitted": 1307,
+        "accepted": 256
+      }
     ]
   },
   {
@@ -4165,6 +6042,32 @@
         "date": "2026-05-08",
         "abstractDate": "",
         "comment": "1st Round"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 25.1,
+        "submitted": 315,
+        "accepted": 79
+      },
+      {
+        "year": 2024,
+        "rate": 29.5,
+        "submitted": 156,
+        "accepted": 46
+      },
+      {
+        "year": 2023,
+        "rate": 29.6,
+        "submitted": 152,
+        "accepted": 45
+      },
+      {
+        "year": 2022,
+        "rate": 38.2,
+        "submitted": 68,
+        "accepted": 26
       }
     ]
   },
@@ -4186,6 +6089,9 @@
         "abstractDate": "2025-10-02",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -4205,6 +6111,20 @@
         "date": "2026-03-02",
         "abstractDate": "",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 36.5,
+        "submitted": 4348,
+        "accepted": 1585
+      },
+      {
+        "year": 2022,
+        "rate": 47.9,
+        "submitted": 3579,
+        "accepted": 1716
       }
     ]
   },
@@ -4226,6 +6146,32 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 29.2,
+        "submitted": 178,
+        "accepted": 52
+      },
+      {
+        "year": 2024,
+        "rate": 29.0,
+        "submitted": 193,
+        "accepted": 56
+      },
+      {
+        "year": 2023,
+        "rate": 29.9,
+        "submitted": 184,
+        "accepted": 55
+      },
+      {
+        "year": 2022,
+        "rate": 36.7,
+        "submitted": 177,
+        "accepted": 65
+      }
     ]
   },
   {
@@ -4246,6 +6192,9 @@
         "abstractDate": "",
         "comment": "Extended submission deadline"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -4265,6 +6214,32 @@
         "date": "2026-07-02",
         "abstractDate": "",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 36.4,
+        "submitted": 77,
+        "accepted": 28
+      },
+      {
+        "year": 2024,
+        "rate": 27.5,
+        "submitted": 120,
+        "accepted": 33
+      },
+      {
+        "year": 2023,
+        "rate": 29.6,
+        "submitted": 98,
+        "accepted": 29
+      },
+      {
+        "year": 2022,
+        "rate": 29.2,
+        "submitted": 72,
+        "accepted": 21
       }
     ]
   },
@@ -4291,6 +6266,14 @@
         "abstractDate": "",
         "comment": "full paper deadline"
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2023,
+        "rate": 21.2,
+        "submitted": 372,
+        "accepted": 79
+      }
     ]
   },
   {
@@ -4311,6 +6294,14 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 51.9,
+        "submitted": 1673,
+        "accepted": 869
+      }
     ]
   },
   {
@@ -4325,7 +6316,12 @@
     "conferenceDate": "June 23-26, 2026",
     "conferenceStart": "2026-06-23",
     "place": "Vilamoura, Algarve, Portugal",
-    "timeline": []
+    "timeline": [
+
+    ],
+    "acceptRates": [
+
+    ]
   },
   {
     "id": "isit26",
@@ -4344,6 +6340,20 @@
         "date": "2026-01-16",
         "abstractDate": "",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2023,
+        "rate": 64.6,
+        "submitted": 717,
+        "accepted": 463
+      },
+      {
+        "year": 2022,
+        "rate": 68.9,
+        "submitted": 822,
+        "accepted": 566
       }
     ]
   },
@@ -4365,6 +6375,9 @@
         "abstractDate": "2026-03-09",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -4385,6 +6398,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -4405,6 +6421,9 @@
         "abstractDate": "2025-12-08",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -4440,6 +6459,9 @@
         "abstractDate": "",
         "comment": "Summer round"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -4460,6 +6482,9 @@
         "abstractDate": "2026-04-24",
         "comment": "Extended Research Track deadlines"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -4479,6 +6504,14 @@
         "date": "2026-01-29",
         "abstractDate": "",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2022,
+        "rate": 24.4,
+        "submitted": 250,
+        "accepted": 61
       }
     ]
   },
@@ -4500,6 +6533,32 @@
         "abstractDate": "2026-05-02",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 21.7,
+        "submitted": 277,
+        "accepted": 60
+      },
+      {
+        "year": 2024,
+        "rate": 23.4,
+        "submitted": 111,
+        "accepted": 26
+      },
+      {
+        "year": 2023,
+        "rate": 19.4,
+        "submitted": 170,
+        "accepted": 33
+      },
+      {
+        "year": 2022,
+        "rate": 19.2,
+        "submitted": 156,
+        "accepted": 30
+      }
     ]
   },
   {
@@ -4520,6 +6579,9 @@
         "abstractDate": "2026-03-20",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -4540,6 +6602,9 @@
         "abstractDate": "2026-04-18",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -4560,6 +6625,9 @@
         "abstractDate": "2025-10-03",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -4580,6 +6648,9 @@
         "abstractDate": "2026-02-16",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -4599,6 +6670,20 @@
         "date": "2026-02-25",
         "abstractDate": "",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 48.1,
+        "submitted": 2138,
+        "accepted": 1029
+      },
+      {
+        "year": 2021,
+        "rate": 48.4,
+        "submitted": 1990,
+        "accepted": 963
       }
     ]
   },
@@ -4625,6 +6710,9 @@
         "abstractDate": "2026-04-27",
         "comment": "Round 2"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -4645,6 +6733,9 @@
         "abstractDate": "2026-04-10",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -4665,6 +6756,9 @@
         "abstractDate": "2026-02-08",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -4685,6 +6779,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -4705,6 +6802,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -4725,6 +6825,9 @@
         "abstractDate": "2026-03-13",
         "comment": "Extended deadlines"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -4744,6 +6847,20 @@
         "date": "2026-01-22",
         "abstractDate": "2026-01-15",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 28.0,
+        "submitted": 293,
+        "accepted": 82
+      },
+      {
+        "year": 2022,
+        "rate": 34.8,
+        "submitted": 181,
+        "accepted": 63
       }
     ]
   },
@@ -4765,6 +6882,9 @@
         "abstractDate": "2026-08-05",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -4784,6 +6904,32 @@
         "date": "2026-02-26",
         "abstractDate": "2026-02-12",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 26.5,
+        "submitted": 4402,
+        "accepted": 1167
+      },
+      {
+        "year": 2025,
+        "rate": 29.8,
+        "submitted": 3447,
+        "accepted": 1027
+      },
+      {
+        "year": 2024,
+        "rate": 30.8,
+        "submitted": 2781,
+        "accepted": 857
+      },
+      {
+        "year": 2023,
+        "rate": 32.4,
+        "submitted": 2250,
+        "accepted": 730
       }
     ]
   },
@@ -4805,6 +6951,26 @@
         "abstractDate": "2026-03-31",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 23.3,
+        "submitted": 485,
+        "accepted": 113
+      },
+      {
+        "year": 2023,
+        "rate": 23.3,
+        "submitted": 434,
+        "accepted": 101
+      },
+      {
+        "year": 2022,
+        "rate": 23.9,
+        "submitted": 348,
+        "accepted": 83
+      }
     ]
   },
   {
@@ -4825,6 +6991,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -4845,6 +7014,9 @@
         "abstractDate": "",
         "comment": "Regular Paper"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -4865,6 +7037,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -4884,6 +7059,14 @@
         "date": "2025-11-21",
         "abstractDate": "2025-11-14",
         "comment": "Round 2 deadline"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 24.1,
+        "submitted": 79,
+        "accepted": 19
       }
     ]
   },
@@ -4905,6 +7088,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -4925,6 +7111,9 @@
         "abstractDate": "2025-10-20",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -4945,6 +7134,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -4965,6 +7157,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -4990,6 +7185,9 @@
         "abstractDate": "2026-05-29",
         "comment": "Round 2"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -5010,6 +7208,9 @@
         "abstractDate": "2026-03-20",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -5035,6 +7236,20 @@
         "abstractDate": "2026-03-06",
         "comment": "Winter Deadlines"
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 19.1,
+        "submitted": 288,
+        "accepted": 55
+      },
+      {
+        "year": 2019,
+        "rate": 19.0,
+        "submitted": 290,
+        "accepted": 55
+      }
     ]
   },
   {
@@ -5054,6 +7269,20 @@
         "date": "2026-04-20",
         "abstractDate": "2026-04-13",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 23.1,
+        "submitted": 169,
+        "accepted": 39
+      },
+      {
+        "year": 2024,
+        "rate": 24.5,
+        "submitted": 155,
+        "accepted": 38
       }
     ]
   },
@@ -5075,6 +7304,20 @@
         "abstractDate": "2025-11-28",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 18.0,
+        "submitted": 233,
+        "accepted": 42
+      },
+      {
+        "year": 2024,
+        "rate": 16.3,
+        "submitted": 263,
+        "accepted": 43
+      }
     ]
   },
   {
@@ -5095,6 +7338,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -5120,6 +7366,20 @@
         "abstractDate": "2025-07-30",
         "comment": "Fall"
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 20.2,
+        "submitted": 694,
+        "accepted": 140
+      },
+      {
+        "year": 2022,
+        "rate": 16.2,
+        "submitted": 513,
+        "accepted": 83
+      }
     ]
   },
   {
@@ -5140,6 +7400,9 @@
         "abstractDate": "2026-03-11",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -5160,6 +7423,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -5180,6 +7446,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -5200,6 +7469,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -5225,6 +7497,32 @@
         "abstractDate": "2025-09-11",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 22.8,
+        "submitted": 659,
+        "accepted": 150
+      },
+      {
+        "year": 2025,
+        "rate": 12.5,
+        "submitted": 666,
+        "accepted": 83
+      },
+      {
+        "year": 2024,
+        "rate": 18.6,
+        "submitted": 601,
+        "accepted": 112
+      },
+      {
+        "year": 2023,
+        "rate": 17.1,
+        "submitted": 560,
+        "accepted": 96
+      }
     ]
   },
   {
@@ -5245,6 +7543,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -5265,6 +7566,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -5284,6 +7588,32 @@
         "date": "2026-05-07",
         "abstractDate": "2026-05-05",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 24.5,
+        "submitted": 21575,
+        "accepted": 5290
+      },
+      {
+        "year": 2024,
+        "rate": 25.8,
+        "submitted": 15671,
+        "accepted": 4037
+      },
+      {
+        "year": 2023,
+        "rate": 26.1,
+        "submitted": 12343,
+        "accepted": 3218
+      },
+      {
+        "year": 2022,
+        "rate": 25.7,
+        "submitted": 10411,
+        "accepted": 2672
       }
     ]
   },
@@ -5310,6 +7640,14 @@
         "abstractDate": "",
         "comment": "Submission Deadline Round 2"
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2023,
+        "rate": 36.2,
+        "submitted": 304,
+        "accepted": 110
+      }
     ]
   },
   {
@@ -5329,6 +7667,32 @@
         "date": "2025-12-11",
         "abstractDate": "2025-12-04",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 20.0,
+        "submitted": 669,
+        "accepted": 134
+      },
+      {
+        "year": 2025,
+        "rate": 15.6,
+        "submitted": 339,
+        "accepted": 53
+      },
+      {
+        "year": 2024,
+        "rate": 18.0,
+        "submitted": 272,
+        "accepted": 49
+      },
+      {
+        "year": 2023,
+        "rate": 19.6,
+        "submitted": 255,
+        "accepted": 50
       }
     ]
   },
@@ -5350,6 +7714,9 @@
         "abstractDate": "2026-04-23",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -5369,6 +7736,32 @@
         "date": "2025-11-25",
         "abstractDate": "",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 25.3,
+        "submitted": 728,
+        "accepted": 184
+      },
+      {
+        "year": 2025,
+        "rate": 24.1,
+        "submitted": 696,
+        "accepted": 168
+      },
+      {
+        "year": 2024,
+        "rate": 24.6,
+        "submitted": 720,
+        "accepted": 177
+      },
+      {
+        "year": 2023,
+        "rate": 17.6,
+        "submitted": 813,
+        "accepted": 143
       }
     ]
   },
@@ -5390,6 +7783,9 @@
         "abstractDate": "2025-10-15",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -5415,6 +7811,9 @@
         "abstractDate": "",
         "comment": "Second Cycle"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -5450,6 +7849,32 @@
         "abstractDate": "",
         "comment": "Issue 4 Paper Submission Deadline"
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 22.4,
+        "submitted": 714,
+        "accepted": 160
+      },
+      {
+        "year": 2025,
+        "rate": 26.2,
+        "submitted": 644,
+        "accepted": 169
+      },
+      {
+        "year": 2024,
+        "rate": 20.9,
+        "submitted": 708,
+        "accepted": 148
+      },
+      {
+        "year": 2023,
+        "rate": 21.8,
+        "submitted": 563,
+        "accepted": 123
+      }
     ]
   },
   {
@@ -5470,6 +7895,9 @@
         "abstractDate": "2026-06-01",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -5489,6 +7917,32 @@
         "date": "2025-10-24",
         "abstractDate": "",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 25.1,
+        "submitted": 259,
+        "accepted": 65
+      },
+      {
+        "year": 2025,
+        "rate": 30.2,
+        "submitted": 199,
+        "accepted": 60
+      },
+      {
+        "year": 2024,
+        "rate": 30.7,
+        "submitted": 176,
+        "accepted": 54
+      },
+      {
+        "year": 2023,
+        "rate": 26.8,
+        "submitted": 183,
+        "accepted": 49
       }
     ]
   },
@@ -5510,6 +7964,14 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2023,
+        "rate": 29.5,
+        "submitted": 281,
+        "accepted": 83
+      }
     ]
   },
   {
@@ -5530,6 +7992,9 @@
         "abstractDate": "2026-02-11",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -5555,6 +8020,9 @@
         "abstractDate": "2025-12-03",
         "comment": "Second submission cycle"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -5574,6 +8042,14 @@
         "date": "2025-07-10",
         "abstractDate": "",
         "comment": "Submission Deadline"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2023,
+        "rate": 26.9,
+        "submitted": 275,
+        "accepted": 74
       }
     ]
   },
@@ -5595,6 +8071,26 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 31.3,
+        "submitted": 527,
+        "accepted": 165
+      },
+      {
+        "year": 2024,
+        "rate": 34.4,
+        "submitted": 294,
+        "accepted": 101
+      },
+      {
+        "year": 2022,
+        "rate": 45.9,
+        "submitted": 185,
+        "accepted": 85
+      }
     ]
   },
   {
@@ -5614,6 +8110,14 @@
         "date": "2025-09-01",
         "abstractDate": "",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2023,
+        "rate": 23.7,
+        "submitted": 131,
+        "accepted": 31
       }
     ]
   },
@@ -5635,6 +8139,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -5655,6 +8162,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -5675,6 +8185,9 @@
         "abstractDate": "2025-11-01",
         "comment": "Conference track"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -5695,6 +8208,9 @@
         "abstractDate": "2025-10-03",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -5715,6 +8231,9 @@
         "abstractDate": "2026-05-15",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -5735,6 +8254,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -5755,6 +8277,9 @@
         "abstractDate": "2026-04-08",
         "comment": "Regular papers (extended)"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -5775,6 +8300,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -5795,6 +8323,9 @@
         "abstractDate": "2026-02-16",
         "comment": "Research Papers"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -5814,6 +8345,14 @@
         "date": "2025-11-20",
         "abstractDate": "2025-11-07",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2022,
+        "rate": 21.3,
+        "submitted": 188,
+        "accepted": 40
       }
     ]
   },
@@ -5835,6 +8374,9 @@
         "abstractDate": "2025-10-10",
         "comment": "Regular research papers; abstract submission is optional"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -5855,6 +8397,9 @@
         "abstractDate": "2026-01-23",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -5874,6 +8419,14 @@
         "date": "2025-11-13",
         "abstractDate": "",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2022,
+        "rate": 24.2,
+        "submitted": 91,
+        "accepted": 22
       }
     ]
   },
@@ -5895,6 +8448,14 @@
         "abstractDate": "2026-05-21",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2022,
+        "rate": 28.9,
+        "submitted": 128,
+        "accepted": 37
+      }
     ]
   },
   {
@@ -5915,6 +8476,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -5934,6 +8498,32 @@
         "date": "2026-04-21",
         "abstractDate": "2026-04-14",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 18.8,
+        "submitted": 261,
+        "accepted": 49
+      },
+      {
+        "year": 2024,
+        "rate": 21.8,
+        "submitted": 266,
+        "accepted": 58
+      },
+      {
+        "year": 2023,
+        "rate": 17.5,
+        "submitted": 269,
+        "accepted": 47
+      },
+      {
+        "year": 2022,
+        "rate": 16.9,
+        "submitted": 231,
+        "accepted": 39
       }
     ]
   },
@@ -5955,6 +8545,9 @@
         "abstractDate": "2026-05-15",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -5980,6 +8573,9 @@
         "abstractDate": "2025-11-06",
         "comment": "Second Paper submission deadline"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -6004,6 +8600,32 @@
         "date": "2026-05-11",
         "abstractDate": "",
         "comment": "Paper submission deadline (cycle 2)"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 25.7,
+        "submitted": 113,
+        "accepted": 29
+      },
+      {
+        "year": 2025,
+        "rate": 26.6,
+        "submitted": 109,
+        "accepted": 29
+      },
+      {
+        "year": 2024,
+        "rate": 28.1,
+        "submitted": 89,
+        "accepted": 25
+      },
+      {
+        "year": 2023,
+        "rate": 46.7,
+        "submitted": 45,
+        "accepted": 21
       }
     ]
   },
@@ -6030,6 +8652,9 @@
         "abstractDate": "",
         "comment": "Second Cycle"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -6050,6 +8675,9 @@
         "abstractDate": "2025-10-09",
         "comment": "Regular research papers; abstract submission is mandatory"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -6069,6 +8697,32 @@
         "date": "2026-05-07",
         "abstractDate": "2026-05-01",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 46.9,
+        "submitted": 32,
+        "accepted": 15
+      },
+      {
+        "year": 2024,
+        "rate": 40.0,
+        "submitted": 45,
+        "accepted": 18
+      },
+      {
+        "year": 2023,
+        "rate": 50.0,
+        "submitted": 40,
+        "accepted": 20
+      },
+      {
+        "year": 2022,
+        "rate": 41.9,
+        "submitted": 43,
+        "accepted": 18
       }
     ]
   },
@@ -6090,6 +8744,32 @@
         "abstractDate": "2026-03-02",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 43.2,
+        "submitted": 95,
+        "accepted": 41
+      },
+      {
+        "year": 2025,
+        "rate": 39.0,
+        "submitted": 77,
+        "accepted": 30
+      },
+      {
+        "year": 2024,
+        "rate": 40.0,
+        "submitted": 70,
+        "accepted": 28
+      },
+      {
+        "year": 2023,
+        "rate": 44.8,
+        "submitted": 67,
+        "accepted": 30
+      }
     ]
   },
   {
@@ -6110,6 +8790,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -6130,6 +8813,9 @@
         "abstractDate": "2026-04-01",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -6150,6 +8836,9 @@
         "abstractDate": "2026-04-10",
         "comment": "Submission deadline (papers)"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -6170,6 +8859,9 @@
         "abstractDate": "",
         "comment": "co-located with ICSME 2026"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -6190,25 +8882,13 @@
         "abstractDate": "2026-04-10",
         "comment": ""
       }
-    ]
-  },
-  {
-    "id": "sec2026",
-    "title": "SEC",
-    "description": "ACM/IEEE Symposium on Edge Computing",
-    "category": "DS",
-    "rank": "C",
-    "year": 2026,
-    "link": "https://acm-ieee-sec.org/2026/",
-    "timezone": "AoE",
-    "conferenceDate": "Oct 13-16, 2026",
-    "conferenceStart": "2026-10-13",
-    "place": "Santa Clara University, CA, USA",
-    "timeline": [
+    ],
+    "acceptRates": [
       {
-        "date": "2026-05-08",
-        "abstractDate": "2026-05-08",
-        "comment": ""
+        "year": 2024,
+        "rate": 29.3,
+        "submitted": 335,
+        "accepted": 98
       }
     ]
   },
@@ -6230,6 +8910,32 @@
         "abstractDate": "",
         "comment": "Submission deadline"
       }
+    ],
+    "acceptRates": [
+
+    ]
+  },
+  {
+    "id": "sec2026",
+    "title": "SEC",
+    "description": "ACM/IEEE Symposium on Edge Computing",
+    "category": "DS",
+    "rank": "C",
+    "year": 2026,
+    "link": "https://acm-ieee-sec.org/2026/",
+    "timezone": "AoE",
+    "conferenceDate": "Oct 13-16, 2026",
+    "conferenceStart": "2026-10-13",
+    "place": "Santa Clara University, CA, USA",
+    "timeline": [
+      {
+        "date": "2026-05-08",
+        "abstractDate": "2026-05-08",
+        "comment": ""
+      }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -6250,6 +8956,9 @@
         "abstractDate": "2025-12-30",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -6270,6 +8979,9 @@
         "abstractDate": "",
         "comment": "Regular papers; midnight EST"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -6294,6 +9006,32 @@
         "date": "2026-08-24",
         "abstractDate": "",
         "comment": "Round 2 (extended)"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 39.1,
+        "submitted": 46,
+        "accepted": 18
+      },
+      {
+        "year": 2024,
+        "rate": 44.7,
+        "submitted": 47,
+        "accepted": 21
+      },
+      {
+        "year": 2022,
+        "rate": 48.3,
+        "submitted": 29,
+        "accepted": 14
+      },
+      {
+        "year": 2021,
+        "rate": 41.0,
+        "submitted": 39,
+        "accepted": 16
       }
     ]
   },
@@ -6320,6 +9058,9 @@
         "abstractDate": "2026-04-13",
         "comment": "Second round"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -6339,6 +9080,20 @@
         "date": "2026-02-06",
         "abstractDate": "2026-01-30",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 16.9,
+        "submitted": 366,
+        "accepted": 62
+      },
+      {
+        "year": 2022,
+        "rate": 19.7,
+        "submitted": 279,
+        "accepted": 55
       }
     ]
   },
@@ -6360,6 +9115,9 @@
         "abstractDate": "2025-06-26",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -6379,6 +9137,20 @@
         "date": "2026-01-22",
         "abstractDate": "2026-01-15",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 20.2,
+        "submitted": 791,
+        "accepted": 160
+      },
+      {
+        "year": 2023,
+        "rate": 20.1,
+        "submitted": 822,
+        "accepted": 165
       }
     ]
   },
@@ -6404,6 +9176,20 @@
         "date": "2026-02-08",
         "abstractDate": "2026-02-01",
         "comment": "2nd round of 2 total rounds"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 20.1,
+        "submitted": 2046,
+        "accepted": 411
+      },
+      {
+        "year": 2023,
+        "rate": 22.1,
+        "submitted": 1416,
+        "accepted": 313
       }
     ]
   },
@@ -6434,6 +9220,20 @@
         "date": "2026-01-13",
         "abstractDate": "2026-01-06",
         "comment": "winter round"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 17.3,
+        "submitted": 382,
+        "accepted": 66
+      },
+      {
+        "year": 2024,
+        "rate": 15.5,
+        "submitted": 336,
+        "accepted": 52
       }
     ]
   },
@@ -6470,6 +9270,20 @@
         "abstractDate": "2025-10-10",
         "comment": "round 4"
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 27.7,
+        "submitted": 768,
+        "accepted": 213
+      },
+      {
+        "year": 2023,
+        "rate": 28.2,
+        "submitted": 660,
+        "accepted": 186
+      }
     ]
   },
   {
@@ -6490,6 +9304,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -6510,6 +9327,9 @@
         "abstractDate": "2026-05-29",
         "comment": "Extended Research Track deadlines"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -6530,6 +9350,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -6550,6 +9373,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -6570,6 +9396,9 @@
         "abstractDate": "2026-03-23",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -6589,6 +9418,32 @@
         "date": "2025-12-02",
         "abstractDate": "2025-11-25",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 34.9,
+        "submitted": 272,
+        "accepted": 95
+      },
+      {
+        "year": 2025,
+        "rate": 34.7,
+        "submitted": 225,
+        "accepted": 78
+      },
+      {
+        "year": 2024,
+        "rate": 34.9,
+        "submitted": 235,
+        "accepted": 82
+      },
+      {
+        "year": 2023,
+        "rate": 34.9,
+        "submitted": 175,
+        "accepted": 61
       }
     ]
   },
@@ -6610,6 +9465,32 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 29.3,
+        "submitted": 655,
+        "accepted": 192
+      },
+      {
+        "year": 2024,
+        "rate": 29.4,
+        "submitted": 652,
+        "accepted": 192
+      },
+      {
+        "year": 2023,
+        "rate": 29.1,
+        "submitted": 652,
+        "accepted": 190
+      },
+      {
+        "year": 2022,
+        "rate": 30.1,
+        "submitted": 491,
+        "accepted": 148
+      }
     ]
   },
   {
@@ -6629,6 +9510,20 @@
         "date": "2026-04-01",
         "abstractDate": "2026-03-26",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 17.7,
+        "submitted": 368,
+        "accepted": 65
+      },
+      {
+        "year": 2021,
+        "rate": 15.5,
+        "submitted": 348,
+        "accepted": 54
       }
     ]
   },
@@ -6650,6 +9545,32 @@
         "abstractDate": "2026-02-12",
         "comment": "Mandatory paper registration with title and abstract"
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 19.1,
+        "submitted": 157,
+        "accepted": 30
+      },
+      {
+        "year": 2024,
+        "rate": 21.2,
+        "submitted": 156,
+        "accepted": 33
+      },
+      {
+        "year": 2023,
+        "rate": 22.4,
+        "submitted": 147,
+        "accepted": 33
+      },
+      {
+        "year": 2022,
+        "rate": 27.8,
+        "submitted": 133,
+        "accepted": 37
+      }
     ]
   },
   {
@@ -6670,6 +9591,9 @@
         "abstractDate": "2026-02-20",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -6690,6 +9614,9 @@
         "abstractDate": "2026-02-08",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -6710,6 +9637,9 @@
         "abstractDate": "2026-05-01",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -6730,6 +9660,9 @@
         "abstractDate": "",
         "comment": "Extended and firm paper submission deadline"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -6749,6 +9682,14 @@
         "date": "2025-11-04",
         "abstractDate": "",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2023,
+        "rate": 32.3,
+        "submitted": 480,
+        "accepted": 155
       }
     ]
   },
@@ -6770,6 +9711,9 @@
         "abstractDate": "",
         "comment": "Regular full papers"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -6795,6 +9739,9 @@
         "abstractDate": "",
         "comment": "Cycle 2"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -6819,6 +9766,14 @@
         "date": "2025-11-13",
         "abstractDate": "2025-11-06",
         "comment": "2nd deadline"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 19.1,
+        "submitted": 235,
+        "accepted": 45
       }
     ]
   },
@@ -6845,6 +9800,9 @@
         "abstractDate": "2026-07-07",
         "comment": "Second round"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -6865,6 +9823,9 @@
         "abstractDate": "2026-03-01",
         "comment": "Extended deadlines"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -6884,6 +9845,32 @@
         "date": "2026-05-19",
         "abstractDate": "",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 28.9,
+        "submitted": 242,
+        "accepted": 70
+      },
+      {
+        "year": 2024,
+        "rate": 39.5,
+        "submitted": 172,
+        "accepted": 68
+      },
+      {
+        "year": 2023,
+        "rate": 40.5,
+        "submitted": 168,
+        "accepted": 68
+      },
+      {
+        "year": 2022,
+        "rate": 43.2,
+        "submitted": 139,
+        "accepted": 60
       }
     ]
   },
@@ -6905,6 +9892,26 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 26.9,
+        "submitted": 744,
+        "accepted": 200
+      },
+      {
+        "year": 2023,
+        "rate": 31.2,
+        "submitted": 778,
+        "accepted": 243
+      },
+      {
+        "year": 2021,
+        "rate": 26.4,
+        "submitted": 777,
+        "accepted": 205
+      }
     ]
   },
   {
@@ -6925,6 +9932,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -6944,6 +9954,26 @@
         "date": "2026-03-31",
         "abstractDate": "2026-03-24",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 24.0,
+        "submitted": 608,
+        "accepted": 146
+      },
+      {
+        "year": 2023,
+        "rate": 25.1,
+        "submitted": 483,
+        "accepted": 121
+      },
+      {
+        "year": 2022,
+        "rate": 26.3,
+        "submitted": 372,
+        "accepted": 98
       }
     ]
   },
@@ -6969,6 +9999,32 @@
         "date": "2026-02-05",
         "abstractDate": "2026-01-29",
         "comment": "Cycle 2 Deadline"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 17.1,
+        "submitted": 2385,
+        "accepted": 407
+      },
+      {
+        "year": 2024,
+        "rate": 18.2,
+        "submitted": 2276,
+        "accepted": 414
+      },
+      {
+        "year": 2023,
+        "rate": 29.2,
+        "submitted": 1444,
+        "accepted": 422
+      },
+      {
+        "year": 2022,
+        "rate": 18.1,
+        "submitted": 1414,
+        "accepted": 256
       }
     ]
   },
@@ -7000,6 +10056,9 @@
         "abstractDate": "",
         "comment": "fourth round"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -7020,6 +10079,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -7095,6 +10157,32 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 19.5,
+        "submitted": 1437,
+        "accepted": 280
+      },
+      {
+        "year": 2023,
+        "rate": 24.8,
+        "submitted": 1074,
+        "accepted": 266
+      },
+      {
+        "year": 2022,
+        "rate": 27.2,
+        "submitted": 976,
+        "accepted": 265
+      },
+      {
+        "year": 2021,
+        "rate": 24.0,
+        "submitted": 882,
+        "accepted": 212
+      }
     ]
   },
   {
@@ -7114,6 +10202,32 @@
         "date": "2025-09-15",
         "abstractDate": "",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 33.3,
+        "submitted": 54,
+        "accepted": 18
+      },
+      {
+        "year": 2025,
+        "rate": 41.7,
+        "submitted": 48,
+        "accepted": 20
+      },
+      {
+        "year": 2024,
+        "rate": 40.5,
+        "submitted": 74,
+        "accepted": 30
+      },
+      {
+        "year": 2023,
+        "rate": 50.0,
+        "submitted": 34,
+        "accepted": 17
       }
     ]
   },
@@ -7140,6 +10254,9 @@
         "abstractDate": "2025-09-12",
         "comment": "Second round"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -7160,6 +10277,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -7180,6 +10300,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -7200,6 +10323,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -7220,6 +10346,9 @@
         "abstractDate": "2026-05-18",
         "comment": "Regular papers; final abstract and paper cutoffs from the official submission-platform API"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -7239,6 +10368,32 @@
         "date": "2026-06-30",
         "abstractDate": "",
         "comment": "Extended submission deadline"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 54.3,
+        "submitted": 140,
+        "accepted": 76
+      },
+      {
+        "year": 2024,
+        "rate": 44.8,
+        "submitted": 368,
+        "accepted": 165
+      },
+      {
+        "year": 2023,
+        "rate": 53.3,
+        "submitted": 137,
+        "accepted": 73
+      },
+      {
+        "year": 2021,
+        "rate": 36.7,
+        "submitted": 229,
+        "accepted": 84
       }
     ]
   },
@@ -7260,6 +10415,20 @@
         "abstractDate": "2025-08-07",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 17.7,
+        "submitted": 615,
+        "accepted": 109
+      },
+      {
+        "year": 2023,
+        "rate": 17.8,
+        "submitted": 690,
+        "accepted": 123
+      }
     ]
   },
   {
@@ -7279,6 +10448,20 @@
         "date": "2025-10-07",
         "abstractDate": "2025-09-30",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 20.2,
+        "submitted": 2008,
+        "accepted": 405
+      },
+      {
+        "year": 2023,
+        "rate": 19.2,
+        "submitted": 1900,
+        "accepted": 365
       }
     ]
   },
@@ -7300,6 +10483,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -7325,6 +10511,26 @@
         "abstractDate": "",
         "comment": "Second Cycle deadline"
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 19.0,
+        "submitted": 121,
+        "accepted": 23
+      },
+      {
+        "year": 2025,
+        "rate": 22.8,
+        "submitted": 123,
+        "accepted": 28
+      },
+      {
+        "year": 2024,
+        "rate": 20.1,
+        "submitted": 144,
+        "accepted": 29
+      }
     ]
   },
   {
@@ -7345,6 +10551,9 @@
         "abstractDate": "2025-12-05",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -7365,6 +10574,9 @@
         "abstractDate": "2026-08-28",
         "comment": "Regular-paper abstract registration and paper submission are both due Aug 28."
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -7385,6 +10597,26 @@
         "abstractDate": "2026-07-21",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 17.6,
+        "submitted": 23680,
+        "accepted": 4167
+      },
+      {
+        "year": 2025,
+        "rate": 23.4,
+        "submitted": 12957,
+        "accepted": 3032
+      },
+      {
+        "year": 2024,
+        "rate": 23.7,
+        "submitted": 9862,
+        "accepted": 2342
+      }
     ]
   },
   {
@@ -7404,6 +10636,32 @@
         "date": "2026-10-08",
         "abstractDate": "2026-10-01",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 24.9,
+        "submitted": 1359,
+        "accepted": 338
+      },
+      {
+        "year": 2025,
+        "rate": 24.5,
+        "submitted": 1021,
+        "accepted": 250
+      },
+      {
+        "year": 2024,
+        "rate": 27.2,
+        "submitted": 847,
+        "accepted": 230
+      },
+      {
+        "year": 2023,
+        "rate": 23.3,
+        "submitted": 1015,
+        "accepted": 237
       }
     ]
   },
@@ -7430,6 +10688,32 @@
         "abstractDate": "",
         "comment": "2nd round Deadline"
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 26.5,
+        "submitted": 260,
+        "accepted": 69
+      },
+      {
+        "year": 2025,
+        "rate": 33.1,
+        "submitted": 181,
+        "accepted": 60
+      },
+      {
+        "year": 2024,
+        "rate": 30.2,
+        "submitted": 232,
+        "accepted": 70
+      },
+      {
+        "year": 2023,
+        "rate": 31.0,
+        "submitted": 87,
+        "accepted": 27
+      }
     ]
   },
   {
@@ -7444,7 +10728,35 @@
     "conferenceDate": "August 17-22, 2027",
     "conferenceStart": "2027-08-17",
     "place": "Kyoto, Japan",
-    "timeline": []
+    "timeline": [
+
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 18.9,
+        "submitted": 12148,
+        "accepted": 2296
+      },
+      {
+        "year": 2025,
+        "rate": 20.3,
+        "submitted": 8360,
+        "accepted": 1699
+      },
+      {
+        "year": 2024,
+        "rate": 21.3,
+        "submitted": 4407,
+        "accepted": 940
+      },
+      {
+        "year": 2023,
+        "rate": 22.1,
+        "submitted": 4864,
+        "accepted": 1074
+      }
+    ]
   },
   {
     "id": "siggraph27",
@@ -7458,7 +10770,29 @@
     "conferenceDate": "August 8 - 12, 2027",
     "conferenceStart": "2027-08-08",
     "place": "Anaheim, California",
-    "timeline": []
+    "timeline": [
+
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 29.9,
+        "submitted": 844,
+        "accepted": 252
+      },
+      {
+        "year": 2023,
+        "rate": 34.7,
+        "submitted": 611,
+        "accepted": 212
+      },
+      {
+        "year": 2022,
+        "rate": 21.8,
+        "submitted": 610,
+        "accepted": 133
+      }
+    ]
   },
   {
     "id": "siggrapha27",
@@ -7472,7 +10806,17 @@
     "conferenceDate": "November 30 - December 3, 2027",
     "conferenceStart": "2027-11-30",
     "place": "Tokyo International Forum, Tokyo, Japan",
-    "timeline": []
+    "timeline": [
+
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 29.5,
+        "submitted": 899,
+        "accepted": 265
+      }
+    ]
   },
   {
     "id": "acns27",
@@ -7497,6 +10841,32 @@
         "abstractDate": "",
         "comment": "Cycle 2 Submission deadline"
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 20.9,
+        "submitted": 282,
+        "accepted": 59
+      },
+      {
+        "year": 2025,
+        "rate": 22.8,
+        "submitted": 241,
+        "accepted": 55
+      },
+      {
+        "year": 2024,
+        "rate": 23.5,
+        "submitted": 230,
+        "accepted": 54
+      },
+      {
+        "year": 2023,
+        "rate": 20.2,
+        "submitted": 263,
+        "accepted": 53
+      }
     ]
   },
   {
@@ -7516,6 +10886,14 @@
         "date": "2026-10-06",
         "abstractDate": "2026-09-29",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 27.6,
+        "submitted": 1980,
+        "accepted": 546
       }
     ]
   },
@@ -7537,6 +10915,32 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 35.4,
+        "submitted": 144,
+        "accepted": 51
+      },
+      {
+        "year": 2024,
+        "rate": 35.5,
+        "submitted": 124,
+        "accepted": 44
+      },
+      {
+        "year": 2023,
+        "rate": 36.1,
+        "submitted": 133,
+        "accepted": 48
+      },
+      {
+        "year": 2022,
+        "rate": 36.5,
+        "submitted": 115,
+        "accepted": 42
+      }
     ]
   },
   {
@@ -7557,6 +10961,9 @@
         "abstractDate": "2026-07-11",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -7581,6 +10988,14 @@
         "date": "2026-09-09",
         "abstractDate": "",
         "comment": "September Cycle Submission Deadline"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2023,
+        "rate": 25.3,
+        "submitted": 598,
+        "accepted": 151
       }
     ]
   },
@@ -7607,6 +11022,9 @@
         "abstractDate": "",
         "comment": "2nd round Deadline"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -7627,6 +11045,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -7646,6 +11067,26 @@
         "date": "2027-02-22",
         "abstractDate": "2027-02-15",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 42.5,
+        "submitted": 87,
+        "accepted": 37
+      },
+      {
+        "year": 2023,
+        "rate": 44.6,
+        "submitted": 74,
+        "accepted": 33
+      },
+      {
+        "year": 2021,
+        "rate": 47.4,
+        "submitted": 76,
+        "accepted": 36
       }
     ]
   },
@@ -7667,6 +11108,32 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 25.4,
+        "submitted": 319,
+        "accepted": 81
+      },
+      {
+        "year": 2025,
+        "rate": 25.9,
+        "submitted": 305,
+        "accepted": 79
+      },
+      {
+        "year": 2024,
+        "rate": 21.8,
+        "submitted": 317,
+        "accepted": 69
+      },
+      {
+        "year": 2023,
+        "rate": 25.7,
+        "submitted": 261,
+        "accepted": 67
+      }
     ]
   },
   {
@@ -7681,7 +11148,35 @@
     "conferenceDate": "June 7-11, 2027",
     "conferenceStart": "2027-06-07",
     "place": "Seville, Spain",
-    "timeline": []
+    "timeline": [
+
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 13.9,
+        "submitted": 331,
+        "accepted": 46
+      },
+      {
+        "year": 2025,
+        "rate": 15.3,
+        "submitted": 229,
+        "accepted": 35
+      },
+      {
+        "year": 2024,
+        "rate": 20.0,
+        "submitted": 180,
+        "accepted": 36
+      },
+      {
+        "year": 2023,
+        "rate": 22.4,
+        "submitted": 161,
+        "accepted": 36
+      }
+    ]
   },
   {
     "id": "ccc27",
@@ -7695,7 +11190,35 @@
     "conferenceDate": "July 19-22, 2027",
     "conferenceStart": "2027-07-19",
     "place": "Seattle, Washington, USA",
-    "timeline": []
+    "timeline": [
+
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 33.9,
+        "submitted": 124,
+        "accepted": 42
+      },
+      {
+        "year": 2025,
+        "rate": 39.6,
+        "submitted": 91,
+        "accepted": 36
+      },
+      {
+        "year": 2024,
+        "rate": 34.3,
+        "submitted": 105,
+        "accepted": 36
+      },
+      {
+        "year": 2023,
+        "rate": 48.6,
+        "submitted": 74,
+        "accepted": 36
+      }
+    ]
   },
   {
     "id": "ccgrid27",
@@ -7715,6 +11238,9 @@
         "abstractDate": "2026-11-24",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -7729,7 +11255,17 @@
     "conferenceDate": "October 11-15, 2027",
     "conferenceStart": "2027-10-11",
     "place": "Atlanta, USA",
-    "timeline": []
+    "timeline": [
+
+    ],
+    "acceptRates": [
+      {
+        "year": 2021,
+        "rate": 22.3,
+        "submitted": 880,
+        "accepted": 196
+      }
+    ]
   },
   {
     "id": "cgi27",
@@ -7749,6 +11285,9 @@
         "abstractDate": "",
         "comment": "Regular conference papers (LNCS proceedings track)"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -7784,6 +11323,9 @@
         "abstractDate": "",
         "comment": "Schedule for TCHES Volume 2027/4"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -7803,6 +11345,32 @@
         "date": "2026-09-10",
         "abstractDate": "",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 25.3,
+        "submitted": 6730,
+        "accepted": 1705
+      },
+      {
+        "year": 2025,
+        "rate": 24.9,
+        "submitted": 5014,
+        "accepted": 1249
+      },
+      {
+        "year": 2024,
+        "rate": 26.3,
+        "submitted": 4028,
+        "accepted": 1060
+      },
+      {
+        "year": 2023,
+        "rate": 27.6,
+        "submitted": 3180,
+        "accepted": 879
       }
     ]
   },
@@ -7824,6 +11392,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -7844,6 +11415,9 @@
         "abstractDate": "2026-11-16",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -7869,6 +11443,26 @@
         "abstractDate": "",
         "comment": "COLING commitment after ARR meta-reviews; reviewed papers only"
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 27.9,
+        "submitted": 2723,
+        "accepted": 760
+      },
+      {
+        "year": 2024,
+        "rate": 44.8,
+        "submitted": 3471,
+        "accepted": 1556
+      },
+      {
+        "year": 2022,
+        "rate": 28.1,
+        "submitted": 2253,
+        "accepted": 632
+      }
     ]
   },
   {
@@ -7883,7 +11477,35 @@
     "conferenceDate": "June 28 - July 2, 2027",
     "conferenceStart": "2027-06-28",
     "place": "Tokyo, Japan",
-    "timeline": []
+    "timeline": [
+
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 29.1,
+        "submitted": 657,
+        "accepted": 191
+      },
+      {
+        "year": 2024,
+        "rate": 35.7,
+        "submitted": 448,
+        "accepted": 160
+      },
+      {
+        "year": 2023,
+        "rate": 34.6,
+        "submitted": 474,
+        "accepted": 164
+      },
+      {
+        "year": 2022,
+        "rate": 33.0,
+        "submitted": 470,
+        "accepted": 155
+      }
+    ]
   },
   {
     "id": "compsac27",
@@ -7903,6 +11525,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -7923,6 +11548,9 @@
         "abstractDate": "2026-11-23",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -7943,6 +11571,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -7973,6 +11604,9 @@
         "abstractDate": "",
         "comment": "Winter"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -7992,6 +11626,32 @@
         "date": "2026-10-22",
         "abstractDate": "",
         "comment": "Paper submission deadline"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 30.8,
+        "submitted": 39,
+        "accepted": 12
+      },
+      {
+        "year": 2025,
+        "rate": 33.3,
+        "submitted": 51,
+        "accepted": 17
+      },
+      {
+        "year": 2024,
+        "rate": 38.3,
+        "submitted": 47,
+        "accepted": 18
+      },
+      {
+        "year": 2023,
+        "rate": 34.2,
+        "submitted": 76,
+        "accepted": 26
       }
     ]
   },
@@ -8018,6 +11678,9 @@
         "abstractDate": "",
         "comment": "Round 2"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -8038,6 +11701,9 @@
         "abstractDate": "2026-10-23",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -8057,6 +11723,32 @@
         "date": "2026-11-16",
         "abstractDate": "2026-11-10",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 25.4,
+        "submitted": 16092,
+        "accepted": 4090
+      },
+      {
+        "year": 2025,
+        "rate": 22.1,
+        "submitted": 13008,
+        "accepted": 2878
+      },
+      {
+        "year": 2024,
+        "rate": 23.6,
+        "submitted": 11532,
+        "accepted": 2719
+      },
+      {
+        "year": 2023,
+        "rate": 25.8,
+        "submitted": 9155,
+        "accepted": 2360
       }
     ]
   },
@@ -8078,6 +11770,9 @@
         "abstractDate": "2026-11-11",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -8097,6 +11792,32 @@
         "date": "2026-11-25",
         "abstractDate": "",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 27.3,
+        "submitted": 834,
+        "accepted": 228
+      },
+      {
+        "year": 2025,
+        "rate": 18.6,
+        "submitted": 731,
+        "accepted": 136
+      },
+      {
+        "year": 2024,
+        "rate": 20.4,
+        "submitted": 722,
+        "accepted": 147
+      },
+      {
+        "year": 2023,
+        "rate": 19.2,
+        "submitted": 652,
+        "accepted": 125
       }
     ]
   },
@@ -8118,6 +11839,9 @@
         "abstractDate": "2026-09-13",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -8138,6 +11862,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -8158,6 +11885,9 @@
         "abstractDate": "2026-10-02",
         "comment": "Extended deadlines"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -8178,6 +11908,9 @@
         "abstractDate": "2027-01-11",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -8197,6 +11930,32 @@
         "date": "2026-12-02",
         "abstractDate": "2026-11-25",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 19.8,
+        "submitted": 329,
+        "accepted": 65
+      },
+      {
+        "year": 2025,
+        "rate": 20.2,
+        "submitted": 277,
+        "accepted": 56
+      },
+      {
+        "year": 2024,
+        "rate": 20.6,
+        "submitted": 204,
+        "accepted": 42
+      },
+      {
+        "year": 2023,
+        "rate": 19.6,
+        "submitted": 240,
+        "accepted": 47
       }
     ]
   },
@@ -8223,6 +11982,32 @@
         "abstractDate": "",
         "comment": "EACL commitment after ARR meta-reviews; reviewed papers only"
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 20.2,
+        "submitted": 2200,
+        "accepted": 445
+      },
+      {
+        "year": 2024,
+        "rate": 20.3,
+        "submitted": 1114,
+        "accepted": 226
+      },
+      {
+        "year": 2023,
+        "rate": 24.1,
+        "submitted": 1166,
+        "accepted": 281
+      },
+      {
+        "year": 2021,
+        "rate": 23.3,
+        "submitted": 1400,
+        "accepted": 326
+      }
     ]
   },
   {
@@ -8243,6 +12028,9 @@
         "abstractDate": "2027-01-15",
         "comment": "Research Papers"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -8262,6 +12050,20 @@
         "date": "2027-04-14",
         "abstractDate": "",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 23.3,
+        "submitted": 2344,
+        "accepted": 547
+      },
+      {
+        "year": 2023,
+        "rate": 24.0,
+        "submitted": 1631,
+        "accepted": 391
       }
     ]
   },
@@ -8283,6 +12085,14 @@
         "abstractDate": "2026-09-21",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 24.8,
+        "submitted": 230,
+        "accepted": 57
+      }
     ]
   },
   {
@@ -8297,7 +12107,12 @@
     "conferenceDate": "September 20-24, 2027",
     "conferenceStart": "2027-09-20",
     "place": "Eindhoven, The Netherlands",
-    "timeline": []
+    "timeline": [
+
+    ],
+    "acceptRates": [
+
+    ]
   },
   {
     "id": "ecoop27",
@@ -8321,6 +12136,14 @@
         "date": "2027-02-11",
         "abstractDate": "",
         "comment": "Submission R2"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2023,
+        "rate": 45.4,
+        "submitted": 97,
+        "accepted": 44
       }
     ]
   },
@@ -8352,6 +12175,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -8372,6 +12198,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -8397,6 +12226,9 @@
         "abstractDate": "",
         "comment": "ESOP round 2, FoSSaCS, TACAS, iFS"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -8411,7 +12243,12 @@
     "conferenceDate": "May 24-28, 2027",
     "conferenceStart": "2027-05-24",
     "place": "London, UK",
-    "timeline": []
+    "timeline": [
+
+    ],
+    "acceptRates": [
+
+    ]
   },
   {
     "id": "eurocrypt27",
@@ -8430,6 +12267,32 @@
         "date": "2026-09-17",
         "abstractDate": "",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 21.0,
+        "submitted": 675,
+        "accepted": 142
+      },
+      {
+        "year": 2025,
+        "rate": 20.4,
+        "submitted": 602,
+        "accepted": 123
+      },
+      {
+        "year": 2024,
+        "rate": 21.0,
+        "submitted": 500,
+        "accepted": 105
+      },
+      {
+        "year": 2023,
+        "rate": 26.3,
+        "submitted": 415,
+        "accepted": 109
       }
     ]
   },
@@ -8451,6 +12314,26 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2020,
+        "rate": 60.2,
+        "submitted": 829,
+        "accepted": 499
+      },
+      {
+        "year": 2018,
+        "rate": 57.7,
+        "submitted": 709,
+        "accepted": 409
+      },
+      {
+        "year": 2017,
+        "rate": 63.2,
+        "submitted": 730,
+        "accepted": 461
+      }
     ]
   },
   {
@@ -8471,6 +12354,9 @@
         "abstractDate": "",
         "comment": "Full papers"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -8491,6 +12377,9 @@
         "abstractDate": "2026-11-25",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -8516,6 +12405,14 @@
         "abstractDate": "2026-09-17",
         "comment": "Fall Submission Deadline"
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2022,
+        "rate": 28.0,
+        "submitted": 161,
+        "accepted": 45
+      }
     ]
   },
   {
@@ -8536,6 +12433,9 @@
         "abstractDate": "2026-09-26",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -8556,6 +12456,9 @@
         "abstractDate": "",
         "comment": "Full papers"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -8576,6 +12479,9 @@
         "abstractDate": "",
         "comment": "Full papers"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -8596,6 +12502,9 @@
         "abstractDate": "",
         "comment": "Full papers"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -8621,6 +12530,32 @@
         "abstractDate": "",
         "comment": "Fall deadline"
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 17.4,
+        "submitted": 253,
+        "accepted": 44
+      },
+      {
+        "year": 2025,
+        "rate": 21.6,
+        "submitted": 167,
+        "accepted": 36
+      },
+      {
+        "year": 2024,
+        "rate": 17.9,
+        "submitted": 123,
+        "accepted": 22
+      },
+      {
+        "year": 2023,
+        "rate": 23.0,
+        "submitted": 122,
+        "accepted": 28
+      }
     ]
   },
   {
@@ -8640,6 +12575,32 @@
         "date": "2026-09-24",
         "abstractDate": "",
         "comment": "Submission deadline"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 15.3,
+        "submitted": 300,
+        "accepted": 46
+      },
+      {
+        "year": 2024,
+        "rate": 21.1,
+        "submitted": 199,
+        "accepted": 42
+      },
+      {
+        "year": 2023,
+        "rate": 22.5,
+        "submitted": 182,
+        "accepted": 41
+      },
+      {
+        "year": 2022,
+        "rate": 22.6,
+        "submitted": 159,
+        "accepted": 36
       }
     ]
   },
@@ -8661,6 +12622,9 @@
         "abstractDate": "2026-10-09",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -8675,7 +12639,29 @@
     "conferenceDate": "October 18-22, 2027",
     "conferenceStart": "2027-10-18",
     "place": "Athens, Greece",
-    "timeline": []
+    "timeline": [
+
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 24.7,
+        "submitted": 178,
+        "accepted": 44
+      },
+      {
+        "year": 2023,
+        "rate": 29.5,
+        "submitted": 95,
+        "accepted": 28
+      },
+      {
+        "year": 2021,
+        "rate": 26.7,
+        "submitted": 131,
+        "accepted": 35
+      }
+    ]
   },
   {
     "id": "fpga2027",
@@ -8695,6 +12681,9 @@
         "abstractDate": "2026-10-01",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -8709,7 +12698,63 @@
     "conferenceDate": "August 23-26, 2027",
     "conferenceStart": "2027-08-23",
     "place": "Nijmegen, Netherlands",
-    "timeline": []
+    "timeline": [
+
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 42.1,
+        "submitted": 76,
+        "accepted": 32
+      },
+      {
+        "year": 2025,
+        "rate": 40.3,
+        "submitted": 77,
+        "accepted": 31
+      },
+      {
+        "year": 2024,
+        "rate": 52.6,
+        "submitted": 57,
+        "accepted": 30
+      },
+      {
+        "year": 2022,
+        "rate": 52.5,
+        "submitted": 59,
+        "accepted": 31
+      }
+    ]
+  },
+  {
+    "id": "fse27",
+    "title": "FSE",
+    "description": "ACM International Conference on the Foundations of Software Engineering",
+    "category": "SE",
+    "rank": "A",
+    "year": 2027,
+    "link": "https://conf.researchr.org/home/fse-2027",
+    "timezone": "AoE",
+    "conferenceDate": "July 12-16, 2027",
+    "conferenceStart": "2027-07-12",
+    "place": "Shenzhen, China",
+    "timeline": [
+      {
+        "date": "2026-10-02",
+        "abstractDate": "",
+        "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2021,
+        "rate": 23.8,
+        "submitted": 407,
+        "accepted": 97
+      }
+    ]
   },
   {
     "id": "iacr-fse27",
@@ -8734,25 +12779,13 @@
         "abstractDate": "",
         "comment": "ToSC, Volume 2027, Issue 1 Submission deadline"
       }
-    ]
-  },
-  {
-    "id": "fse27",
-    "title": "FSE",
-    "description": "ACM International Conference on the Foundations of Software Engineering",
-    "category": "SE",
-    "rank": "A",
-    "year": 2027,
-    "link": "https://conf.researchr.org/home/fse-2027",
-    "timezone": "AoE",
-    "conferenceDate": "July 12-16, 2027",
-    "conferenceStart": "2027-07-12",
-    "place": "Shenzhen, China",
-    "timeline": [
+    ],
+    "acceptRates": [
       {
-        "date": "2026-10-02",
-        "abstractDate": "",
-        "comment": ""
+        "year": 2021,
+        "rate": 23.8,
+        "submitted": 407,
+        "accepted": 97
       }
     ]
   },
@@ -8768,7 +12801,12 @@
     "conferenceDate": "July 12-16, 2027",
     "conferenceStart": "2027-07-12",
     "place": "Kraków, Poland",
-    "timeline": []
+    "timeline": [
+
+    ],
+    "acceptRates": [
+
+    ]
   },
   {
     "id": "gi27",
@@ -8782,7 +12820,12 @@
     "conferenceDate": "June 15-18, 2027",
     "conferenceStart": "2027-06-15",
     "place": "Winnipeg, Canada",
-    "timeline": []
+    "timeline": [
+
+    ],
+    "acceptRates": [
+
+    ]
   },
   {
     "id": "gmp27",
@@ -8802,6 +12845,9 @@
         "abstractDate": "2026-12-14",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -8827,6 +12873,9 @@
         "abstractDate": "2026-03-24",
         "comment": "Full Paper Second Wave Submissions (extended)"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -8847,6 +12896,9 @@
         "abstractDate": "",
         "comment": "Paper Submission Deadline"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -8866,6 +12918,14 @@
         "date": "2026-07-31",
         "abstractDate": "2026-07-24",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2023,
+        "rate": 25.3,
+        "submitted": 360,
+        "accepted": 91
       }
     ]
   },
@@ -8887,6 +12947,9 @@
         "abstractDate": "2026-10-29",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -8907,6 +12970,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -8921,7 +12987,12 @@
     "conferenceDate": "May 24-26, 2027",
     "conferenceStart": "2027-05-24",
     "place": "Burghausen, Bavaria, Germany",
-    "timeline": []
+    "timeline": [
+
+    ],
+    "acceptRates": [
+
+    ]
   },
   {
     "id": "icalp27",
@@ -8940,6 +13011,32 @@
         "date": "2026-09-15",
         "abstractDate": "",
         "comment": "Track B first round; Track A and Track B second round TBA"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 30.3,
+        "submitted": 628,
+        "accepted": 190
+      },
+      {
+        "year": 2025,
+        "rate": 30.2,
+        "submitted": 563,
+        "accepted": 170
+      },
+      {
+        "year": 2024,
+        "rate": 29.5,
+        "submitted": 519,
+        "accepted": 153
+      },
+      {
+        "year": 2023,
+        "rate": 29.8,
+        "submitted": 443,
+        "accepted": 132
       }
     ]
   },
@@ -8961,6 +13058,9 @@
         "abstractDate": "2026-12-07",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -8980,6 +13080,14 @@
         "date": "2026-09-23",
         "abstractDate": "",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 48.5,
+        "submitted": 5796,
+        "accepted": 2812
       }
     ]
   },
@@ -9001,6 +13109,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -9015,7 +13126,17 @@
     "conferenceDate": "October 2-8, 2027",
     "conferenceStart": "2027-10-02",
     "place": "Hong Kong, China",
-    "timeline": []
+    "timeline": [
+
+    ],
+    "acceptRates": [
+      {
+        "year": 2023,
+        "rate": 26.2,
+        "submitted": 8260,
+        "accepted": 2160
+      }
+    ]
   },
   {
     "id": "icdar2027",
@@ -9035,6 +13156,9 @@
         "abstractDate": "2027-01-31",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -9049,7 +13173,12 @@
     "conferenceDate": "July 5-8, 2027",
     "conferenceStart": "2027-07-05",
     "place": "Melbourne, Australia",
-    "timeline": []
+    "timeline": [
+
+    ],
+    "acceptRates": [
+
+    ]
   },
   {
     "id": "icde27",
@@ -9074,6 +13203,26 @@
         "abstractDate": "",
         "comment": "second round"
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 25.4,
+        "submitted": 1481,
+        "accepted": 376
+      },
+      {
+        "year": 2023,
+        "rate": 30.6,
+        "submitted": 748,
+        "accepted": 229
+      },
+      {
+        "year": 2022,
+        "rate": 27.1,
+        "submitted": 780,
+        "accepted": 211
+      }
     ]
   },
   {
@@ -9094,6 +13243,9 @@
         "abstractDate": "",
         "comment": "Full Paper Submission deadline"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -9119,6 +13271,9 @@
         "abstractDate": "2026-09-03",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -9138,6 +13293,14 @@
         "date": "2027-02-25",
         "abstractDate": "",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2023,
+        "rate": 36.7,
+        "submitted": 90,
+        "accepted": 33
       }
     ]
   },
@@ -9159,6 +13322,32 @@
         "abstractDate": "2026-09-18",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 27.4,
+        "submitted": 19525,
+        "accepted": 5355
+      },
+      {
+        "year": 2025,
+        "rate": 31.9,
+        "submitted": 11603,
+        "accepted": 3704
+      },
+      {
+        "year": 2024,
+        "rate": 31.1,
+        "submitted": 7262,
+        "accepted": 2260
+      },
+      {
+        "year": 2023,
+        "rate": 31.9,
+        "submitted": 4938,
+        "accepted": 1574
+      }
     ]
   },
   {
@@ -9173,7 +13362,23 @@
     "conferenceDate": "July 13-17, 2027",
     "conferenceStart": "2027-07-13",
     "place": "Xiamen, China",
-    "timeline": []
+    "timeline": [
+
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 32.5,
+        "submitted": 2049,
+        "accepted": 666
+      },
+      {
+        "year": 2023,
+        "rate": 34.5,
+        "submitted": 1415,
+        "accepted": 488
+      }
+    ]
   },
   {
     "id": "icmr27",
@@ -9192,6 +13397,14 @@
         "date": "2027-01-31",
         "abstractDate": "",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 41.6,
+        "submitted": 281,
+        "accepted": 117
       }
     ]
   },
@@ -9213,6 +13426,9 @@
         "abstractDate": "2026-10-29",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -9233,6 +13449,14 @@
         "abstractDate": "",
         "comment": "Extended submission deadline"
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2022,
+        "rate": 43.1,
+        "submitted": 3313,
+        "accepted": 1428
+      }
     ]
   },
   {
@@ -9247,7 +13471,12 @@
     "conferenceDate": "TBD",
     "conferenceStart": "",
     "place": "Atlanta, Georgia, USA",
-    "timeline": []
+    "timeline": [
+
+    ],
+    "acceptRates": [
+
+    ]
   },
   {
     "id": "icse27",
@@ -9266,6 +13495,14 @@
         "date": "2026-06-30",
         "abstractDate": "2026-06-23",
         "comment": "Single Submission Cycle Deadline"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 22.3,
+        "submitted": 1051,
+        "accepted": 234
       }
     ]
   },
@@ -9287,6 +13524,9 @@
         "abstractDate": "",
         "comment": "Research Papers Track"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -9307,6 +13547,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -9337,6 +13580,9 @@
         "abstractDate": "",
         "comment": "3rd Full-paper Deadline"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -9351,7 +13597,12 @@
     "conferenceDate": "June 21-24, 2027",
     "conferenceStart": "2027-06-21",
     "place": "Seattle, Washington, USA",
-    "timeline": []
+    "timeline": [
+
+    ],
+    "acceptRates": [
+
+    ]
   },
   {
     "id": "cec2027",
@@ -9371,6 +13622,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -9396,6 +13650,9 @@
         "abstractDate": "",
         "comment": "Auxiliary Paper"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -9416,6 +13673,9 @@
         "abstractDate": "2026-08-24",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -9441,6 +13701,9 @@
         "abstractDate": "",
         "comment": "Second Submission"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -9461,6 +13724,9 @@
         "abstractDate": "",
         "comment": "Submission Deadline"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -9475,7 +13741,23 @@
     "conferenceDate": "August 7-13 and August 15-17, 2027",
     "conferenceStart": "2027-08-07",
     "place": "Kyoto, Japan and Hengqin, China",
-    "timeline": []
+    "timeline": [
+
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 14.0,
+        "submitted": 5651,
+        "accepted": 791
+      },
+      {
+        "year": 2022,
+        "rate": 15.0,
+        "submitted": 4537,
+        "accepted": 679
+      }
+    ]
   },
   {
     "id": "ijcnn2027",
@@ -9495,6 +13777,26 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 38.9,
+        "submitted": 5526,
+        "accepted": 2152
+      },
+      {
+        "year": 2024,
+        "rate": 52.0,
+        "submitted": 1701,
+        "accepted": 3272
+      },
+      {
+        "year": 2023,
+        "rate": 54.8,
+        "submitted": 1888,
+        "accepted": 1034
+      }
     ]
   },
   {
@@ -9509,7 +13811,23 @@
     "conferenceDate": "TBD",
     "conferenceStart": "",
     "place": "Atlanta, GA, USA",
-    "timeline": []
+    "timeline": [
+
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 21.7,
+        "submitted": 253,
+        "accepted": 55
+      },
+      {
+        "year": 2022,
+        "rate": 26.6,
+        "submitted": 143,
+        "accepted": 38
+      }
+    ]
   },
   {
     "id": "infocom27",
@@ -9528,6 +13846,14 @@
         "date": "2026-07-31",
         "abstractDate": "2026-07-24",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 19.6,
+        "submitted": 1307,
+        "accepted": 256
       }
     ]
   },
@@ -9549,6 +13875,9 @@
         "abstractDate": "2027-01-25",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -9569,6 +13898,9 @@
         "abstractDate": "2026-10-01",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -9583,7 +13915,23 @@
     "conferenceDate": "September 26 - October 1, 2027",
     "conferenceStart": "2027-09-26",
     "place": "Florence, Italy",
-    "timeline": []
+    "timeline": [
+
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 36.5,
+        "submitted": 4348,
+        "accepted": 1585
+      },
+      {
+        "year": 2022,
+        "rate": 47.9,
+        "submitted": 3579,
+        "accepted": 1716
+      }
+    ]
   },
   {
     "id": "isca27",
@@ -9597,7 +13945,17 @@
     "conferenceDate": "TBD",
     "conferenceStart": "",
     "place": "Atlanta, Georgia, USA",
-    "timeline": []
+    "timeline": [
+
+    ],
+    "acceptRates": [
+      {
+        "year": 2023,
+        "rate": 21.2,
+        "submitted": 372,
+        "accepted": 79
+      }
+    ]
   },
   {
     "id": "iscas27",
@@ -9616,6 +13974,14 @@
         "date": "2026-10-13",
         "abstractDate": "",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 51.9,
+        "submitted": 1673,
+        "accepted": 869
       }
     ]
   },
@@ -9637,6 +14003,20 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2023,
+        "rate": 64.6,
+        "submitted": 717,
+        "accepted": 463
+      },
+      {
+        "year": 2022,
+        "rate": 68.9,
+        "submitted": 822,
+        "accepted": 566
+      }
     ]
   },
   {
@@ -9651,7 +14031,12 @@
     "conferenceDate": "July 18-22, 2027",
     "conferenceStart": "2027-07-18",
     "place": "Copenhagen, Denmark",
-    "timeline": []
+    "timeline": [
+
+    ],
+    "acceptRates": [
+
+    ]
   },
   {
     "id": "ispd27",
@@ -9671,6 +14056,9 @@
         "abstractDate": "2026-09-21",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -9685,7 +14073,12 @@
     "conferenceDate": "October 19-22, 2027",
     "conferenceStart": "2027-10-19",
     "place": "Taipa, Macao SAR, China",
-    "timeline": []
+    "timeline": [
+
+    ],
+    "acceptRates": [
+
+    ]
   },
   {
     "id": "issta27",
@@ -9704,6 +14097,14 @@
         "date": "2027-01-11",
         "abstractDate": "2027-01-08",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2022,
+        "rate": 24.4,
+        "submitted": 250,
+        "accepted": 61
       }
     ]
   },
@@ -9725,6 +14126,9 @@
         "abstractDate": "2026-08-13",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -9745,6 +14149,20 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 48.1,
+        "submitted": 2138,
+        "accepted": 1029
+      },
+      {
+        "year": 2021,
+        "rate": 48.4,
+        "submitted": 1990,
+        "accepted": 963
+      }
     ]
   },
   {
@@ -9759,7 +14177,12 @@
     "conferenceDate": "TBD",
     "conferenceStart": "",
     "place": "Buenos Aires, Argentina",
-    "timeline": []
+    "timeline": [
+
+    ],
+    "acceptRates": [
+
+    ]
   },
   {
     "id": "lics27",
@@ -9773,7 +14196,23 @@
     "conferenceDate": "June 21-24, 2027",
     "conferenceStart": "2027-06-21",
     "place": "Montréal, Canada",
-    "timeline": []
+    "timeline": [
+
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 28.0,
+        "submitted": 293,
+        "accepted": 82
+      },
+      {
+        "year": 2022,
+        "rate": 34.8,
+        "submitted": 181,
+        "accepted": 63
+      }
+    ]
   },
   {
     "id": "miccai27",
@@ -9787,7 +14226,35 @@
     "conferenceDate": "September 26 - October 1, 2027",
     "conferenceStart": "2027-09-26",
     "place": "Auckland, New Zealand",
-    "timeline": []
+    "timeline": [
+
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 26.5,
+        "submitted": 4402,
+        "accepted": 1167
+      },
+      {
+        "year": 2025,
+        "rate": 29.8,
+        "submitted": 3447,
+        "accepted": 1027
+      },
+      {
+        "year": 2024,
+        "rate": 30.8,
+        "submitted": 2781,
+        "accepted": 857
+      },
+      {
+        "year": 2023,
+        "rate": 32.4,
+        "submitted": 2250,
+        "accepted": 730
+      }
+    ]
   },
   {
     "id": "mlsys27",
@@ -9807,6 +14274,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -9827,6 +14297,9 @@
         "abstractDate": "",
         "comment": "Regular papers; extended deadline"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -9852,6 +14325,14 @@
         "abstractDate": "2026-11-12",
         "comment": "Research Track - Second Round"
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 24.1,
+        "submitted": 79,
+        "accepted": 19
+      }
     ]
   },
   {
@@ -9872,6 +14353,9 @@
         "abstractDate": "2026-10-20",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -9886,7 +14370,12 @@
     "conferenceDate": "May 17-21, 2027",
     "conferenceStart": "2027-05-17",
     "place": "TBD",
-    "timeline": []
+    "timeline": [
+
+    ],
+    "acceptRates": [
+
+    ]
   },
   {
     "id": "mobicom27",
@@ -9905,6 +14394,20 @@
         "date": "2026-09-02",
         "abstractDate": "2026-08-26",
         "comment": "Summer Deadlines"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 19.1,
+        "submitted": 288,
+        "accepted": 55
+      },
+      {
+        "year": 2019,
+        "rate": 19.0,
+        "submitted": 290,
+        "accepted": 55
       }
     ]
   },
@@ -9926,6 +14429,20 @@
         "abstractDate": "2026-11-27",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 18.0,
+        "submitted": 233,
+        "accepted": 42
+      },
+      {
+        "year": 2024,
+        "rate": 16.3,
+        "submitted": 263,
+        "accepted": 43
+      }
     ]
   },
   {
@@ -9946,6 +14463,9 @@
         "abstractDate": "2027-02-10",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -9970,6 +14490,20 @@
         "date": "2026-12-23",
         "abstractDate": "",
         "comment": "NAACL commitment after ARR meta-reviews; reviewed papers only"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 23.2,
+        "submitted": 2434,
+        "accepted": 565
+      },
+      {
+        "year": 2021,
+        "rate": 26.5,
+        "submitted": 1797,
+        "accepted": 477
       }
     ]
   },
@@ -9996,6 +14530,20 @@
         "abstractDate": "",
         "comment": "Fall"
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 20.2,
+        "submitted": 694,
+        "accepted": 140
+      },
+      {
+        "year": 2022,
+        "rate": 16.2,
+        "submitted": 513,
+        "accepted": 83
+      }
     ]
   },
   {
@@ -10016,6 +14564,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -10030,7 +14581,12 @@
     "conferenceDate": "TBD",
     "conferenceStart": "",
     "place": "Ghent, Belgium",
-    "timeline": []
+    "timeline": [
+
+    ],
+    "acceptRates": [
+
+    ]
   },
   {
     "id": "nsdi27",
@@ -10054,6 +14610,32 @@
         "date": "2026-09-17",
         "abstractDate": "2026-09-10",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 22.8,
+        "submitted": 659,
+        "accepted": 150
+      },
+      {
+        "year": 2025,
+        "rate": 12.5,
+        "submitted": 666,
+        "accepted": 83
+      },
+      {
+        "year": 2024,
+        "rate": 18.6,
+        "submitted": 601,
+        "accepted": 112
+      },
+      {
+        "year": 2023,
+        "rate": 17.1,
+        "submitted": 560,
+        "accepted": 96
       }
     ]
   },
@@ -10080,6 +14662,14 @@
         "abstractDate": "",
         "comment": "Submission Deadline Round 2"
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2023,
+        "rate": 36.2,
+        "submitted": 304,
+        "accepted": 110
+      }
     ]
   },
   {
@@ -10099,6 +14689,32 @@
         "date": "2026-12-08",
         "abstractDate": "2026-12-01",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 20.0,
+        "submitted": 669,
+        "accepted": 134
+      },
+      {
+        "year": 2025,
+        "rate": 15.6,
+        "submitted": 339,
+        "accepted": 53
+      },
+      {
+        "year": 2024,
+        "rate": 18.0,
+        "submitted": 272,
+        "accepted": 49
+      },
+      {
+        "year": 2023,
+        "rate": 19.6,
+        "submitted": 255,
+        "accepted": 50
       }
     ]
   },
@@ -10120,6 +14736,32 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 25.3,
+        "submitted": 728,
+        "accepted": 184
+      },
+      {
+        "year": 2025,
+        "rate": 24.1,
+        "submitted": 696,
+        "accepted": 168
+      },
+      {
+        "year": 2024,
+        "rate": 24.6,
+        "submitted": 720,
+        "accepted": 177
+      },
+      {
+        "year": 2023,
+        "rate": 17.6,
+        "submitted": 813,
+        "accepted": 143
+      }
     ]
   },
   {
@@ -10140,6 +14782,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -10175,6 +14820,32 @@
         "abstractDate": "",
         "comment": "Issue 4 Paper Submission Deadline"
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 22.4,
+        "submitted": 714,
+        "accepted": 160
+      },
+      {
+        "year": 2025,
+        "rate": 26.2,
+        "submitted": 644,
+        "accepted": 169
+      },
+      {
+        "year": 2024,
+        "rate": 20.9,
+        "submitted": 708,
+        "accepted": 148
+      },
+      {
+        "year": 2023,
+        "rate": 21.8,
+        "submitted": 563,
+        "accepted": 123
+      }
     ]
   },
   {
@@ -10195,6 +14866,32 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 25.1,
+        "submitted": 259,
+        "accepted": 65
+      },
+      {
+        "year": 2025,
+        "rate": 30.2,
+        "submitted": 199,
+        "accepted": 60
+      },
+      {
+        "year": 2024,
+        "rate": 30.7,
+        "submitted": 176,
+        "accepted": 54
+      },
+      {
+        "year": 2023,
+        "rate": 26.8,
+        "submitted": 183,
+        "accepted": 49
+      }
     ]
   },
   {
@@ -10214,6 +14911,14 @@
         "date": "2026-11-12",
         "abstractDate": "",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2023,
+        "rate": 29.5,
+        "submitted": 281,
+        "accepted": 83
       }
     ]
   },
@@ -10240,6 +14945,9 @@
         "abstractDate": "2026-12-03",
         "comment": "Second Submission Cycle"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -10259,6 +14967,14 @@
         "date": "2026-07-09",
         "abstractDate": "",
         "comment": "Submission Deadline"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2023,
+        "rate": 26.9,
+        "submitted": 275,
+        "accepted": 74
       }
     ]
   },
@@ -10280,6 +14996,14 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2023,
+        "rate": 23.7,
+        "submitted": 131,
+        "accepted": 31
+      }
     ]
   },
   {
@@ -10300,6 +15024,9 @@
         "abstractDate": "2026-11-02",
         "comment": "Conference track"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -10320,6 +15047,9 @@
         "abstractDate": "2026-09-11",
         "comment": "Extended deadlines"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -10334,7 +15064,12 @@
     "conferenceDate": "August 23-27, 2027",
     "conferenceStart": "2027-08-23",
     "place": "Milan, Italy",
-    "timeline": []
+    "timeline": [
+
+    ],
+    "acceptRates": [
+
+    ]
   },
   {
     "id": "recomb27",
@@ -10353,6 +15088,14 @@
         "date": "2026-11-04",
         "abstractDate": "2026-10-28",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2022,
+        "rate": 21.3,
+        "submitted": 188,
+        "accepted": 40
       }
     ]
   },
@@ -10374,6 +15117,9 @@
         "abstractDate": "2026-11-05",
         "comment": "Regular research papers; abstract submission is optional"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -10394,6 +15140,9 @@
         "abstractDate": "",
         "comment": "Stage 1: initial 6-page extended abstract submission"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -10414,6 +15163,14 @@
         "abstractDate": "",
         "comment": "Submission Deadline (Firm)"
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2022,
+        "rate": 24.2,
+        "submitted": 91,
+        "accepted": 22
+      }
     ]
   },
   {
@@ -10428,7 +15185,35 @@
     "conferenceDate": "August 23-27, 2027",
     "conferenceStart": "2027-08-23",
     "place": "Honolulu, O‘ahu, Hawaii, USA",
-    "timeline": []
+    "timeline": [
+
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 18.8,
+        "submitted": 261,
+        "accepted": 49
+      },
+      {
+        "year": 2024,
+        "rate": 21.8,
+        "submitted": 266,
+        "accepted": 58
+      },
+      {
+        "year": 2023,
+        "rate": 17.5,
+        "submitted": 269,
+        "accepted": 47
+      },
+      {
+        "year": 2022,
+        "rate": 16.9,
+        "submitted": 231,
+        "accepted": 39
+      }
+    ]
   },
   {
     "id": "sp27",
@@ -10453,6 +15238,9 @@
         "abstractDate": "2026-11-10",
         "comment": "Second Paper submission deadline"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -10478,6 +15266,9 @@
         "abstractDate": "",
         "comment": "Second Cycle"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -10503,6 +15294,9 @@
         "abstractDate": "",
         "comment": "Round 2"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -10523,6 +15317,9 @@
         "abstractDate": "2026-09-21",
         "comment": "Research Track Paper submission deadline"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -10543,6 +15340,9 @@
         "abstractDate": "2026-09-22",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -10557,7 +15357,12 @@
     "conferenceDate": "TBD",
     "conferenceStart": "",
     "place": "Linköping, Sweden",
-    "timeline": []
+    "timeline": [
+
+    ],
+    "acceptRates": [
+
+    ]
   },
   {
     "id": "secon27",
@@ -10577,6 +15382,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -10591,7 +15399,12 @@
     "conferenceDate": "June 21-25, 2027",
     "conferenceStart": "2027-06-21",
     "place": "Singapore",
-    "timeline": []
+    "timeline": [
+
+    ],
+    "acceptRates": [
+
+    ]
   },
   {
     "id": "sigcomm27",
@@ -10605,7 +15418,23 @@
     "conferenceDate": "August 8 - 12, 2027",
     "conferenceStart": "2027-08-08",
     "place": "Bangkok, Thailand",
-    "timeline": []
+    "timeline": [
+
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 16.9,
+        "submitted": 366,
+        "accepted": 62
+      },
+      {
+        "year": 2022,
+        "rate": 19.7,
+        "submitted": 279,
+        "accepted": 55
+      }
+    ]
   },
   {
     "id": "sigcse27",
@@ -10625,6 +15454,9 @@
         "abstractDate": "2026-06-26",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -10645,6 +15477,20 @@
         "abstractDate": "2027-01-14",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 20.2,
+        "submitted": 791,
+        "accepted": 160
+      },
+      {
+        "year": 2023,
+        "rate": 20.1,
+        "submitted": 822,
+        "accepted": 165
+      }
     ]
   },
   {
@@ -10664,6 +15510,20 @@
         "date": "2026-07-26",
         "abstractDate": "2026-07-19",
         "comment": "1st round of 2 total rounds"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 20.1,
+        "submitted": 2046,
+        "accepted": 411
+      },
+      {
+        "year": 2023,
+        "rate": 22.1,
+        "submitted": 1416,
+        "accepted": 313
       }
     ]
   },
@@ -10694,6 +15554,20 @@
         "date": "2027-01-11",
         "abstractDate": "2027-01-04",
         "comment": "winter round"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 17.3,
+        "submitted": 382,
+        "accepted": 66
+      },
+      {
+        "year": 2024,
+        "rate": 15.5,
+        "submitted": 336,
+        "accepted": 52
       }
     ]
   },
@@ -10730,6 +15604,20 @@
         "abstractDate": "2026-10-10",
         "comment": "round 4"
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 27.7,
+        "submitted": 768,
+        "accepted": 213
+      },
+      {
+        "year": 2023,
+        "rate": 28.2,
+        "submitted": 660,
+        "accepted": 186
+      }
     ]
   },
   {
@@ -10744,7 +15632,12 @@
     "conferenceDate": "June 21-25, 2027",
     "conferenceStart": "2027-06-21",
     "place": "Singapore",
-    "timeline": []
+    "timeline": [
+
+    ],
+    "acceptRates": [
+
+    ]
   },
   {
     "id": "socg27",
@@ -10758,7 +15651,35 @@
     "conferenceDate": "June 21-25, 2027",
     "conferenceStart": "2027-06-21",
     "place": "Bengaluru, India",
-    "timeline": []
+    "timeline": [
+
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 34.9,
+        "submitted": 272,
+        "accepted": 95
+      },
+      {
+        "year": 2025,
+        "rate": 34.7,
+        "submitted": 225,
+        "accepted": 78
+      },
+      {
+        "year": 2024,
+        "rate": 34.9,
+        "submitted": 235,
+        "accepted": 82
+      },
+      {
+        "year": 2023,
+        "rate": 34.9,
+        "submitted": 175,
+        "accepted": 61
+      }
+    ]
   },
   {
     "id": "soda27",
@@ -10778,6 +15699,32 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 29.3,
+        "submitted": 655,
+        "accepted": 192
+      },
+      {
+        "year": 2024,
+        "rate": 29.4,
+        "submitted": 652,
+        "accepted": 192
+      },
+      {
+        "year": 2023,
+        "rate": 29.1,
+        "submitted": 652,
+        "accepted": 190
+      },
+      {
+        "year": 2022,
+        "rate": 30.1,
+        "submitted": 491,
+        "accepted": 148
+      }
     ]
   },
   {
@@ -10792,7 +15739,35 @@
     "conferenceDate": "August 8-10, 2027",
     "conferenceStart": "2027-08-08",
     "place": "Denver, Colorado, USA",
-    "timeline": []
+    "timeline": [
+
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 19.1,
+        "submitted": 157,
+        "accepted": 30
+      },
+      {
+        "year": 2024,
+        "rate": 21.2,
+        "submitted": 156,
+        "accepted": 33
+      },
+      {
+        "year": 2023,
+        "rate": 22.4,
+        "submitted": 147,
+        "accepted": 33
+      },
+      {
+        "year": 2022,
+        "rate": 27.8,
+        "submitted": 133,
+        "accepted": 37
+      }
+    ]
   },
   {
     "id": "spaa27",
@@ -10817,6 +15792,9 @@
         "abstractDate": "2027-01-22",
         "comment": "Cycle 2"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -10831,7 +15809,12 @@
     "conferenceDate": "June 21-25, 2027",
     "conferenceStart": "2027-06-21",
     "place": "Singapore",
-    "timeline": []
+    "timeline": [
+
+    ],
+    "acceptRates": [
+
+    ]
   },
   {
     "id": "stoc27",
@@ -10850,6 +15833,14 @@
         "date": "2026-11-02",
         "abstractDate": "",
         "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2023,
+        "rate": 32.3,
+        "submitted": 480,
+        "accepted": 155
       }
     ]
   },
@@ -10876,6 +15867,9 @@
         "abstractDate": "",
         "comment": "Full Paper Submission deadline (Cycle 2)"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -10901,6 +15895,14 @@
         "abstractDate": "2026-10-29",
         "comment": "2nd deadline"
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 19.1,
+        "submitted": 235,
+        "accepted": 45
+      }
     ]
   },
   {
@@ -10925,6 +15927,32 @@
         "date": "2027-01-26",
         "abstractDate": "2027-01-19",
         "comment": "Cycle 2 Deadline"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 17.1,
+        "submitted": 2385,
+        "accepted": 407
+      },
+      {
+        "year": 2024,
+        "rate": 18.2,
+        "submitted": 2276,
+        "accepted": 414
+      },
+      {
+        "year": 2023,
+        "rate": 29.2,
+        "submitted": 1444,
+        "accepted": 422
+      },
+      {
+        "year": 2022,
+        "rate": 18.1,
+        "submitted": 1414,
+        "accepted": 256
       }
     ]
   },
@@ -11001,6 +16029,32 @@
         "abstractDate": "2027-02-25",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 19.5,
+        "submitted": 1437,
+        "accepted": 280
+      },
+      {
+        "year": 2023,
+        "rate": 24.8,
+        "submitted": 1074,
+        "accepted": 266
+      },
+      {
+        "year": 2022,
+        "rate": 27.2,
+        "submitted": 976,
+        "accepted": 265
+      },
+      {
+        "year": 2021,
+        "rate": 24.0,
+        "submitted": 882,
+        "accepted": 212
+      }
     ]
   },
   {
@@ -11025,6 +16079,32 @@
         "date": "2026-09-30",
         "abstractDate": "",
         "comment": "Paper Submission"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 33.3,
+        "submitted": 54,
+        "accepted": 18
+      },
+      {
+        "year": 2025,
+        "rate": 41.7,
+        "submitted": 48,
+        "accepted": 20
+      },
+      {
+        "year": 2024,
+        "rate": 40.5,
+        "submitted": 74,
+        "accepted": 30
+      },
+      {
+        "year": 2023,
+        "rate": 50.0,
+        "submitted": 34,
+        "accepted": 17
       }
     ]
   },
@@ -11051,6 +16131,9 @@
         "abstractDate": "2026-08-21",
         "comment": "Second round"
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -11065,7 +16148,12 @@
     "conferenceDate": "April 5-8, 2027",
     "conferenceStart": "2027-04-05",
     "place": "Panama City, Panama",
-    "timeline": []
+    "timeline": [
+
+    ],
+    "acceptRates": [
+
+    ]
   },
   {
     "id": "whc27",
@@ -11085,6 +16173,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -11104,6 +16195,20 @@
         "date": "2026-08-24",
         "abstractDate": "2026-08-17",
         "comment": "Full Paper"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 17.7,
+        "submitted": 615,
+        "accepted": 109
+      },
+      {
+        "year": 2023,
+        "rate": 17.8,
+        "submitted": 690,
+        "accepted": 123
       }
     ]
   },
@@ -11125,6 +16230,20 @@
         "abstractDate": "2026-10-18",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 20.2,
+        "submitted": 2008,
+        "accepted": 405
+      },
+      {
+        "year": 2023,
+        "rate": 19.2,
+        "submitted": 1900,
+        "accepted": 365
+      }
     ]
   },
   {
@@ -11145,6 +16264,9 @@
         "abstractDate": "",
         "comment": ""
       }
+    ],
+    "acceptRates": [
+
     ]
   },
   {
@@ -11159,7 +16281,17 @@
     "conferenceDate": "May 28-June 2, 2028",
     "conferenceStart": "2028-05-28",
     "place": "Tokyo, Japan",
-    "timeline": []
+    "timeline": [
+
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 48.5,
+        "submitted": 5796,
+        "accepted": 2812
+      }
+    ]
   },
   {
     "id": "miccai28",
@@ -11173,6 +16305,34 @@
     "conferenceDate": "Oct 16-20, 2028",
     "conferenceStart": "2028-10-16",
     "place": "São Paulo, Brazil",
-    "timeline": []
+    "timeline": [
+
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 26.5,
+        "submitted": 4402,
+        "accepted": 1167
+      },
+      {
+        "year": 2025,
+        "rate": 29.8,
+        "submitted": 3447,
+        "accepted": 1027
+      },
+      {
+        "year": 2024,
+        "rate": 30.8,
+        "submitted": 2781,
+        "accepted": 857
+      },
+      {
+        "year": 2023,
+        "rate": 32.4,
+        "submitted": 2250,
+        "accepted": 730
+      }
+    ]
   }
 ]

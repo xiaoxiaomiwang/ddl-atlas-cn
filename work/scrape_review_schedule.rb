@@ -185,6 +185,11 @@ def scrape_conference(entry)
     end
     next unless body
     rows = date_rows(html_lines(body)).select { |r| r =~ DATE_RE }
+    # researchr 系站点（conf.researchr.org）页面附带的紧凑日历列表存在日期与事件名串行错位，
+    # 只保留主体日程表（"事件名 : 日期" 冒号格式）的行
+    if page_url =~ /researchr\.org/
+      rows = rows.select { |r| r.include?(" : ") }
+    end
     next if rows.empty?
     events = extract_events(rows, entry)
     next if events.empty?

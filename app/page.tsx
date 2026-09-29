@@ -9,10 +9,12 @@ import { placeZh } from "./place-names";
 
 type DataMeta = { upstreamSha: string | null; upstreamTime: string | null; generatedAt: string | null; recordCount: number };
 type Milestone = { date: string; abstractDate: string; comment: string };
+type AcceptRate = { year: number; rate: number; submitted: number; accepted: number };
 type Conference = {
   id: string; title: string; description: string; category: string; rank: string;
   year: number; link: string; timezone: string; conferenceDate: string; conferenceStart: string; place: string;
   timeline: Milestone[];
+  acceptRates?: AcceptRate[];
   supplementalEvents?: SupplementalEvent[]; commitVenues?: string[]; isARR?: boolean;
 };
 
@@ -254,6 +256,15 @@ export default function Home() {
     try { localStorage.setItem(FILTER_STORAGE_KEY, JSON.stringify({ year, rank, categories: selectedCategories, arrMode })); } catch { /* 忽略存储异常（如隐私模式） */ }
   }, [year, rank, selectedCategories, arrMode]);
 
+  // Esc 关闭节点详情弹层与转投面板
+  useEffect(() => {
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === "Escape") { setSelectedEvent(null); setTransferPoint(null); }
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
+
   // 每个领域的会议数量（按会议名去重，用于领域按钮徽章）
   const categoryCounts = useMemo(() => {
     const counts: Record<string, number> = {};
@@ -364,7 +375,7 @@ export default function Home() {
         <div className="gantt-viewport" ref={ganttViewportRef}>
           {visible.length === 0 && <div className="empty"><b>没有匹配的会议</b><span>换一个等级、领域或搜索词试试。</span></div>}
           {visible.length > 0 && <div className="vertical-gantt" style={{ "--column-count": visible.length } as React.CSSProperties}>
-            <div className="sticky-gantt-head"><div className="corner"><b>{year}</b><span>时间 / 日期</span></div><div className="conference-heads">{visible.map((conf, index) => { const nextDeadline = nextDeadlineInfo(conf); const countdownLevel = nextDeadline ? (nextDeadline.days === 0 ? "countdown-today" : nextDeadline.days <= 7 ? "countdown-soon" : nextDeadline.days <= 30 ? "countdown-mid" : "countdown-later") : ""; return <div className="conference-head" key={`head-${conf.id}-${conf.year}`}><div className="column-number">{String(index + 1).padStart(2, "0")}</div><div className="venue-top"><h3 title={`${conf.title} ${conf.year}`}>{conf.title} <small>{conf.year}</small></h3><span className={`rank ${rankColors[conf.rank] || "rank-n"}`}>{conf.isARR ? "ARR" : conf.rank === "N" || !conf.rank ? "—" : `CCF ${conf.rank}`}</span></div><p title={conf.description}>{conf.description}</p><div className="meta">{nextDeadline && <span className={`countdown ${countdownLevel}`} title={`下一个投稿节点：${nextDeadline.date}`}>{nextDeadline.days === 0 ? "⚠ 今天截止" : `⏳ 剩 ${nextDeadline.days} 天`}</span>}<span title={conf.place || undefined}>⌖ {conf.place || "地点待定"}{conf.place && placeZh(conf.place)}</span><span>◷ {conf.conferenceDate || "时间待定"}</span>{conf.commitVenues?.map((venue) => <span className="commit-venue" key={venue}>→ {venue}</span>)}</div><a href={conf.link} target="_blank" rel="noreferrer">会议官网 ↗</a></div>})}</div></div>
+            <div className="sticky-gantt-head"><div className="corner"><b>{year}</b><span>时间 / 日期</span></div><div className="conference-heads">{visible.map((conf, index) => { const nextDeadline = nextDeadlineInfo(conf); const countdownLevel = nextDeadline ? (nextDeadline.days === 0 ? "countdown-today" : nextDeadline.days <= 7 ? "countdown-soon" : nextDeadline.days <= 30 ? "countdown-mid" : "countdown-later") : ""; return <div className="conference-head" key={`head-${conf.id}-${conf.year}`}><div className="column-number">{String(index + 1).padStart(2, "0")}</div><div className="venue-top"><h3 title={`${conf.title} ${conf.year}`}>{conf.title} <small>{conf.year}</small></h3><span className={`rank ${rankColors[conf.rank] || "rank-n"}`}>{conf.isARR ? "ARR" : conf.rank === "N" || !conf.rank ? "—" : `CCF ${conf.rank}`}</span></div><p title={conf.description}>{conf.description}</p><div className="meta">{nextDeadline && <span className={`countdown ${countdownLevel}`} title={`下一个投稿节点：${nextDeadline.date}`}>{nextDeadline.days === 0 ? "⚠ 今天截止" : `⏳ 剩 ${nextDeadline.days} 天`}</span>}<span title={conf.place || undefined}>⌖ {conf.place || "地点待定"}{conf.place && placeZh(conf.place)}</span><span>◷ {conf.conferenceDate || "时间待定"}</span>{conf.acceptRates && conf.acceptRates.length > 0 && <span className="accept-rate" title={`历届录用率：${conf.acceptRates.map((r) => `${r.year} 届 ${(r.rate).toFixed(1)}%（${r.accepted}/${r.submitted}）`).join("；")}`}>✦ {conf.acceptRates[0].rate.toFixed(1)}% 录取（{conf.acceptRates[0].year} 届）</span>}{conf.commitVenues?.map((venue) => <span className="commit-venue" key={venue}>→ {venue}</span>)}</div><a href={conf.link} target="_blank" rel="noreferrer">会议官网 ↗</a></div>})}</div></div>
             <div className="gantt-body"><div className="date-axis">{axisMonths.map((month) => <div className="axis-month" key={`${month.year}-${month.index}`} style={{ top: `${monthPosition(month.index, year)}%` }}><b>{month.label}</b><span>{month.year}/{String((month.index % 12) + 1).padStart(2, "0")}/01</span></div>)}{todayPosition !== null && <div className="axis-today" style={{ top: `${todayPosition}%` }}>今天 · {TODAY.replace(/-/g, "/")}</div>}</div>
             <div className="conference-columns">
           {transferPoint && inTwoYearWindow(transferPoint.event.date, year) && <div className="transfer-line" style={{ top: `${dayPosition(transferPoint.event.date, year)}%` }}><span>转投基准 · {transferPoint.event.date} · {transferPoint.conf.title}</span></div>}
@@ -393,7 +404,7 @@ export default function Home() {
         {limit < filtered.length && <button className="load-more" onClick={() => setLimit((n) => n + 32)}>加载更多会议 <span>{visible.length} / {filtered.length}</span></button>}
       </section>
 
-      {selectedEvent && <div className="event-popover" role="dialog" aria-modal="true" aria-label="日期节点详情"><button className="popover-close" onClick={() => setSelectedEvent(null)} aria-label="关闭">×</button><p>{selectedEvent.conf.title} · {selectedEvent.conf.year} {selectedEvent.event.inferred ? "· 往届官网节奏平移 *" : selectedEvent.event.autoFetched ? "· 官网自动抓取（未核验）" : "· 官方核验"}</p><h3>{selectedEvent.event.label}</h3><time>{selectedEvent.event.date} · {selectedEvent.conf.timezone || "以官网为准"} · {(() => { const relDays = diffDaysFromToday(selectedEvent.event.date); return relDays === 0 ? "就是今天" : relDays > 0 ? `还有 ${relDays} 天` : `已过去 ${-relDays} 天`; })()}</time>{selectedEvent.event.detail && <div>{selectedEvent.event.detail}</div>}{selectedEvent.event.autoFetched && <div>该节点由程序从会议官网自动解析，未经人工核验，请以官网为准。</div>}<a href={selectedEvent.event.source} target="_blank" rel="noreferrer">{selectedEvent.event.inferred ? "查看所依据的往届官网 ↗" : "查看官方来源 ↗"}</a></div>}
+      {selectedEvent && <div className="event-popover" role="dialog" aria-modal="true" aria-label="日期节点详情"><button className="popover-close" onClick={() => setSelectedEvent(null)} aria-label="关闭">×</button><p>{selectedEvent.conf.title} · {selectedEvent.conf.year} {selectedEvent.event.inferred ? "· 往届官网节奏平移 *" : selectedEvent.event.autoFetched ? "· 官网自动抓取（未核验）" : "· 官方核验"}</p><h3>{selectedEvent.event.label}</h3><time>{selectedEvent.event.date} · {selectedEvent.conf.timezone || "以官网为准"} · {(() => { const relDays = diffDaysFromToday(selectedEvent.event.date); return relDays === 0 ? "就是今天" : relDays > 0 ? `还有 ${relDays} 天` : `已过去 ${-relDays} 天`; })()}</time>{selectedEvent.event.detail && <div>{selectedEvent.event.detail}</div>}{selectedEvent.event.autoFetched && <div>该节点由程序从会议官网自动解析，未经人工核验，请以官网为准。</div>}{selectedEvent.conf.acceptRates && selectedEvent.conf.acceptRates.length > 0 && <div className="popover-rates"><b>历届录用率</b>{selectedEvent.conf.acceptRates.map((r) => <span key={r.year}>{r.year} 届：<b>{r.rate.toFixed(1)}%</b>（{r.accepted}/{r.submitted}）</span>)}</div>}<a href={selectedEvent.event.source} target="_blank" rel="noreferrer">{selectedEvent.event.inferred ? "查看所依据的往届官网 ↗" : "查看官方来源 ↗"}</a></div>}
 
       {transferPoint && <aside className="transfer-panel" aria-label="转投候选会议">
         <div className="transfer-panel-head"><div><p>TRANSFER PLANNER</p><h3>从 {transferPoint.event.date.slice(5).replace("-", "/")} 之后转投</h3><span>{transferPoint.conf.title} · {transferPoint.event.label}</span></div><button onClick={() => setTransferPoint(null)} aria-label="关闭转投规划">×</button></div>
