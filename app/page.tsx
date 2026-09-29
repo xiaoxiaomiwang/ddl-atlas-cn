@@ -234,10 +234,11 @@ export default function Home() {
     }
     return [...unique.values()].sort((a, b) => {
       const baseline = year === CURRENT_YEAR ? TODAY : `${year}-01-01`;
+      // 与倒计时同源：以"下一个可投稿节点"（摘要/全文/Commit，含官网抓取、排除推测）排序
       const nextDeadline = (conf: Conference) => [
-        ...conf.timeline.map((item) => item.date),
-        ...(conf.supplementalEvents || []).filter((event) => event.type === "submission" || event.type === "commit" || event.type === "abstract").map((event) => event.date),
-      ].filter((date) => date >= baseline && inTwoYearWindow(date, year)).sort()[0] || `${year + 2}-12-31`;
+        ...conf.timeline.flatMap((item) => [item.abstractDate, item.date]),
+        ...(conf.supplementalEvents || []).filter((event) => !event.inferred && ["submission", "commit", "abstract"].includes(event.type)).map((event) => event.date),
+      ].filter((date) => date && date !== "TBD" && date >= baseline && inTwoYearWindow(date, year)).sort()[0] || `${year + 2}-12-31`;
       const ad = nextDeadline(a);
       const bd = nextDeadline(b);
       return ad.localeCompare(bd) || a.title.localeCompare(b.title);
@@ -345,11 +346,6 @@ export default function Home() {
       </header>
 
       <section className="hero" id="top">
-        <div className="hero-copy">
-          <p className="eyebrow">CCF CONFERENCE INTELLIGENCE · {CURRENT_YEAR}</p>
-          <h1>把一整年的<br/><em>投稿节奏</em>看清楚。</h1>
-          <p className="intro">开源 CCFDDL 数据的年度甘特视图。摘要、各轮投稿与会议举办时间，在同一条轴上排布。</p>
-        </div>
         <div className="hero-stat"><strong>{filtered.length}</strong><span>场会议 / 当前筛选</span><small>{syncStatusText}</small></div>
       </section>
 
