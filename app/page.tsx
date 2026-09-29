@@ -68,6 +68,25 @@ function formatMetaTime(iso: string | null | undefined) {
   return value.toLocaleString("zh-CN", { year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" });
 }
 
+// 距指定日期还剩几天（0 = 今天，负数 = 已过去）
+function diffDaysFromToday(date: string): number {
+  return Math.round((Date.parse(`${date}T00:00:00Z`) - Date.parse(`${TODAY}T00:00:00Z`)) / 86400000);
+}
+
+// 该会议下一个未过期的投稿类节点（摘要/全文/Commit；含官网核验与自动抓取数据，排除推测日期）
+function nextDeadlineInfo(conf: Conference): { date: string; days: number } | null {
+  const candidates = [
+    ...conf.timeline.flatMap((item) => [item.abstractDate, item.date]),
+    ...(conf.supplementalEvents || [])
+      .filter((event) => !event.inferred && ["abstract", "submission", "commit"].includes(event.type))
+      .map((event) => event.date),
+  ].filter((date) => date && date !== "TBD" && date >= TODAY).sort();
+  const earliest = candidates[0];
+  if (!earliest) return null;
+  const days = diffDaysFromToday(earliest);
+  return days >= 0 ? { date: earliest, days } : null;
+}
+
 function dayPosition(date: string, year: number) {
   const start = Date.UTC(year, 0, 1);
   const end = Date.UTC(year + 2, 0, 1);
@@ -348,7 +367,7 @@ export default function Home() {
         <div className="gantt-viewport" ref={ganttViewportRef}>
           {visible.length === 0 && <div className="empty"><b>没有匹配的会议</b><span>换一个等级、领域或搜索词试试。</span></div>}
           {visible.length > 0 && <div className="vertical-gantt" style={{ "--column-count": visible.length } as React.CSSProperties}>
-            <div className="sticky-gantt-head"><div className="corner"><b>{year}</b><span>时间 / 日期</span></div><div className="conference-heads">{visible.map((conf, index) => { const supplementalAll = conf.supplementalEvents || []; const officialReview = supplementalAll.some((event) => !event.autoFetched && !event.inferred && ["rebuttal", "result", "camera", "reject"].includes(event.type)); const autoReview = supplementalAll.some((event) => event.autoFetched && ["rebuttal", "result", "camera", "reject"].includes(event.type)); const hasReviewSchedule = officialReview || autoReview || inferredReviewEvents(conf, year).length > 0; const scheduleBadge = officialReview ? <span className="schedule-ok">✓ 评审日程已核验</span> : autoReview ? <span className="schedule-auto">≈ 官网日程自动抓取</span> : hasReviewSchedule ? <span className="schedule-ok">✓ 评审日程已核验</span> : <span className="schedule-pending">! 评审日程待核验</span>; return <div className="conference-head" key={`head-${conf.id}-${conf.year}`}><div className="column-number">{String(index + 1).padStart(2, "0")}</div><div className="venue-top"><h3 title={`${conf.title} ${conf.year}`}>{conf.title} <small>{conf.year}</small></h3><span className={`rank ${rankColors[conf.rank] || "rank-n"}`}>{conf.isARR ? "ARR" : conf.rank === "N" || !conf.rank ? "—" : `CCF ${conf.rank}`}</span></div><p title={conf.description}>{conf.description}</p><div className="meta"><span>⌖ {conf.place || "地点待定"}</span><span>◷ {conf.conferenceDate || "时间待定"}</span>{conf.rank === "A" && scheduleBadge}{conf.commitVenues?.map((venue) => <span className="commit-venue" key={venue}>→ {venue}</span>)}</div><a href={conf.link} target="_blank" rel="noreferrer">会议官网 ↗</a></div>})}</div></div>
+            <div className="sticky-gantt-head"><div className="corner"><b>{year}</b><span>时间 / 日期</span></div><div className="conference-heads">{visible.map((conf, index) => { const supplementalAll = conf.supplementalEvents || []; const officialReview = supplementalAll.some((event) => !event.autoFetched && !event.inferred && ["rebuttal", "result", "camera", "reject"].includes(event.type)); const autoReview = supplementalAll.some((event) => event.autoFetched && ["rebuttal", "result", "camera", "reject"].includes(event.type)); const hasReviewSchedule = officialReview || autoReview || inferredReviewEvents(conf, year).length > 0; const scheduleBadge = officialReview ? <span className="schedule-ok">✓ 评审日程已核验</span> : autoReview ? <span className="schedule-auto">≈ 官网日程自动抓取</span> : hasReviewSchedule ? <span className="schedule-ok">✓ 评审日程已核验</span> : <span className="schedule-pending">! 评审日程待核验</span>; const nextDeadline = nextDeadlineInfo(conf); const countdownLevel = nextDeadline ? (nextDeadline.days === 0 ? "countdown-today" : nextDeadline.days <= 7 ? "countdown-soon" : nextDeadline.days <= 30 ? "countdown-mid" : "countdown-later") : ""; return <div className="conference-head" key={`head-${conf.id}-${conf.year}`}><div className="column-number">{String(index + 1).padStart(2, "0")}</div><div className="venue-top"><h3 title={`${conf.title} ${conf.year}`}>{conf.title} <small>{conf.year}</small></h3><span className={`rank ${rankColors[conf.rank] || "rank-n"}`}>{conf.isARR ? "ARR" : conf.rank === "N" || !conf.rank ? "—" : `CCF ${conf.rank}`}</span></div><p title={conf.description}>{conf.description}</p><div className="meta">{nextDeadline && <span className={`countdown ${countdownLevel}`} title={`下一个投稿节点：${nextDeadline.date}`}>{nextDeadline.days === 0 ? "⚠ 今天截止" : `⏳ 剩 ${nextDeadline.days} 天`}</span>}<span>⌖ {conf.place || "地点待定"}</span><span>◷ {conf.conferenceDate || "时间待定"}</span>{conf.rank === "A" && scheduleBadge}{conf.commitVenues?.map((venue) => <span className="commit-venue" key={venue}>→ {venue}</span>)}</div><a href={conf.link} target="_blank" rel="noreferrer">会议官网 ↗</a></div>})}</div></div>
             <div className="gantt-body"><div className="date-axis">{axisMonths.map((month) => <div className="axis-month" key={`${month.year}-${month.index}`} style={{ top: `${monthPosition(month.index, year)}%` }}><b>{month.label}</b><span>{month.year}/{String((month.index % 12) + 1).padStart(2, "0")}/01</span></div>)}{todayPosition !== null && <div className="axis-today" style={{ top: `${todayPosition}%` }}>今天 · {TODAY.replace(/-/g, "/")}</div>}</div>
             <div className="conference-columns">
           {transferPoint && inTwoYearWindow(transferPoint.event.date, year) && <div className="transfer-line" style={{ top: `${dayPosition(transferPoint.event.date, year)}%` }}><span>转投基准 · {transferPoint.event.date} · {transferPoint.conf.title}</span></div>}
@@ -377,7 +396,7 @@ export default function Home() {
         {limit < filtered.length && <button className="load-more" onClick={() => setLimit((n) => n + 32)}>加载更多会议 <span>{visible.length} / {filtered.length}</span></button>}
       </section>
 
-      {selectedEvent && <div className="event-popover" role="dialog" aria-modal="true" aria-label="日期节点详情"><button className="popover-close" onClick={() => setSelectedEvent(null)} aria-label="关闭">×</button><p>{selectedEvent.conf.title} · {selectedEvent.conf.year} {selectedEvent.event.inferred ? "· 往届官网节奏平移 *" : selectedEvent.event.autoFetched ? "· 官网自动抓取（未核验）" : "· 官方核验"}</p><h3>{selectedEvent.event.label}</h3><time>{selectedEvent.event.date} · {selectedEvent.conf.timezone || "以官网为准"}</time>{selectedEvent.event.detail && <div>{selectedEvent.event.detail}</div>}{selectedEvent.event.autoFetched && <div>该节点由程序从会议官网自动解析，未经人工核验，请以官网为准。</div>}<a href={selectedEvent.event.source} target="_blank" rel="noreferrer">{selectedEvent.event.inferred ? "查看所依据的往届官网 ↗" : "查看官方来源 ↗"}</a></div>}
+      {selectedEvent && <div className="event-popover" role="dialog" aria-modal="true" aria-label="日期节点详情"><button className="popover-close" onClick={() => setSelectedEvent(null)} aria-label="关闭">×</button><p>{selectedEvent.conf.title} · {selectedEvent.conf.year} {selectedEvent.event.inferred ? "· 往届官网节奏平移 *" : selectedEvent.event.autoFetched ? "· 官网自动抓取（未核验）" : "· 官方核验"}</p><h3>{selectedEvent.event.label}</h3><time>{selectedEvent.event.date} · {selectedEvent.conf.timezone || "以官网为准"} · {(() => { const relDays = diffDaysFromToday(selectedEvent.event.date); return relDays === 0 ? "就是今天" : relDays > 0 ? `还有 ${relDays} 天` : `已过去 ${-relDays} 天`; })()}</time>{selectedEvent.event.detail && <div>{selectedEvent.event.detail}</div>}{selectedEvent.event.autoFetched && <div>该节点由程序从会议官网自动解析，未经人工核验，请以官网为准。</div>}<a href={selectedEvent.event.source} target="_blank" rel="noreferrer">{selectedEvent.event.inferred ? "查看所依据的往届官网 ↗" : "查看官方来源 ↗"}</a></div>}
 
       {transferPoint && <aside className="transfer-panel" aria-label="转投候选会议">
         <div className="transfer-panel-head"><div><p>TRANSFER PLANNER</p><h3>从 {transferPoint.event.date.slice(5).replace("-", "/")} 之后转投</h3><span>{transferPoint.conf.title} · {transferPoint.event.label}</span></div><button onClick={() => setTransferPoint(null)} aria-label="关闭转投规划">×</button></div>

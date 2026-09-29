@@ -42,7 +42,7 @@ footer { background:var(--green); color:white; padding:45px 5vw; display:flex; j
 .conference-head { background:var(--paper); padding-top:9px; }
 .conference-head .venue-top { min-height:44px; }
 .conference-head .venue-top h3 { max-width:154px; min-height:40px; white-space:normal; display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:2; line-clamp:2; font-size:17px; line-height:1.15; }
-.conference-head .schedule-ok { color:#207044; font-weight:850; }.conference-head .schedule-pending { color:#a64b25; font-weight:850; }.conference-head .schedule-auto { color:#8a6d1f; font-weight:850; }
+.conference-head .schedule-ok { color:#207044; font-weight:850; }.conference-head .schedule-pending { color:#a64b25; font-weight:850; }.conference-head .schedule-auto { color:#8a6d1f; font-weight:850; }.conference-head .countdown { font-weight:850; }.conference-head .countdown-today { color:white; background:#bd382e; padding:1px 6px; }.conference-head .countdown-soon { color:#bd382e; }.conference-head .countdown-mid { color:#a64b25; }.conference-head .countdown-later { color:#207044; }
 .gantt-body { display:flex; width:max-content; min-width:100%; height:3200px; }
 .date-axis { flex:0 0 112px; height:3200px; position:sticky; left:0; z-index:10; background:#eeeadf; border-right:1px solid var(--ink); }
 .axis-month { position:absolute; left:0; right:0; height:0; border-top:1px solid #aaa498; padding:5px 9px 0; }.axis-month b { display:block; font:600 15px Georgia,"Songti SC",serif; }.axis-month span { color:#7b827e; font-size:7px; }
