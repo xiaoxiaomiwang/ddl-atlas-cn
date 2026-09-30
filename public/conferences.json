@@ -7246,10 +7246,10 @@
         "accepted": 53
       },
       {
-        "year": 2021,
-        "rate": 23.7,
-        "submitted": 194,
-        "accepted": 46
+        "year": 2022,
+        "rate": 12.4,
+        "submitted": 170,
+        "accepted": 21
       }
     ]
   },
@@ -8694,6 +8694,12 @@
         "rate": 24.4,
         "submitted": 250,
         "accepted": 61
+      },
+      {
+        "year": 2021,
+        "rate": 26.6,
+        "submitted": 241,
+        "accepted": 64
       }
     ]
   },
@@ -18145,7 +18151,14 @@
         "comment": ""
       }
     ],
-    "acceptRates": []
+    "acceptRates": [
+      {
+        "year": 2023,
+        "rate": 32.3,
+        "submitted": 220,
+        "accepted": 71
+      }
+    ]
   },
   {
     "id": "ipdps27",
@@ -18363,7 +18376,32 @@
         "comment": ""
       }
     ],
-    "acceptRates": []
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 34.1,
+        "submitted": 41,
+        "accepted": 14
+      },
+      {
+        "year": 2025,
+        "rate": 37.5,
+        "submitted": 48,
+        "accepted": 18
+      },
+      {
+        "year": 2024,
+        "rate": 37.5,
+        "submitted": 48,
+        "accepted": 18
+      },
+      {
+        "year": 2023,
+        "rate": 52.0,
+        "submitted": 25,
+        "accepted": 13
+      }
+    ]
   },
   {
     "id": "issre27",
@@ -18482,6 +18520,12 @@
         "rate": 24.4,
         "submitted": 250,
         "accepted": 61
+      },
+      {
+        "year": 2021,
+        "rate": 26.6,
+        "submitted": 241,
+        "accepted": 64
       }
     ]
   },
