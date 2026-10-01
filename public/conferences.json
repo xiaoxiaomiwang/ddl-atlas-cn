@@ -8,9 +8,9 @@
     "year": 2026,
     "link": "https://3dvconf.github.io/2026/",
     "timezone": "UTC-7",
-    "conferenceDate": "March 24-27, 2026",
-    "conferenceStart": "2026-03-24",
-    "place": "Metro Vancouver, BC, Canada",
+    "conferenceDate": "March 20-23, 2026",
+    "conferenceStart": "2026-03-20",
+    "place": "Vancouver, BC, Canada",
     "timeline": [
       {
         "date": "2025-08-18",
@@ -264,8 +264,8 @@
     "year": 2026,
     "link": "https://2026.acmmm.org/",
     "timezone": "AoE",
-    "conferenceDate": "November 10-14, 2026",
-    "conferenceStart": "2026-11-10",
+    "conferenceDate": "November 11-14, 2026",
+    "conferenceStart": "2026-11-11",
     "place": "Rio de Janeiro, Brazil",
     "timeline": [
       {
@@ -317,7 +317,7 @@
       {
         "date": "2026-01-22",
         "abstractDate": "2026-01-15",
-        "comment": "Regular conference papers; submission form registration and initial full paper"
+        "comment": "Registration / full paper"
       }
     ],
     "acceptRates": [
@@ -363,7 +363,7 @@
       {
         "date": "2026-05-12",
         "abstractDate": "2026-05-05",
-        "comment": ""
+        "comment": "Registration / full paper"
       }
     ],
     "acceptRates": [
@@ -551,7 +551,7 @@
       {
         "date": "2026-07-17",
         "abstractDate": "",
-        "comment": "Main Track"
+        "comment": ""
       }
     ],
     "acceptRates": [
@@ -835,7 +835,7 @@
     "year": 2026,
     "link": "https://www.appt-conference.com/2026",
     "timezone": "AoE",
-    "conferenceDate": "July 27-31, 2026",
+    "conferenceDate": "July 27-30, 2026",
     "conferenceStart": "2026-07-27",
     "place": "Brussels, Belgium",
     "timeline": [
@@ -1172,19 +1172,19 @@
     "year": 2026,
     "link": "https://www.asplos-conference.org/asplos2026/cfp/",
     "timezone": "UTC-4",
-    "conferenceDate": "March 22-26, 2026",
-    "conferenceStart": "2026-03-22",
+    "conferenceDate": "March 23-26, 2026",
+    "conferenceStart": "2026-03-23",
     "place": "Pittsburgh, PA, USA",
     "timeline": [
       {
         "date": "2025-03-12",
         "abstractDate": "2025-03-06",
-        "comment": "Spring Submission Deadline"
+        "comment": "Spring; later portal upload cutoff has unconfirmed scope"
       },
       {
         "date": "2025-08-20",
-        "abstractDate": "2025-08-13",
-        "comment": "Summer Submission Deadline"
+        "abstractDate": "2025-08-14",
+        "comment": "Summer; later portal upload cutoff has unconfirmed scope"
       }
     ],
     "acceptRates": [
@@ -1331,19 +1331,19 @@
     "year": 2026,
     "link": "https://asiaccs2026.cse.iitkgp.ac.in/",
     "timezone": "AoE",
-    "conferenceDate": "June 1-5, 2026",
-    "conferenceStart": "2026-06-01",
+    "conferenceDate": "June 3-5, 2026",
+    "conferenceStart": "2026-06-03",
     "place": "Bangalore, India",
     "timeline": [
       {
         "date": "2025-08-25",
         "abstractDate": "",
-        "comment": "1st round Deadline"
+        "comment": "Round 1"
       },
       {
         "date": "2025-12-12",
         "abstractDate": "",
-        "comment": "2nd round Deadline"
+        "comment": "Round 2"
       }
     ],
     "acceptRates": [
@@ -1796,19 +1796,19 @@
     "year": 2026,
     "link": "https://www.sigsac.org/ccs/CCS2026/",
     "timezone": "UTC-12",
-    "conferenceDate": "November 15-19, 2026",
-    "conferenceStart": "2026-11-15",
+    "conferenceDate": "November 16-18, 2026",
+    "conferenceStart": "2026-11-16",
     "place": "World Forum, Hague, Netherlands",
     "timeline": [
       {
         "date": "2026-01-14",
-        "abstractDate": "",
-        "comment": "First Review Cycle"
+        "abstractDate": "2026-01-07",
+        "comment": "Cycle 1"
       },
       {
         "date": "2026-04-29",
-        "abstractDate": "",
-        "comment": "Second Review Cycle"
+        "abstractDate": "2026-04-22",
+        "comment": "Cycle 2"
       }
     ],
     "acceptRates": [
@@ -1898,22 +1898,22 @@
       {
         "date": "2025-07-15",
         "abstractDate": "",
-        "comment": "Schedule for TCHES Volume 2026/1"
+        "comment": "TCHES 2026/1"
       },
       {
         "date": "2025-10-15",
         "abstractDate": "",
-        "comment": "Schedule for TCHES Volume 2026/2"
+        "comment": "TCHES 2026/2"
       },
       {
         "date": "2026-01-15",
         "abstractDate": "",
-        "comment": "Schedule for TCHES Volume 2026/3"
+        "comment": "TCHES 2026/3"
       },
       {
         "date": "2026-04-15",
         "abstractDate": "",
-        "comment": "Schedule for TCHES Volume 2026/4"
+        "comment": "TCHES 2026/4"
       }
     ],
     "acceptRates": [
@@ -2026,8 +2026,8 @@
     "year": 2026,
     "link": "https://www.cidrdb.org/cidr2026/",
     "timezone": "UTC-7",
-    "conferenceDate": "Jan 18-21, 2026",
-    "conferenceStart": "2026-01-18",
+    "conferenceDate": "January 19-21, 2026",
+    "conferenceStart": "2026-01-19",
     "place": "Chaminade Resort & Spa, Santa Cruz, California, USA",
     "timeline": [
       {
@@ -2047,8 +2047,8 @@
     "year": 2026,
     "link": "https://cikm2026.diag.uniroma1.it/",
     "timezone": "AoE",
-    "conferenceDate": "November 7-11, 2026",
-    "conferenceStart": "2026-11-07",
+    "conferenceDate": "November 9-11, 2026",
+    "conferenceStart": "2026-11-09",
     "place": "Rome, Italy",
     "timeline": [
       {
@@ -2087,8 +2087,8 @@
     "year": 2026,
     "link": "https://clustercomp.org/2026",
     "timezone": "AoE",
-    "conferenceDate": "September 22-25, 2026",
-    "conferenceStart": "2026-09-22",
+    "conferenceDate": "September 23-25, 2026",
+    "conferenceStart": "2026-09-23",
     "place": "Alexandria, Virginia, USA",
     "timeline": [
       {
@@ -2245,8 +2245,8 @@
     "year": 2026,
     "link": "https://learningtheory.org/colt2026/",
     "timezone": "AoE",
-    "conferenceDate": "June 29 - July 3, 2026",
-    "conferenceStart": "2026-06-29",
+    "conferenceDate": "June 30 - July 3, 2026",
+    "conferenceStart": "2026-06-30",
     "place": "San Diego, California",
     "timeline": [
       {
@@ -2746,9 +2746,9 @@
     "year": 2026,
     "link": "https://cvpr.thecvf.com/Conferences/2026",
     "timezone": "UTC-12",
-    "conferenceDate": "June 3-7, 2026",
-    "conferenceStart": "2026-06-03",
-    "place": "Denver, Colorado, United States",
+    "conferenceDate": "June 5-7, 2026",
+    "conferenceStart": "2026-06-05",
+    "place": "Denver, Colorado, United States (Hybrid)",
     "timeline": [
       {
         "date": "2025-11-13",
@@ -2792,7 +2792,7 @@
     "year": 2026,
     "link": "https://services.conferences.computer.org/2026/cloud/",
     "timezone": "AoE",
-    "conferenceDate": "July 13-18, 2026",
+    "conferenceDate": "July 13-17, 2026",
     "conferenceStart": "2026-07-13",
     "place": "Sydney, Australia",
     "timeline": [
@@ -2911,7 +2911,7 @@
     "year": 2026,
     "link": "https://www.corl.org/",
     "timezone": "AoE",
-    "conferenceDate": "November 9-12, 2026",
+    "conferenceDate": "November 9-11, 2026",
     "conferenceStart": "2026-11-09",
     "place": "Austin, Texas, USA",
     "timeline": [
@@ -3087,8 +3087,8 @@
     "year": 2026,
     "link": "https://dasfaa2026.github.io/",
     "timezone": "AoE",
-    "conferenceDate": "April 21-24, 2026",
-    "conferenceStart": "2026-04-21",
+    "conferenceDate": "April 28-30, 2026",
+    "conferenceStart": "2026-04-28",
     "place": "Jeju Island, South Korea",
     "timeline": [
       {
@@ -3334,8 +3334,8 @@
     "year": 2026,
     "link": "https://dsn2026.github.io",
     "timezone": "AoE",
-    "conferenceDate": "June 22-25, 2026",
-    "conferenceStart": "2026-06-22",
+    "conferenceDate": "June 23-25, 2026",
+    "conferenceStart": "2026-06-23",
     "place": "Charlotte, USA",
     "timeline": [
       {
@@ -3380,9 +3380,9 @@
     "year": 2026,
     "link": "https://2026.eacl.org/",
     "timezone": "AoE",
-    "conferenceDate": "March 24-29, 2026",
-    "conferenceStart": "2026-03-24",
-    "place": "Rabat, Morocco",
+    "conferenceDate": "March 25-27, 2026",
+    "conferenceStart": "2026-03-25",
+    "place": "Rabat, Morocco (Hybrid)",
     "timeline": [
       {
         "date": "2025-10-06",
@@ -3459,8 +3459,8 @@
     "year": 2026,
     "link": "https://2026.ijcai.org/",
     "timezone": "UTC-12",
-    "conferenceDate": "August 15-21, 2026",
-    "conferenceStart": "2026-08-15",
+    "conferenceDate": "August 18-21, 2026",
+    "conferenceStart": "2026-08-18",
     "place": "Bremen, Germany",
     "timeline": [
       {
@@ -3499,8 +3499,8 @@
     "year": 2026,
     "link": "https://eccv.ecva.net/",
     "timezone": "UTC-8",
-    "conferenceDate": "September 8 - 12, 2026",
-    "conferenceStart": "2026-09-08",
+    "conferenceDate": "September 10-12, 2026",
+    "conferenceStart": "2026-09-10",
     "place": "Malmö, Sweden",
     "timeline": [
       {
@@ -3584,9 +3584,19 @@
     "place": "Naples, Italy",
     "timeline": [
       {
+        "date": "2025-10-30",
+        "abstractDate": "2025-10-30",
+        "comment": "Journal track, cycle 1; CMT abstract and journal manuscript"
+      },
+      {
+        "date": "2026-01-15",
+        "abstractDate": "2026-01-15",
+        "comment": "Journal track, cycle 2; CMT abstract and journal manuscript"
+      },
+      {
         "date": "2026-03-12",
         "abstractDate": "2026-03-05",
-        "comment": ""
+        "comment": "Research track"
       }
     ],
     "acceptRates": [
@@ -3769,9 +3779,9 @@
     "year": 2026,
     "link": "https://2026.emnlp.org/",
     "timezone": "UTC-12",
-    "conferenceDate": "October 24 - 29, 2026",
-    "conferenceStart": "2026-10-24",
-    "place": "Budapest, Hungary",
+    "conferenceDate": "October 25-27, 2026",
+    "conferenceStart": "2026-10-25",
+    "place": "Budapest, Hungary (Hybrid)",
     "timeline": [
       {
         "date": "2026-05-25",
@@ -3820,8 +3830,8 @@
     "year": 2026,
     "link": "https://esweek.org/emsoft/",
     "timezone": "AoE",
-    "conferenceDate": "October 4 - 9, 2026",
-    "conferenceStart": "2026-10-04",
+    "conferenceDate": "October 5-7, 2026",
+    "conferenceStart": "2026-10-05",
     "place": "Barcelona, Spain",
     "timeline": [
       {
@@ -4018,19 +4028,19 @@
     "year": 2026,
     "link": "https://etaps.org/2026",
     "timezone": "AoE",
-    "conferenceDate": "April 11-16, 2026",
-    "conferenceStart": "2026-04-11",
+    "conferenceDate": "April 13-16, 2026",
+    "conferenceStart": "2026-04-13",
     "place": "Torino, Italy",
     "timeline": [
       {
         "date": "2025-06-03",
         "abstractDate": "",
-        "comment": "Submission deadline ESOP round 1"
+        "comment": "ESOP round 1"
       },
       {
         "date": "2025-10-16",
         "abstractDate": "",
-        "comment": "Submission deadline ESOP round 2"
+        "comment": "ESOP round 2, FASE, FoSSaCS, TACAS"
       }
     ],
     "acceptRates": [
@@ -4204,8 +4214,8 @@
     "year": 2026,
     "link": "https://2026.euro-par.org/",
     "timezone": "AoE",
-    "conferenceDate": "August 24-28, 2026",
-    "conferenceStart": "2026-08-24",
+    "conferenceDate": "August 26-28, 2026",
+    "conferenceStart": "2026-08-26",
     "place": "Pisa, Italy",
     "timeline": [
       {
@@ -4257,7 +4267,7 @@
       {
         "date": "2025-11-15",
         "abstractDate": "",
-        "comment": "Regular papers; extended deadline"
+        "comment": ""
       }
     ],
     "acceptRates": [
@@ -4296,8 +4306,8 @@
     "year": 2026,
     "link": "https://eurosp2026.ieee-security.org/",
     "timezone": "UTC-12",
-    "conferenceDate": "July 6 - 10, 2026",
-    "conferenceStart": "2026-07-06",
+    "conferenceDate": "July 7-9, 2026",
+    "conferenceStart": "2026-07-07",
     "place": "Lisbon, Portugal",
     "timeline": [
       {
@@ -4342,8 +4352,8 @@
     "year": 2026,
     "link": "https://2026.eurosys.org/",
     "timezone": "AoE",
-    "conferenceDate": "April 13-16, 2026",
-    "conferenceStart": "2026-04-13",
+    "conferenceDate": "April 28-30, 2026",
+    "conferenceStart": "2026-04-28",
     "place": "Edinburgh, UK",
     "timeline": [
       {
@@ -4486,7 +4496,7 @@
       {
         "date": "2025-11-15",
         "abstractDate": "",
-        "comment": "Regular papers; extended deadline"
+        "comment": ""
       }
     ],
     "acceptRates": [
@@ -4532,7 +4542,7 @@
       {
         "date": "2025-11-15",
         "abstractDate": "",
-        "comment": "Regular papers; extended deadline"
+        "comment": ""
       }
     ],
     "acceptRates": [
@@ -4900,8 +4910,8 @@
     "year": 2026,
     "link": "https://www.discotec.org/2026/forte",
     "timezone": "AoE",
-    "conferenceDate": "June 8-12, 2026",
-    "conferenceStart": "2026-06-08",
+    "conferenceDate": "June 9-11, 2026",
+    "conferenceStart": "2026-06-09",
     "place": "Urbino, Italy",
     "timeline": [
       {
@@ -4980,19 +4990,19 @@
     "year": 2026,
     "link": "https://fpt2026.uark.edu",
     "timezone": "AoE",
-    "conferenceDate": "December 07 - December 10, 2026",
-    "conferenceStart": "2026-12-07",
+    "conferenceDate": "December 8-10, 2026",
+    "conferenceStart": "2026-12-08",
     "place": "Honolulu, Hawaii, USA",
     "timeline": [
       {
-        "date": "2026-06-19",
+        "date": "2026-05-01",
         "abstractDate": "",
-        "comment": "Title and Abstract Due (Conference Track)"
+        "comment": "Journal track"
       },
       {
         "date": "2026-06-19",
-        "abstractDate": "",
-        "comment": "Submission Due (Conference Track)"
+        "abstractDate": "2026-06-19",
+        "comment": "Conference track"
       }
     ],
     "acceptRates": []
@@ -5059,22 +5069,22 @@
       {
         "date": "2025-03-01",
         "abstractDate": "",
-        "comment": "ToSC, Volume 2025, Issue 2 Submission deadline"
+        "comment": "ToSC 2025/2"
       },
       {
         "date": "2025-06-01",
         "abstractDate": "",
-        "comment": "ToSC, Volume 2025, Issue 3 Submission deadline"
+        "comment": "ToSC 2025/3"
       },
       {
         "date": "2025-09-01",
         "abstractDate": "",
-        "comment": "ToSC, Volume 2025, Issue 4 Submission deadline"
+        "comment": "ToSC 2025/4"
       },
       {
         "date": "2025-11-23",
         "abstractDate": "",
-        "comment": "ToSC, Volume 2026, Issue 1 Submission deadline"
+        "comment": "ToSC 2026/1"
       }
     ],
     "acceptRates": [
@@ -5378,8 +5388,8 @@
     "year": 2026,
     "link": "https://hpca-conf.org/2026/",
     "timezone": "UTC",
-    "conferenceDate": "Feb 25-Mar 1, 2026",
-    "conferenceStart": "2026-02-25",
+    "conferenceDate": "February 2-4, 2026",
+    "conferenceStart": "2026-02-02",
     "place": "Sydney, NSW, Australia",
     "timeline": [
       {
@@ -5439,14 +5449,14 @@
     "year": 2026,
     "link": "https://hpdc.sci.utah.edu/2026/",
     "timezone": "AoE",
-    "conferenceDate": "July 13-16, 2026",
-    "conferenceStart": "2026-07-13",
+    "conferenceDate": "July 14-16, 2026",
+    "conferenceStart": "2026-07-14",
     "place": "Cleveland, OH, USA",
     "timeline": [
       {
         "date": "2026-02-05",
         "abstractDate": "2026-01-29",
-        "comment": "Dates and AoE verified; 23:59:00 is the repository default for the unpublished cutoff time."
+        "comment": ""
       }
     ],
     "acceptRates": [
@@ -5527,8 +5537,8 @@
     "timeline": [
       {
         "date": "2026-07-16",
-        "abstractDate": "",
-        "comment": ""
+        "abstractDate": "2026-07-16",
+        "comment": "Registration / full paper"
       }
     ],
     "acceptRates": [
@@ -5825,8 +5835,8 @@
     "year": 2026,
     "link": "https://2026.ieeeicassp.org/",
     "timezone": "UTC-12",
-    "conferenceDate": "May 4-8, 2026",
-    "conferenceStart": "2026-05-04",
+    "conferenceDate": "May 5-8, 2026",
+    "conferenceStart": "2026-05-05",
     "place": "Barcelona, Spain",
     "timeline": [
       {
@@ -5852,13 +5862,13 @@
     "rank": "C",
     "year": 2026,
     "link": "https://icc2026.ieee-icc.org",
-    "timezone": "UTC-4",
+    "timezone": "AoE",
     "conferenceDate": "May 24-28, 2026",
     "conferenceStart": "2026-05-24",
     "place": "Glasgow, Scotland, UK",
     "timeline": [
       {
-        "date": "2025-10-31",
+        "date": "2025-11-10",
         "abstractDate": "",
         "comment": ""
       }
@@ -6019,7 +6029,7 @@
       {
         "date": "2026-06-10",
         "abstractDate": "2026-06-03",
-        "comment": "abstract and full paper deadline"
+        "comment": ""
       }
     ],
     "acceptRates": []
@@ -6084,7 +6094,7 @@
     "year": 2026,
     "link": "http://icdcs2026.icdcs.org/",
     "timezone": "AoE",
-    "conferenceDate": "June 22-25, 2026",
+    "conferenceDate": "June 22-24, 2026",
     "conferenceStart": "2026-06-22",
     "place": "Seoul, South Korea",
     "timeline": [
@@ -6105,8 +6115,8 @@
     "year": 2026,
     "link": "https://icde2026.github.io/",
     "timezone": "UTC-7",
-    "conferenceDate": "May 4-8, 2026",
-    "conferenceStart": "2026-05-04",
+    "conferenceDate": "May 5-8, 2026",
+    "conferenceStart": "2026-05-05",
     "place": "Montréal, Canada",
     "timeline": [
       {
@@ -6516,8 +6526,8 @@
     "year": 2026,
     "link": "https://2026.ieeeicip.org/",
     "timezone": "AoE",
-    "conferenceDate": "Sep 13-17, 2026",
-    "conferenceStart": "2026-09-13",
+    "conferenceDate": "September 14-16, 2026",
+    "conferenceStart": "2026-09-14",
     "place": "Tampere, Finland",
     "timeline": [
       {
@@ -6562,7 +6572,7 @@
     "year": 2026,
     "link": "https://iclr.cc/Conferences/2026",
     "timezone": "AoE",
-    "conferenceDate": "April 23-27, 2026",
+    "conferenceDate": "April 23-25, 2026",
     "conferenceStart": "2026-04-23",
     "place": "Rio de Janeiro, Brazil",
     "timeline": [
@@ -6608,8 +6618,8 @@
     "year": 2026,
     "link": "https://2026.ieeeicme.org/",
     "timezone": "UTC-12",
-    "conferenceDate": "July 6 - July 10, 2026",
-    "conferenceStart": "2026-07-06",
+    "conferenceDate": "July 5-9, 2026",
+    "conferenceStart": "2026-07-05",
     "place": "Bangkok, Thailand",
     "timeline": [
       {
@@ -6734,8 +6744,8 @@
     "year": 2026,
     "link": "https://icmr2026.org/calls.html",
     "timezone": "UTC-12",
-    "conferenceDate": "June 16-19, 2026",
-    "conferenceStart": "2026-06-16",
+    "conferenceDate": "June 17-19, 2026",
+    "conferenceStart": "2026-06-17",
     "place": "Amsterdam, Netherlands",
     "timeline": [
       {
@@ -6774,8 +6784,8 @@
     "year": 2026,
     "link": "https://icnp26.cs.ucr.edu/",
     "timezone": "AoE",
-    "conferenceDate": "October 5-8, 2026",
-    "conferenceStart": "2026-10-05",
+    "conferenceDate": "October 6-8, 2026",
+    "conferenceStart": "2026-10-06",
     "place": "Tempe, Arizona, USA",
     "timeline": [
       {
@@ -6933,8 +6943,8 @@
     "year": 2026,
     "link": "https://icpp2026.github.io/",
     "timezone": "AoE",
-    "conferenceDate": "September 28-October 1, 2026",
-    "conferenceStart": "2026-09-28",
+    "conferenceDate": "September 29-October 1, 2026",
+    "conferenceStart": "2026-09-29",
     "place": "Singapore",
     "timeline": [
       {
@@ -7034,8 +7044,8 @@
     "year": 2026,
     "link": "https://dipsa-qub.github.io/ICS2026-webpage/",
     "timezone": "AoE",
-    "conferenceDate": "July 6-9, 2026",
-    "conferenceStart": "2026-07-06",
+    "conferenceDate": "July 7-9, 2026",
+    "conferenceStart": "2026-07-07",
     "place": "Belfast, Northern Ireland, United Kingdom",
     "timeline": [
       {
@@ -7599,8 +7609,8 @@
     "year": 2026,
     "link": "https://conf.researchr.org/home/cgo-2026",
     "timezone": "AoE",
-    "conferenceDate": "January 31 - 4 February, 2026",
-    "conferenceStart": "2026-01-31",
+    "conferenceDate": "February 2-4, 2026",
+    "conferenceStart": "2026-02-02",
     "place": "Sydney, Australia",
     "timeline": [
       {
@@ -7746,8 +7756,8 @@
     "year": 2026,
     "link": "https://2026.ijcai.org/",
     "timezone": "UTC-12",
-    "conferenceDate": "August 15-21, 2026",
-    "conferenceStart": "2026-08-15",
+    "conferenceDate": "August 18-21, 2026",
+    "conferenceStart": "2026-08-18",
     "place": "Bremen, Germany",
     "timeline": [
       {
@@ -7964,19 +7974,19 @@
     "year": 2026,
     "link": "https://conferences.sigcomm.org/imc/2026/",
     "timezone": "AoE",
-    "conferenceDate": "Oct 12-16, 2026",
-    "conferenceStart": "2026-10-12",
+    "conferenceDate": "October 13-16, 2026",
+    "conferenceStart": "2026-10-13",
     "place": "Karlsruhe, Germany",
     "timeline": [
       {
         "date": "2025-11-20",
         "abstractDate": "2025-11-13",
-        "comment": "Cycle 1 Deadline"
+        "comment": "Cycle 1"
       },
       {
         "date": "2026-04-29",
         "abstractDate": "2026-04-22",
-        "comment": "Cycle 2 Deadline"
+        "comment": "Cycle 2"
       }
     ],
     "acceptRates": [
@@ -8061,8 +8071,8 @@
     "year": 2026,
     "link": "https://infocom2026.ieee-infocom.org/",
     "timezone": "AoE",
-    "conferenceDate": "May 18 - 21, 2026",
-    "conferenceStart": "2026-05-18",
+    "conferenceDate": "May 19-21, 2026",
+    "conferenceStart": "2026-05-19",
     "place": "Tokyo, Japan",
     "timeline": [
       {
@@ -8153,8 +8163,8 @@
     "year": 2026,
     "link": "https://www.ipdps.org/",
     "timezone": "AoE",
-    "conferenceDate": "May 25-29, 2026",
-    "conferenceStart": "2026-05-25",
+    "conferenceDate": "May 27-29, 2026",
+    "conferenceStart": "2026-05-27",
     "place": "New Orleans, USA",
     "timeline": [
       {
@@ -8358,8 +8368,8 @@
     "year": 2026,
     "link": "https://iscaconf.org/isca2026/",
     "timezone": "AoE",
-    "conferenceDate": "June 27-July 1, 2026",
-    "conferenceStart": "2026-06-27",
+    "conferenceDate": "June 29-July 1, 2026",
+    "conferenceStart": "2026-06-29",
     "place": "Raleigh, USA",
     "timeline": [
       {
@@ -8425,11 +8435,17 @@
     "rank": "C",
     "year": 2026,
     "link": "https://ieee-iscc.computer.org/2026/",
-    "timezone": "UTC+0",
-    "conferenceDate": "June 23-26, 2026",
-    "conferenceStart": "2026-06-23",
+    "timezone": "AoE",
+    "conferenceDate": "June 24-26, 2026",
+    "conferenceStart": "2026-06-24",
     "place": "Vilamoura, Algarve, Portugal",
-    "timeline": [],
+    "timeline": [
+      {
+        "date": "2026-02-27",
+        "abstractDate": "",
+        "comment": ""
+      }
+    ],
     "acceptRates": []
   },
   {
@@ -8542,8 +8558,8 @@
     "year": 2026,
     "link": "https://ispass.org/ispass2026/",
     "timezone": "UTC-5",
-    "conferenceDate": "April 26-28, 2026",
-    "conferenceStart": "2026-04-26",
+    "conferenceDate": "April 27-28, 2026",
+    "conferenceStart": "2026-04-27",
     "place": "Seoul, South Korea",
     "timeline": [
       {
@@ -8769,14 +8785,19 @@
     "year": 2026,
     "link": "https://iswc2026.semanticweb.org/",
     "timezone": "AoE",
-    "conferenceDate": "October 25-29, 2026",
-    "conferenceStart": "2026-10-25",
+    "conferenceDate": "October 27-29, 2026",
+    "conferenceStart": "2026-10-27",
     "place": "Bari, Italy",
     "timeline": [
       {
         "date": "2026-05-07",
+        "abstractDate": "2026-04-11",
+        "comment": "ESWC transfer"
+      },
+      {
+        "date": "2026-05-07",
         "abstractDate": "2026-05-02",
-        "comment": ""
+        "comment": "Regular route"
       }
     ],
     "acceptRates": [
@@ -8923,8 +8944,8 @@
     "year": 2026,
     "link": "https://iwqos2026.ieee-iwqos.org/",
     "timezone": "AoE",
-    "conferenceDate": "29 June - 2 July, 2026",
-    "conferenceStart": "2026-06-29",
+    "conferenceDate": "June 30 - July 2, 2026",
+    "conferenceStart": "2026-06-30",
     "place": "Istanbul, Türkiye",
     "timeline": [
       {
@@ -9161,8 +9182,8 @@
     "timeline": [
       {
         "date": "2026-05-04",
-        "abstractDate": "",
-        "comment": ""
+        "abstractDate": "2026-05-04",
+        "comment": "Registration / full paper"
       }
     ],
     "acceptRates": []
@@ -9423,7 +9444,7 @@
       {
         "date": "2026-08-14",
         "abstractDate": "",
-        "comment": "Regular Paper"
+        "comment": ""
       }
     ],
     "acceptRates": []
@@ -9617,14 +9638,14 @@
     "year": 2026,
     "link": "https://mswimconf.com/2026/",
     "timezone": "AoE",
-    "conferenceDate": "October 26-30, 2026",
-    "conferenceStart": "2026-10-26",
+    "conferenceDate": "October 27-29, 2026",
+    "conferenceStart": "2026-10-27",
     "place": "Paris, France",
     "timeline": [
       {
         "date": "2026-06-15",
         "abstractDate": "2026-06-14",
-        "comment": "Regular papers; extended abstract registration and full-paper dates. Cutoff clocks and timezone unpublished. 23:59:00 uses the repository default where the source gives no clear cutoff clock. AoE uses the repository default because the source gives no timezone."
+        "comment": ""
       }
     ],
     "acceptRates": []
@@ -9685,8 +9706,8 @@
     "year": 2026,
     "link": "https://sigmobile.org/mobicom/2026/",
     "timezone": "AoE",
-    "conferenceDate": "November, 2026",
-    "conferenceStart": "",
+    "conferenceDate": "October 26-29, 2026",
+    "conferenceStart": "2026-10-26",
     "place": "Austin, Texas, USA",
     "timeline": [
       {
@@ -9724,16 +9745,10 @@
     "year": 2026,
     "link": "https://www.sigmobile.org/mobihoc/2026/",
     "timezone": "AoE",
-    "conferenceDate": "November 23-26, 2026",
+    "conferenceDate": "November 23-25, 2026",
     "conferenceStart": "2026-11-23",
     "place": "Tokyo, Japan",
-    "timeline": [
-      {
-        "date": "2026-04-20",
-        "abstractDate": "2026-04-13",
-        "comment": ""
-      }
-    ],
+    "timeline": [],
     "acceptRates": [
       {
         "year": 2025,
@@ -9770,8 +9785,8 @@
     "year": 2026,
     "link": "https://www.sigmobile.org/mobisys/2026/",
     "timezone": "AoE",
-    "conferenceDate": "June 21-25, 2026",
-    "conferenceStart": "2026-06-21",
+    "conferenceDate": "June 22-24, 2026",
+    "conferenceStart": "2026-06-22",
     "place": "Cambridge, UK",
     "timeline": [
       {
@@ -9878,8 +9893,8 @@
     "year": 2026,
     "link": "https://www.ndss-symposium.org/ndss2026/",
     "timezone": "UTC-12",
-    "conferenceDate": "February 23 - February 27, 2026",
-    "conferenceStart": "2026-02-23",
+    "conferenceDate": "February 24-26, 2026",
+    "conferenceStart": "2026-02-24",
     "place": "San Diego, California",
     "timeline": [
       {
@@ -10198,8 +10213,8 @@
     "year": 2026,
     "link": "https://networking.ifip.org/2026/",
     "timezone": "AoE",
-    "conferenceDate": "May 24-27, 2026",
-    "conferenceStart": "2026-05-24",
+    "conferenceDate": "May 25-27, 2026",
+    "conferenceStart": "2026-05-25",
     "place": "Lugano, Switzerland",
     "timeline": [
       {
@@ -10363,8 +10378,8 @@
     "year": 2026,
     "link": "https://pact2026.github.io/",
     "timezone": "AoE",
-    "conferenceDate": "October 19-22, 2026",
-    "conferenceStart": "2026-10-19",
+    "conferenceDate": "October 20-22, 2026",
+    "conferenceStart": "2026-10-20",
     "place": "Chicago, Illinois, USA",
     "timeline": [
       {
@@ -10567,29 +10582,29 @@
     "year": 2026,
     "link": "https://petsymposium.org/cfp26.php",
     "timezone": "AoE",
-    "conferenceDate": "July 20-25, 2026",
-    "conferenceStart": "2026-07-20",
+    "conferenceDate": "July 21-23, 2026",
+    "conferenceStart": "2026-07-21",
     "place": "Calgary, Canada",
     "timeline": [
       {
         "date": "2025-05-31",
         "abstractDate": "",
-        "comment": "Issue 1 Paper Submission Deadline"
+        "comment": "Issue 1"
       },
       {
         "date": "2025-08-31",
         "abstractDate": "",
-        "comment": "Issue 2 Paper Submission Deadline"
+        "comment": "Issue 2"
       },
       {
         "date": "2025-11-30",
         "abstractDate": "",
-        "comment": "Issue 3 Paper Submission Deadline"
+        "comment": "Issue 3"
       },
       {
         "date": "2026-02-28",
         "abstractDate": "",
-        "comment": "Issue 4 Paper Submission Deadline"
+        "comment": "Issue 4"
       }
     ],
     "acceptRates": [
@@ -10720,8 +10735,8 @@
     "year": 2026,
     "link": "https://pldi26.sigplan.org/",
     "timezone": "AoE",
-    "conferenceDate": "June 15-19, 2026",
-    "conferenceStart": "2026-06-15",
+    "conferenceDate": "June 17-19, 2026",
+    "conferenceStart": "2026-06-17",
     "place": "Boulder, Colorado, United States",
     "timeline": [
       {
@@ -10766,8 +10781,8 @@
     "year": 2026,
     "link": "https://www.podc.org/podc2026/",
     "timezone": "AoE",
-    "conferenceDate": "July 6-10, 2026",
-    "conferenceStart": "2026-07-06",
+    "conferenceDate": "July 7-9, 2026",
+    "conferenceStart": "2026-07-07",
     "place": "Egham, England",
     "timeline": [
       {
@@ -10794,7 +10809,7 @@
     "year": 2026,
     "link": "https://2026.sigmod.org/",
     "timezone": "AoE",
-    "conferenceDate": "May 31 - June 5, 2026",
+    "conferenceDate": "May 31-June 3, 2026",
     "conferenceStart": "2026-05-31",
     "place": "Bengaluru, India",
     "timeline": [
@@ -10827,14 +10842,14 @@
     "year": 2026,
     "link": "https://popl26.sigplan.org/",
     "timezone": "AoE",
-    "conferenceDate": "January 11-17, 2026",
-    "conferenceStart": "2026-01-11",
+    "conferenceDate": "January 14-16, 2026",
+    "conferenceStart": "2026-01-14",
     "place": "Rennes, France",
     "timeline": [
       {
         "date": "2025-07-10",
         "abstractDate": "",
-        "comment": "Submission Deadline"
+        "comment": ""
       }
     ],
     "acceptRates": [
@@ -10913,8 +10928,8 @@
     "year": 2026,
     "link": "https://ppopp26.sigplan.org/",
     "timezone": "AoE",
-    "conferenceDate": "Jan 31-Feb 4, 2026",
-    "conferenceStart": "2026-01-31",
+    "conferenceDate": "February 2-4, 2026",
+    "conferenceStart": "2026-02-02",
     "place": "Sydney, Australia",
     "timeline": [
       {
@@ -10987,8 +11002,8 @@
     "year": 2026,
     "link": "https://2026.pricai.org/",
     "timezone": "UTC-12",
-    "conferenceDate": "Nov 16-20, 2026",
-    "conferenceStart": "2026-11-16",
+    "conferenceDate": "November 18-20, 2026",
+    "conferenceStart": "2026-11-18",
     "place": "Guangzhou, China",
     "timeline": [
       {
@@ -11208,8 +11223,8 @@
     "year": 2026,
     "link": "https://raid2026.org",
     "timezone": "AoE",
-    "conferenceDate": "October 11-14, 2026",
-    "conferenceStart": "2026-10-11",
+    "conferenceDate": "October 12-14, 2026",
+    "conferenceStart": "2026-10-12",
     "place": "Lancaster, UK",
     "timeline": [
       {
@@ -11602,7 +11617,7 @@
     "category": "AI",
     "rank": "N",
     "year": 2026,
-    "link": "https://2026.declarativeai.net/events/ruleml-rr",
+    "link": "https://2026.declarativeai.net/ruleml-rr",
     "timezone": "AoE",
     "conferenceDate": "August 24-26, 2026",
     "conferenceStart": "2026-08-24",
@@ -11650,19 +11665,19 @@
     "year": 2026,
     "link": "https://www.ieee-security.org/TC/SP2026/",
     "timezone": "UTC-12",
-    "conferenceDate": "MAY 18-21, 2026",
+    "conferenceDate": "May 18-20, 2026",
     "conferenceStart": "2026-05-18",
     "place": "SAN FRANCISCO, CA",
     "timeline": [
       {
         "date": "2025-06-05",
         "abstractDate": "2025-05-29",
-        "comment": "First Paper submission deadline"
+        "comment": "Cycle 1"
       },
       {
         "date": "2025-11-13",
         "abstractDate": "2025-11-06",
-        "comment": "Second Paper submission deadline"
+        "comment": "Cycle 2"
       }
     ],
     "acceptRates": [
@@ -11963,8 +11978,8 @@
     "year": 2026,
     "link": "https://sc26.supercomputing.org/",
     "timezone": "AoE",
-    "conferenceDate": "November 15-20, 2026",
-    "conferenceStart": "2026-11-15",
+    "conferenceDate": "November 16-20, 2026",
+    "conferenceStart": "2026-11-16",
     "place": "McCormick Place, Chicago, Illinois, USA",
     "timeline": [
       {
@@ -12181,7 +12196,7 @@
     "timezone": "AoE",
     "conferenceDate": "June 3-5, 2026",
     "conferenceStart": "2026-06-03",
-    "place": "Abu Dhabi, UAE",
+    "place": "Pisa, Italy",
     "timeline": [
       {
         "date": "2025-12-30",
@@ -12305,12 +12320,12 @@
       {
         "date": "2026-02-04",
         "abstractDate": "2026-02-02",
-        "comment": "First round"
+        "comment": "First round: recommended abstract / full paper"
       },
       {
         "date": "2026-04-15",
         "abstractDate": "2026-04-13",
-        "comment": "Second round"
+        "comment": "Second round: recommended abstract / full paper"
       }
     ],
     "acceptRates": []
@@ -12324,8 +12339,8 @@
     "year": 2026,
     "link": "https://conferences.sigcomm.org/sigcomm/2026/",
     "timezone": "AoE",
-    "conferenceDate": "August 17 - 21, 2026",
-    "conferenceStart": "2026-08-17",
+    "conferenceDate": "August 18-21, 2026",
+    "conferenceStart": "2026-08-18",
     "place": "Denver, Colorado, USA",
     "timeline": [
       {
@@ -12404,8 +12419,8 @@
     "year": 2026,
     "link": "https://sigir2026.org/en-AU",
     "timezone": "AoE",
-    "conferenceDate": "July 20-24, 2026",
-    "conferenceStart": "2026-07-20",
+    "conferenceDate": "July 21-23, 2026",
+    "conferenceStart": "2026-07-21",
     "place": "Melbourne, Australia",
     "timeline": [
       {
@@ -12450,19 +12465,19 @@
     "year": 2026,
     "link": "https://kdd2026.kdd.org/",
     "timezone": "AoE",
-    "conferenceDate": "August 9-13, 2026",
-    "conferenceStart": "2026-08-09",
+    "conferenceDate": "August 10-13, 2026",
+    "conferenceStart": "2026-08-10",
     "place": "Jeju, Korea",
     "timeline": [
       {
         "date": "2025-07-31",
         "abstractDate": "2025-07-24",
-        "comment": "1st round of 2 total rounds"
+        "comment": "first round"
       },
       {
         "date": "2026-02-08",
         "abstractDate": "2026-02-01",
-        "comment": "2nd round of 2 total rounds"
+        "comment": "second round"
       }
     ],
     "acceptRates": [
@@ -12489,8 +12504,8 @@
     "year": 2026,
     "link": "https://www.sigmetrics.org/sigmetrics2026/",
     "timezone": "AoE",
-    "conferenceDate": "June 8-12, 2026",
-    "conferenceStart": "2026-06-08",
+    "conferenceDate": "June 9-11, 2026",
+    "conferenceStart": "2026-06-09",
     "place": "Ann Arbor, Michigan, USA",
     "timeline": [
       {
@@ -12588,8 +12603,8 @@
     "year": 2026,
     "link": "https://sigops.org/s/conferences/atc/2026/index.html",
     "timezone": "UTC+0",
-    "conferenceDate": "November 15-18, 2026",
-    "conferenceStart": "2026-11-15",
+    "conferenceDate": "November 16-18, 2026",
+    "conferenceStart": "2026-11-16",
     "place": "Hyatt Hotel, Shatin, Hong Kong, China",
     "timeline": [
       {
@@ -12616,7 +12631,7 @@
       {
         "date": "2026-06-05",
         "abstractDate": "2026-05-29",
-        "comment": "Extended Research Track deadlines"
+        "comment": ""
       }
     ],
     "acceptRates": [
@@ -12648,9 +12663,9 @@
     "place": "Palermo, Sicily, Italy",
     "timeline": [
       {
-        "date": "2026-06-24",
-        "abstractDate": "",
-        "comment": ""
+        "date": "2026-07-01",
+        "abstractDate": "2026-06-24",
+        "comment": "Abstract registration / full paper"
       }
     ],
     "acceptRates": [
@@ -12864,14 +12879,14 @@
     "year": 2026,
     "link": "https://soups.page/",
     "timezone": "AoE",
-    "conferenceDate": "August 23-26, 2026",
-    "conferenceStart": "2026-08-23",
+    "conferenceDate": "August 24-26, 2026",
+    "conferenceStart": "2026-08-24",
     "place": "Hannover, Germany",
     "timeline": [
       {
         "date": "2026-02-19",
         "abstractDate": "2026-02-12",
-        "comment": "Mandatory paper registration with title and abstract"
+        "comment": ""
       }
     ],
     "acceptRates": [
@@ -12908,11 +12923,11 @@
     "category": "DS",
     "rank": "B",
     "year": 2026,
-    "link": "https://spaa.acm.org/",
+    "link": "https://spaa.acm.org/spaa-2026/",
     "timezone": "AoE",
-    "conferenceDate": "July 6 - July 10, 2026",
-    "conferenceStart": "2026-07-06",
-    "place": "London, UK",
+    "conferenceDate": "July 7-9, 2026",
+    "conferenceStart": "2026-07-07",
+    "place": "Egham, England",
     "timeline": [
       {
         "date": "2026-02-27",
@@ -12968,13 +12983,7 @@
     "conferenceDate": "September 22-24, 2026",
     "conferenceStart": "2026-09-22",
     "place": "Rome, Italy",
-    "timeline": [
-      {
-        "date": "2026-05-08",
-        "abstractDate": "2026-05-01",
-        "comment": ""
-      }
-    ],
+    "timeline": [],
     "acceptRates": [
       {
         "year": 2026,
@@ -13092,7 +13101,7 @@
       {
         "date": "2026-05-25",
         "abstractDate": "",
-        "comment": "Regular full papers"
+        "comment": ""
       }
     ],
     "acceptRates": [
@@ -13182,13 +13191,13 @@
     "year": 2026,
     "link": "https://sensys.acm.org/2026/",
     "timezone": "AoE",
-    "conferenceDate": "May 11-14, 2026",
-    "conferenceStart": "2026-05-11",
+    "conferenceDate": "May 12-14, 2026",
+    "conferenceStart": "2026-05-12",
     "place": "Saint-Malo, France",
     "timeline": [
       {
         "date": "2025-07-01",
-        "abstractDate": "2025-06-24",
+        "abstractDate": "2025-07-01",
         "comment": "1st deadline"
       },
       {
@@ -13351,9 +13360,9 @@
     "year": 2026,
     "link": "https://www.auai.org/uai2026/",
     "timezone": "AoE",
-    "conferenceDate": "August 17-21, 2026",
-    "conferenceStart": "2026-08-17",
-    "place": "Amsterdam, Netherlands",
+    "conferenceDate": "August 18-20, 2026",
+    "conferenceStart": "2026-08-18",
+    "place": "Amsterdam, Netherlands (Hybrid)",
     "timeline": [
       {
         "date": "2026-02-25",
@@ -13697,9 +13706,9 @@
     "year": 2026,
     "link": "https://wacv.thecvf.com/Conferences/2026",
     "timezone": "AoE",
-    "conferenceDate": "Mar 6 - 10, 2026",
-    "conferenceStart": "2026-03-06",
-    "place": "Tucson, Arizona, USA",
+    "conferenceDate": "March 8-10, 2026",
+    "conferenceStart": "2026-03-08",
+    "place": "Tucson, Arizona, USA (Hybrid)",
     "timeline": [
       {
         "date": "2025-07-18",
@@ -13942,8 +13951,8 @@
     "year": 2026,
     "link": "https://wsdm-conference.org/2026/",
     "timezone": "UTC-12",
-    "conferenceDate": "February 22 - 26, 2026",
-    "conferenceStart": "2026-02-22",
+    "conferenceDate": "February 23-25, 2026",
+    "conferenceStart": "2026-02-23",
     "place": "Boise, Idaho, USA",
     "timeline": [
       {
@@ -13976,8 +13985,8 @@
     "year": 2026,
     "link": "https://www2026.thewebconf.org/",
     "timezone": "AoE",
-    "conferenceDate": "April 13 - 17, 2026",
-    "conferenceStart": "2026-04-13",
+    "conferenceDate": "July 1-3, 2026",
+    "conferenceStart": "2026-07-01",
     "place": "Dubaï, UAE",
     "timeline": [
       {
@@ -14056,19 +14065,19 @@
     "year": 2026,
     "link": "https://wisec26.events.cispa.de/",
     "timezone": "AoE",
-    "conferenceDate": "June 30 - July 3, 2026",
+    "conferenceDate": "June 30 - July 2, 2026",
     "conferenceStart": "2026-06-30",
     "place": "Saarbrücken, Germany",
     "timeline": [
       {
         "date": "2025-11-18",
         "abstractDate": "",
-        "comment": "First Cycle deadline"
+        "comment": "Round 1"
       },
       {
         "date": "2026-03-03",
         "abstractDate": "",
-        "comment": "Second Cycle deadline"
+        "comment": "Round 2"
       }
     ],
     "acceptRates": [
@@ -14107,8 +14116,8 @@
     "year": 2026,
     "link": "https://www.cs.unibo.it/wowmom2026/",
     "timezone": "UTC-5",
-    "conferenceDate": "June 16-19, 2026",
-    "conferenceStart": "2026-06-16",
+    "conferenceDate": "June 17-19, 2026",
+    "conferenceStart": "2026-06-17",
     "place": "Bologna, Italy",
     "timeline": [
       {
@@ -14302,7 +14311,13 @@
     "conferenceDate": "August 17-22, 2027",
     "conferenceStart": "2027-08-17",
     "place": "Kyoto, Japan",
-    "timeline": [],
+    "timeline": [
+      {
+        "date": "2027-01-04",
+        "abstractDate": "",
+        "comment": "ARR Submission"
+      }
+    ],
     "acceptRates": [
       {
         "year": 2026,
