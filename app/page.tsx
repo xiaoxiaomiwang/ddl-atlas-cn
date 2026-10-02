@@ -100,6 +100,63 @@ function nextDeadlineInfo(conf: Conference): { date: string; days: number } | nu
   return days >= 0 ? { date: earliest, days } : null;
 }
 
+// ---- 投稿拓扑（Submission Topology）----
+// 每一跳 = 一投；边 = "被拒后转投"。结果日来自人工核验/官网抓取，缺失按投稿后 100 天推测（标 *）。
+type TopologyHop = {
+  conf: Conference;
+  entryDate: string;           // 投稿入口日期（摘要/全文/Commit 节点）
+  entryLabel: string;          // 入口节点名
+  resultDate: string;          // 预计最终结果日（主线按最坏情况延伸）
+  earlyDate: string | null;    // 早反馈日（Phase1/早拒，可提前回退）
+  inferredResult: boolean;     // 结果日是否为推测
+};
+
+type TopologyFilters = { ranks: string[]; categories: string[]; sameOnly: boolean; breadth: number };
+
+// 推断某会议某轮投稿的出结果时间（早反馈 + 最终结果）
+function inferResultDates(conf: Conference, entryDate: string): { result: string; early: string | null; inferred: boolean } {
+  const results = (conf.supplementalEvents || [])
+    .filter((event) => !event.inferred && (event.type === "result" || event.type === "reject"))
+    .map((event) => event.date)
+    .filter((date) => date > entryDate)
+    .sort();
+  if (results.length > 0) return { result: results[results.length - 1], early: results[0], inferred: false };
+  return { result: addDays(entryDate, 100), early: null, inferred: true };
+}
+
+// 从 fromDate（上一投的结果日）出发，生成下一投候选（Top-N，评分排序，路径去重，7 天缓冲）
+function topologyCandidates(fromDate: string, rootConf: Conference, usedTitles: Set<string>, filters: TopologyFilters, pool: Conference[]): TopologyHop[] {
+  const minEntry = addDays(fromDate, 7); // 转投缓冲
+  const entries: Array<{ conf: Conference; date: string; label: string }> = [];
+  for (const conf of pool) {
+    if (conf.isARR) continue;
+    if (usedTitles.has(conf.title)) continue; // 路径去重：同一条线不重复投同一会议
+    if (filters.ranks.length > 0 && !filters.ranks.includes(conf.rank)) continue;
+    const sameField = conf.category === rootConf.category;
+    if (filters.sameOnly && !sameField) continue;
+    if (filters.categories.length > 0 && !filters.categories.includes(conf.category)) continue;
+    const nodes = [
+      ...conf.timeline.filter((item) => item.date && item.date !== "TBD").map((item, index) => ({ date: item.date, label: markerLabel(item.comment, index) })),
+      ...(conf.supplementalEvents || []).filter((e) => !e.inferred && (e.type === "submission" || e.type === "commit")).map((e) => ({ date: e.date, label: e.label })),
+    ].filter((n) => n.date >= minEntry && n.date < addDays(fromDate, 550)).sort((a, b) => a.date.localeCompare(b.date));
+    if (nodes.length === 0) continue;
+    entries.push({ conf, date: nodes[0].date, label: nodes[0].label });
+  }
+  const scored = entries.map((entry) => {
+    const { result, early, inferred } = inferResultDates(entry.conf, entry.date);
+    const gap = Math.round((Date.parse(`${entry.date}T00:00:00Z`) - Date.parse(`${fromDate}T00:00:00Z`)) / 86400000);
+    const fit = gap >= 30 && gap <= 180 ? 24 : gap < 30 ? 8 : gap <= 300 ? 12 : 4;   // 时间衔接适中度
+    const rank = entry.conf.rank === "A" ? 16 : entry.conf.rank === "B" ? 10 : entry.conf.rank === "C" ? 5 : 0;
+    const field = entry.conf.category === rootConf.category ? 20 : 0;
+    const rate = entry.conf.acceptRates && entry.conf.acceptRates.length > 0 ? Math.min(10, entry.conf.acceptRates[0].rate / 4) : 0;
+    return { hop: { conf: entry.conf, entryDate: entry.date, entryLabel: entry.label, resultDate: result, earlyDate: early, inferredResult: inferred } as TopologyHop, score: fit + rank + field + rate - (inferred ? 6 : 0) };
+  });
+  scored.sort((a, b) => b.score - a.score || a.hop.entryDate.localeCompare(b.hop.entryDate));
+  const bestPerConf = new Map<string, typeof scored[number]>();
+  for (const item of scored) if (!bestPerConf.has(item.hop.conf.title)) bestPerConf.set(item.hop.conf.title, item);
+  return [...bestPerConf.values()].slice(0, filters.breadth).map((item) => item.hop);
+}
+
 function dayPosition(date: string, year: number) {
   const start = Date.UTC(year, 0, 1);
   const end = Date.UTC(year + 2, 0, 1);
@@ -266,10 +323,10 @@ export default function Home() {
     try { localStorage.setItem(FILTER_STORAGE_KEY, JSON.stringify({ year, rank, categories: selectedCategories, arrMode })); } catch { /* 忽略存储异常（如隐私模式） */ }
   }, [year, rank, selectedCategories, arrMode]);
 
-  // Esc 关闭节点详情弹层与转投面板
+  // Esc 关闭节点详情弹层、转投面板与投稿拓扑
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
-      if (event.key === "Escape") { setSelectedEvent(null); setTransferPoint(null); }
+      if (event.key === "Escape") { setSelectedEvent(null); setTransferPoint(null); setTopologyRoot(null); }
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
@@ -352,6 +409,43 @@ export default function Home() {
     setSelectedEvent(null);
   };
 
+  // ---- 投稿拓扑状态 ----
+  const [topologyRoot, setTopologyRoot] = useState<{ conf: Conference; event: SupplementalEvent } | null>(null);
+  const [topologyPath, setTopologyPath] = useState<TopologyHop[]>([]);
+  const [topoDepth, setTopoDepth] = useState(3);
+  const [topoBreadth, setTopoBreadth] = useState(4);
+  const [topoRanks, setTopoRanks] = useState<string[]>(["A", "B"]);
+  const [topoCategories, setTopoCategories] = useState<string[]>([]);
+  const [topoSameOnly, setTopoSameOnly] = useState(true);
+
+  const startTopology = (conf: Conference, event: SupplementalEvent) => {
+    setTopologyRoot({ conf, event });
+    setTopologyPath([]);
+    setTopoRanks(rank === "ALL" ? ["A", "B"] : [rank]);
+    setTopoCategories(conf.isARR ? ["AI"] : [conf.category]);
+    setTopoSameOnly(!conf.isARR);
+    setTransferPoint(null);
+    setSelectedEvent(null);
+  };
+
+  // 各层候选：根节点之后的每跳由"上一跳结果日"驱动；根层之前的起点即根事件
+  const topologyColumns = useMemo(() => {
+    if (!topologyRoot) return [];
+    const filters: TopologyFilters = { ranks: topoRanks, categories: topoCategories, sameOnly: topoSameOnly, breadth: topoBreadth };
+    const columns: TopologyHop[][] = [];
+    let fromDate = topologyRoot.event.date; // 根层：从根事件当天起
+    const used = new Set<string>([topologyRoot.conf.title]); // 逐层累积：只排除已走过的路径
+    for (let depth = 0; depth < topoDepth; depth += 1) {
+      const candidates = topologyCandidates(fromDate, topologyRoot.conf, used, filters, data);
+      columns.push(candidates);
+      const selected = topologyPath[depth];
+      if (!selected || !candidates.some((hop) => hop.conf.id === selected.conf.id)) break;
+      used.add(selected.conf.title);
+      fromDate = selected.resultDate;
+    }
+    return columns;
+  }, [topologyRoot, topologyPath, topoDepth, topoBreadth, topoRanks, topoCategories, topoSameOnly, data]);
+
   const syncStatusText = syncFailed
     ? `线上更新失败 · 正在使用内置数据${builtInMeta.generatedAt ? `（生成于 ${formatMetaTime(builtInMeta.generatedAt)}）` : ""}`
     : meta.upstreamTime
@@ -417,7 +511,7 @@ export default function Home() {
       {selectedEvent && <div className="event-popover" role="dialog" aria-modal="true" aria-label="日期节点详情"><button className="popover-close" onClick={() => setSelectedEvent(null)} aria-label="关闭">×</button><p>{selectedEvent.conf.title} · {selectedEvent.conf.year} {selectedEvent.event.inferred ? "· 往届官网节奏平移 *" : selectedEvent.event.autoFetched ? "· 官网自动抓取（未核验）" : "· 官方核验"}</p><h3>{selectedEvent.event.label}</h3><time>{selectedEvent.event.date} · {selectedEvent.conf.timezone || "以官网为准"} · {(() => { const relDays = diffDaysFromToday(selectedEvent.event.date); return relDays === 0 ? "就是今天" : relDays > 0 ? `还有 ${relDays} 天` : `已过去 ${-relDays} 天`; })()}</time>{selectedEvent.event.detail && <div>{selectedEvent.event.detail}</div>}{selectedEvent.event.autoFetched && <div>该节点由程序从会议官网自动解析，未经人工核验，请以官网为准。</div>}{selectedEvent.conf.acceptRates && selectedEvent.conf.acceptRates.length > 0 && <div className="popover-rates"><b>历届录用率</b>{selectedEvent.conf.acceptRates.map((r) => <span key={r.year}>{r.year} 届：<b>{r.rate.toFixed(1)}%</b>（{r.accepted}/{r.submitted}）</span>)}</div>}<a href={selectedEvent.event.source} target="_blank" rel="noreferrer">{selectedEvent.event.inferred ? "查看所依据的往届官网 ↗" : "查看官方来源 ↗"}</a></div>}
 
       {transferPoint && <aside className="transfer-panel" aria-label="转投候选会议">
-        <div className="transfer-panel-head"><div><p>TRANSFER PLANNER</p><h3>从 {transferPoint.event.date.slice(5).replace("-", "/")} 之后转投</h3><span>{transferPoint.conf.title} · {transferPoint.event.label}</span></div><button onClick={() => setTransferPoint(null)} aria-label="关闭转投规划">×</button></div>
+        <div className="transfer-panel-head"><div><p>TRANSFER PLANNER</p><h3>从 {transferPoint.event.date.slice(5).replace("-", "/")} 之后转投</h3><span>{transferPoint.conf.title} · {transferPoint.event.label}</span></div><div className="transfer-head-actions"><button className="topology-entry" onClick={() => startTopology(transferPoint.conf, transferPoint.event)}>投稿拓扑 ↗</button><button onClick={() => setTransferPoint(null)} aria-label="关闭转投规划">×</button></div></div>
         <div className="planner-controls">
           <label>候选领域 · 可多选</label><div className="mini-buttons"><button className={plannerCategories.length === 0 ? "active" : ""} onClick={() => setPlannerCategories([])}>全部</button>{Object.entries(categories).filter(([key]) => key !== "ALL").map(([key, value]) => <button key={key} title={value} className={plannerCategories.includes(key) ? "active" : ""} onClick={() => setPlannerCategories((current) => current.includes(key) ? current.filter((item) => item !== key) : [...current, key])}>{key}</button>)}</div>
           <label>CCF 等级 · 可多选</label><div className="mini-buttons">{["A", "B", "C"].map((item) => <button key={item} className={plannerRanks.includes(item) ? "active" : ""} onClick={() => setPlannerRanks((current) => current.includes(item) ? current.filter((rankItem) => rankItem !== item) : [...current, item])}>{item}</button>)}</div>
@@ -427,6 +521,48 @@ export default function Home() {
         </div>
         <div className="candidate-list">{transferCandidates.length === 0 && <p className="no-candidate">当前条件下没有可用投稿节点，可放宽领域、等级或最长等待时间。</p>}{transferCandidates.map(({ conf, event, days, sameField }, index) => <a href={conf.link} target="_blank" rel="noreferrer" className={`candidate ${event.inferred ? "projected" : ""}`} key={`${conf.id}-${event.date}-${event.label}`}><b>{String(index + 1).padStart(2, "0")}</b><div><h4>{conf.title} <em>{conf.isARR ? "ARR" : conf.rank ? `CCF ${conf.rank}` : ""}</em></h4><p>{event.date} · {event.label}</p><small>{event.inferred ? "* 根据本届日期顺延一年 · " : "官网已公布 · "}{sameField ? "同领域 · " : ""}{conf.place || conf.description}</small></div><strong>+{days} 天</strong></a>)}</div>
       </aside>}
+
+      {topologyRoot && <div className="topology-overlay" role="dialog" aria-modal="true" aria-label="投稿拓扑规划">
+        <div className="topology-head">
+          <div><p>SUBMISSION TOPOLOGY</p><h3>从 {topologyRoot.conf.title} {topologyRoot.event.date.slice(5).replace("-", "/")} 起，最坏情况的投稿路线</h3>
+            <span>{[topologyRoot.conf.title, ...topologyPath.map((hop) => hop.conf.title)].join(" → ")}</span></div>
+          <div className="topology-controls">
+            <label>深度 {topoDepth} 投</label><div className="mini-buttons">{[2, 3, 4].map((d) => <button key={d} className={topoDepth === d ? "active" : ""} onClick={() => { setTopoDepth(d); setTopologyPath(topologyPath.slice(0, d)); }}>{d}</button>)}</div>
+            <label>每层 {topoBreadth} 选</label><div className="mini-buttons">{[3, 4, 5].map((b) => <button key={b} className={topoBreadth === b ? "active" : ""} onClick={() => setTopoBreadth(b)}>{b}</button>)}</div>
+            <label>CCF 等级</label><div className="mini-buttons">{["A", "B", "C"].map((r) => <button key={r} className={topoRanks.includes(r) ? "active" : ""} onClick={() => setTopoRanks((cur) => cur.includes(r) ? cur.filter((x) => x !== r) : [...cur, r])}>{r}</button>)}</div>
+            <label className="same-toggle"><input type="checkbox" checked={topoSameOnly} onChange={(e) => setTopoSameOnly(e.target.checked)}/> 只看同领域</label>
+            <button className="topology-close" onClick={() => setTopologyRoot(null)} aria-label="关闭投稿拓扑">×</button>
+          </div>
+        </div>
+        <div className="topology-body">
+          <div className="topology-columns">
+            {topologyColumns.map((candidates, depth) => (
+              <div className="topology-column" key={`col-${depth}`}>
+                <div className="topology-column-label">第 {depth + 1} 投候选{depth > 0 ? ` · 前一投结果日 ${topologyPath[depth - 1]?.resultDate || ""} 之后` : ""}</div>
+                {candidates.length === 0 && <p className="no-candidate">当前条件下此层没有可投会议，可放宽等级/领域或减少深度。</p>}
+                {candidates.map((hop) => {
+                  const active = topologyPath[depth]?.conf.id === hop.conf.id;
+                  const gapFromPrev = Math.round((Date.parse(`${hop.entryDate}T00:00:00Z`) - Date.parse(`${(depth === 0 ? topologyRoot!.event.date : topologyPath[depth - 1].resultDate)}T00:00:00Z`)) / 86400000);
+                  return <div className={`topology-card ${active ? "active" : ""}`} key={hop.conf.id} onClick={() => setTopologyPath((cur) => [...cur.slice(0, depth), hop])}>
+                    <div className="topology-card-top"><h4>{hop.conf.title} <small>{hop.conf.year}</small></h4><span className={`rank ${rankColors[hop.conf.rank] || "rank-n"}`}>CCF {hop.conf.rank}</span></div>
+                    <p>{hop.conf.place || hop.conf.description}{hop.conf.place && placeZh(hop.conf.place)}</p>
+                    <div className="topology-dates">
+                      <span>■ 投稿 {hop.entryDate.slice(5)}</span>
+                      {hop.earlyDate && <span>· 早反馈 {hop.earlyDate.slice(5)}</span>}
+                      <span>· {hop.inferredResult ? "* 约" : ""}结果 {hop.resultDate.slice(5)}</span>
+                    </div>
+                    <div className="topology-meta">
+                      <span>距上一投 +{gapFromPrev} 天</span>
+                      {hop.conf.acceptRates && hop.conf.acceptRates.length > 0 && <span>· ✦ {hop.conf.acceptRates[0].rate.toFixed(1)}%（{hop.conf.acceptRates[0].year} 届）</span>}
+                    </div>
+                    <a href={hop.conf.link} target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()}>会议官网 ↗</a>
+                  </div>;
+                })}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>}
 
       <footer><div><b>DDL ATLAS<sup>CN</sup></b><p>让研究计划，更早一点清晰。</p></div><p>会议与截止信息来自社区维护的 <a href="https://github.com/ccfddl/ccf-deadlines">CCFDDL</a>。Rebuttal 与最终结果仅在上游数据明确提供时显示，请以会议官网为准。</p></footer>
     </main>
