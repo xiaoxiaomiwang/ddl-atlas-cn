@@ -507,12 +507,12 @@ export default function Home() {
   // 各层候选：根节点之后的每跳由"上一跳结果日"驱动
   const topologyColumns = useMemo(() => {
     if (!topologyRoot) return [];
-    // 每层生成最多 12 个候选：默认只显示前 breadth 个，点击"更多"可展开全部，支持选列表外的会议
     const filters: TopologyFilters = { ranks: topoRanks, categories: topoCategories, sameOnly: topoSameOnly, breadth: Math.max(topoBreadth, 12) };
     const columns: TopologyHop[][] = [];
-    const fromDate = topologyRoot.mode === "conf" ? topologyRoot.event.date : topologyRoot.freeDate;
-    const anchor = topologyRoot.mode === "conf" ? topologyRoot.conf : (topologyPath[0]?.conf ?? null); // 领域参照：锚定会议，或第一投
-    const used = new Set<string>(anchor ? [anchor.title] : []); // 逐层累积：只排除已走过的路径
+    const fromDate = topologyRoot.mode === "conf" ? topologyRoot.event.date : (topologyRoot.freeDate || TODAY);
+    // anchor 仅为领域参照（评分用），绝不参与路径排除——排除集 used 只由真实路径构成
+    const anchor = topologyRoot.mode === "conf" ? topologyRoot.conf : (topologyPath[0]?.conf ?? null);
+    const used = new Set<string>(topologyRoot.mode === "conf" ? [topologyRoot.conf.title] : []);
     let cursor = fromDate;
     for (let depth = 0; depth < topoDepth; depth += 1) {
       const candidates = topologyCandidates(cursor, anchor, used, filters, data);
@@ -609,7 +609,7 @@ export default function Home() {
             <span>{topologyRoot.mode === "conf" ? topologyRoot.conf.title : topologyRoot.freeDate} → {topologyPath.map((hop) => hop.conf.title).join(" → ")}</span></div>
           <div className="topology-controls">
             <div className="topology-tabs"><button className={topologyView === "plan" ? "active" : ""} onClick={() => setTopologyView("plan")}>拓扑规划</button><button className={topologyView === "verify" ? "active" : ""} onClick={() => setTopologyView("verify")}>组合验证</button></div>
-            {topologyRoot.mode === "date" && <div className="topology-datepicker"><label>论文完成日</label><input type="date" value={freeDate} onChange={(e) => { setFreeDate(e.target.value); setTopologyRoot({ mode: "date", freeDate: e.target.value }); setTopologyPath([]); }}/></div>}
+            {topologyRoot.mode === "date" && <div className="topology-datepicker"><label>论文完成日</label><input type="date" value={freeDate} onChange={(e) => { const value = e.target.value || TODAY; setFreeDate(value); setTopologyRoot({ mode: "date", freeDate: value }); setTopologyPath([]); }}/></div>}
             <label>领域类型 · 换领域即换整套拓扑</label><div className="mini-buttons"><button className={topoCategories.length === 0 ? "active" : ""} title="不限领域" onClick={() => setTopoCategories([])}>全部</button>{Object.entries(categories).filter(([key]) => key !== "ALL").map(([key, value]) => <button key={key} title={value} className={topoCategories.includes(key) ? "active" : ""} onClick={() => { setTopoCategories((cur) => cur.includes(key) ? cur.filter((x) => x !== key) : [...cur, key]); setTopoExpanded([]); }}>{key}</button>)}</div>
             <label>CCF 等级</label><div className="mini-buttons">{["A", "B", "C"].map((r) => <button key={r} className={topoRanks.includes(r) ? "active" : ""} onClick={() => { setTopoRanks((cur) => cur.includes(r) ? cur.filter((x) => x !== r) : [...cur, r]); setTopoExpanded([]); }}>{r}</button>)}</div>
             <label>深度 {topoDepth} 投</label><div className="mini-buttons">{[2, 3, 4].map((d) => <button key={d} className={topoDepth === d ? "active" : ""} onClick={() => { setTopoDepth(d); setTopologyPath(topologyPath.slice(0, d)); }}>{d}</button>)}</div>
