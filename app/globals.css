@@ -77,7 +77,7 @@ footer { background:var(--green); color:white; padding:45px 5vw; display:flex; j
 .topology-body { flex:1; overflow:auto; padding:18px 22px 30px; }
 .topology-columns { display:flex; gap:18px; align-items:flex-start; }
 .topology-column { flex:none; width:250px; display:flex; flex-direction:column; gap:8px; }
-.topology-column-label { color:#74806f; font-size:9px; font-weight:850; letter-spacing:.06em; border-bottom:1px solid var(--line); padding-bottom:5px; }
+.topology-column-label { color:#74806f; font-size:9px; font-weight:850; letter-spacing:.06em; border-bottom:1px solid var(--line); padding-bottom:5px; display:flex; flex-direction:column; gap:2px; }.topology-column-label .topology-hint { color:#a9b2aa; font-size:8px; font-weight:700; letter-spacing:0; }.topology-more { border:1px dashed #b5ad9e; background:transparent; color:#74806f; font-size:8px; font-weight:800; padding:6px 8px; cursor:pointer; }.topology-more:hover { border-color:var(--green); color:var(--green); }
 .topology-card { background:#fffdf7; border:2px solid #d9d2c3; box-shadow:4px 4px 0 rgba(23,33,29,.07); padding:11px 12px; cursor:pointer; transition:.12s ease; }
 .topology-card:hover { transform:translateY(-2px); border-color:var(--green); }
 .topology-card.active { border-color:var(--green); box-shadow:5px 5px 0 rgba(32,112,68,.25); background:#f4f9f4; }

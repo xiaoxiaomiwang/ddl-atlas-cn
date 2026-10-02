@@ -417,6 +417,7 @@ export default function Home() {
   const [topoRanks, setTopoRanks] = useState<string[]>(["A", "B"]);
   const [topoCategories, setTopoCategories] = useState<string[]>([]);
   const [topoSameOnly, setTopoSameOnly] = useState(true);
+  const [topoExpanded, setTopoExpanded] = useState<number[]>([]); // 展开显示全部候选的层序号
 
   const startTopology = (conf: Conference, event: SupplementalEvent) => {
     setTopologyRoot({ conf, event });
@@ -431,7 +432,8 @@ export default function Home() {
   // 各层候选：根节点之后的每跳由"上一跳结果日"驱动；根层之前的起点即根事件
   const topologyColumns = useMemo(() => {
     if (!topologyRoot) return [];
-    const filters: TopologyFilters = { ranks: topoRanks, categories: topoCategories, sameOnly: topoSameOnly, breadth: topoBreadth };
+    // 每层生成最多 12 个候选：默认只显示前 breadth 个，点击"更多"可展开全部，支持选列表外的会议
+    const filters: TopologyFilters = { ranks: topoRanks, categories: topoCategories, sameOnly: topoSameOnly, breadth: Math.max(topoBreadth, 12) };
     const columns: TopologyHop[][] = [];
     let fromDate = topologyRoot.event.date; // 根层：从根事件当天起
     const used = new Set<string>([topologyRoot.conf.title]); // 逐层累积：只排除已走过的路径
@@ -527,23 +529,34 @@ export default function Home() {
           <div><p>SUBMISSION TOPOLOGY</p><h3>从 {topologyRoot.conf.title} {topologyRoot.event.date.slice(5).replace("-", "/")} 起，最坏情况的投稿路线</h3>
             <span>{[topologyRoot.conf.title, ...topologyPath.map((hop) => hop.conf.title)].join(" → ")}</span></div>
           <div className="topology-controls">
+            <label>领域类型 · 换领域即换整套拓扑</label><div className="mini-buttons"><button className={topoCategories.length === 0 ? "active" : ""} title="不限领域" onClick={() => setTopoCategories([])}>全部</button>{Object.entries(categories).filter(([key]) => key !== "ALL").map(([key, value]) => <button key={key} title={value} className={topoCategories.includes(key) ? "active" : ""} onClick={() => { setTopoCategories((cur) => cur.includes(key) ? cur.filter((x) => x !== key) : [...cur, key]); setTopoExpanded([]); }}>{key}</button>)}</div>
+            <label>CCF 等级</label><div className="mini-buttons">{["A", "B", "C"].map((r) => <button key={r} className={topoRanks.includes(r) ? "active" : ""} onClick={() => { setTopoRanks((cur) => cur.includes(r) ? cur.filter((x) => x !== r) : [...cur, r]); setTopoExpanded([]); }}>{r}</button>)}</div>
             <label>深度 {topoDepth} 投</label><div className="mini-buttons">{[2, 3, 4].map((d) => <button key={d} className={topoDepth === d ? "active" : ""} onClick={() => { setTopoDepth(d); setTopologyPath(topologyPath.slice(0, d)); }}>{d}</button>)}</div>
-            <label>每层 {topoBreadth} 选</label><div className="mini-buttons">{[3, 4, 5].map((b) => <button key={b} className={topoBreadth === b ? "active" : ""} onClick={() => setTopoBreadth(b)}>{b}</button>)}</div>
-            <label>CCF 等级</label><div className="mini-buttons">{["A", "B", "C"].map((r) => <button key={r} className={topoRanks.includes(r) ? "active" : ""} onClick={() => setTopoRanks((cur) => cur.includes(r) ? cur.filter((x) => x !== r) : [...cur, r])}>{r}</button>)}</div>
-            <label className="same-toggle"><input type="checkbox" checked={topoSameOnly} onChange={(e) => setTopoSameOnly(e.target.checked)}/> 只看同领域</label>
+            <label>每层显示 {topoBreadth} 选</label><div className="mini-buttons">{[3, 4, 5].map((b) => <button key={b} className={topoBreadth === b ? "active" : ""} onClick={() => { setTopoBreadth(b); setTopoExpanded([]); }}>{b}</button>)}</div>
+            <label className="same-toggle"><input type="checkbox" checked={topoSameOnly} onChange={(e) => { setTopoSameOnly(e.target.checked); setTopoExpanded([]); }}/> 只看同领域</label>
             <button className="topology-close" onClick={() => setTopologyRoot(null)} aria-label="关闭投稿拓扑">×</button>
           </div>
         </div>
         <div className="topology-body">
           <div className="topology-columns">
-            {topologyColumns.map((candidates, depth) => (
+            {topologyColumns.map((candidates, depth) => {
+              const isExpanded = topoExpanded.includes(depth);
+              let visibleCandidates = candidates.slice(0, isExpanded ? 12 : topoBreadth);
+              const activeHop = topologyPath[depth];
+              if (activeHop && !visibleCandidates.some((hop) => hop.conf.id === activeHop.conf.id) && candidates.some((hop) => hop.conf.id === activeHop.conf.id)) {
+                visibleCandidates = [...visibleCandidates, activeHop]; // 已选中的会议即使超出显示数也保持可见
+              }
+              return (
               <div className="topology-column" key={`col-${depth}`}>
-                <div className="topology-column-label">第 {depth + 1} 投候选{depth > 0 ? ` · 前一投结果日 ${topologyPath[depth - 1]?.resultDate || ""} 之后` : ""}</div>
+                <div className="topology-column-label">第 {depth + 1} 投候选{depth > 0 ? ` · 前一投结果日 ${topologyPath[depth - 1]?.resultDate || ""} 之后` : ""}<span className="topology-hint">点击卡片选中，再点可取消</span></div>
                 {candidates.length === 0 && <p className="no-candidate">当前条件下此层没有可投会议，可放宽等级/领域或减少深度。</p>}
-                {candidates.map((hop) => {
+                {visibleCandidates.map((hop) => {
                   const active = topologyPath[depth]?.conf.id === hop.conf.id;
                   const gapFromPrev = Math.round((Date.parse(`${hop.entryDate}T00:00:00Z`) - Date.parse(`${(depth === 0 ? topologyRoot!.event.date : topologyPath[depth - 1].resultDate)}T00:00:00Z`)) / 86400000);
-                  return <div className={`topology-card ${active ? "active" : ""}`} key={hop.conf.id} onClick={() => setTopologyPath((cur) => [...cur.slice(0, depth), hop])}>
+                  return <div className={`topology-card ${active ? "active" : ""}`} key={hop.conf.id} onClick={() => setTopologyPath((cur) => {
+                    if (cur[depth]?.conf.id === hop.conf.id) return cur.slice(0, depth); // 点已选卡片 = 取消该层及更深选择
+                    return [...cur.slice(0, depth), hop];
+                  })}>
                     <div className="topology-card-top"><h4>{hop.conf.title} <small>{hop.conf.year}</small></h4><span className={`rank ${rankColors[hop.conf.rank] || "rank-n"}`}>CCF {hop.conf.rank}</span></div>
                     <p>{hop.conf.place || hop.conf.description}{hop.conf.place && placeZh(hop.conf.place)}</p>
                     <div className="topology-dates">
@@ -558,8 +571,11 @@ export default function Home() {
                     <a href={hop.conf.link} target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()}>会议官网 ↗</a>
                   </div>;
                 })}
+                {candidates.length > visibleCandidates.length && <button className="topology-more" onClick={() => setTopoExpanded((cur) => [...cur, depth])}>＋ 展开全部 {candidates.length} 个候选</button>}
+                {isExpanded && candidates.length > topoBreadth && <button className="topology-more" onClick={() => setTopoExpanded((cur) => cur.filter((d) => d !== depth))}>收起</button>}
               </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>}
