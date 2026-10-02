@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-02T13:54:18Z",
+    "generatedAt": "2026-10-02T16:45:09Z",
     "targetCount": 53,
     "scrapedCount": 32
   },
@@ -185,6 +185,29 @@
         }
       ]
     },
+    "STOC-2026": {
+      "source": "https://acm-stoc.org/stoc2026/stoc2026-cfp.html",
+      "events": [
+        {
+          "date": "2025-11-04",
+          "label": "Salt Lake City, Utah, USA https://acm-stoc",
+          "type": "submission",
+          "source": "https://acm-stoc.org/stoc2026/stoc2026-cfp.html"
+        },
+        {
+          "date": "2026-02-01",
+          "label": "There is no separate abstract submission d",
+          "type": "result",
+          "source": "https://acm-stoc.org/stoc2026/stoc2026-cfp.html"
+        },
+        {
+          "date": "2026-03-31",
+          "label": "Camera-ready deadline for accepted papers:",
+          "type": "camera",
+          "source": "https://acm-stoc.org/stoc2026/stoc2026-cfp.html"
+        }
+      ]
+    },
     "SIGOPS ATC-2026": {
       "source": "https://sigops.org/s/conferences/atc/2026/cfp.html",
       "events": [
@@ -281,29 +304,6 @@
           "label": "Camera-ready versions due Friday,",
           "type": "camera",
           "source": "https://uist.acm.org/2026/cfp"
-        }
-      ]
-    },
-    "STOC-2026": {
-      "source": "https://acm-stoc.org/stoc2026/stoc2026-cfp.html",
-      "events": [
-        {
-          "date": "2025-11-04",
-          "label": "Salt Lake City, Utah, USA https://acm-stoc",
-          "type": "submission",
-          "source": "https://acm-stoc.org/stoc2026/stoc2026-cfp.html"
-        },
-        {
-          "date": "2026-02-01",
-          "label": "There is no separate abstract submission d",
-          "type": "result",
-          "source": "https://acm-stoc.org/stoc2026/stoc2026-cfp.html"
-        },
-        {
-          "date": "2026-03-31",
-          "label": "Camera-ready deadline for accepted papers:",
-          "type": "camera",
-          "source": "https://acm-stoc.org/stoc2026/stoc2026-cfp.html"
         }
       ]
     },
@@ -546,35 +546,6 @@
         }
       ]
     },
-    "DAC-2027": {
-      "source": "https://dac.com/2027/program/research-manuscript-submissions",
-      "events": [
-        {
-          "date": "2026-11-18",
-          "label": "A submitter must enter the names, affiliat",
-          "type": "submission",
-          "source": "https://dac.com/2027/program/research-manuscript-submissions"
-        },
-        {
-          "date": "2026-11-18",
-          "label": "Abstract Submission Deadline (5 PM PST)",
-          "type": "abstract",
-          "source": "https://dac.com/2027/program/research-manuscript-submissions"
-        },
-        {
-          "date": "2027-02-22",
-          "label": "Manuscript Submission Deadline (5 PM PST)",
-          "type": "submission",
-          "source": "https://dac.com/2027/program/research-manuscript-submissions"
-        },
-        {
-          "date": "2027-03-22",
-          "label": "Accept/Reject Notifications Sent",
-          "type": "result",
-          "source": "https://dac.com/2027/program/research-manuscript-submissions"
-        }
-      ]
-    },
     "EUROCRYPT-2027": {
       "source": "https://eurocrypt.iacr.org/2027/",
       "events": [
@@ -613,6 +584,35 @@
           "label": "Camera-ready version due",
           "type": "camera",
           "source": "https://eurocrypt.iacr.org/2027/"
+        }
+      ]
+    },
+    "DAC-2027": {
+      "source": "https://dac.com/2027/program/research-manuscript-submissions",
+      "events": [
+        {
+          "date": "2026-11-18",
+          "label": "A submitter must enter the names, affiliat",
+          "type": "submission",
+          "source": "https://dac.com/2027/program/research-manuscript-submissions"
+        },
+        {
+          "date": "2026-11-18",
+          "label": "Abstract Submission Deadline (5 PM PST)",
+          "type": "abstract",
+          "source": "https://dac.com/2027/program/research-manuscript-submissions"
+        },
+        {
+          "date": "2027-02-22",
+          "label": "Manuscript Submission Deadline (5 PM PST)",
+          "type": "submission",
+          "source": "https://dac.com/2027/program/research-manuscript-submissions"
+        },
+        {
+          "date": "2027-03-22",
+          "label": "Accept/Reject Notifications Sent",
+          "type": "result",
+          "source": "https://dac.com/2027/program/research-manuscript-submissions"
         }
       ]
     },
@@ -673,35 +673,6 @@
         }
       ]
     },
-    "MobiCom-2027": {
-      "source": "https://www.sigmobile.org/mobicom/2027/",
-      "events": [
-        {
-          "date": "2026-09-02",
-          "label": "Paper Submission 23:59 AoE",
-          "type": "submission",
-          "source": "https://www.sigmobile.org/mobicom/2027/"
-        },
-        {
-          "date": "2026-10-23",
-          "label": "Early Rejection Notification",
-          "type": "result",
-          "source": "https://www.sigmobile.org/mobicom/2027/"
-        },
-        {
-          "date": "2026-11-03",
-          "label": "Rebuttal Period",
-          "type": "rebuttal",
-          "source": "https://www.sigmobile.org/mobicom/2027/"
-        },
-        {
-          "date": "2026-11-19",
-          "label": "Final Notifications",
-          "type": "result",
-          "source": "https://www.sigmobile.org/mobicom/2027/"
-        }
-      ]
-    },
     "ICSE-2027": {
       "source": "https://conf.researchr.org/track/icse-2027/icse-2027-research-track",
       "events": [
@@ -749,26 +720,61 @@
         }
       ]
     },
-    "OOPSLA-2027": {
-      "source": "https://2027.splashcon.org/track/splashoopsla2027",
+    "MobiCom-2027": {
+      "source": "https://www.sigmobile.org/mobicom/2027/",
       "events": [
         {
-          "date": "2027-07-02",
-          "label": "Author Response (Round 2) Fri",
+          "date": "2026-09-02",
+          "label": "Paper Submission 23:59 AoE",
+          "type": "submission",
+          "source": "https://www.sigmobile.org/mobicom/2027/"
+        },
+        {
+          "date": "2026-10-23",
+          "label": "Early Rejection Notification",
+          "type": "result",
+          "source": "https://www.sigmobile.org/mobicom/2027/"
+        },
+        {
+          "date": "2026-11-03",
+          "label": "Rebuttal Period",
           "type": "rebuttal",
-          "source": "https://2027.splashcon.org/track/splashoopsla2027"
+          "source": "https://www.sigmobile.org/mobicom/2027/"
         },
         {
-          "date": "2027-07-30",
-          "label": "Author Notification (Round 2) Fri",
+          "date": "2026-11-19",
+          "label": "Final Notifications",
           "type": "result",
-          "source": "https://2027.splashcon.org/track/splashoopsla2027"
+          "source": "https://www.sigmobile.org/mobicom/2027/"
+        }
+      ]
+    },
+    "INFOCOM-2027": {
+      "source": "https://infocom2027.ieee-infocom.org/call-papers",
+      "events": [
+        {
+          "date": "2026-07-24",
+          "label": "IEEE INFOCOM is a top-ranked conference on",
+          "type": "abstract",
+          "source": "https://infocom2027.ieee-infocom.org/call-papers"
         },
         {
-          "date": "2027-08-27",
-          "label": "Author Notification (Round 2) Fri",
+          "date": "2026-07-31",
+          "label": "Full Paper Due: Friday, (11:59 p.m. AOE)",
+          "type": "submission",
+          "source": "https://infocom2027.ieee-infocom.org/call-papers"
+        },
+        {
+          "date": "2026-10-09",
+          "label": "Early-Reject Notification: Friday,",
           "type": "result",
-          "source": "https://2027.splashcon.org/track/splashoopsla2027"
+          "source": "https://infocom2027.ieee-infocom.org/call-papers"
+        },
+        {
+          "date": "2026-12-08",
+          "label": "Acceptance Notification: Tuesday,",
+          "type": "result",
+          "source": "https://infocom2027.ieee-infocom.org/call-papers"
         }
       ]
     },
@@ -825,6 +831,29 @@
         }
       ]
     },
+    "OOPSLA-2027": {
+      "source": "https://2027.splashcon.org/track/splashoopsla2027",
+      "events": [
+        {
+          "date": "2027-07-02",
+          "label": "Author Response (Round 2) Fri",
+          "type": "rebuttal",
+          "source": "https://2027.splashcon.org/track/splashoopsla2027"
+        },
+        {
+          "date": "2027-07-30",
+          "label": "Author Notification (Round 2) Fri",
+          "type": "result",
+          "source": "https://2027.splashcon.org/track/splashoopsla2027"
+        },
+        {
+          "date": "2027-08-27",
+          "label": "Author Notification (Round 2) Fri",
+          "type": "result",
+          "source": "https://2027.splashcon.org/track/splashoopsla2027"
+        }
+      ]
+    },
     "PLDI-2027": {
       "source": "https://pldi27.sigplan.org/dates",
       "events": [
@@ -854,6 +883,35 @@
         }
       ]
     },
+    "STOC-2027": {
+      "source": "https://acm-stoc.org/stoc2027/stoc2027-cfp.html",
+      "events": [
+        {
+          "date": "2026-11-02",
+          "label": "Atlanta, GA, USA (part of FCRC’27) https:/",
+          "type": "submission",
+          "source": "https://acm-stoc.org/stoc2027/stoc2027-cfp.html"
+        },
+        {
+          "date": "2026-11-16",
+          "label": "Video submission deadline: Monday, , 11:59",
+          "type": "submission",
+          "source": "https://acm-stoc.org/stoc2027/stoc2027-cfp.html"
+        },
+        {
+          "date": "2027-02-01",
+          "label": "Author notification",
+          "type": "result",
+          "source": "https://acm-stoc.org/stoc2027/stoc2027-cfp.html"
+        },
+        {
+          "date": "2027-04-01",
+          "label": "Camera-ready deadline for accepted papers",
+          "type": "camera",
+          "source": "https://acm-stoc.org/stoc2027/stoc2027-cfp.html"
+        }
+      ]
+    },
     "SIGIR-2027": {
       "source": "https://sigir2027.org/",
       "events": [
@@ -880,29 +938,6 @@
           "label": "Camera-ready submission",
           "type": "camera",
           "source": "https://sigir2027.org/"
-        }
-      ]
-    },
-    "STOC-2027": {
-      "source": "https://acm-stoc.org/stoc2027/stoc2027-cfp.html",
-      "events": [
-        {
-          "date": "2026-11-02",
-          "label": "Atlanta, GA, USA (part of FCRC’27) https:/",
-          "type": "submission",
-          "source": "https://acm-stoc.org/stoc2027/stoc2027-cfp.html"
-        },
-        {
-          "date": "2027-02-01",
-          "label": "Author notification",
-          "type": "result",
-          "source": "https://acm-stoc.org/stoc2027/stoc2027-cfp.html"
-        },
-        {
-          "date": "2027-04-01",
-          "label": "Camera-ready deadline for accepted papers",
-          "type": "camera",
-          "source": "https://acm-stoc.org/stoc2027/stoc2027-cfp.html"
         }
       ]
     },
@@ -968,35 +1003,6 @@
           "label": "FRIDA Submission Deadline Sat",
           "type": "submission",
           "source": "https://popl27.sigplan.org/dates"
-        }
-      ]
-    },
-    "INFOCOM-2027": {
-      "source": "https://infocom2027.ieee-infocom.org/call-papers",
-      "events": [
-        {
-          "date": "2026-07-24",
-          "label": "IEEE INFOCOM is a top-ranked conference on",
-          "type": "abstract",
-          "source": "https://infocom2027.ieee-infocom.org/call-papers"
-        },
-        {
-          "date": "2026-07-31",
-          "label": "Full Paper Due: Friday, (11:59 p.m. AOE)",
-          "type": "submission",
-          "source": "https://infocom2027.ieee-infocom.org/call-papers"
-        },
-        {
-          "date": "2026-10-09",
-          "label": "Early-Reject Notification: Friday,",
-          "type": "result",
-          "source": "https://infocom2027.ieee-infocom.org/call-papers"
-        },
-        {
-          "date": "2026-12-08",
-          "label": "Acceptance Notification: Tuesday,",
-          "type": "result",
-          "source": "https://infocom2027.ieee-infocom.org/call-papers"
         }
       ]
     },
