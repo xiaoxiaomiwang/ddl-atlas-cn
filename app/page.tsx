@@ -81,6 +81,13 @@ function formatMetaTime(iso: string | null | undefined) {
   return value.toLocaleString("zh-CN", { year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" });
 }
 
+// 数据的已知投稿排期视野边界（全数据最晚的投稿截止日）
+function maxKnownDeadline(pool: Conference[]): string {
+  let max = "";
+  for (const conf of pool) for (const item of conf.timeline) if (item.date && item.date !== "TBD" && item.date > max) max = item.date;
+  return max;
+}
+
 // 距指定日期还剩几天（0 = 今天，负数 = 已过去）
 function diffDaysFromToday(date: string): number {
   return Math.round((Date.parse(`${date}T00:00:00Z`) - Date.parse(`${TODAY}T00:00:00Z`)) / 86400000);
@@ -150,7 +157,10 @@ function topologyCandidates(fromDate: string, rootConf: Conference | null, usedT
     const rank = entry.conf.rank === "A" ? 16 : entry.conf.rank === "B" ? 10 : entry.conf.rank === "C" ? 5 : 0;
     const field = rootConf && entry.conf.category === rootConf.category ? 20 : 0;
     const rate = entry.conf.acceptRates && entry.conf.acceptRates.length > 0 ? Math.min(10, entry.conf.acceptRates[0].rate / 4) : 0;
-    return { hop: { conf: entry.conf, entryDate: entry.date, entryLabel: entry.label, resultDate: result, earlyDate: early, inferredResult: inferred } as TopologyHop, score: fit + rank + field + rate - (inferred ? 6 : 0) };
+    // 评审周期惩罚：出结果越晚，越早把规划推到数据视野之外，适度减分保证链路可持续
+    const cycle = Math.round((Date.parse(`${result}T00:00:00Z`) - Date.parse(`${entry.date}T00:00:00Z`)) / 86400000);
+    const cyclePenalty = cycle > 210 ? -14 : cycle > 150 ? -7 : cycle > 120 ? -3 : 0;
+    return { hop: { conf: entry.conf, entryDate: entry.date, entryLabel: entry.label, resultDate: result, earlyDate: early, inferredResult: inferred } as TopologyHop, score: fit + rank + field + rate + cyclePenalty - (inferred ? 6 : 0) };
   });
   scored.sort((a, b) => b.score - a.score || a.hop.entryDate.localeCompare(b.hop.entryDate));
   const bestPerConf = new Map<string, typeof scored[number]>();
@@ -167,12 +177,12 @@ type VerifyResult =
 function verifyTopology(selection: Conference[]): VerifyResult {
   if (selection.length === 0) return { ok: false, reason: "请先添加至少一场会议。", bestPrefix: [] };
   if (selection.length > 6) return { ok: false, reason: "最多支持 6 场会议组合验证。", bestPrefix: [] };
-  // 每场会议保留最多 3 个未来投稿轮次（滚动投稿会议可选更晚轮次衔接）
+  // 每场会议保留最多 8 个未来投稿轮次（滚动投稿会议的深轮次参与衔接）
   const optionsPerConf = selection.map((conf) => {
     const nodes = [
       ...conf.timeline.filter((item) => item.date && item.date !== "TBD").map((item) => item.date),
       ...(conf.supplementalEvents || []).filter((e) => !e.inferred && (e.type === "submission" || e.type === "commit")).map((e) => e.date),
-    ].filter((d) => d >= TODAY).sort().slice(0, 3);
+    ].filter((d) => d >= TODAY).sort().slice(0, 8);
     if (nodes.length === 0) return null;
     return nodes.map((node) => {
       const { result, early, inferred } = inferResultDates(conf, node);
@@ -498,6 +508,7 @@ export default function Home() {
   };
 
   const verifyResult = useMemo(() => (topologyView === "verify" ? verifyTopology(verifySelection) : null), [topologyView, verifySelection]);
+  const dataHorizon = useMemo(() => maxKnownDeadline(data), [data]);
   const verifySearchResults = useMemo(() => {
     if (topologyView !== "verify" || !verifyQuery.trim()) return [];
     const q = verifyQuery.trim().toLowerCase();
@@ -645,7 +656,7 @@ export default function Home() {
               return (
               <div className="topology-column" key={`col-${depth}`}>
                 <div className="topology-column-label">第 {depth + 1} 投候选{depth > 0 ? ` · 前一投结果日 ${topologyPath[depth - 1]?.resultDate || ""} 之后` : ""}<span className="topology-hint">点击卡片选中，再点可取消</span></div>
-                {candidates.length === 0 && <p className="no-candidate">当前条件下此层没有可投会议，可放宽等级/领域或减少深度。</p>}
+                {candidates.length === 0 && <p className="no-candidate">{(depth === 0 ? (topologyRoot!.mode === "conf" ? topologyRoot.event.date : topologyRoot.freeDate) : topologyPath[depth - 1].resultDate) > dataHorizon ? `规划已推进到已知排期之外（上游仅公布到 ${dataHorizon}）——建议回退一层，改选结果日更早的会议（评审周期短），让后续投递落在已知排期内。` : "当前条件下此层没有可投会议，可放宽等级/领域筛选，或回退一层改选其他会议。"}</p>}
                 {visibleCandidates.map((hop) => {
                   const active = topologyPath[depth]?.conf.id === hop.conf.id;
                   const gapFromPrev = Math.round((Date.parse(`${hop.entryDate}T00:00:00Z`) - Date.parse(`${(depth === 0 ? (topologyRoot!.mode === "conf" ? topologyRoot.event.date : topologyRoot.freeDate) : topologyPath[depth - 1].resultDate)}T00:00:00Z`)) / 86400000);
