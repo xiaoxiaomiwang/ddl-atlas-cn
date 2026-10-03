@@ -17464,13 +17464,13 @@
     "rank": "C",
     "year": 2027,
     "link": "https://icc2027.ieee-icc.org",
-    "timezone": "UTC-4",
+    "timezone": "UTC-7",
     "conferenceDate": "May 30 - June 3, 2027",
     "conferenceStart": "2027-05-30",
     "place": "Washington, DC, USA",
     "timeline": [
       {
-        "date": "2026-10-02",
+        "date": "2026-10-16",
         "abstractDate": "",
         "comment": ""
       }
