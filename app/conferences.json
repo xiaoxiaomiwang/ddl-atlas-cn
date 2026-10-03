@@ -398,6 +398,27 @@
     ]
   },
   {
+    "id": "acmturc2026",
+    "title": "ACM TURC",
+    "description": "ACM Turing Award Celebration Conference - China",
+    "category": "MX",
+    "rank": "N",
+    "year": 2026,
+    "link": "https://www.acmturc.com/2026/en/",
+    "timezone": "AoE",
+    "conferenceDate": "July 11-12, 2026",
+    "conferenceStart": "2026-07-11",
+    "place": "Hangzhou, China",
+    "timeline": [
+      {
+        "date": "2026-06-10",
+        "abstractDate": "",
+        "comment": ""
+      }
+    ],
+    "acceptRates": []
+  },
+  {
     "id": "acml26",
     "title": "ACML",
     "description": "Asian Conference on Machine Learning",
