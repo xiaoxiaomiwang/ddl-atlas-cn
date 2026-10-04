@@ -1,24 +1,36 @@
 {
   "meta": {
-    "generatedAt": "2026-10-04T09:52:00Z",
+    "generatedAt": "2026-10-04T15:24:15Z",
     "targetCount": 53,
     "scrapedCount": 32
   },
   "conferences": {
-    "HPDC-2026": {
-      "source": "https://hpdc.sci.utah.edu/2026/calls-cfp.html",
+    "CAV-2026": {
+      "source": "https://conferences.i-cav.org/2026/cfp",
       "events": [
         {
-          "date": "2026-03-31",
-          "label": "(Firm) Paper Submission Deadline (Technica",
-          "type": "submission",
-          "source": "https://hpdc.sci.utah.edu/2026/calls-cfp.html"
+          "date": "2026-03-04",
+          "label": "Springer’s guidelines regarding AI Authors",
+          "type": "camera",
+          "source": "https://conferences.i-cav.org/2026/cfp"
         },
         {
-          "date": "2026-04-30",
-          "label": "Notification of Acceptance (Technical Pape",
+          "date": "2026-04-02",
+          "label": "Author Response Period: March 30 -",
+          "type": "rebuttal",
+          "source": "https://conferences.i-cav.org/2026/cfp"
+        },
+        {
+          "date": "2026-04-17",
+          "label": "Author Notification",
           "type": "result",
-          "source": "https://hpdc.sci.utah.edu/2026/calls-cfp.html"
+          "source": "https://conferences.i-cav.org/2026/cfp"
+        },
+        {
+          "date": "2026-05-15",
+          "label": "Camera-ready deadline",
+          "type": "camera",
+          "source": "https://conferences.i-cav.org/2026/cfp"
         }
       ]
     },
@@ -80,32 +92,20 @@
         }
       ]
     },
-    "CAV-2026": {
-      "source": "https://conferences.i-cav.org/2026/cfp",
+    "HPDC-2026": {
+      "source": "https://hpdc.sci.utah.edu/2026/calls-cfp.html",
       "events": [
         {
-          "date": "2026-03-04",
-          "label": "Springer’s guidelines regarding AI Authors",
-          "type": "camera",
-          "source": "https://conferences.i-cav.org/2026/cfp"
+          "date": "2026-03-31",
+          "label": "(Firm) Paper Submission Deadline (Technica",
+          "type": "submission",
+          "source": "https://hpdc.sci.utah.edu/2026/calls-cfp.html"
         },
         {
-          "date": "2026-04-02",
-          "label": "Author Response Period: March 30 -",
-          "type": "rebuttal",
-          "source": "https://conferences.i-cav.org/2026/cfp"
-        },
-        {
-          "date": "2026-04-17",
-          "label": "Author Notification",
+          "date": "2026-04-30",
+          "label": "Notification of Acceptance (Technical Pape",
           "type": "result",
-          "source": "https://conferences.i-cav.org/2026/cfp"
-        },
-        {
-          "date": "2026-05-15",
-          "label": "Camera-ready deadline",
-          "type": "camera",
-          "source": "https://conferences.i-cav.org/2026/cfp"
+          "source": "https://hpdc.sci.utah.edu/2026/calls-cfp.html"
         }
       ]
     },
@@ -185,29 +185,6 @@
         }
       ]
     },
-    "STOC-2026": {
-      "source": "https://acm-stoc.org/stoc2026/stoc2026-cfp.html",
-      "events": [
-        {
-          "date": "2025-11-04",
-          "label": "Salt Lake City, Utah, USA https://acm-stoc",
-          "type": "submission",
-          "source": "https://acm-stoc.org/stoc2026/stoc2026-cfp.html"
-        },
-        {
-          "date": "2026-02-01",
-          "label": "There is no separate abstract submission d",
-          "type": "result",
-          "source": "https://acm-stoc.org/stoc2026/stoc2026-cfp.html"
-        },
-        {
-          "date": "2026-03-31",
-          "label": "Camera-ready deadline for accepted papers:",
-          "type": "camera",
-          "source": "https://acm-stoc.org/stoc2026/stoc2026-cfp.html"
-        }
-      ]
-    },
     "SIGOPS ATC-2026": {
       "source": "https://sigops.org/s/conferences/atc/2026/cfp.html",
       "events": [
@@ -278,6 +255,29 @@
         }
       ]
     },
+    "STOC-2026": {
+      "source": "https://acm-stoc.org/stoc2026/stoc2026-cfp.html",
+      "events": [
+        {
+          "date": "2025-11-04",
+          "label": "Salt Lake City, Utah, USA https://acm-stoc",
+          "type": "submission",
+          "source": "https://acm-stoc.org/stoc2026/stoc2026-cfp.html"
+        },
+        {
+          "date": "2026-02-01",
+          "label": "There is no separate abstract submission d",
+          "type": "result",
+          "source": "https://acm-stoc.org/stoc2026/stoc2026-cfp.html"
+        },
+        {
+          "date": "2026-03-31",
+          "label": "Camera-ready deadline for accepted papers:",
+          "type": "camera",
+          "source": "https://acm-stoc.org/stoc2026/stoc2026-cfp.html"
+        }
+      ]
+    },
     "UIST-2026": {
       "source": "https://uist.acm.org/2026/cfp",
       "events": [
@@ -304,41 +304,6 @@
           "label": "Camera-ready versions due Friday,",
           "type": "camera",
           "source": "https://uist.acm.org/2026/cfp"
-        }
-      ]
-    },
-    "UbiComp/ISWC-2026": {
-      "source": "https://www.ubicomp.org/ubicomp-iswc-2026/author/",
-      "events": [
-        {
-          "date": "2026-06-19",
-          "label": "Author Notification",
-          "type": "result",
-          "source": "https://www.ubicomp.org/ubicomp-iswc-2026/author/"
-        },
-        {
-          "date": "2026-06-22",
-          "label": "Author Notification",
-          "type": "result",
-          "source": "https://www.ubicomp.org/ubicomp-iswc-2026/author/"
-        },
-        {
-          "date": "2026-06-28",
-          "label": "Acceptance Notification",
-          "type": "result",
-          "source": "https://www.ubicomp.org/ubicomp-iswc-2026/author/"
-        },
-        {
-          "date": "2026-07-01",
-          "label": "Author Notification",
-          "type": "result",
-          "source": "https://www.ubicomp.org/ubicomp-iswc-2026/author/"
-        },
-        {
-          "date": "2026-07-04",
-          "label": "Author Notification",
-          "type": "result",
-          "source": "https://www.ubicomp.org/ubicomp-iswc-2026/author/"
         }
       ]
     },
@@ -389,43 +354,38 @@
         }
       ]
     },
-    "ISSTA-2026": {
-      "source": "https://conf.researchr.org/track/issta-2026/issta-2026-research-papers",
+    "UbiComp/ISWC-2026": {
+      "source": "https://www.ubicomp.org/ubicomp-iswc-2026/author/",
       "events": [
         {
-          "date": "2026-07-23",
-          "label": "ACM FAQ which describes in what situations",
-          "type": "camera",
-          "source": "https://conf.researchr.org/track/issta-2026/issta-2026-research-papers"
-        }
-      ]
-    },
-    "OOPSLA-2026": {
-      "source": "https://2026.splashcon.org/track/oopsla-2026",
-      "events": [
-        {
-          "date": "2026-05-22",
-          "label": "Author Notification (Round 2) Tue 19 - Fri",
+          "date": "2026-06-19",
+          "label": "Author Notification",
           "type": "result",
-          "source": "https://2026.splashcon.org/track/oopsla-2026"
+          "source": "https://www.ubicomp.org/ubicomp-iswc-2026/author/"
         },
         {
-          "date": "2026-06-10",
-          "label": "Revision Due (Round 2) Wed",
-          "type": "rebuttal",
-          "source": "https://2026.splashcon.org/track/oopsla-2026"
-        },
-        {
-          "date": "2026-07-21",
-          "label": "Author Notification Revision (Round 2) Tue",
+          "date": "2026-06-22",
+          "label": "Author Notification",
           "type": "result",
-          "source": "https://2026.splashcon.org/track/oopsla-2026"
+          "source": "https://www.ubicomp.org/ubicomp-iswc-2026/author/"
         },
         {
-          "date": "2026-08-07",
-          "label": "Camera Ready (Round 2) Fri",
-          "type": "camera",
-          "source": "https://2026.splashcon.org/track/oopsla-2026"
+          "date": "2026-06-28",
+          "label": "Acceptance Notification",
+          "type": "result",
+          "source": "https://www.ubicomp.org/ubicomp-iswc-2026/author/"
+        },
+        {
+          "date": "2026-07-01",
+          "label": "Author Notification",
+          "type": "result",
+          "source": "https://www.ubicomp.org/ubicomp-iswc-2026/author/"
+        },
+        {
+          "date": "2026-07-04",
+          "label": "Author Notification",
+          "type": "result",
+          "source": "https://www.ubicomp.org/ubicomp-iswc-2026/author/"
         }
       ]
     },
@@ -487,44 +447,43 @@
         }
       ]
     },
-    "EUROCRYPT-2027": {
-      "source": "https://eurocrypt.iacr.org/2027/",
+    "OOPSLA-2026": {
+      "source": "https://2026.splashcon.org/track/oopsla-2026",
       "events": [
         {
-          "date": "2026-06-17",
-          "label": "Conference begins Further details are avai",
-          "type": "submission",
-          "source": "https://eurocrypt.iacr.org/2027/"
-        },
-        {
-          "date": "2026-11-30",
-          "label": "Submission deadline at 23:59 anywhere on E",
-          "type": "submission",
-          "source": "https://eurocrypt.iacr.org/2027/"
-        },
-        {
-          "date": "2026-12-05",
-          "label": "Early rejection notifications & start of r",
-          "type": "rebuttal",
-          "source": "https://eurocrypt.iacr.org/2027/"
-        },
-        {
-          "date": "2027-01-18",
-          "label": "Rebuttal period ends",
-          "type": "rebuttal",
-          "source": "https://eurocrypt.iacr.org/2027/"
-        },
-        {
-          "date": "2027-02-08",
-          "label": "Final notification",
+          "date": "2026-05-22",
+          "label": "Author Notification (Round 2) Tue 19 - Fri",
           "type": "result",
-          "source": "https://eurocrypt.iacr.org/2027/"
+          "source": "https://2026.splashcon.org/track/oopsla-2026"
         },
         {
-          "date": "2027-04-11",
-          "label": "Camera-ready version due",
+          "date": "2026-06-10",
+          "label": "Revision Due (Round 2) Wed",
+          "type": "rebuttal",
+          "source": "https://2026.splashcon.org/track/oopsla-2026"
+        },
+        {
+          "date": "2026-07-21",
+          "label": "Author Notification Revision (Round 2) Tue",
+          "type": "result",
+          "source": "https://2026.splashcon.org/track/oopsla-2026"
+        },
+        {
+          "date": "2026-08-07",
+          "label": "Camera Ready (Round 2) Fri",
           "type": "camera",
-          "source": "https://eurocrypt.iacr.org/2027/"
+          "source": "https://2026.splashcon.org/track/oopsla-2026"
+        }
+      ]
+    },
+    "ISSTA-2026": {
+      "source": "https://conf.researchr.org/track/issta-2026/issta-2026-research-papers",
+      "events": [
+        {
+          "date": "2026-07-23",
+          "label": "ACM FAQ which describes in what situations",
+          "type": "camera",
+          "source": "https://conf.researchr.org/track/issta-2026/issta-2026-research-papers"
         }
       ]
     },
@@ -584,6 +543,47 @@
           "label": "(to be confirmed) Camera-ready deadline: F",
           "type": "camera",
           "source": "https://2027.eurosys.org/cfp.html"
+        }
+      ]
+    },
+    "EUROCRYPT-2027": {
+      "source": "https://eurocrypt.iacr.org/2027/",
+      "events": [
+        {
+          "date": "2026-06-17",
+          "label": "Conference begins Further details are avai",
+          "type": "submission",
+          "source": "https://eurocrypt.iacr.org/2027/"
+        },
+        {
+          "date": "2026-11-30",
+          "label": "Submission deadline at 23:59 anywhere on E",
+          "type": "submission",
+          "source": "https://eurocrypt.iacr.org/2027/"
+        },
+        {
+          "date": "2026-12-05",
+          "label": "Early rejection notifications & start of r",
+          "type": "rebuttal",
+          "source": "https://eurocrypt.iacr.org/2027/"
+        },
+        {
+          "date": "2027-01-18",
+          "label": "Rebuttal period ends",
+          "type": "rebuttal",
+          "source": "https://eurocrypt.iacr.org/2027/"
+        },
+        {
+          "date": "2027-02-08",
+          "label": "Final notification",
+          "type": "result",
+          "source": "https://eurocrypt.iacr.org/2027/"
+        },
+        {
+          "date": "2027-04-11",
+          "label": "Camera-ready version due",
+          "type": "camera",
+          "source": "https://eurocrypt.iacr.org/2027/"
         }
       ]
     },
@@ -702,6 +702,35 @@
         }
       ]
     },
+    "INFOCOM-2027": {
+      "source": "https://infocom2027.ieee-infocom.org/call-papers",
+      "events": [
+        {
+          "date": "2026-07-24",
+          "label": "IEEE INFOCOM is a top-ranked conference on",
+          "type": "abstract",
+          "source": "https://infocom2027.ieee-infocom.org/call-papers"
+        },
+        {
+          "date": "2026-07-31",
+          "label": "Full Paper Due: Friday, (11:59 p.m. AOE)",
+          "type": "submission",
+          "source": "https://infocom2027.ieee-infocom.org/call-papers"
+        },
+        {
+          "date": "2026-10-09",
+          "label": "Early-Reject Notification: Friday,",
+          "type": "result",
+          "source": "https://infocom2027.ieee-infocom.org/call-papers"
+        },
+        {
+          "date": "2026-12-08",
+          "label": "Acceptance Notification: Tuesday,",
+          "type": "result",
+          "source": "https://infocom2027.ieee-infocom.org/call-papers"
+        }
+      ]
+    },
     "ICSE-2027": {
       "source": "https://conf.researchr.org/track/icse-2027/icse-2027-research-track",
       "events": [
@@ -749,35 +778,6 @@
         }
       ]
     },
-    "INFOCOM-2027": {
-      "source": "https://infocom2027.ieee-infocom.org/call-papers",
-      "events": [
-        {
-          "date": "2026-07-24",
-          "label": "IEEE INFOCOM is a top-ranked conference on",
-          "type": "abstract",
-          "source": "https://infocom2027.ieee-infocom.org/call-papers"
-        },
-        {
-          "date": "2026-07-31",
-          "label": "Full Paper Due: Friday, (11:59 p.m. AOE)",
-          "type": "submission",
-          "source": "https://infocom2027.ieee-infocom.org/call-papers"
-        },
-        {
-          "date": "2026-10-09",
-          "label": "Early-Reject Notification: Friday,",
-          "type": "result",
-          "source": "https://infocom2027.ieee-infocom.org/call-papers"
-        },
-        {
-          "date": "2026-12-08",
-          "label": "Acceptance Notification: Tuesday,",
-          "type": "result",
-          "source": "https://infocom2027.ieee-infocom.org/call-papers"
-        }
-      ]
-    },
     "OOPSLA-2027": {
       "source": "https://2027.splashcon.org/track/splashoopsla2027",
       "events": [
@@ -798,6 +798,59 @@
           "label": "Author Notification (Round 2) Fri",
           "type": "result",
           "source": "https://2027.splashcon.org/track/splashoopsla2027"
+        }
+      ]
+    },
+    "S&P-2027": {
+      "source": "https://sp2027.ieee-security.org/cfpapers.html",
+      "events": [
+        {
+          "date": "2026-11-17",
+          "label": "Paper submission deadline",
+          "type": "submission",
+          "source": "https://sp2027.ieee-security.org/cfpapers.html"
+        },
+        {
+          "date": "2027-01-18",
+          "label": "Early-reject notification",
+          "type": "result",
+          "source": "https://sp2027.ieee-security.org/cfpapers.html"
+        },
+        {
+          "date": "2027-02-11",
+          "label": "Reviews released",
+          "type": "rebuttal",
+          "source": "https://sp2027.ieee-security.org/cfpapers.html"
+        },
+        {
+          "date": "2027-02-16",
+          "label": "Rebuttal text due",
+          "type": "rebuttal",
+          "source": "https://sp2027.ieee-security.org/cfpapers.html"
+        },
+        {
+          "date": "2027-02-17",
+          "label": "Beginning of the interactive period for pa",
+          "type": "rebuttal",
+          "source": "https://sp2027.ieee-security.org/cfpapers.html"
+        },
+        {
+          "date": "2027-02-26",
+          "label": "End of the interactive rebuttal and revise",
+          "type": "rebuttal",
+          "source": "https://sp2027.ieee-security.org/cfpapers.html"
+        },
+        {
+          "date": "2027-03-05",
+          "label": "Acceptance notification",
+          "type": "result",
+          "source": "https://sp2027.ieee-security.org/cfpapers.html"
+        },
+        {
+          "date": "2027-04-08",
+          "label": "Camera-ready deadline",
+          "type": "camera",
+          "source": "https://sp2027.ieee-security.org/cfpapers.html"
         }
       ]
     },
@@ -856,59 +909,6 @@
           "label": "Camera-ready submission",
           "type": "camera",
           "source": "https://sigir2027.org/"
-        }
-      ]
-    },
-    "S&P-2027": {
-      "source": "https://sp2027.ieee-security.org/cfpapers.html",
-      "events": [
-        {
-          "date": "2026-11-17",
-          "label": "Paper submission deadline",
-          "type": "submission",
-          "source": "https://sp2027.ieee-security.org/cfpapers.html"
-        },
-        {
-          "date": "2027-01-18",
-          "label": "Early-reject notification",
-          "type": "result",
-          "source": "https://sp2027.ieee-security.org/cfpapers.html"
-        },
-        {
-          "date": "2027-02-11",
-          "label": "Reviews released",
-          "type": "rebuttal",
-          "source": "https://sp2027.ieee-security.org/cfpapers.html"
-        },
-        {
-          "date": "2027-02-16",
-          "label": "Rebuttal text due",
-          "type": "rebuttal",
-          "source": "https://sp2027.ieee-security.org/cfpapers.html"
-        },
-        {
-          "date": "2027-02-17",
-          "label": "Beginning of the interactive period for pa",
-          "type": "rebuttal",
-          "source": "https://sp2027.ieee-security.org/cfpapers.html"
-        },
-        {
-          "date": "2027-02-26",
-          "label": "End of the interactive rebuttal and revise",
-          "type": "rebuttal",
-          "source": "https://sp2027.ieee-security.org/cfpapers.html"
-        },
-        {
-          "date": "2027-03-05",
-          "label": "Acceptance notification",
-          "type": "result",
-          "source": "https://sp2027.ieee-security.org/cfpapers.html"
-        },
-        {
-          "date": "2027-04-08",
-          "label": "Camera-ready deadline",
-          "type": "camera",
-          "source": "https://sp2027.ieee-security.org/cfpapers.html"
         }
       ]
     },
