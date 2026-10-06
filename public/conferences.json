@@ -16305,7 +16305,7 @@
       {
         "date": "2026-12-15",
         "abstractDate": "2026-12-08",
-        "comment": "Regular papers; official CFP dates. Clock 23:59:00 and timezone AoE are repository defaults, not published cutoff precision."
+        "comment": "Regular papers; official CFP dates. Clock 23:59:59 and timezone AoE are repository defaults, not published cutoff precision."
       }
     ],
     "acceptRates": []
@@ -21615,7 +21615,7 @@
       {
         "date": "2026-09-15",
         "abstractDate": "",
-        "comment": "Technical papers; official IEEE ComSoc calendar date. Clock 23:59:00 and timezone AoE are repository defaults, not published cutoff precision."
+        "comment": "Technical papers; official IEEE ComSoc calendar date. Clock 23:59:59 and timezone AoE are repository defaults, not published cutoff precision."
       }
     ],
     "acceptRates": [
