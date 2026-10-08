@@ -137,9 +137,9 @@ function topologyCandidates(fromDate: string, rootConf: Conference | null, usedT
   const minEntry = addDays(fromDate, fromDate === TODAY ? 0 : 7); // 转投缓冲
   const entries: Array<{ conf: Conference; date: string; label: string }> = [];
   for (const conf of pool) {
-    if (conf.isARR) continue;
     if (usedTitles.has(conf.title)) continue; // 路径去重：同一条线不重复投同一会议
-    if (filters.ranks.length > 0 && !filters.ranks.includes(conf.rank)) continue;
+    // ARR 周期不受 CCF 等级过滤（rank=N）；普通会议按等级过滤
+    if (!conf.isARR && filters.ranks.length > 0 && !filters.ranks.includes(conf.rank)) continue;
     const sameField = rootConf ? conf.category === rootConf.category : false;
     if (filters.sameOnly && rootConf && !sameField) continue;
     if (filters.categories.length > 0 && !filters.categories.includes(conf.category)) continue;
@@ -157,10 +157,12 @@ function topologyCandidates(fromDate: string, rootConf: Conference | null, usedT
     const rank = entry.conf.rank === "A" ? 16 : entry.conf.rank === "B" ? 10 : entry.conf.rank === "C" ? 5 : 0;
     const field = rootConf && entry.conf.category === rootConf.category ? 20 : 0;
     const rate = entry.conf.acceptRates && entry.conf.acceptRates.length > 0 ? Math.min(10, entry.conf.acceptRates[0].rate / 4) : 0;
-    // 评审周期惩罚：出结果越晚，越早把规划推到数据视野之外，适度减分保证链路可持续
+    // 评审周期惩罚：出结果越晚，越早把规划推到数据视野之外；短周期奖励（快速拿到反馈再转投）
     const cycle = Math.round((Date.parse(`${result}T00:00:00Z`) - Date.parse(`${entry.date}T00:00:00Z`)) / 86400000);
     const cyclePenalty = cycle > 210 ? -14 : cycle > 150 ? -7 : cycle > 120 ? -3 : 0;
-    return { hop: { conf: entry.conf, entryDate: entry.date, entryLabel: entry.label, resultDate: result, earlyDate: early, inferredResult: inferred } as TopologyHop, score: fit + rank + field + rate + cyclePenalty - (inferred ? 6 : 0) };
+    const cycleBonus = cycle <= 90 ? 10 : cycle <= 120 ? 5 : 0;
+    const arrBonus = entry.conf.isARR ? 12 : 0; // ARR 滚动投稿 + 可 Commit 多个会议的灵活性
+    return { hop: { conf: entry.conf, entryDate: entry.date, entryLabel: entry.label, resultDate: result, earlyDate: early, inferredResult: inferred } as TopologyHop, score: fit + rank + field + rate + cyclePenalty + cycleBonus + arrBonus - (inferred ? 6 : 0) };
   });
   scored.sort((a, b) => b.score - a.score || a.hop.entryDate.localeCompare(b.hop.entryDate));
   const bestPerConf = new Map<string, typeof scored[number]>();
@@ -512,7 +514,7 @@ export default function Home() {
   const verifySearchResults = useMemo(() => {
     if (topologyView !== "verify" || !verifyQuery.trim()) return [];
     const q = verifyQuery.trim().toLowerCase();
-    return data.filter((conf) => !conf.isARR && !verifySelection.some((c) => c.title === conf.title) && `${conf.title} ${conf.description} ${conf.place}`.toLowerCase().includes(q)).slice(0, 8);
+    return data.filter((conf) => !verifySelection.some((c) => c.title === conf.title) && `${conf.title} ${conf.description} ${conf.place}`.toLowerCase().includes(q)).slice(0, 8);
   }, [topologyView, verifyQuery, verifySelection, data]);
 
   // 各层候选：根节点之后的每跳由"上一跳结果日"驱动
@@ -527,6 +529,10 @@ export default function Home() {
     let cursor = fromDate;
     for (let depth = 0; depth < topoDepth; depth += 1) {
       const candidates = topologyCandidates(cursor, anchor, used, filters, data);
+      // ARR 周期作为"保底中转"始终追加在候选尾部（随时可投、周期短、可 Commit 多个会议）
+      const arrPool = data.filter((conf) => conf.isARR);
+      const arrPick = topologyCandidates(cursor, anchor, used, { ...filters, ranks: [], breadth: 1 }, arrPool);
+      if (arrPick.length > 0 && !candidates.some((hop) => hop.conf.isARR)) candidates.push(arrPick[0]);
       columns.push(candidates);
       const selected = topologyPath[depth];
       if (!selected || !candidates.some((hop) => hop.conf.id === selected.conf.id)) break;
@@ -612,7 +618,8 @@ export default function Home() {
         <div className="candidate-list">{transferCandidates.length === 0 && <p className="no-candidate">当前条件下没有可用投稿节点，可放宽领域、等级或最长等待时间。</p>}{transferCandidates.map(({ conf, event, days, sameField }, index) => <a href={conf.link} target="_blank" rel="noreferrer" className={`candidate ${event.inferred ? "projected" : ""}`} key={`${conf.id}-${event.date}-${event.label}`}><b>{String(index + 1).padStart(2, "0")}</b><div><h4>{conf.title} <em>{conf.isARR ? "ARR" : conf.rank ? `CCF ${conf.rank}` : ""}</em></h4><p>{event.date} · {event.label}</p><small>{event.inferred ? "* 根据本届日期顺延一年 · " : "官网已公布 · "}{sameField ? "同领域 · " : ""}{conf.place || conf.description}</small></div><strong>+{days} 天</strong></a>)}</div>
       </aside>}
 
-      {topologyRoot && <div className="topology-overlay" role="dialog" aria-modal="true" aria-label="投稿拓扑规划">
+      {topologyRoot && <div className="topology-overlay" role="dialog" aria-modal="true" aria-label="投稿拓扑规划" onClick={() => setTopologyRoot(null)}>
+        <div className="topology-panel" onClick={(e) => e.stopPropagation()}>
         <div className="topology-head">
           <div><p>SUBMISSION TOPOLOGY</p>
             {topologyRoot.mode === "conf" && <h3>锚定 {topologyRoot.conf.title} · 从 {topologyRoot.event.date.slice(5).replace("-", "/")} 起，最坏情况的投稿路线</h3>}
@@ -664,10 +671,10 @@ export default function Home() {
                     if (cur[depth]?.conf.id === hop.conf.id) return cur.slice(0, depth); // 点已选卡片 = 取消该层及更深选择
                     return [...cur.slice(0, depth), hop];
                   })}>
-                    <div className="topology-card-top"><h4>{hop.conf.title} <small>{hop.conf.year}</small></h4><span className={`rank ${rankColors[hop.conf.rank] || "rank-n"}`}>CCF {hop.conf.rank}</span></div>
-                    <p>{hop.conf.place || hop.conf.description}{hop.conf.place && placeZh(hop.conf.place)}</p>
+                    <div className="topology-card-top"><h4>{hop.conf.title} <small>{hop.conf.year}</small></h4><span className={`rank ${rankColors[hop.conf.rank] || "rank-n"}`}>{hop.conf.isARR ? "ARR" : `CCF ${hop.conf.rank}`}</span></div>
+                    <p>{hop.conf.isARR ? `${hop.conf.description}${hop.conf.commitVenues?.length ? ` · 可 Commit：${hop.conf.commitVenues.join("、")}` : ""}` : `${hop.conf.place || hop.conf.description}${hop.conf.place ? placeZh(hop.conf.place) : ""}`}</p>
                     <div className="topology-dates">
-                      <span>■ 投稿 {hop.entryDate.slice(5)}</span>
+                      <span>■ {hop.conf.isARR ? "ARR 投稿" : "投稿"} {hop.entryDate.slice(5)}</span>
                       {hop.earlyDate && <span>· 早反馈 {hop.earlyDate.slice(5)}</span>}
                       <span>· {hop.inferredResult ? "* 约" : ""}结果 {hop.resultDate.slice(5)}</span>
                     </div>
@@ -684,6 +691,7 @@ export default function Home() {
               );
             })}
           </div>}
+        </div>
         </div>
       </div>}
 

@@ -20,6 +20,9 @@ const data = raw.map((conf) => {
   const events = auto[key]?.events?.map((e) => ({ ...e, autoFetched: true, source: e.source || auto[key].source })) || [];
   return { ...conf, supplementalEvents: events };
 });
+// 合并 ARR 周期（前端 enrich 的 arrCycles 等价物）
+const arrCycles = JSON.parse(readFileSync("app/arr-cycles.json", "utf8"));
+for (const cycle of arrCycles) data.push(cycle);
 
 // ===== 与线上同源的算法 =====
 const inferResultDates = (conf, entryDate) => {
@@ -34,9 +37,8 @@ const topologyCandidates = (fromDate, rootConf, usedTitles, filters, pool) => {
   const minEntry = addDays(fromDate, fromDate === TODAY ? 0 : 7);
   const entries = [];
   for (const conf of pool) {
-    if (conf.isARR) continue;
     if (usedTitles.has(conf.title)) continue;
-    if (filters.ranks.length > 0 && !filters.ranks.includes(conf.rank)) continue;
+    if (!conf.isARR && filters.ranks.length > 0 && !filters.ranks.includes(conf.rank)) continue;
     const sameField = rootConf ? conf.category === rootConf.category : false;
     if (filters.sameOnly && rootConf && !sameField) continue;
     if (filters.categories.length > 0 && !filters.categories.includes(conf.category)) continue;
@@ -56,7 +58,9 @@ const topologyCandidates = (fromDate, rootConf, usedTitles, filters, pool) => {
     const rate = entry.conf.acceptRates?.length ? Math.min(10, entry.conf.acceptRates[0].rate / 4) : 0;
     const cycle = Math.round((Date.parse(`${result}T00:00:00Z`) - Date.parse(`${entry.date}T00:00:00Z`)) / 86400000);
     const cyclePenalty = cycle > 210 ? -14 : cycle > 150 ? -7 : cycle > 120 ? -3 : 0;
-    return { hop: { conf: entry.conf, entryDate: entry.date, entryLabel: entry.label, resultDate: result, earlyDate: early, inferredResult: inferred }, score: fit + rank + field + rate + cyclePenalty - (inferred ? 6 : 0) };
+    const cycleBonus = cycle <= 90 ? 10 : cycle <= 120 ? 5 : 0;
+    const arrBonus = entry.conf.isARR ? 12 : 0;
+    return { hop: { conf: entry.conf, entryDate: entry.date, entryLabel: entry.label, resultDate: result, earlyDate: early, inferredResult: inferred }, score: fit + rank + field + rate + cyclePenalty + cycleBonus + arrBonus - (inferred ? 6 : 0) };
   });
   scored.sort((a, b) => b.score - a.score || a.hop.entryDate.localeCompare(b.hop.entryDate));
   const best = new Map();
@@ -96,6 +100,18 @@ const verifyTopology = (selection) => {
 
 const filters = { ranks: ["A", "B"], categories: [], sameOnly: false, breadth: 12 };
 const hopLine = (h) => `${h.conf.title}-${h.conf.year} 投 ${h.entryDate} → ${h.inferredResult ? "*约" : ""}结果 ${h.resultDate}`;
+
+// ===== 测试 0：ARR 周期参与拓扑 =====
+console.log("===== 测试 0：ARR 周期纳入拓扑候选 =====");
+const colARR = topologyCandidates(TODAY, null, new Set(), filters, data);
+const arrPick = topologyCandidates(TODAY, null, new Set(), { ...filters, ranks: [], breadth: 1 }, data.filter((c) => c.isARR));
+const arrHop = colARR.find((h) => h.conf.isARR) || arrPick[0];
+console.log(`ARR 保底候选: ${arrHop ? `✓ ${arrHop.conf.title} 投 ${arrHop.entryDate} → 结果 ${arrHop.resultDate}` : "✗ 无"}`);
+if (arrHop) {
+  const next = topologyCandidates(arrHop.resultDate, arrHop.conf, new Set([arrHop.conf.title]), filters, data);
+  console.log(`  投 ARR 后（结果日 ${arrHop.resultDate}）下一层候选数: ${next.length}`);
+  next.slice(0, 3).forEach((h) => console.log("   ", hopLine(h)));
+}
 
 // ===== 测试 1：自由日期入口（修复的断链 bug 场景）=====
 console.log("===== 测试 1：自由日期模式点选三层链路 =====");
