@@ -65,11 +65,17 @@ const data = [...sourceData, ...mergedArr];
 
 // ===== 与线上同源的算法 =====
 const inferResultDates = (conf, entryDate) => {
-  const results = (conf.supplementalEvents || [])
-    .filter((e) => (!e.inferred || e.projected) && (e.type === "result" || e.type === "reject"))
-    .map((e) => e.date).filter((d) => d > entryDate).sort();
-  if (results.length > 0) return { result: results[results.length - 1], early: results[0], inferred: false };
-  return { result: addDays(entryDate, 100), early: null, inferred: true };
+  const events = (conf.supplementalEvents || []).filter((e) => (!e.inferred || e.projected) && e.date > entryDate);
+  const results = events.filter((e) => e.type === "result" || e.type === "reject").map((e) => e.date).sort();
+  const rebuttals = events.filter((e) => e.type === "rebuttal").map((e) => e.date).sort();
+  if (results.length > 0) return { result: results[results.length - 1], early: results[0], rebuttal: rebuttals.length > 0 ? rebuttals[rebuttals.length - 1] : null, inferred: false };
+  return { result: addDays(entryDate, 100), early: null, rebuttal: rebuttals.length > 0 ? rebuttals[rebuttals.length - 1] : null, inferred: true };
+};
+const EXIT_LABEL = { early: "一轮结果", rebuttal: "Rebuttal", final: "最终结果" };
+const exitOf = (hop, mode) => {
+  if (mode === "early" && hop.earlyDate) return hop.earlyDate;
+  if (mode === "rebuttal" && hop.rebuttalDate) return hop.rebuttalDate;
+  return hop.resultDate;
 };
 
 const topologyCandidates = (fromDate, rootConf, usedIds, filters, pool) => {
@@ -86,10 +92,10 @@ const topologyCandidates = (fromDate, rootConf, usedIds, filters, pool) => {
       ...(conf.supplementalEvents || []).filter((e) => (!e.inferred || e.projected) && (e.type === "submission" || e.type === "commit")).map((e) => ({ date: e.date, label: e.label })),
     ].filter((n) => n.date >= minEntry && n.date < addDays(fromDate, 730)).sort((a, b) => a.date.localeCompare(b.date));
     if (nodes.length === 0) continue;
-    entries.push({ conf, date: nodes[0].date, label: nodes[0].label });
+    for (const node of nodes) entries.push({ conf, date: node.date, label: node.label }); // 多轮次全部参与评估
   }
   const scored = entries.map((entry) => {
-    const { result, early, inferred } = inferResultDates(entry.conf, entry.date);
+    const { result, early, rebuttal, inferred } = inferResultDates(entry.conf, entry.date);
     const gap = Math.round((Date.parse(entry.date) - Date.parse(fromDate)) / 86400000);
     const fit = gap >= 30 && gap <= 180 ? 24 : gap < 30 ? 8 : gap <= 300 ? 12 : 4;
     const rank = entry.conf.rank === "A" ? 16 : entry.conf.rank === "B" ? 10 : 5;
@@ -100,7 +106,7 @@ const topologyCandidates = (fromDate, rootConf, usedIds, filters, pool) => {
     const cycleBonus = cycle <= 90 ? 10 : cycle <= 120 ? 5 : 0;
     const arrBonus = entry.conf.isARR ? 12 : 0;
     const projectedPenalty = entry.conf.projected ? -3 : 0;
-    return { hop: { conf: entry.conf, entryDate: entry.date, entryLabel: entry.label, resultDate: result, earlyDate: early, inferredResult: inferred }, score: fit + rank + field + rate + cyclePenalty + cycleBonus + arrBonus + projectedPenalty - (inferred ? 6 : 0) };
+    return { hop: { conf: entry.conf, entryDate: entry.date, entryLabel: entry.label, resultDate: result, earlyDate: early, rebuttalDate: rebuttal, inferredResult: inferred }, score: fit + rank + field + rate + cyclePenalty + cycleBonus + arrBonus + projectedPenalty - (inferred ? 6 : 0) };
   });
   scored.sort((a, b) => b.score - a.score || a.hop.entryDate.localeCompare(b.hop.entryDate));
   const best = new Map();
@@ -119,7 +125,7 @@ const verifyTopology = (selection, allowPast = false) => {
     const past = allowPast ? all.filter((d) => d < TODAY).slice(-2) : [];
     const nodes = [...past, ...future];
     if (nodes.length === 0) return null;
-    return nodes.map((node) => { const { result, early, inferred } = inferResultDates(conf, node); return { conf, entryDate: node, entryLabel: "投稿", resultDate: result, earlyDate: early, inferredResult: inferred }; });
+    return nodes.map((node) => { const { result, early, rebuttal, inferred } = inferResultDates(conf, node); return { conf, entryDate: node, entryLabel: "投稿", resultDate: result, earlyDate: early, rebuttalDate: rebuttal, inferredResult: inferred }; });
   });
   const missing = selection.filter((_, i) => optionsPerConf[i] === null);
   if (missing.length > 0) return { ok: false, reason: `${missing.map((c) => c.title).join("、")} 无投稿轮次` };
@@ -258,8 +264,8 @@ const manualPick = (conf, layerFrom) => {
     ...(conf.supplementalEvents || []).filter((e) => (!e.inferred || e.projected) && (e.type === "submission" || e.type === "commit")).map((e) => ({ date: e.date, label: e.label })),
   ].filter((n) => n.date >= minEntry && n.date < addDays(layerFrom, 730)).sort((a, b) => a.date.localeCompare(b.date));
   if (nodes.length === 0) return null;
-  const { result, early, inferred } = inferResultDates(conf, nodes[0].date);
-  return { conf, entryDate: nodes[0].date, resultDate: result, inferredResult: inferred };
+  const { result, early, rebuttal, inferred } = inferResultDates(conf, nodes[0].date);
+  return { conf, entryDate: nodes[0].date, resultDate: result, earlyDate: early, rebuttalDate: rebuttal, inferredResult: inferred };
 };
 const sm28m = data.find((c) => c.title === "SIGMOD" && c.year === 2028 && c.projected);
 const manual1 = manualPick(sm28m, "2026-10-15");
@@ -268,6 +274,42 @@ assert(manual1 && manual1.entryDate === "2027-01-17", "手动指定 SIGMOD 2028*
 const sigmod26m = data.find((c) => c.title === "SIGMOD" && c.year === 2026 && !c.projected);
 const manual2 = manualPick(sigmod26m, "2026-10-15");
 assert(manual2 === null, "手动指定已截稿的 SIGMOD 2026 应提示无节点（不可行）");
+
+// ===== 测试 7：转投时点（一轮结果 / rebuttal / 最终结果）与多轮次评估 =====
+console.log("\n===== 测试 7：转投时点与多轮次评估 =====");
+// 注入一场带完整评审链的会议：投稿 12-01 → 一轮结果 12-15 → rebuttal 结束 01-10 → 最终结果 02-01
+const fakeEarly = { id: "test-early-2027", title: "TESTEARLY", description: "早撤测试", category: "MX", rank: "A", year: 2027,
+  link: "https://example.org", timezone: "AoE", conferenceDate: "June 2027", conferenceStart: "2027-06-01", place: "Test City",
+  timeline: [{ date: "2026-12-01", abstractDate: "", comment: "" }], acceptRates: [],
+  supplementalEvents: [
+    { date: "2026-12-15", label: "Phase1 一轮结果", type: "result", source: "test" },
+    { date: "2027-01-10", label: "Rebuttal 结束", type: "rebuttal", source: "test" },
+    { date: "2027-02-01", label: "最终结果", type: "result", source: "test" },
+  ] };
+const fakeTarget = { id: "test-target-2027", title: "TESTTARGET", description: "早撤目标", category: "MX", rank: "A", year: 2027,
+  link: "https://example.org", timezone: "AoE", conferenceDate: "May 2027", conferenceStart: "2027-05-01", place: "Test City",
+  timeline: [{ date: "2026-12-27", abstractDate: "", comment: "" }], acceptRates: [], supplementalEvents: [] };
+data.push(fakeEarly, fakeTarget);
+const infer = inferResultDates(fakeEarly, "2026-12-01");
+console.log(`TESTEARLY 推断: 一轮 ${infer.early} / rebuttal ${infer.rebuttal} / 最终 ${infer.result}`);
+assert(infer.early === "2026-12-15" && infer.rebuttal === "2027-01-10" && infer.result === "2027-02-01", "inferResultDates 应提取一轮结果/rebuttal/最终结果三档");
+const hopEarly = { conf: fakeEarly, entryDate: "2026-12-01", entryLabel: "投稿截止", resultDate: infer.result, earlyDate: infer.early, rebuttalDate: infer.rebuttal, inferredResult: false };
+assert(exitOf(hopEarly, "early") === "2026-12-15" && exitOf(hopEarly, "rebuttal") === "2027-01-10" && exitOf(hopEarly, "final") === "2027-02-01", "exitOf 三档出口日期正确");
+assert(exitOf({ ...hopEarly, earlyDate: null, rebuttalDate: null }, "early") === hopEarly.resultDate, "缺早档数据时回退最终结果（保守）");
+// 早撤优势：一轮结果 12-15 撤 → 12-22 起可投 TESTTARGET（12-27 截稿）；最终结果 02-01 撤 → 02-08 起 TESTTARGET 已过
+const colEarlyExit = topologyCandidates(exitOf(hopEarly, "early"), null, new Set([fakeEarly.id]), { ...filters, breadth: 3 }, [fakeTarget]);
+const colFinalExit = topologyCandidates(exitOf(hopEarly, "final"), null, new Set([fakeEarly.id]), { ...filters, breadth: 3 }, [fakeTarget]);
+assert(colEarlyExit.length > 0 && colEarlyExit[0].entryDate === "2026-12-27", "早撤（一轮结果 12-15 撤）后应能赶上 TESTTARGET 12-27 截稿");
+assert(colFinalExit.length === 0, "保守（最终结果 02-01 撤）时 TESTTARGET 已过——早撤窗口的价值");
+console.log(`TESTTARGET：早撤层可投（${colEarlyExit.length} 条），保守层无可投节点（0 条）`);
+// 多轮次评估：VLDB 2027 两轮（04-01 / 05-01），fromDate=2026-03-20 时一轮 gap 仅 12 天（fit 低）、二轮 gap 42 天（fit 优）→ 应选二轮
+const vldbMulti = data.find((c) => c.title === "VLDB" && c.year === 2027 && !c.projected);
+const vldbHop = topologyCandidates("2026-03-20", null, new Set(), { ...filters, breadth: 2 }, [vldbMulti])[0];
+console.log(`VLDB 2027 入选轮次: ${vldbHop ? `投 ${vldbHop.entryDate}（${vldbHop.entryLabel}）` : "无"}`);
+assert(vldbHop && vldbHop.entryDate === "2026-05-01", "多轮会议应按衔接评分选轮次（一轮 04-01 gap 仅 12 天，二轮 05-01 gap 42 天更优）");
+// 评审链完整出现在卡片数据里：hop 同时带 early/rebuttal/final 三档
+const fullHop = topologyCandidates("2026-10-15", null, new Set(), filters, data).find((h) => h.conf.id === "test-early-2027");
+assert(fullHop && fullHop.earlyDate === "2026-12-15" && fullHop.rebuttalDate === "2027-01-10" && fullHop.resultDate === "2027-02-01", "候选 hop 应携带完整评审链三档节点（供卡片展示与转投时点选择）");
 
 console.log(`
 ========== ${failures === 0 ? "✓ 全部通过" : `✗ ${failures} 项失败`} ==========`);

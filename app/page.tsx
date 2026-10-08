@@ -181,27 +181,44 @@ function nextDeadlineInfo(conf: Conference): { date: string; days: number } | nu
 }
 
 // ---- 投稿拓扑（Submission Topology）----
-// 每一跳 = 一投；边 = "被拒后转投"。结果日来自人工核验/官网抓取，缺失按投稿后 100 天推测（标 *）。
+// 每一跳 = 一投；边 = "被拒后转投"。转投时点支持三档：一轮结果（早撤）/ rebuttal 结束 / 最终结果（保守）。
+// 结果日来自人工核验/官网抓取，缺失按投稿后 100 天推测（标 *）。
 type TopologyHop = {
   conf: Conference;
   entryDate: string;           // 投稿入口日期（摘要/全文/Commit 节点）
   entryLabel: string;          // 入口节点名
-  resultDate: string;          // 预计最终结果日（主线按最坏情况延伸）
-  earlyDate: string | null;    // 早反馈日（Phase1/早拒，可提前回退）
+  resultDate: string;          // 预计最终结果日（最坏情况）
+  earlyDate: string | null;    // 早反馈日（一轮结果/Phase1/早拒，可提前回退）
+  rebuttalDate: string | null; // rebuttal 结束日（可提前判断走势的中途撤出点）
   inferredResult: boolean;     // 结果日是否为推测
 };
 
 type TopologyFilters = { ranks: string[]; categories: string[]; sameOnly: boolean; breadth: number };
+type ExitMode = "early" | "rebuttal" | "final";
 
-// 推断某会议某轮投稿的出结果时间（早反馈 + 最终结果）
-function inferResultDates(conf: Conference, entryDate: string): { result: string; early: string | null; inferred: boolean } {
-  const results = (conf.supplementalEvents || [])
-    .filter((event) => (!event.inferred || event.projected) && (event.type === "result" || event.type === "reject"))
-    .map((event) => event.date)
-    .filter((date) => date > entryDate)
-    .sort();
-  if (results.length > 0) return { result: results[results.length - 1], early: results[0], inferred: false };
-  return { result: addDays(entryDate, 100), early: null, inferred: true };
+// 推断某会议某轮投稿的关键节点：早反馈（一轮结果/早拒）、rebuttal 结束、最终结果
+function inferResultDates(conf: Conference, entryDate: string): { result: string; early: string | null; rebuttal: string | null; inferred: boolean } {
+  const events = (conf.supplementalEvents || []).filter((event) => (!event.inferred || event.projected) && event.date > entryDate);
+  const results = events.filter((event) => event.type === "result" || event.type === "reject").map((event) => event.date).sort();
+  const rebuttals = events.filter((event) => event.type === "rebuttal").map((event) => event.date).sort();
+  if (results.length > 0) return { result: results[results.length - 1], early: results[0], rebuttal: rebuttals.length > 0 ? rebuttals[rebuttals.length - 1] : null, inferred: false };
+  return { result: addDays(entryDate, 100), early: null, rebuttal: rebuttals.length > 0 ? rebuttals[rebuttals.length - 1] : null, inferred: true };
+}
+
+// 某一投的转投出口日期：早撤一轮结果 / rebuttal 结束 / 最终结果；缺数据时回退保守档
+function exitOf(hop: TopologyHop, mode: ExitMode): string {
+  if (mode === "early" && hop.earlyDate) return hop.earlyDate;
+  if (mode === "rebuttal" && hop.rebuttalDate) return hop.rebuttalDate;
+  return hop.resultDate;
+}
+const EXIT_LABEL: Record<ExitMode, string> = { early: "一轮结果", rebuttal: "Rebuttal", final: "最终结果" };
+
+// 会议在某窗口内的全部投稿轮次节点（timeline 截止 + 官网核验/抓取的投稿与 Commit 节点）
+function confEntryNodes(conf: Conference, minEntry: string, maxEntry: string) {
+  return [
+    ...conf.timeline.filter((item) => item.date && item.date !== "TBD").map((item, index) => ({ date: item.date, label: markerLabel(item.comment, index) })),
+    ...(conf.supplementalEvents || []).filter((e) => (!e.inferred || e.projected) && (e.type === "submission" || e.type === "commit")).map((e) => ({ date: e.date, label: e.label })),
+  ].filter((n) => n.date >= minEntry && n.date < maxEntry).sort((a, b) => a.date.localeCompare(b.date));
 }
 
 // 从 fromDate（上一投的结果日）出发，生成下一投候选（Top-N，评分排序，7 天缓冲）。
@@ -219,15 +236,13 @@ function topologyCandidates(fromDate: string, rootConf: Conference | null, usedI
     // ARR 视作 NLP/AI 领域：锚定 AI 会议并勾选"只看同领域"时仍保留 ARR
     const sameField = rootConf ? (conf.isARR ? rootConf.category === "AI" : conf.category === rootConf.category) : false;
     if (filters.sameOnly && rootConf && !sameField) continue;
-    const nodes = [
-      ...conf.timeline.filter((item) => item.date && item.date !== "TBD").map((item, index) => ({ date: item.date, label: markerLabel(item.comment, index) })),
-      ...(conf.supplementalEvents || []).filter((e) => (!e.inferred || e.projected) && (e.type === "submission" || e.type === "commit")).map((e) => ({ date: e.date, label: e.label })),
-    ].filter((n) => n.date >= minEntry && n.date < addDays(fromDate, 730)).sort((a, b) => a.date.localeCompare(b.date));
+    const nodes = confEntryNodes(conf, minEntry, addDays(fromDate, 730));
     if (nodes.length === 0) continue;
-    entries.push({ conf, date: nodes[0].date, label: nodes[0].label });
+    // 多轮会议的每一轮都参与评估（bestPerConf 按分数去重 → 自动选出衔接最优的轮次，而非最早轮次）
+    for (const node of nodes) entries.push({ conf, date: node.date, label: node.label });
   }
   const scored = entries.map((entry) => {
-    const { result, early, inferred } = inferResultDates(entry.conf, entry.date);
+    const { result, early, rebuttal, inferred } = inferResultDates(entry.conf, entry.date);
     const gap = Math.round((Date.parse(`${entry.date}T00:00:00Z`) - Date.parse(`${fromDate}T00:00:00Z`)) / 86400000);
     const fit = gap >= 30 && gap <= 180 ? 24 : gap < 30 ? 8 : gap <= 300 ? 12 : 4;   // 时间衔接适中度
     const rank = entry.conf.rank === "A" ? 16 : entry.conf.rank === "B" ? 10 : entry.conf.rank === "C" ? 5 : 0;
@@ -239,7 +254,7 @@ function topologyCandidates(fromDate: string, rootConf: Conference | null, usedI
     const cycleBonus = cycle <= 90 ? 10 : cycle <= 120 ? 5 : 0;
     const arrBonus = entry.conf.isARR ? 12 : 0; // ARR 滚动投稿 + 可 Commit 多个会议的灵活性
     const projectedPenalty = entry.conf.projected ? -3 : 0; // 预测届日期为平移推测，同级让位于真实数据
-    return { hop: { conf: entry.conf, entryDate: entry.date, entryLabel: entry.label, resultDate: result, earlyDate: early, inferredResult: inferred } as TopologyHop, score: fit + rank + field + rate + cyclePenalty + cycleBonus + arrBonus + projectedPenalty - (inferred ? 6 : 0) };
+    return { hop: { conf: entry.conf, entryDate: entry.date, entryLabel: entry.label, resultDate: result, earlyDate: early, rebuttalDate: rebuttal, inferredResult: inferred } as TopologyHop, score: fit + rank + field + rate + cyclePenalty + cycleBonus + arrBonus + projectedPenalty - (inferred ? 6 : 0) };
   });
   scored.sort((a, b) => b.score - a.score || a.hop.entryDate.localeCompare(b.hop.entryDate));
   const bestPerConf = new Map<string, typeof scored[number]>();
@@ -268,8 +283,8 @@ function verifyTopology(selection: Conference[], allowPast = false): VerifyResul
     const nodes = [...past, ...future];
     if (nodes.length === 0) return null;
     return nodes.map((node) => {
-      const { result, early, inferred } = inferResultDates(conf, node);
-      return { conf, entryDate: node, entryLabel: "投稿", resultDate: result, earlyDate: early, inferredResult: inferred } as TopologyHop;
+      const { result, early, rebuttal, inferred } = inferResultDates(conf, node);
+      return { conf, entryDate: node, entryLabel: "投稿", resultDate: result, earlyDate: early, rebuttalDate: rebuttal, inferredResult: inferred } as TopologyHop;
     });
   });
   const missing = selection.filter((_, index) => optionsPerConf[index] === null);
@@ -558,6 +573,8 @@ export default function Home() {
   const [verifyQuery, setVerifyQuery] = useState("");
   const [verifyAllowPast, setVerifyAllowPast] = useState(false); // 复盘模式：允许已截止轮次参与组合验证
   const [topologyPath, setTopologyPath] = useState<TopologyHop[]>([]);
+  // 每跳的转投时点：一轮结果（早撤）/ rebuttal 结束 / 最终结果（保守），驱动下一层的起算日
+  const [exitChoices, setExitChoices] = useState<Record<number, ExitMode>>({});
   const [topoDepth, setTopoDepth] = useState(3);
   const [topoBreadth, setTopoBreadth] = useState(4);
   const [topoRanks, setTopoRanks] = useState<string[]>(["A", "B"]);
@@ -569,6 +586,7 @@ export default function Home() {
     setTopologyRoot({ mode: "date", freeDate });
     setTopologyView("plan");
     setTopologyPath([]);
+    setExitChoices({});
     setVerifySelection([]);
     setSelectedEvent(null);
     setTransferPoint(null);
@@ -578,6 +596,7 @@ export default function Home() {
     setTopologyRoot({ mode: "conf", conf, event });
     setTopologyView("plan");
     setTopologyPath([]);
+    setExitChoices({});
     setTopoRanks(rank === "ALL" ? ["A", "B"] : [rank]);
     setTopoCategories([]);
     setTopoSameOnly(false); // 默认宽松：候选不足的 bug 修复
@@ -587,34 +606,45 @@ export default function Home() {
 
   const verifyResult = useMemo(() => (topologyView === "verify" ? verifyTopology(verifySelection, verifyAllowPast) : null), [topologyView, verifySelection, verifyAllowPast]);
   const dataHorizon = useMemo(() => maxKnownDeadline(data), [data]);
-  // 手动指定会议：每层可通过搜索强制选入任意会议（与双击转投面板的候选口径一致：含预测届、ARR 与全部投稿轮次）
+  // 手动指定会议：每层可通过搜索强制选入任意会议与轮次（含预测届、ARR；与候选口径一致）
   const [pickDepth, setPickDepth] = useState<number | null>(null);
   const [pickQuery, setPickQuery] = useState("");
   const [pickError, setPickError] = useState<string | null>(null);
   useEffect(() => { if (pickError) { const timer = setTimeout(() => setPickError(null), 4000); return () => clearTimeout(timer); } return undefined; }, [pickError]);
+  // 某层的起算日：首层为锚定日期/论文完成日；后续层为上一跳所选转投出口（一轮结果/rebuttal/最终结果）
+  const layerFromDate = (depth: number): string | undefined => {
+    if (!topologyRoot) return undefined;
+    if (depth === 0) return topologyRoot.mode === "conf" ? topologyRoot.event.date : topologyRoot.freeDate;
+    const prev = topologyPath[depth - 1];
+    return prev ? exitOf(prev, exitChoices[depth - 1] ?? "final") : undefined;
+  };
   const pickResults = useMemo(() => {
     const q = pickQuery.trim().toLowerCase();
-    if (pickDepth === null || !q) return [];
-    const usedIds = new Set<string>([...(topologyRoot?.mode === "conf" ? [topologyRoot.conf.id] : []), ...topologyPath.map((hop) => hop.conf.id)]);
-    return data.filter((conf) => !usedIds.has(conf.id) && `${conf.title} ${conf.year} ${conf.description} ${conf.place}`.toLowerCase().includes(q)).slice(0, 6);
-  }, [pickDepth, pickQuery, topologyRoot, topologyPath, data]);
-  const pickManualConf = (depth: number, conf: Conference) => {
-    if (!topologyRoot) return;
-    const layerFrom = depth === 0
-      ? (topologyRoot.mode === "conf" ? topologyRoot.event.date : topologyRoot.freeDate)
-      : topologyPath[depth - 1]?.resultDate;
-    if (!layerFrom) return;
+    if (pickDepth === null || !q) return [] as Array<{ conf: Conference; date: string; label: string }>;
+    const layerFrom = layerFromDate(pickDepth);
+    if (!layerFrom) return [];
     const minEntry = addDays(layerFrom, layerFrom === TODAY ? 0 : 7);
-    const nodes = [
-      ...conf.timeline.filter((item) => item.date && item.date !== "TBD").map((item, index) => ({ date: item.date, label: markerLabel(item.comment, index) })),
-      ...(conf.supplementalEvents || []).filter((e) => (!e.inferred || e.projected) && (e.type === "submission" || e.type === "commit")).map((e) => ({ date: e.date, label: e.label })),
-    ].filter((n) => n.date >= minEntry && n.date < addDays(layerFrom, 730)).sort((a, b) => a.date.localeCompare(b.date));
-    if (nodes.length === 0) {
+    const usedIds = new Set<string>([...(topologyRoot?.mode === "conf" ? [topologyRoot.conf.id] : []), ...topologyPath.map((hop) => hop.conf.id)]);
+    const out: Array<{ conf: Conference; date: string; label: string }> = [];
+    const matched = data.filter((conf) => !usedIds.has(conf.id) && `${conf.title} ${conf.year} ${conf.description} ${conf.place}`.toLowerCase().includes(q)).slice(0, 6);
+    for (const conf of matched) {
+      // 每个会议按轮次展开条目（多轮会议可指定具体轮次）；窗口内无节点的会议给出占位条目并说明原因
+      const nodes = confEntryNodes(conf, minEntry, addDays(layerFrom, 730));
+      if (nodes.length === 0) { out.push({ conf, date: "", label: "该层时点后无可投节点" }); continue; }
+      for (const node of nodes.slice(0, 3)) out.push({ conf, date: node.date, label: node.label });
+    }
+    return out.slice(0, 12);
+  }, [pickDepth, pickQuery, topologyRoot, topologyPath, exitChoices, data]);
+  const pickManualConf = (depth: number, conf: Conference, node?: { date: string; label: string }) => {
+    const layerFrom = layerFromDate(depth);
+    if (!layerFrom) return;
+    const entry = node || confEntryNodes(conf, addDays(layerFrom, layerFrom === TODAY ? 0 : 7), addDays(layerFrom, 730))[0];
+    if (!entry) {
       setPickError(`${conf.title} ${conf.year}：从 ${layerFrom} 起（+7 天缓冲）没有可投节点——已截稿、未公布或时间不衔接，无法放在第 ${depth + 1} 投。`);
       return;
     }
-    const { result, early, inferred } = inferResultDates(conf, nodes[0].date);
-    setTopologyPath((cur) => [...cur.slice(0, depth), { conf, entryDate: nodes[0].date, entryLabel: nodes[0].label, resultDate: result, earlyDate: early, inferredResult: inferred }]);
+    const { result, early, rebuttal, inferred } = inferResultDates(conf, entry.date);
+    setTopologyPath((cur) => [...cur.slice(0, depth), { conf, entryDate: entry.date, entryLabel: entry.label, resultDate: result, earlyDate: early, rebuttalDate: rebuttal, inferredResult: inferred }]);
     setPickQuery("");
     setPickDepth(null);
     setPickError(null);
@@ -625,7 +655,7 @@ export default function Home() {
     return data.filter((conf) => !verifySelection.some((c) => c.title === conf.title) && `${conf.title} ${conf.description} ${conf.place}`.toLowerCase().includes(q)).slice(0, 8);
   }, [topologyView, verifyQuery, verifySelection, data]);
 
-  // 各层候选：根节点之后的每跳由"上一跳结果日"驱动
+  // 各层候选：每跳由"上一跳的转投出口"驱动（一轮结果 / rebuttal / 最终结果，缺数据自动回退保守档）
   const topologyColumns = useMemo(() => {
     if (!topologyRoot) return [];
     const filters: TopologyFilters = { ranks: topoRanks, categories: topoCategories, sameOnly: topoSameOnly, breadth: Math.max(topoBreadth, 12) };
@@ -649,10 +679,10 @@ export default function Home() {
       if (!candidates.some((hop) => hop.conf.id === selected.conf.id)) candidates.push(selected);
       columns.push(candidates);
       used.add(selected.conf.id);
-      cursor = selected.resultDate;
+      cursor = exitOf(selected, exitChoices[depth] ?? "final");
     }
     return columns;
-  }, [topologyRoot, topologyPath, topoDepth, topoBreadth, topoRanks, topoCategories, topoSameOnly, data]);
+  }, [topologyRoot, topologyPath, exitChoices, topoDepth, topoBreadth, topoRanks, topoCategories, topoSameOnly, data]);
 
   const syncStatusText = syncFailed
     ? `线上更新失败 · 正在使用内置数据${builtInMeta.generatedAt ? `（生成于 ${formatMetaTime(builtInMeta.generatedAt)}）` : ""}`
@@ -776,20 +806,20 @@ export default function Home() {
               }
               return (
               <div className="topology-column" key={`col-${depth}`}>
-                <div className="topology-column-label">第 {depth + 1} 投候选{depth > 0 ? ` · 前一投结果日 ${topologyPath[depth - 1]?.resultDate || ""} 之后` : ""}<span className="topology-hint">点击卡片选中，再点可取消</span></div>
+                <div className="topology-column-label">第 {depth + 1} 投候选{depth > 0 && topologyPath[depth - 1] ? ` · 前一投【${EXIT_LABEL[exitChoices[depth - 1] ?? "final"]}】${exitOf(topologyPath[depth - 1]!, exitChoices[depth - 1] ?? "final")} 之后` : ""}<span className="topology-hint">点击卡片选中，再点可取消</span></div>
                 <div className="topology-pick">
                   <input type="text" value={pickDepth === depth ? pickQuery : ""} placeholder="＋ 指定会议（搜索选入本层）" onFocus={() => { setPickDepth(depth); setPickQuery(""); }} onChange={(e) => { setPickDepth(depth); setPickQuery(e.target.value); }} aria-label={`搜索指定第 ${depth + 1} 投会议`} />
                   {pickDepth === depth && pickQuery.trim() && (
                     <div className="pick-list">
                       {pickResults.length === 0 && <span className="pick-empty">没有匹配的会议（或已在本线路中）</span>}
-                      {pickResults.map((conf) => <button key={conf.id} onClick={() => pickManualConf(depth, conf)}>＋ {conf.title} {conf.year}{conf.projected ? "*" : ""}<em>{conf.isARR ? "ARR" : `CCF ${conf.rank}`}</em></button>)}
+                      {pickResults.map((item) => <button key={`${item.conf.id}-${item.date}-${item.label}`} onClick={() => pickManualConf(depth, item.conf, item.date ? { date: item.date, label: item.label } : undefined)}>＋ {item.conf.title} {item.conf.year}{item.conf.projected ? "*" : ""}<em>{item.date ? `${item.date.slice(5)} · ${item.label}` : item.label}{item.conf.isARR ? " · ARR" : ""}</em></button>)}
                     </div>
                   )}
                 </div>
-                {candidates.length === 0 && <p className="no-candidate">{(depth === 0 ? (topologyRoot!.mode === "conf" ? topologyRoot.event.date : topologyRoot.freeDate) : topologyPath[depth - 1].resultDate) > dataHorizon ? `规划已推进到已知排期之外（上游仅公布到 ${dataHorizon}）——建议回退一层，改选结果日更早的会议（评审周期短），让后续投递落在已知排期内。` : "当前条件下此层没有可投会议，可放宽等级/领域筛选，或回退一层改选其他会议。"}</p>}
+                {candidates.length === 0 && <p className="no-candidate">{(depth === 0 ? (topologyRoot!.mode === "conf" ? topologyRoot.event.date : topologyRoot.freeDate) : exitOf(topologyPath[depth - 1]!, exitChoices[depth - 1] ?? "final")) > dataHorizon ? `规划已推进到已知排期之外（上游仅公布到 ${dataHorizon}）——建议回退一层，改选结果日更早的会议（评审周期短），或把上一投的转投时点切到更早的一轮结果/Rebuttal 档。` : "当前条件下此层没有可投会议，可放宽等级/领域筛选，或回退一层改选其他会议。"}</p>}
                 {visibleCandidates.map((hop) => {
                   const active = topologyPath[depth]?.conf.id === hop.conf.id;
-                  const gapFromPrev = Math.round((Date.parse(`${hop.entryDate}T00:00:00Z`) - Date.parse(`${(depth === 0 ? (topologyRoot!.mode === "conf" ? topologyRoot.event.date : topologyRoot.freeDate) : topologyPath[depth - 1].resultDate)}T00:00:00Z`)) / 86400000);
+                  const gapFromPrev = Math.round((Date.parse(`${hop.entryDate}T00:00:00Z`) - Date.parse(`${(depth === 0 ? (topologyRoot!.mode === "conf" ? topologyRoot.event.date : topologyRoot.freeDate) : exitOf(topologyPath[depth - 1]!, exitChoices[depth - 1] ?? "final"))}T00:00:00Z`)) / 86400000);
                   return <div className={`topology-card ${active ? "active" : ""} ${hop.conf.projected ? "projected" : ""}`} key={hop.conf.id} onClick={() => setTopologyPath((cur) => {
                     if (cur[depth]?.conf.id === hop.conf.id) return cur.slice(0, depth); // 点已选卡片 = 取消该层及更深选择
                     return [...cur.slice(0, depth), hop];
@@ -798,8 +828,9 @@ export default function Home() {
                     <p>{hop.conf.isARR ? `${hop.conf.description}${hop.conf.commitVenues?.length ? ` · 可 Commit：${hop.conf.commitVenues.join("、")}` : ""}` : `${hop.conf.place || hop.conf.description}${hop.conf.place ? placeZh(hop.conf.place) : ""}`}</p>
                     <div className="topology-dates">
                       <span>■ {hop.conf.isARR ? "ARR 投稿" : "投稿"} {hop.entryDate.slice(5)}{hop.entryDate < TODAY ? "（已截止）" : ""}</span>
-                      {hop.earlyDate && <span>· 早反馈 {hop.earlyDate.slice(5)}</span>}
-                      <span>· {hop.inferredResult ? "* 约" : ""}结果 {hop.resultDate.slice(5)}</span>
+                      {hop.earlyDate && <span>· ○ 一轮 {hop.earlyDate.slice(5)}</span>}
+                      {hop.rebuttalDate && <span>· ○ rebuttal {hop.rebuttalDate.slice(5)}</span>}
+                      <span>· ● {hop.inferredResult ? "* 约" : ""}结果 {hop.resultDate.slice(5)}</span>
                     </div>
                     <div className="topology-meta">
                       <span>距上一投 +{gapFromPrev} 天</span>
@@ -807,6 +838,16 @@ export default function Home() {
                       {hop.conf.acceptRates && hop.conf.acceptRates.length > 0 && <span>· ✦ {hop.conf.acceptRates[0].rate.toFixed(1)}%（{hop.conf.acceptRates[0].year} 届）</span>}
                     </div>
                     <a href={hop.conf.link} target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()}>{hop.conf.projected ? "参考上届官网 ↗" : "会议官网 ↗"}</a>
+                    {active && (
+                      <div className="exit-picker" onClick={(e) => e.stopPropagation()}>
+                        <span className="exit-label">被拒后转投时点：</span>
+                        {(["early", "rebuttal", "final"] as ExitMode[]).map((mode) => {
+                          const date = mode === "early" ? hop.earlyDate : mode === "rebuttal" ? hop.rebuttalDate : hop.resultDate;
+                          if (!date) return null; // 该档无数据（如无一轮结果/日程）时自动回退保守档
+                          return <button key={mode} className={(exitChoices[depth] ?? "final") === mode ? "active" : ""} title={`下一层候选从 ${date} + 7 天起计算；一轮结果/Rebuttal 档缺数据时自动回退最终结果`} onClick={() => { setExitChoices((cur) => ({ ...cur, [depth]: mode })); setTopologyPath((cur) => cur.slice(0, depth + 1)); setTopoExpanded([]); }}>{EXIT_LABEL[mode]} {date.slice(5)}</button>;
+                        })}
+                      </div>
+                    )}
                   </div>;
                 })}
                 {candidates.length > visibleCandidates.length && <button className="topology-more" onClick={() => setTopoExpanded((cur) => [...cur, depth])}>＋ 展开全部 {candidates.length} 个候选</button>}
