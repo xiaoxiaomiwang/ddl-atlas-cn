@@ -6,6 +6,8 @@ export type SupplementalEvent = {
   source: string;
   inferred?: boolean;
   autoFetched?: boolean;
+  /** 外推/预测周期节点：UI 上按推测显示（* 标记），但参与拓扑与组合验证的排期计算 */
+  projected?: boolean;
 };
 
 export type SupplementalConference = {

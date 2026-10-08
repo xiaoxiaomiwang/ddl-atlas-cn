@@ -17,20 +17,91 @@ type Conference = {
   timeline: Milestone[];
   acceptRates?: AcceptRate[];
   supplementalEvents?: SupplementalEvent[]; commitVenues?: string[]; isARR?: boolean;
+  /** 预测届：上游尚未公布的年份按最近一届平移生成；上游收录真实届次后自动替换 */
+  projected?: boolean;
+  projectedFrom?: number;
 };
+
+// 以运行当天为准动态计算"今天"与年份，避免硬编码随时间过期（定义需在 enrich 之前，外推 ARR 周期依赖）
+const TODAY = (() => {
+  const now = new Date();
+  return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
+})();
+const CURRENT_YEAR = new Date().getFullYear();
+const YEAR_OPTIONS = [CURRENT_YEAR - 1, CURRENT_YEAR, CURRENT_YEAR + 1];
+
+function addDays(date: string, days: number) {
+  const value = new Date(`${date}T00:00:00Z`);
+  value.setUTCDate(value.getUTCDate() + days);
+  return value.toISOString().slice(0, 10);
+}
+
+// 日期平移 N 年（预测届与评审日程回退用）
+function shiftYears(date: string, years: number) {
+  if (!date) return date;
+  const value = new Date(`${date.slice(0, 10)}T00:00:00Z`);
+  value.setUTCFullYear(value.getUTCFullYear() + years);
+  return value.toISOString().slice(0, 10);
+}
 
 // 自动抓取的官网评审日程（CI 从会议官网解析，未经人工核验，人工核验数据优先）
 type AutoSupplements = { conferences?: Record<string, { source: string; events: SupplementalEvent[] }> };
 const autoSupplements = (autoSupplementsRaw as AutoSupplements).conferences || {};
 
-// ARR 周期：优先用自动抓取的官网数据（保持最新），回退静态数据；静态中的 commitment 信息按周期合并
+// ARR 周期：官网自动抓取（live）与人工维护静态合并，live 优先、静态补充 commit 节点；
+// 官网只公布未来两三个周期，其余按双月节奏外推（标 * 预测），保证拓扑每一层都有 ARR 保底通道
+const ARR_MONTH_NAMES = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
 type ArrCycle = typeof arrCycles[number];
-const arrCyclesLive: ArrCycle[] = (arrCyclesAutoRaw as ArrCycle[]).length > 0
-  ? (arrCyclesAutoRaw as ArrCycle[]).map((cycle) => {
-      const staticCycle = arrCycles.find((item) => item.id === cycle.id);
-      return { ...cycle, commitVenues: staticCycle?.commitVenues };
-    })
-  : arrCycles;
+function mergedArrCycles(): Conference[] {
+  const liveAll = (arrCyclesAutoRaw as ArrCycle[]).length > 0 ? (arrCyclesAutoRaw as ArrCycle[]) : arrCycles;
+  const liveIds = new Set(liveAll.map((cycle) => cycle.id));
+  const merged: Conference[] = liveAll.map((cycle) => {
+    const staticCycle = arrCycles.find((item) => item.id === cycle.id);
+    const events = [...(cycle.supplementalEvents || [])];
+    for (const event of staticCycle?.supplementalEvents || []) {
+      // live 抓取不解析 commitment 列，静态核验的 commit 节点补进去
+      if (event.type === "commit" && !events.some((item) => item.type === "commit" && item.date === event.date)) events.push(event);
+    }
+    return { ...cycle, commitVenues: staticCycle?.commitVenues ?? cycle.commitVenues, supplementalEvents: events } as Conference;
+  });
+  for (const cycle of arrCycles) {
+    if (!liveIds.has(cycle.id)) merged.push({ ...cycle } as Conference); // live 覆盖逻辑曾把静态独有周期整个丢掉，这里找回
+  }
+  const submissionDate = (conf: Conference) => (conf.supplementalEvents || []).find((event) => event.type === "submission")?.date || "";
+  merged.sort((a, b) => (submissionDate(a) || "9999").localeCompare(submissionDate(b) || "9999"));
+  const last = merged[merged.length - 1];
+  if (last) {
+    const lastSub = submissionDate(last);
+    const prevSub = merged.length > 1 ? submissionDate(merged[merged.length - 2]) : "";
+    const stepDays = lastSub && prevSub
+      ? Math.max(40, Math.min(90, Math.round((Date.parse(`${lastSub}T00:00:00Z`) - Date.parse(`${prevSub}T00:00:00Z`)) / 86400000)))
+      : 70;
+    for (let index = 1; index <= 9; index += 1) {
+      const nextSub = addDays(lastSub, stepDays * index);
+      if (nextSub > addDays(TODAY, 540)) break;
+      const monthName = ARR_MONTH_NAMES[Number(nextSub.slice(5, 7)) - 1] || "CYC";
+      merged.push({
+        ...last,
+        id: `arr-proj-${index}`,
+        title: `ARR ${monthName}`,
+        description: `ACL Rolling Review · ${nextSub.slice(0, 4)} 年 ${monthName} 周期（按节奏预测）`,
+        year: Number(nextSub.slice(0, 4)),
+        conferenceDate: `预计投稿 ${nextSub}（双月节奏外推）`,
+        commitVenues: ["官方尚未公布对应 venue"],
+        projected: true,
+        supplementalEvents: (last.supplementalEvents || []).map((event) => ({
+          ...event,
+          date: addDays(event.date, stepDays * index),
+          label: event.type === "commit" ? event.label : `* 预计 · ${event.label}`,
+          detail: "按 ARR 双月周期的历史节奏外推，官网公布后自动更新。",
+          inferred: true,
+          projected: true,
+        })).filter((event) => event.date && event.date !== "TBD"),
+      });
+    }
+  }
+  return merged;
+}
 
 function enrichConferenceData(records: Conference[]) {
   const sourceData = records.map((conf) => {
@@ -39,16 +110,26 @@ function enrichConferenceData(records: Conference[]) {
     const auto = official ? [] : (autoSupplements[key]?.events || []).map((event) => ({ ...event, autoFetched: true as const, source: event.source || autoSupplements[key].source }));
     return { ...conf, supplementalEvents: (official || auto) as SupplementalEvent[] };
   });
-  const visionProjections = [
-    { title: "CVPR", sourceYear: 2026, targetYear: 2027, shift: 1 },
-    { title: "ICCV", sourceYear: 2025, targetYear: 2027, shift: 2 },
-  ].flatMap((spec) => {
-    const source = sourceData.find((conf) => conf.title === spec.title && conf.year === spec.sourceYear);
-    if (!source) return [];
-    const shiftDate = (date: string) => date && date !== "TBD" ? `${Number(date.slice(0, 4)) + spec.shift}${date.slice(4)}` : date;
-    return [{ ...source, id: `${source.id}-projection-${spec.targetYear}`, year: spec.targetYear, conferenceDate: `* 参考 ${spec.sourceYear} 届次顺延`, conferenceStart: shiftDate(source.conferenceStart), place: "地点待官方公布", timeline: source.timeline.map((item) => ({ ...item, date: shiftDate(item.date), abstractDate: shiftDate(item.abstractDate) })), supplementalEvents: (source.supplementalEvents || []).map((event) => ({ ...event, date: shiftDate(event.date), label: `* 下一届预计 · ${event.label}`, detail: `依据 ${spec.title} ${spec.sourceYear} 官方日程顺延 ${spec.shift} 年；${spec.targetYear} 届官网日期公布后将替换。`, inferred: true })) }];
-  });
-  return [...sourceData, ...visionProjections, ...arrCyclesLive] as Conference[];
+  // 预测届：评审日程（rebuttal/结果等）按来源届平移补全（标 * 推测，不参与结果推算——结果日仍走 +100 天保守估计）
+  const byKey = new Map(sourceData.map((conf) => [`${conf.title}-${conf.year}`, conf]));
+  for (const conf of sourceData) {
+    if (!conf.projected || (conf.supplementalEvents || []).length > 0) continue;
+    const fromYear = conf.projectedFrom ?? conf.year;
+    const source = byKey.get(`${conf.title}-${fromYear}`);
+    if (!source || fromYear === conf.year) continue;
+    const shift = conf.year - fromYear;
+    conf.supplementalEvents = (source.supplementalEvents || [])
+      .filter((event) => !event.inferred && event.date && event.date !== "TBD")
+      .map((event) => ({
+        ...event,
+        date: shiftYears(event.date, shift),
+        label: `* 预计 · ${event.label}`,
+        detail: `依据 ${conf.title} ${conf.projectedFrom} 届官方日程顺延 ${shift} 年推测；官网公布 ${conf.year} 届真实时间后自动替换为准确日期。`,
+        inferred: true,
+      }))
+      .filter((event) => event.date && event.date !== "TBD") as SupplementalEvent[];
+  }
+  return [...sourceData, ...mergedArrCycles()] as Conference[];
 }
 const builtInData = enrichConferenceData(rawData as Conference[]);
 const categories: Record<string, string> = {
@@ -58,14 +139,6 @@ const categories: Record<string, string> = {
 };
 const months = ["1 月", "2 月", "3 月", "4 月", "5 月", "6 月", "7 月", "8 月", "9 月", "10 月", "11 月", "12 月"];
 const rankColors: Record<string, string> = { A: "rank-a", B: "rank-b", C: "rank-c", N: "rank-n" };
-
-// 以运行当天为准动态计算"今天"与年份，避免硬编码随时间过期
-const TODAY = (() => {
-  const now = new Date();
-  return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
-})();
-const CURRENT_YEAR = new Date().getFullYear();
-const YEAR_OPTIONS = [CURRENT_YEAR - 1, CURRENT_YEAR, CURRENT_YEAR + 1];
 
 // 记住用户上次选择的筛选条件（年份/等级/领域/ARR 模式），下次访问自动恢复
 const FILTER_STORAGE_KEY = "ddl-atlas-filters";
@@ -123,7 +196,7 @@ type TopologyFilters = { ranks: string[]; categories: string[]; sameOnly: boolea
 // 推断某会议某轮投稿的出结果时间（早反馈 + 最终结果）
 function inferResultDates(conf: Conference, entryDate: string): { result: string; early: string | null; inferred: boolean } {
   const results = (conf.supplementalEvents || [])
-    .filter((event) => !event.inferred && (event.type === "result" || event.type === "reject"))
+    .filter((event) => (!event.inferred || event.projected) && (event.type === "result" || event.type === "reject"))
     .map((event) => event.date)
     .filter((date) => date > entryDate)
     .sort();
@@ -140,12 +213,14 @@ function topologyCandidates(fromDate: string, rootConf: Conference | null, usedT
     if (usedTitles.has(conf.title)) continue; // 路径去重：同一条线不重复投同一会议
     // ARR 周期不受 CCF 等级过滤（rank=N）；普通会议按等级过滤
     if (!conf.isARR && filters.ranks.length > 0 && !filters.ranks.includes(conf.rank)) continue;
-    const sameField = rootConf ? conf.category === rootConf.category : false;
+    // ARR 是跨领域的保底转投通道，不受领域筛选限制；普通会议按领域过滤
+    if (!conf.isARR && filters.categories.length > 0 && !filters.categories.includes(conf.category)) continue;
+    // ARR 视作 NLP/AI 领域：锚定 AI 会议并勾选"只看同领域"时仍保留 ARR
+    const sameField = rootConf ? (conf.isARR ? rootConf.category === "AI" : conf.category === rootConf.category) : false;
     if (filters.sameOnly && rootConf && !sameField) continue;
-    if (filters.categories.length > 0 && !filters.categories.includes(conf.category)) continue;
     const nodes = [
       ...conf.timeline.filter((item) => item.date && item.date !== "TBD").map((item, index) => ({ date: item.date, label: markerLabel(item.comment, index) })),
-      ...(conf.supplementalEvents || []).filter((e) => !e.inferred && (e.type === "submission" || e.type === "commit")).map((e) => ({ date: e.date, label: e.label })),
+      ...(conf.supplementalEvents || []).filter((e) => (!e.inferred || e.projected) && (e.type === "submission" || e.type === "commit")).map((e) => ({ date: e.date, label: e.label })),
     ].filter((n) => n.date >= minEntry && n.date < addDays(fromDate, 550)).sort((a, b) => a.date.localeCompare(b.date));
     if (nodes.length === 0) continue;
     entries.push({ conf, date: nodes[0].date, label: nodes[0].label });
@@ -162,7 +237,8 @@ function topologyCandidates(fromDate: string, rootConf: Conference | null, usedT
     const cyclePenalty = cycle > 210 ? -14 : cycle > 150 ? -7 : cycle > 120 ? -3 : 0;
     const cycleBonus = cycle <= 90 ? 10 : cycle <= 120 ? 5 : 0;
     const arrBonus = entry.conf.isARR ? 12 : 0; // ARR 滚动投稿 + 可 Commit 多个会议的灵活性
-    return { hop: { conf: entry.conf, entryDate: entry.date, entryLabel: entry.label, resultDate: result, earlyDate: early, inferredResult: inferred } as TopologyHop, score: fit + rank + field + rate + cyclePenalty + cycleBonus + arrBonus - (inferred ? 6 : 0) };
+    const projectedPenalty = entry.conf.projected ? -3 : 0; // 预测届日期为平移推测，同级让位于真实数据
+    return { hop: { conf: entry.conf, entryDate: entry.date, entryLabel: entry.label, resultDate: result, earlyDate: early, inferredResult: inferred } as TopologyHop, score: fit + rank + field + rate + cyclePenalty + cycleBonus + arrBonus + projectedPenalty - (inferred ? 6 : 0) };
   });
   scored.sort((a, b) => b.score - a.score || a.hop.entryDate.localeCompare(b.hop.entryDate));
   const bestPerConf = new Map<string, typeof scored[number]>();
@@ -172,19 +248,23 @@ function topologyCandidates(fromDate: string, rootConf: Conference | null, usedT
 
 // ---- 组合验证：给定一组心仪会议（≤6），寻找可行的串行投稿顺序 ----
 // 可行 = 每一投的截止日 ≥ 上一投结果日 + 7 天缓冲；不可行则给出断点与最长可行前缀
+// allowPast（复盘模式）：允许纳入已截止的最近轮次，用于复盘"当年怎么投才是可行路线"
 type VerifyResult =
   | { ok: true; sequence: TopologyHop[] }
   | { ok: false; reason: string; bestPrefix: TopologyHop[]; suggestion?: TopologyHop[] };
 
-function verifyTopology(selection: Conference[]): VerifyResult {
+function verifyTopology(selection: Conference[], allowPast = false): VerifyResult {
   if (selection.length === 0) return { ok: false, reason: "请先添加至少一场会议。", bestPrefix: [] };
   if (selection.length > 6) return { ok: false, reason: "最多支持 6 场会议组合验证。", bestPrefix: [] };
-  // 每场会议保留最多 8 个未来投稿轮次（滚动投稿会议的深轮次参与衔接）
+  // 每场会议保留最多 8 个未来投稿轮次（滚动投稿会议的深轮次参与衔接）；复盘模式再附最近的 2 个已截止轮次
   const optionsPerConf = selection.map((conf) => {
-    const nodes = [
+    const all = [
       ...conf.timeline.filter((item) => item.date && item.date !== "TBD").map((item) => item.date),
-      ...(conf.supplementalEvents || []).filter((e) => !e.inferred && (e.type === "submission" || e.type === "commit")).map((e) => e.date),
-    ].filter((d) => d >= TODAY).sort().slice(0, 8);
+      ...(conf.supplementalEvents || []).filter((e) => (!e.inferred || e.projected) && (e.type === "submission" || e.type === "commit")).map((e) => e.date),
+    ].sort();
+    const future = all.filter((d) => d >= TODAY).slice(0, 8);
+    const past = allowPast ? all.filter((d) => d < TODAY).slice(-2) : [];
+    const nodes = [...past, ...future];
     if (nodes.length === 0) return null;
     return nodes.map((node) => {
       const { result, early, inferred } = inferResultDates(conf, node);
@@ -192,7 +272,7 @@ function verifyTopology(selection: Conference[]): VerifyResult {
     });
   });
   const missing = selection.filter((_, index) => optionsPerConf[index] === null);
-  if (missing.length > 0) return { ok: false, reason: `${missing.map((c) => c.title).join("、")} 已无未来投稿节点（已截稿或未公布），无法纳入组合。`, bestPrefix: [] };
+  if (missing.length > 0) return { ok: false, reason: `${missing.map((c) => c.title).join("、")} ${allowPast ? "在数据里没有任何投稿轮次" : "已无未来投稿节点（已截稿或未公布），可勾选复盘模式纳入已截止轮次"}，无法纳入组合。`, bestPrefix: [] };
   const valid = optionsPerConf as TopologyHop[][];
   // DFS：对每场会议选择一个轮次，寻找满足"结果日 + 7 天缓冲后可投下一场"的排列
   let answer: TopologyHop[] | null = null;
@@ -206,7 +286,7 @@ function verifyTopology(selection: Conference[]): VerifyResult {
     const ordered = [...remaining].sort((a, b) => a[0].entryDate.localeCompare(b[0].entryDate));
     for (const options of ordered) {
       for (const hop of options) {
-        const feasible = current.length === 0 ? hop.entryDate >= TODAY : hop.entryDate >= addDays(current[current.length - 1].resultDate, 7);
+        const feasible = current.length === 0 ? allowPast || hop.entryDate >= TODAY : hop.entryDate >= addDays(current[current.length - 1].resultDate, 7);
         if (!feasible) continue;
         search([...current, hop], remaining.filter((x) => x !== options));
         if (answer) return;
@@ -254,12 +334,6 @@ function markerLabel(comment: string, index: number, isAbstract = false) {
   if (/rebuttal|revision|response/i.test(comment)) return "Rebuttal / 修订";
   if (/notification|result|decision|accept/i.test(comment)) return "最终结果";
   return index === 0 ? "投稿截止" : `投稿截止 ${index + 1}`;
-}
-
-function addDays(date: string, days: number) {
-  const value = new Date(`${date}T00:00:00Z`);
-  value.setUTCDate(value.getUTCDate() + days);
-  return value.toISOString().slice(0, 10);
 }
 
 function addOneYear(date: string) {
@@ -481,6 +555,7 @@ export default function Home() {
   const [freeDate, setFreeDate] = useState<string>(addDays(TODAY, 7));
   const [verifySelection, setVerifySelection] = useState<Conference[]>([]);
   const [verifyQuery, setVerifyQuery] = useState("");
+  const [verifyAllowPast, setVerifyAllowPast] = useState(false); // 复盘模式：允许已截止轮次参与组合验证
   const [topologyPath, setTopologyPath] = useState<TopologyHop[]>([]);
   const [topoDepth, setTopoDepth] = useState(3);
   const [topoBreadth, setTopoBreadth] = useState(4);
@@ -509,7 +584,7 @@ export default function Home() {
     setSelectedEvent(null);
   };
 
-  const verifyResult = useMemo(() => (topologyView === "verify" ? verifyTopology(verifySelection) : null), [topologyView, verifySelection]);
+  const verifyResult = useMemo(() => (topologyView === "verify" ? verifyTopology(verifySelection, verifyAllowPast) : null), [topologyView, verifySelection, verifyAllowPast]);
   const dataHorizon = useMemo(() => maxKnownDeadline(data), [data]);
   const verifySearchResults = useMemo(() => {
     if (topologyView !== "verify" || !verifyQuery.trim()) return [];
@@ -570,12 +645,12 @@ export default function Home() {
       </section>
 
       <section className="timeline-section" id="timeline">
-        <div className="section-heading"><div><p className="eyebrow">ANNUAL SUBMISSION GANTT</p><h2>{arrMode === "only" ? `${year} ARR 时间线` : `${year} 投稿甘特图`}</h2></div><div className="legend"><span><i className="abstract"/>摘要</span><span><i className="submission"/>投稿</span><span><i className="reject"/>拒稿</span><span><i className="rebuttal"/>Rebuttal</span><span><i className="result"/>出分/录用</span><span><i className="commit"/>Commit</span><span><i className="event"/>开会</span><span className="estimate-key">* 往届官网节奏平移</span></div></div>
+        <div className="section-heading"><div><p className="eyebrow">ANNUAL SUBMISSION GANTT</p><h2>{arrMode === "only" ? `${year} ARR 时间线` : `${year} 投稿甘特图`}</h2></div><div className="legend"><span><i className="abstract"/>摘要</span><span><i className="submission"/>投稿</span><span><i className="reject"/>拒稿</span><span><i className="rebuttal"/>Rebuttal</span><span><i className="result"/>出分/录用</span><span><i className="commit"/>Commit</span><span><i className="event"/>开会</span><span className="estimate-key">* 预测 / 往届节奏平移</span></div></div>
         <p className="drag-hint">↔ 左右拖动浏览会议　↕ 上下拖动浏览全年日期　·　单击看详情，双击日期节点生成转投路线</p>
         <div className="gantt-viewport" ref={ganttViewportRef}>
           {visible.length === 0 && <div className="empty"><b>没有匹配的会议</b><span>换一个等级、领域或搜索词试试。</span></div>}
           {visible.length > 0 && <div className="vertical-gantt" style={{ "--column-count": visible.length } as React.CSSProperties}>
-            <div className="sticky-gantt-head"><div className="corner"><b>{year}</b><span>时间 / 日期</span></div><div className="conference-heads">{visible.map((conf, index) => { const nextDeadline = nextDeadlineInfo(conf); const countdownLevel = nextDeadline ? (nextDeadline.days === 0 ? "countdown-today" : nextDeadline.days <= 7 ? "countdown-soon" : nextDeadline.days <= 30 ? "countdown-mid" : "countdown-later") : ""; return <div className="conference-head" key={`head-${conf.id}-${conf.year}`}><div className="column-number">{String(index + 1).padStart(2, "0")}</div><div className="venue-top"><h3 title={`${conf.title} ${conf.year}`}>{conf.title} <small>{conf.year}</small></h3><span className={`rank ${rankColors[conf.rank] || "rank-n"}`}>{conf.isARR ? "ARR" : conf.rank === "N" || !conf.rank ? "—" : `CCF ${conf.rank}`}</span></div><p title={conf.description}>{conf.description}</p><div className="meta">{nextDeadline && <span className={`countdown ${countdownLevel}`} title={`下一个投稿节点：${nextDeadline.date}`}>{nextDeadline.days === 0 ? "⚠ 今天截止" : `⏳ 剩 ${nextDeadline.days} 天`}</span>}<span title={conf.place || undefined}>⌖ {conf.place || "地点待定"}{conf.place && placeZh(conf.place)}</span><span>◷ {conf.conferenceDate || "时间待定"}</span>{conf.acceptRates && conf.acceptRates.length > 0 && <span className="accept-rate" title={`历届录用率：${conf.acceptRates.map((r) => `${r.year} 届 ${(r.rate).toFixed(1)}%（${r.accepted}/${r.submitted}）`).join("；")}`}>✦ {conf.acceptRates[0].rate.toFixed(1)}% 录取（{conf.acceptRates[0].year} 届）</span>}{conf.commitVenues?.map((venue) => <span className="commit-venue" key={venue}>→ {venue}</span>)}</div><a href={conf.link} target="_blank" rel="noreferrer">会议官网 ↗</a></div>})}</div></div>
+            <div className="sticky-gantt-head"><div className="corner"><b>{year}</b><span>时间 / 日期</span></div><div className="conference-heads">{visible.map((conf, index) => { const nextDeadline = nextDeadlineInfo(conf); const countdownLevel = nextDeadline ? (nextDeadline.days === 0 ? "countdown-today" : nextDeadline.days <= 7 ? "countdown-soon" : nextDeadline.days <= 30 ? "countdown-mid" : "countdown-later") : ""; return <div className="conference-head" key={`head-${conf.id}-${conf.year}`}><div className="column-number">{String(index + 1).padStart(2, "0")}</div><div className="venue-top"><h3 title={`${conf.title} ${conf.year}${conf.projected ? " · 预测届（按上届顺延，官网公布后自动替换）" : ""}`}>{conf.title} <small className={conf.projected ? "proj-year" : ""}>{conf.year}{conf.projected ? "*" : ""}</small></h3><span className={`rank ${rankColors[conf.rank] || "rank-n"}`}>{conf.isARR ? "ARR" : conf.rank === "N" || !conf.rank ? "—" : `CCF ${conf.rank}`}</span></div><p title={conf.description}>{conf.description}</p><div className="meta">{nextDeadline && <span className={`countdown ${countdownLevel}`} title={`下一个投稿节点：${nextDeadline.date}`}>{nextDeadline.days === 0 ? "⚠ 今天截止" : `⏳ 剩 ${nextDeadline.days} 天`}</span>}{conf.projected && <span className="projected-tag" title={`预测届 · 依据 ${conf.projectedFrom} 届官方时间顺延；官网公布后自动替换`}>◷ 预测届</span>}<span title={conf.place || undefined}>⌖ {conf.place || "地点待定"}{conf.place && placeZh(conf.place)}</span><span>◷ {conf.conferenceDate || "时间待定"}</span>{conf.acceptRates && conf.acceptRates.length > 0 && <span className="accept-rate" title={`历届录用率：${conf.acceptRates.map((r) => `${r.year} 届 ${(r.rate).toFixed(1)}%（${r.accepted}/${r.submitted}）`).join("；")}`}>✦ {conf.acceptRates[0].rate.toFixed(1)}% 录取（{conf.acceptRates[0].year} 届）</span>}{conf.commitVenues?.map((venue) => <span className="commit-venue" key={venue}>→ {venue}</span>)}</div><a href={conf.link} target="_blank" rel="noreferrer">{conf.projected ? "参考上届官网 ↗" : "会议官网 ↗"}</a></div>})}</div></div>
             <div className="gantt-body"><div className="date-axis">{axisMonths.map((month) => <div className="axis-month" key={`${month.year}-${month.index}`} style={{ top: `${monthPosition(month.index, year)}%` }}><b>{month.label}</b><span>{month.year}/{String((month.index % 12) + 1).padStart(2, "0")}/01</span></div>)}{todayPosition !== null && <div className="axis-today" style={{ top: `${todayPosition}%` }}>今天 · {TODAY.replace(/-/g, "/")}</div>}</div>
             <div className="conference-columns">
           {transferPoint && inTwoYearWindow(transferPoint.event.date, year) && <div className="transfer-line" style={{ top: `${dayPosition(transferPoint.event.date, year)}%` }}><span>转投基准 · {transferPoint.event.date} · {transferPoint.conf.title}</span></div>}
@@ -604,7 +679,7 @@ export default function Home() {
         {limit < filtered.length && <button className="load-more" onClick={() => setLimit((n) => n + 32)}>加载更多会议 <span>{visible.length} / {filtered.length}</span></button>}
       </section>
 
-      {selectedEvent && <div className="event-popover" role="dialog" aria-modal="true" aria-label="日期节点详情"><button className="popover-close" onClick={() => setSelectedEvent(null)} aria-label="关闭">×</button><p>{selectedEvent.conf.title} · {selectedEvent.conf.year} {selectedEvent.event.inferred ? "· 往届官网节奏平移 *" : selectedEvent.event.autoFetched ? "· 官网自动抓取（未核验）" : "· 官方核验"}</p><h3>{selectedEvent.event.label}</h3><time>{selectedEvent.event.date} · {selectedEvent.conf.timezone || "以官网为准"} · {(() => { const relDays = diffDaysFromToday(selectedEvent.event.date); return relDays === 0 ? "就是今天" : relDays > 0 ? `还有 ${relDays} 天` : `已过去 ${-relDays} 天`; })()}</time>{selectedEvent.event.detail && <div>{selectedEvent.event.detail}</div>}{selectedEvent.event.autoFetched && <div>该节点由程序从会议官网自动解析，未经人工核验，请以官网为准。</div>}{selectedEvent.conf.acceptRates && selectedEvent.conf.acceptRates.length > 0 && <div className="popover-rates"><b>历届录用率</b>{selectedEvent.conf.acceptRates.map((r) => <span key={r.year}>{r.year} 届：<b>{r.rate.toFixed(1)}%</b>（{r.accepted}/{r.submitted}）</span>)}</div>}<a href={selectedEvent.event.source} target="_blank" rel="noreferrer">{selectedEvent.event.inferred ? "查看所依据的往届官网 ↗" : "查看官方来源 ↗"}</a></div>}
+      {selectedEvent && <div className="event-popover" role="dialog" aria-modal="true" aria-label="日期节点详情"><button className="popover-close" onClick={() => setSelectedEvent(null)} aria-label="关闭">×</button><p>{selectedEvent.conf.title} · {selectedEvent.conf.year} {selectedEvent.event.inferred ? "· 往届官网节奏平移 *" : selectedEvent.event.autoFetched ? "· 官网自动抓取（未核验）" : "· 官方核验"}</p><h3>{selectedEvent.event.label}</h3><time>{selectedEvent.event.date} · {selectedEvent.conf.timezone || "以官网为准"} · {(() => { const relDays = diffDaysFromToday(selectedEvent.event.date); return relDays === 0 ? "就是今天" : relDays > 0 ? `还有 ${relDays} 天` : `已过去 ${-relDays} 天`; })()}</time>{selectedEvent.event.detail && <div>{selectedEvent.event.detail}</div>}{selectedEvent.conf.projected && <div>该届为<b>预测排期</b>：依据 {selectedEvent.conf.projectedFrom} 届官方时间顺延推测，非主办方公布；官网公布真实时间后将自动替换为准确日期。</div>}{selectedEvent.event.autoFetched && <div>该节点由程序从会议官网自动解析，未经人工核验，请以官网为准。</div>}{selectedEvent.conf.acceptRates && selectedEvent.conf.acceptRates.length > 0 && <div className="popover-rates"><b>历届录用率</b>{selectedEvent.conf.acceptRates.map((r) => <span key={r.year}>{r.year} 届：<b>{r.rate.toFixed(1)}%</b>（{r.accepted}/{r.submitted}）</span>)}</div>}<a href={selectedEvent.event.source} target="_blank" rel="noreferrer">{selectedEvent.event.inferred ? "查看所依据的往届官网 ↗" : "查看官方来源 ↗"}</a></div>}
 
       {transferPoint && <aside className="transfer-panel" aria-label="转投候选会议">
         <div className="transfer-panel-head"><div><p>TRANSFER PLANNER</p><h3>从 {transferPoint.event.date.slice(5).replace("-", "/")} 之后转投</h3><span>{transferPoint.conf.title} · {transferPoint.event.label}</span></div><div className="transfer-head-actions"><button className="topology-entry" onClick={() => startTopology(transferPoint.conf, transferPoint.event)}>投稿拓扑 ↗</button><button onClick={() => setTransferPoint(null)} aria-label="关闭转投规划">×</button></div></div>
@@ -615,7 +690,7 @@ export default function Home() {
           <label>排序方式</label><div className="mini-buttons"><button title="按距截止的天数升序，最快可投的排最前" className={plannerSort === "soonest" ? "active" : ""} onClick={() => setPlannerSort("soonest")}>最近截止</button><button title="CCF 等级从高到低，同级按截止临近排序" className={plannerSort === "rank" ? "active" : ""} onClick={() => setPlannerSort("rank")}>等级优先</button><button title="综合评分：截止临近度 + CCF 等级 + 同领域 + 节点类型" className={plannerSort === "recommended" ? "active" : ""} onClick={() => setPlannerSort("recommended")}>综合推荐</button></div>
           <label className="same-toggle"><input type="checkbox" checked={plannerSameOnly} onChange={(e) => setPlannerSameOnly(e.target.checked)}/> 只看同领域</label><small>候选结果实时按当前条件重新计算</small>
         </div>
-        <div className="candidate-list">{transferCandidates.length === 0 && <p className="no-candidate">当前条件下没有可用投稿节点，可放宽领域、等级或最长等待时间。</p>}{transferCandidates.map(({ conf, event, days, sameField }, index) => <a href={conf.link} target="_blank" rel="noreferrer" className={`candidate ${event.inferred ? "projected" : ""}`} key={`${conf.id}-${event.date}-${event.label}`}><b>{String(index + 1).padStart(2, "0")}</b><div><h4>{conf.title} <em>{conf.isARR ? "ARR" : conf.rank ? `CCF ${conf.rank}` : ""}</em></h4><p>{event.date} · {event.label}</p><small>{event.inferred ? "* 根据本届日期顺延一年 · " : "官网已公布 · "}{sameField ? "同领域 · " : ""}{conf.place || conf.description}</small></div><strong>+{days} 天</strong></a>)}</div>
+        <div className="candidate-list">{transferCandidates.length === 0 && <p className="no-candidate">{transferPoint.event.date < TODAY ? "该基准日已过去，未来无更多投稿节点。可点上方「投稿拓扑」查看从该时点起的完整路线（含已截止节点，供复盘）。" : "当前条件下没有可用投稿节点，可放宽领域、等级或最长等待时间。"}</p>}{transferCandidates.map(({ conf, event, days, sameField }, index) => <a href={conf.link} target="_blank" rel="noreferrer" className={`candidate ${event.inferred ? "projected" : ""}`} key={`${conf.id}-${event.date}-${event.label}`}><b>{String(index + 1).padStart(2, "0")}</b><div><h4>{conf.title} <em>{conf.isARR ? "ARR" : conf.rank ? `CCF ${conf.rank}` : ""}</em></h4><p>{event.date} · {event.label}</p><small>{event.inferred ? "* 根据本届日期顺延一年 · " : "官网已公布 · "}{sameField ? "同领域 · " : ""}{conf.place || conf.description}</small></div><strong>+{days} 天</strong></a>)}</div>
       </aside>}
 
       {topologyRoot && <div className="topology-overlay" role="dialog" aria-modal="true" aria-label="投稿拓扑规划" onClick={() => setTopologyRoot(null)}>
@@ -627,7 +702,7 @@ export default function Home() {
             <span>{topologyRoot.mode === "conf" ? topologyRoot.conf.title : topologyRoot.freeDate} → {topologyPath.map((hop) => hop.conf.title).join(" → ")}</span></div>
           <div className="topology-controls">
             <div className="topology-tabs"><button className={topologyView === "plan" ? "active" : ""} onClick={() => setTopologyView("plan")}>拓扑规划</button><button className={topologyView === "verify" ? "active" : ""} onClick={() => setTopologyView("verify")}>组合验证</button></div>
-            {topologyRoot.mode === "date" && <div className="topology-datepicker"><label>论文完成日</label><input type="date" value={freeDate} onChange={(e) => { const value = e.target.value || TODAY; setFreeDate(value); setTopologyRoot({ mode: "date", freeDate: value }); setTopologyPath([]); }}/></div>}
+            {topologyRoot.mode === "date" && <div className="topology-datepicker"><label>论文完成日 · 可选过去日期复盘</label><input type="date" value={freeDate} onChange={(e) => { const value = e.target.value || TODAY; setFreeDate(value); setTopologyRoot({ mode: "date", freeDate: value }); setTopologyPath([]); }}/></div>}
             <label>领域类型 · 换领域即换整套拓扑</label><div className="mini-buttons"><button className={topoCategories.length === 0 ? "active" : ""} title="不限领域" onClick={() => setTopoCategories([])}>全部</button>{Object.entries(categories).filter(([key]) => key !== "ALL").map(([key, value]) => <button key={key} title={value} className={topoCategories.includes(key) ? "active" : ""} onClick={() => { setTopoCategories((cur) => cur.includes(key) ? cur.filter((x) => x !== key) : [...cur, key]); setTopoExpanded([]); }}>{key}</button>)}</div>
             <label>CCF 等级</label><div className="mini-buttons">{["A", "B", "C"].map((r) => <button key={r} className={topoRanks.includes(r) ? "active" : ""} onClick={() => { setTopoRanks((cur) => cur.includes(r) ? cur.filter((x) => x !== r) : [...cur, r]); setTopoExpanded([]); }}>{r}</button>)}</div>
             <label>深度 {topoDepth} 投</label><div className="mini-buttons">{[2, 3, 4].map((d) => <button key={d} className={topoDepth === d ? "active" : ""} onClick={() => { setTopoDepth(d); setTopologyPath(topologyPath.slice(0, d)); }}>{d}</button>)}</div>
@@ -641,12 +716,13 @@ export default function Home() {
             <div className="verify-picker">
               <label>搜索并添加心仪会议（≤6）</label>
               <input type="text" value={verifyQuery} onChange={(e) => setVerifyQuery(e.target.value)} placeholder="SIGMOD、NeurIPS、www…"/>
-              {verifySearchResults.length > 0 && <div className="verify-search-list">{verifySearchResults.map((conf) => <button key={conf.id} onClick={() => { setVerifySelection((cur) => cur.length >= 6 ? cur : [...cur, conf]); setVerifyQuery(""); }}>＋ {conf.title} {conf.year} <em>CCF {conf.rank}</em></button>)}</div>}
-              <div className="verify-selected">{verifySelection.length === 0 && <span className="verify-empty">尚未添加会议，搜索后点击加入。</span>}{verifySelection.map((conf) => <button key={conf.id} className="verify-chip" onClick={() => setVerifySelection((cur) => cur.filter((c) => c !== conf))}>{conf.title} {conf.year} ✕</button>)}</div>
+              {verifySearchResults.length > 0 && <div className="verify-search-list">{verifySearchResults.map((conf) => <button key={conf.id} onClick={() => { setVerifySelection((cur) => cur.length >= 6 ? cur : [...cur, conf]); setVerifyQuery(""); }}>＋ {conf.title} {conf.year}{conf.projected ? "*" : ""} <em>{conf.isARR ? "ARR" : `CCF ${conf.rank}`}</em></button>)}</div>}
+              <div className="verify-selected">{verifySelection.length === 0 && <span className="verify-empty">尚未添加会议，搜索后点击加入。</span>}{verifySelection.map((conf) => <button key={conf.id} className="verify-chip" onClick={() => setVerifySelection((cur) => cur.filter((c) => c !== conf))}>{conf.title} {conf.year}{conf.projected ? "*" : ""} ✕</button>)}</div>
+              <label className="same-toggle"><input type="checkbox" checked={verifyAllowPast} onChange={(e) => setVerifyAllowPast(e.target.checked)}/> 允许已截止轮次（复盘过去的路线）</label>
             </div>
             {verifyResult && (verifyResult.ok
               ? <div className="verify-result ok"><p>✓ 这组会议可以构成可行的串行投稿线（间隔均 ≥ 7 天缓冲）：</p>
-                  <div className="verify-sequence">{verifyResult.sequence.map((hop, index) => <div className="topology-card" key={hop.conf.id}><span className="verify-order">第 {index + 1} 投</span><div className="topology-card-top"><h4>{hop.conf.title} <small>{hop.conf.year}</small></h4><span className={`rank ${rankColors[hop.conf.rank] || "rank-n"}`}>CCF {hop.conf.rank}</span></div><div className="topology-dates"><span>■ 投稿 {hop.entryDate.slice(5)}</span><span>· {hop.inferredResult ? "* 约" : ""}结果 {hop.resultDate.slice(5)}</span></div><a href={hop.conf.link} target="_blank" rel="noreferrer">会议官网 ↗</a></div>)}</div>
+                  <div className="verify-sequence">{verifyResult.sequence.map((hop, index) => <div className={`topology-card ${hop.conf.projected ? "projected" : ""}`} key={hop.conf.id}><span className="verify-order">第 {index + 1} 投</span><div className="topology-card-top"><h4>{hop.conf.title} <small>{hop.conf.year}{hop.conf.projected ? "*" : ""}</small></h4><span className={`rank ${rankColors[hop.conf.rank] || "rank-n"}`}>{hop.conf.isARR ? "ARR" : `CCF ${hop.conf.rank}`}</span></div><div className="topology-dates"><span>■ 投稿 {hop.entryDate.slice(5)}{hop.entryDate < TODAY ? "（已截止）" : ""}</span><span>· {hop.inferredResult ? "* 约" : ""}结果 {hop.resultDate.slice(5)}</span></div><a href={hop.conf.link} target="_blank" rel="noreferrer">{hop.conf.projected ? "参考上届官网 ↗" : "会议官网 ↗"}</a></div>)}</div>
                   <p className="verify-tip">提示：该顺序按"每一投的结果日 + 7 天缓冲后可投下一场"验证。切换到"拓扑规划"可查看更完整的多级分支。</p></div>
               : <div className="verify-result bad"><p>✕ {verifyResult.reason}</p>
                   {verifyResult.bestPrefix.length > 0 && <p className="verify-tip">最长可行前缀：{verifyResult.bestPrefix.map((hop) => hop.conf.title).join(" → ")}；断点之后的会议无法衔接，可尝试替换其中一场或调整顺序。</p>}
@@ -667,22 +743,23 @@ export default function Home() {
                 {visibleCandidates.map((hop) => {
                   const active = topologyPath[depth]?.conf.id === hop.conf.id;
                   const gapFromPrev = Math.round((Date.parse(`${hop.entryDate}T00:00:00Z`) - Date.parse(`${(depth === 0 ? (topologyRoot!.mode === "conf" ? topologyRoot.event.date : topologyRoot.freeDate) : topologyPath[depth - 1].resultDate)}T00:00:00Z`)) / 86400000);
-                  return <div className={`topology-card ${active ? "active" : ""}`} key={hop.conf.id} onClick={() => setTopologyPath((cur) => {
+                  return <div className={`topology-card ${active ? "active" : ""} ${hop.conf.projected ? "projected" : ""}`} key={hop.conf.id} onClick={() => setTopologyPath((cur) => {
                     if (cur[depth]?.conf.id === hop.conf.id) return cur.slice(0, depth); // 点已选卡片 = 取消该层及更深选择
                     return [...cur.slice(0, depth), hop];
                   })}>
-                    <div className="topology-card-top"><h4>{hop.conf.title} <small>{hop.conf.year}</small></h4><span className={`rank ${rankColors[hop.conf.rank] || "rank-n"}`}>{hop.conf.isARR ? "ARR" : `CCF ${hop.conf.rank}`}</span></div>
+                    <div className="topology-card-top"><h4>{hop.conf.title} <small>{hop.conf.year}{hop.conf.projected ? "*" : ""}</small></h4><span className={`rank ${rankColors[hop.conf.rank] || "rank-n"}`}>{hop.conf.isARR ? "ARR" : `CCF ${hop.conf.rank}`}</span></div>
                     <p>{hop.conf.isARR ? `${hop.conf.description}${hop.conf.commitVenues?.length ? ` · 可 Commit：${hop.conf.commitVenues.join("、")}` : ""}` : `${hop.conf.place || hop.conf.description}${hop.conf.place ? placeZh(hop.conf.place) : ""}`}</p>
                     <div className="topology-dates">
-                      <span>■ {hop.conf.isARR ? "ARR 投稿" : "投稿"} {hop.entryDate.slice(5)}</span>
+                      <span>■ {hop.conf.isARR ? "ARR 投稿" : "投稿"} {hop.entryDate.slice(5)}{hop.entryDate < TODAY ? "（已截止）" : ""}</span>
                       {hop.earlyDate && <span>· 早反馈 {hop.earlyDate.slice(5)}</span>}
                       <span>· {hop.inferredResult ? "* 约" : ""}结果 {hop.resultDate.slice(5)}</span>
                     </div>
                     <div className="topology-meta">
                       <span>距上一投 +{gapFromPrev} 天</span>
+                      {hop.conf.projected && <span>· 预测届（按 {hop.conf.projectedFrom} 届顺延）</span>}
                       {hop.conf.acceptRates && hop.conf.acceptRates.length > 0 && <span>· ✦ {hop.conf.acceptRates[0].rate.toFixed(1)}%（{hop.conf.acceptRates[0].year} 届）</span>}
                     </div>
-                    <a href={hop.conf.link} target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()}>会议官网 ↗</a>
+                    <a href={hop.conf.link} target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()}>{hop.conf.projected ? "参考上届官网 ↗" : "会议官网 ↗"}</a>
                   </div>;
                 })}
                 {candidates.length > visibleCandidates.length && <button className="topology-more" onClick={() => setTopoExpanded((cur) => [...cur, depth])}>＋ 展开全部 {candidates.length} 个候选</button>}

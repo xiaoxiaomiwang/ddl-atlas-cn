@@ -81,6 +81,11 @@ footer { background:var(--green); color:white; padding:45px 5vw; display:flex; j
 .topology-card { background:#fffdf7; border:2px solid #d9d2c3; box-shadow:4px 4px 0 rgba(23,33,29,.07); padding:11px 12px; cursor:pointer; transition:.12s ease; }
 .topology-card:hover { transform:translateY(-2px); border-color:var(--green); }
 .topology-card.active { border-color:var(--green); box-shadow:5px 5px 0 rgba(32,112,68,.25); background:#f4f9f4; }
+.topology-card.projected { border-style:dashed; background:#fdfbf3; }
+.topology-card.projected .topology-card-top h4 small { color:#8a6a1f; }
+.proj-year { color:#8a6a1f; }
+.projected-tag { color:#8a6a1f; font-weight:800; }
+.topology-dates .verify-past { color:#a9762f; font-weight:850; }
 .topology-card-top { display:flex; justify-content:space-between; align-items:center; gap:8px; margin-bottom:5px; }
 .topology-card-top h4 { margin:0; font:600 16px Georgia,serif; }
 .topology-card-top h4 small { color:#7a837c; font-size:11px; font-weight:500; }
