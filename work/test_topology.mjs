@@ -72,11 +72,11 @@ const inferResultDates = (conf, entryDate) => {
   return { result: addDays(entryDate, 100), early: null, inferred: true };
 };
 
-const topologyCandidates = (fromDate, rootConf, usedTitles, filters, pool) => {
+const topologyCandidates = (fromDate, rootConf, usedIds, filters, pool) => {
   const minEntry = addDays(fromDate, fromDate === TODAY ? 0 : 7);
   const entries = [];
   for (const conf of pool) {
-    if (usedTitles.has(conf.title)) continue;
+    if (usedIds.has(conf.id)) continue;
     if (!conf.isARR && filters.ranks.length > 0 && !filters.ranks.includes(conf.rank)) continue;
     if (!conf.isARR && filters.categories.length > 0 && !filters.categories.includes(conf.category)) continue;
     const sameField = rootConf ? (conf.isARR ? rootConf.category === "AI" : conf.category === rootConf.category) : false;
@@ -84,7 +84,7 @@ const topologyCandidates = (fromDate, rootConf, usedTitles, filters, pool) => {
     const nodes = [
       ...conf.timeline.filter((i) => i.date && i.date !== "TBD").map((i, idx) => ({ date: i.date, label: markerLabel(i.comment, idx) })),
       ...(conf.supplementalEvents || []).filter((e) => (!e.inferred || e.projected) && (e.type === "submission" || e.type === "commit")).map((e) => ({ date: e.date, label: e.label })),
-    ].filter((n) => n.date >= minEntry && n.date < addDays(fromDate, 550)).sort((a, b) => a.date.localeCompare(b.date));
+    ].filter((n) => n.date >= minEntry && n.date < addDays(fromDate, 730)).sort((a, b) => a.date.localeCompare(b.date));
     if (nodes.length === 0) continue;
     entries.push({ conf, date: nodes[0].date, label: nodes[0].label });
   }
@@ -174,11 +174,11 @@ const colDB = topologyCandidates(TODAY, null, new Set(), { ...filters, categorie
 assert(colDB.some((h) => h.conf.isARR), "领域筛选=DB 时 ARR 仍应保留（跨领域保底通道）");
 // 锚定 DB 会议 + sameOnly：ARR 不应出现；锚定 AI 会议 + sameOnly：ARR 保留
 const anchorDB = data.find((c) => c.title === "SIGMOD" && c.year === 2027 && !c.projected);
-const colSameDB = topologyCandidates(TODAY, anchorDB, new Set(["SIGMOD"]), { ...filters, sameOnly: true, breadth: 12 }, data);
+const colSameDB = topologyCandidates(TODAY, anchorDB, new Set([anchorDB?.id]), { ...filters, sameOnly: true, breadth: 12 }, data);
 assert(!colSameDB.some((h) => h.conf.isARR), "锚定 DB 会议 + 只看同领域时 ARR 不出现（合理）");
 const anchorAI = data.find((c) => c.title === "AAAI" && c.year === 2027 && !c.projected);
 if (anchorAI) {
-  const colSameAI = topologyCandidates(TODAY, anchorAI, new Set(["AAAI"]), { ...filters, sameOnly: true, breadth: 12 }, data);
+  const colSameAI = topologyCandidates(TODAY, anchorAI, new Set([anchorAI?.id]), { ...filters, sameOnly: true, breadth: 12 }, data);
   assert(colSameAI.some((h) => h.conf.isARR), "锚定 AI 会议 + 只看同领域时 ARR 保留（ARR 视同 NLP/AI）");
 }
 
@@ -188,11 +188,11 @@ const freeDate = addDays(TODAY, 7);
 const col1 = topologyCandidates(freeDate, null, new Set(), filters, data);
 console.log(`第一层候选数: ${col1.length}（前3）`); col1.slice(0, 3).forEach((h) => console.log("  ", hopLine(h)));
 const pick1 = col1[0];
-const used = new Set([pick1.conf.title]);
+const used = new Set([pick1.conf.id]);
 const col2 = topologyCandidates(pick1.resultDate, pick1.conf, used, filters, data);
 console.log(`选 ${pick1.conf.title}（结果 ${pick1.resultDate}）→ 第二层候选数: ${col2.length}`);
 col2.slice(0, 3).forEach((h) => console.log("  ", hopLine(h)));
-const pick2 = col2[0]; used.add(pick2.conf.title);
+const pick2 = col2[0]; used.add(pick2.conf.id);
 const col3 = topologyCandidates(pick2.resultDate, pick2.conf, used, filters, data);
 console.log(`选 ${pick2 ? pick2.conf.title : "无"} → 第三层候选数: ${col3.length}（其中预测届 ${col3.filter((h) => h.conf.projected).length}）`);
 col3.slice(0, 3).forEach((h) => console.log("  ", hopLine(h)));
@@ -234,6 +234,40 @@ console.log("\n===== 测试 5：数据视野 =====");
 const horizon = data.reduce((max, c) => { for (const t of c.timeline) if (t.date && t.date > max) max = t.date; return max; }, "");
 console.log(`最晚投稿节点: ${horizon}（预测届已覆盖至该年份）`);
 assert(horizon >= "2029-01-01", "数据视野应覆盖到 2029（预测届生效）");
+
+// ===== 测试 6：跨届重投（WWW 2027 被拒 → WWW 2028 预测届）+ 手动指定会议 =====
+console.log("\n===== 测试 6：跨届候选与手动指定 =====");
+const anchorWWW = data.find((c) => c.title === "WWW" && c.year === 2027 && !c.projected);
+assert(!!anchorWWW, "WWW 2027 真实届存在");
+const wwwResult = inferResultDates(anchorWWW, "2026-10-25").result;
+const colWWW2 = topologyCandidates(wwwResult, anchorWWW, new Set([anchorWWW.id]), filters, data);
+const wwwNext = colWWW2.find((h) => h.conf.title === "WWW" && h.conf.projected);
+console.log(`锚定 WWW 2027（结果 ${wwwResult}）→ 第二层候选 ${colWWW2.length} 个，同会议下一届: ${wwwNext ? `${wwwNext.conf.title} ${wwwNext.conf.year}* 投 ${wwwNext.entryDate}` : "无"}`);
+assert(!!wwwNext && wwwNext.conf.year >= 2028, "WWW 2027 被拒后应可转投 WWW 2028 预测届（届级去重修复）");
+assert(!colWWW2.some((h) => h.conf.id === anchorWWW.id), "同届 WWW 2027 不得重复出现");
+const used2 = new Set([anchorWWW.id, wwwNext?.conf.id]);
+const colWWW3 = topologyCandidates(wwwNext.resultDate, anchorWWW, used2, filters, data);
+assert(colWWW3.some((h) => h.conf.title === "WWW" && h.conf.year === 2029), "第三层应还能看到 WWW 2029 预测届（隔届连环重投）");
+
+// 手动指定复刻（与 page.tsx pickManualConf 同源）：会议即使不在候选里也可强制选入
+const manualPick = (conf, layerFrom) => {
+  if (!conf) return null;
+  const minEntry = addDays(layerFrom, layerFrom === TODAY ? 0 : 7);
+  const nodes = [
+    ...conf.timeline.filter((i) => i.date && i.date !== "TBD").map((i, idx) => ({ date: i.date, label: markerLabel(i.comment, idx) })),
+    ...(conf.supplementalEvents || []).filter((e) => (!e.inferred || e.projected) && (e.type === "submission" || e.type === "commit")).map((e) => ({ date: e.date, label: e.label })),
+  ].filter((n) => n.date >= minEntry && n.date < addDays(layerFrom, 730)).sort((a, b) => a.date.localeCompare(b.date));
+  if (nodes.length === 0) return null;
+  const { result, early, inferred } = inferResultDates(conf, nodes[0].date);
+  return { conf, entryDate: nodes[0].date, resultDate: result, inferredResult: inferred };
+};
+const sm28m = data.find((c) => c.title === "SIGMOD" && c.year === 2028 && c.projected);
+const manual1 = manualPick(sm28m, "2026-10-15");
+console.log(`手动指定 SIGMOD 2028* 于第一层: ${manual1 ? `投 ${manual1.entryDate} → *约结果 ${manual1.resultDate}` : "无节点"}`);
+assert(manual1 && manual1.entryDate === "2027-01-17", "手动指定 SIGMOD 2028* 应取最早可投轮次 2027-01-17");
+const sigmod26m = data.find((c) => c.title === "SIGMOD" && c.year === 2026 && !c.projected);
+const manual2 = manualPick(sigmod26m, "2026-10-15");
+assert(manual2 === null, "手动指定已截稿的 SIGMOD 2026 应提示无节点（不可行）");
 
 console.log(`
 ========== ${failures === 0 ? "✓ 全部通过" : `✗ ${failures} 项失败`} ==========`);
