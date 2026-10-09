@@ -17409,7 +17409,13 @@
     "conferenceDate": "May 27-30, 2027",
     "conferenceStart": "2027-05-27",
     "place": "Shenyang, China",
-    "timeline": [],
+    "timeline": [
+      {
+        "date": "2026-11-25",
+        "abstractDate": "",
+        "comment": "Research papers"
+      }
+    ],
     "acceptRates": [
       {
         "year": 2026,
@@ -21374,6 +21380,40 @@
     "acceptRates": [],
     "projected": true,
     "projectedFrom": 2026
+  },
+  {
+    "id": "icpr27",
+    "title": "ICPR",
+    "description": "International Conference on Pattern Recognition",
+    "category": "AI",
+    "rank": "C",
+    "year": 2027,
+    "link": "https://www.icpr2027.com/",
+    "timezone": "AoE",
+    "conferenceDate": "October 4-6 and 14-15, 2027",
+    "conferenceStart": "2027-10-04",
+    "place": "Online",
+    "timeline": [
+      {
+        "date": "2027-03-08",
+        "abstractDate": "2027-03-01",
+        "comment": "All dates tentative; March 1 is paper registration; author rebuttal April 23 (provisional, cutoff unspecified)"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 44.3,
+        "submitted": 2135,
+        "accepted": 945
+      },
+      {
+        "year": 2022,
+        "rate": 46.3,
+        "submitted": 1547,
+        "accepted": 716
+      }
+    ]
   },
   {
     "id": "icra27",
@@ -31877,22 +31917,22 @@
     "projectedFrom": 2026
   },
   {
-    "id": "dasfaa26-2028p",
+    "id": "dasfaa27-2028p",
     "title": "DASFAA",
     "description": "Database Systems for Advanced Applications",
     "category": "DB",
     "rank": "B",
     "year": 2028,
-    "link": "https://dasfaa2026.github.io/",
+    "link": "https://dasfaa2027.github.io/",
     "timezone": "AoE",
-    "conferenceDate": "April 28-30, 2028",
-    "conferenceStart": "2028-04-28",
-    "place": "Jeju Island, South Korea",
+    "conferenceDate": "May 27-30, 2028",
+    "conferenceStart": "2028-05-27",
+    "place": "Shenyang, China",
     "timeline": [
       {
-        "date": "2027-10-27",
-        "abstractDate": "2027-10-20",
-        "comment": ""
+        "date": "2027-11-25",
+        "abstractDate": "",
+        "comment": "Research papers"
       }
     ],
     "acceptRates": [
@@ -31922,7 +31962,7 @@
       }
     ],
     "projected": true,
-    "projectedFrom": 2026
+    "projectedFrom": 2027
   },
   {
     "id": "date2027-2028p",
@@ -35909,42 +35949,6 @@
       }
     ],
     "acceptRates": [],
-    "projected": true,
-    "projectedFrom": 2026
-  },
-  {
-    "id": "icpr26-2028p",
-    "title": "ICPR",
-    "description": "International Conference on Pattern Recognition",
-    "category": "AI",
-    "rank": "C",
-    "year": 2028,
-    "link": "https://icpr2026.org/",
-    "timezone": "AoE",
-    "conferenceDate": "August 17-20, 2028",
-    "conferenceStart": "2028-08-17",
-    "place": "Lyon, France",
-    "timeline": [
-      {
-        "date": "2028-01-10",
-        "abstractDate": "",
-        "comment": ""
-      }
-    ],
-    "acceptRates": [
-      {
-        "year": 2024,
-        "rate": 44.3,
-        "submitted": 2135,
-        "accepted": 945
-      },
-      {
-        "year": 2022,
-        "rate": 46.3,
-        "submitted": 1547,
-        "accepted": 716
-      }
-    ],
     "projected": true,
     "projectedFrom": 2026
   },
@@ -44763,6 +44767,54 @@
     "projectedFrom": 2027
   },
   {
+    "id": "dasfaa27-2029p",
+    "title": "DASFAA",
+    "description": "Database Systems for Advanced Applications",
+    "category": "DB",
+    "rank": "B",
+    "year": 2029,
+    "link": "https://dasfaa2027.github.io/",
+    "timezone": "AoE",
+    "conferenceDate": "May 27-30, 2029",
+    "conferenceStart": "2029-05-27",
+    "place": "Shenyang, China",
+    "timeline": [
+      {
+        "date": "2028-11-25",
+        "abstractDate": "",
+        "comment": "Research papers"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 27.3,
+        "submitted": 834,
+        "accepted": 228
+      },
+      {
+        "year": 2025,
+        "rate": 18.6,
+        "submitted": 731,
+        "accepted": 136
+      },
+      {
+        "year": 2024,
+        "rate": 20.4,
+        "submitted": 722,
+        "accepted": 147
+      },
+      {
+        "year": 2023,
+        "rate": 19.2,
+        "submitted": 652,
+        "accepted": 125
+      }
+    ],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
     "id": "date2027-2029p",
     "title": "DATE",
     "description": "Design, Automation & Test in Europe",
@@ -46784,6 +46836,42 @@
         "rate": 47.1,
         "submitted": 102,
         "accepted": 48
+      }
+    ],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
+    "id": "icpr27-2029p",
+    "title": "ICPR",
+    "description": "International Conference on Pattern Recognition",
+    "category": "AI",
+    "rank": "C",
+    "year": 2029,
+    "link": "https://www.icpr2027.com/",
+    "timezone": "AoE",
+    "conferenceDate": "October 4-6 and 14-15, 2029",
+    "conferenceStart": "2029-10-04",
+    "place": "Online",
+    "timeline": [
+      {
+        "date": "2029-03-08",
+        "abstractDate": "2029-03-01",
+        "comment": "All dates tentative; March 1 is paper registration; author rebuttal April 23 (provisional, cutoff unspecified)"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 44.3,
+        "submitted": 2135,
+        "accepted": 945
+      },
+      {
+        "year": 2022,
+        "rate": 46.3,
+        "submitted": 1547,
+        "accepted": 716
       }
     ],
     "projected": true,
