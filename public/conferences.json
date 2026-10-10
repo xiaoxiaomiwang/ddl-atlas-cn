@@ -20812,24 +20812,18 @@
     ]
   },
   {
-    "id": "icic26-2027p",
+    "id": "icic27",
     "title": "ICIC",
     "description": "International Conference on Intelligent Computing",
     "category": "MX",
     "rank": "C",
     "year": 2027,
-    "link": "http://www.ic-icc.cn/2026/",
-    "timezone": "UTC+8",
+    "link": "http://ic-icc.cn/2027/index.php",
+    "timezone": "AoE",
     "conferenceDate": "July 22-26, 2027",
     "conferenceStart": "2027-07-22",
-    "place": "Toronto, Canada (Hybrid)",
-    "timeline": [
-      {
-        "date": "2027-04-04",
-        "abstractDate": "",
-        "comment": ""
-      }
-    ],
+    "place": "Jinan, China",
+    "timeline": [],
     "acceptRates": [
       {
         "year": 2026,
@@ -20855,9 +20849,7 @@
         "submitted": 828,
         "accepted": 337
       }
-    ],
-    "projected": true,
-    "projectedFrom": 2026
+    ]
   },
   {
     "id": "icics26-2027p",
@@ -22183,12 +22175,18 @@
     "category": "AI",
     "rank": "B",
     "year": 2027,
-    "link": "https://www.ijcai.org/node/8",
-    "timezone": "UTC-12",
-    "conferenceDate": "August 7-13 and August 15-17, 2027",
+    "link": "https://2027.ijcai.org/",
+    "timezone": "AoE",
+    "conferenceDate": "August 7-13, 2027",
     "conferenceStart": "2027-08-07",
-    "place": "Kyoto, Japan and Hengqin, China",
-    "timeline": [],
+    "place": "Kyoto, Japan",
+    "timeline": [
+      {
+        "date": "2027-01-11",
+        "abstractDate": "2027-01-04",
+        "comment": "Separate satellite event: August 15-17, 2027, Hengqin, China"
+      }
+    ],
     "acceptRates": [
       {
         "year": 2025,
@@ -36744,22 +36742,22 @@
     "projectedFrom": 2026
   },
   {
-    "id": "ijcai26-2028p",
+    "id": "ijcai27-2028p",
     "title": "IJCAI",
     "description": "International Joint Conference on Artificial Intelligence",
     "category": "AI",
     "rank": "B",
     "year": 2028,
-    "link": "https://2026.ijcai.org/",
-    "timezone": "UTC-12",
-    "conferenceDate": "August 18-21, 2028",
-    "conferenceStart": "2028-08-18",
-    "place": "Bremen, Germany",
+    "link": "https://2027.ijcai.org/",
+    "timezone": "AoE",
+    "conferenceDate": "August 7-13, 2028",
+    "conferenceStart": "2028-08-07",
+    "place": "Kyoto, Japan",
     "timeline": [
       {
-        "date": "2028-01-19",
-        "abstractDate": "2028-01-12",
-        "comment": ""
+        "date": "2028-01-11",
+        "abstractDate": "2028-01-04",
+        "comment": "Separate satellite event: August 15-17, 2027, Hengqin, China"
       }
     ],
     "acceptRates": [
@@ -36789,7 +36787,7 @@
       }
     ],
     "projected": true,
-    "projectedFrom": 2026
+    "projectedFrom": 2027
   },
   {
     "id": "ijcar26-2028p",
@@ -47328,6 +47326,54 @@
         "rate": 40.0,
         "submitted": 25,
         "accepted": 10
+      }
+    ],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
+    "id": "ijcai27-2029p",
+    "title": "IJCAI",
+    "description": "International Joint Conference on Artificial Intelligence",
+    "category": "AI",
+    "rank": "B",
+    "year": 2029,
+    "link": "https://2027.ijcai.org/",
+    "timezone": "AoE",
+    "conferenceDate": "August 7-13, 2029",
+    "conferenceStart": "2029-08-07",
+    "place": "Kyoto, Japan",
+    "timeline": [
+      {
+        "date": "2029-01-11",
+        "abstractDate": "2029-01-04",
+        "comment": "Separate satellite event: August 15-17, 2027, Hengqin, China"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 17.6,
+        "submitted": 5806,
+        "accepted": 1023
+      },
+      {
+        "year": 2024,
+        "rate": 14.0,
+        "submitted": 5651,
+        "accepted": 791
+      },
+      {
+        "year": 2023,
+        "rate": 14.1,
+        "submitted": 4566,
+        "accepted": 643
+      },
+      {
+        "year": 2022,
+        "rate": 15.0,
+        "submitted": 4537,
+        "accepted": 679
       }
     ],
     "projected": true,
