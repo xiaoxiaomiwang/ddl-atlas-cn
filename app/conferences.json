@@ -18674,24 +18674,18 @@
     ]
   },
   {
-    "id": "eurovis2026-2027p",
+    "id": "eurovis2027",
     "title": "EuroVis",
     "description": "Eurographics Conference on Visualization",
     "category": "CG",
     "rank": "B",
     "year": 2027,
-    "link": "https://www.eurovis.org.uk/",
+    "link": "https://eurovis27.github.io/web/",
     "timezone": "AoE",
-    "conferenceDate": "June 8-12, 2027",
-    "conferenceStart": "2027-06-08",
-    "place": "Nottingham, United Kingdom",
-    "timeline": [
-      {
-        "date": "2026-12-03",
-        "abstractDate": "2026-11-26",
-        "comment": ""
-      }
-    ],
+    "conferenceDate": "May 31-June 4, 2027",
+    "conferenceStart": "2027-05-31",
+    "place": "Stuttgart, Germany",
+    "timeline": [],
     "acceptRates": [
       {
         "year": 2026,
@@ -18717,9 +18711,7 @@
         "submitted": 134,
         "accepted": 36
       }
-    ],
-    "projected": true,
-    "projectedFrom": 2026
+    ]
   },
   {
     "id": "eg27",
@@ -20583,22 +20575,22 @@
     ]
   },
   {
-    "id": "icdm2026-2027p",
+    "id": "icdm2027",
     "title": "ICDM",
     "description": "IEEE International Conference on Data Mining",
     "category": "DB",
     "rank": "B",
     "year": 2027,
-    "link": "http://icdm2026.neu.edu.cn/",
+    "link": "https://icdm2027-website.onrender.com/",
     "timezone": "AoE",
-    "conferenceDate": "November 12-15, 2027",
-    "conferenceStart": "2027-11-12",
-    "place": "Shenyang, China",
+    "conferenceDate": "November 15-18, 2027",
+    "conferenceStart": "2027-11-15",
+    "place": "Brisbane, Australia",
     "timeline": [
       {
         "date": "2027-06-06",
         "abstractDate": "",
-        "comment": ""
+        "comment": "Full papers; dates are tentative and subject to change"
       }
     ],
     "acceptRates": [
@@ -20626,9 +20618,7 @@
         "submitted": 870,
         "accepted": 85
       }
-    ],
-    "projected": true,
-    "projectedFrom": 2026
+    ]
   },
   {
     "id": "icdt27",
@@ -20905,20 +20895,20 @@
     "projectedFrom": 2026
   },
   {
-    "id": "icip26-2027p",
+    "id": "icip27",
     "title": "ICIP",
     "description": "The IEEE International Conference on Image Processing",
     "category": "CG",
     "rank": "C",
     "year": 2027,
-    "link": "https://2026.ieeeicip.org/",
+    "link": "https://2027.ieeeicip.org/",
     "timezone": "AoE",
-    "conferenceDate": "September 14-16, 2027",
-    "conferenceStart": "2027-09-14",
-    "place": "Tampere, Finland",
+    "conferenceDate": "November 29-December 3, 2027",
+    "conferenceStart": "2027-11-29",
+    "place": "Singapore",
     "timeline": [
       {
-        "date": "2027-02-04",
+        "date": "2027-03-31",
         "abstractDate": "",
         "comment": ""
       }
@@ -20948,9 +20938,7 @@
         "submitted": 1957,
         "accepted": 863
       }
-    ],
-    "projected": true,
-    "projectedFrom": 2026
+    ]
   },
   {
     "id": "iclr27",
@@ -35134,22 +35122,22 @@
     "projectedFrom": 2027
   },
   {
-    "id": "icdm2026-2028p",
+    "id": "icdm2027-2028p",
     "title": "ICDM",
     "description": "IEEE International Conference on Data Mining",
     "category": "DB",
     "rank": "B",
     "year": 2028,
-    "link": "http://icdm2026.neu.edu.cn/",
+    "link": "https://icdm2027-website.onrender.com/",
     "timezone": "AoE",
-    "conferenceDate": "November 12-15, 2028",
-    "conferenceStart": "2028-11-12",
-    "place": "Shenyang, China",
+    "conferenceDate": "November 15-18, 2028",
+    "conferenceStart": "2028-11-15",
+    "place": "Brisbane, Australia",
     "timeline": [
       {
         "date": "2028-06-06",
         "abstractDate": "",
-        "comment": ""
+        "comment": "Full papers; dates are tentative and subject to change"
       }
     ],
     "acceptRates": [
@@ -35179,7 +35167,7 @@
       }
     ],
     "projected": true,
-    "projectedFrom": 2026
+    "projectedFrom": 2027
   },
   {
     "id": "icdt27-2028p",
@@ -35468,20 +35456,20 @@
     "projectedFrom": 2026
   },
   {
-    "id": "icip26-2028p",
+    "id": "icip27-2028p",
     "title": "ICIP",
     "description": "The IEEE International Conference on Image Processing",
     "category": "CG",
     "rank": "C",
     "year": 2028,
-    "link": "https://2026.ieeeicip.org/",
+    "link": "https://2027.ieeeicip.org/",
     "timezone": "AoE",
-    "conferenceDate": "September 14-16, 2028",
-    "conferenceStart": "2028-09-14",
-    "place": "Tampere, Finland",
+    "conferenceDate": "November 29-December 3, 2028",
+    "conferenceStart": "2028-11-29",
+    "place": "Singapore",
     "timeline": [
       {
-        "date": "2028-02-04",
+        "date": "2028-03-31",
         "abstractDate": "",
         "comment": ""
       }
@@ -35513,7 +35501,7 @@
       }
     ],
     "projected": true,
-    "projectedFrom": 2026
+    "projectedFrom": 2027
   },
   {
     "id": "iclr27-2028p",
@@ -46613,6 +46601,54 @@
     "projectedFrom": 2027
   },
   {
+    "id": "icdm2027-2029p",
+    "title": "ICDM",
+    "description": "IEEE International Conference on Data Mining",
+    "category": "DB",
+    "rank": "B",
+    "year": 2029,
+    "link": "https://icdm2027-website.onrender.com/",
+    "timezone": "AoE",
+    "conferenceDate": "November 15-18, 2029",
+    "conferenceStart": "2029-11-15",
+    "place": "Brisbane, Australia",
+    "timeline": [
+      {
+        "date": "2029-06-06",
+        "abstractDate": "",
+        "comment": "Full papers; dates are tentative and subject to change"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 13.5,
+        "submitted": 785,
+        "accepted": 106
+      },
+      {
+        "year": 2024,
+        "rate": 11.1,
+        "submitted": 604,
+        "accepted": 67
+      },
+      {
+        "year": 2023,
+        "rate": 19.9,
+        "submitted": 1003,
+        "accepted": 200
+      },
+      {
+        "year": 2022,
+        "rate": 9.8,
+        "submitted": 870,
+        "accepted": 85
+      }
+    ],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
     "id": "icdt27-2029p",
     "title": "ICDT",
     "description": "International Conference on Database Theory",
@@ -46696,6 +46732,54 @@
         "rate": 33.0,
         "submitted": 106,
         "accepted": 35
+      }
+    ],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
+    "id": "icip27-2029p",
+    "title": "ICIP",
+    "description": "The IEEE International Conference on Image Processing",
+    "category": "CG",
+    "rank": "C",
+    "year": 2029,
+    "link": "https://2027.ieeeicip.org/",
+    "timezone": "AoE",
+    "conferenceDate": "November 29-December 3, 2029",
+    "conferenceStart": "2029-11-29",
+    "place": "Singapore",
+    "timeline": [
+      {
+        "date": "2029-03-31",
+        "abstractDate": "",
+        "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 39.6,
+        "submitted": 1040,
+        "accepted": 412
+      },
+      {
+        "year": 2024,
+        "rate": 47.4,
+        "submitted": 1258,
+        "accepted": 596
+      },
+      {
+        "year": 2023,
+        "rate": 44.4,
+        "submitted": 1647,
+        "accepted": 732
+      },
+      {
+        "year": 2022,
+        "rate": 44.1,
+        "submitted": 1957,
+        "accepted": 863
       }
     ],
     "projected": true,
