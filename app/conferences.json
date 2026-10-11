@@ -22948,7 +22948,13 @@
     "conferenceDate": "July 18-22, 2027",
     "conferenceStart": "2027-07-18",
     "place": "Copenhagen, Denmark",
-    "timeline": [],
+    "timeline": [
+      {
+        "date": "2027-01-14",
+        "abstractDate": "",
+        "comment": "Proceedings; conditional acceptance: March 2, 2027; revised papers due: March 18, 2027, 23:59 AoE; no extensions to submission or revision deadlines"
+      }
+    ],
     "acceptRates": [
       {
         "year": 2026,
@@ -23542,12 +23548,18 @@
     "category": "AI",
     "rank": "B",
     "year": 2027,
-    "link": "https://kr.org/",
+    "link": "https://kr.org/KR2027/",
     "timezone": "AoE",
-    "conferenceDate": "TBD",
-    "conferenceStart": "",
+    "conferenceDate": "September 21-24, 2027",
+    "conferenceStart": "2027-09-21",
     "place": "Buenos Aires, Argentina",
-    "timeline": [],
+    "timeline": [
+      {
+        "date": "2027-04-28",
+        "abstractDate": "2027-04-23",
+        "comment": "Main track; author response period: June 15-18, 2027"
+      }
+    ],
     "acceptRates": [
       {
         "year": 2026,
@@ -37559,22 +37571,22 @@
     "projectedFrom": 2026
   },
   {
-    "id": "ismb26-2028p",
+    "id": "ismb27-2028p",
     "title": "ISMB",
     "description": "International Conference on Intelligent Systems for Molecular Biology",
     "category": "MX",
     "rank": "B",
     "year": 2028,
-    "link": "https://www.iscb.org/ismb2026/",
+    "link": "https://www.iscb.org/ismbeccb2027/",
     "timezone": "AoE",
-    "conferenceDate": "July 12-16, 2028",
-    "conferenceStart": "2028-07-12",
-    "place": "Washington, DC, USA (Hybrid)",
+    "conferenceDate": "July 18-22, 2028",
+    "conferenceStart": "2028-07-18",
+    "place": "Copenhagen, Denmark",
     "timeline": [
       {
-        "date": "2028-01-20",
+        "date": "2028-01-14",
         "abstractDate": "",
-        "comment": ""
+        "comment": "Proceedings; conditional acceptance: March 2, 2027; revised papers due: March 18, 2027, 23:59 AoE; no extensions to submission or revision deadlines"
       }
     ],
     "acceptRates": [
@@ -37604,7 +37616,7 @@
       }
     ],
     "projected": true,
-    "projectedFrom": 2026
+    "projectedFrom": 2027
   },
   {
     "id": "ispa26-2028p",
@@ -38182,22 +38194,22 @@
     "projectedFrom": 2026
   },
   {
-    "id": "krd26-2028p",
+    "id": "krd27-2028p",
     "title": "KR",
     "description": "International Conference on Principles of Knowledge Representation and Reasoning",
     "category": "AI",
     "rank": "B",
     "year": 2028,
-    "link": "https://kr.org/KR2026/",
-    "timezone": "UTC-12",
-    "conferenceDate": "July 20-23, 2028",
-    "conferenceStart": "2028-07-20",
-    "place": "Lisbon, Portugal",
+    "link": "https://kr.org/KR2027/",
+    "timezone": "AoE",
+    "conferenceDate": "September 21-24, 2028",
+    "conferenceStart": "2028-09-21",
+    "place": "Buenos Aires, Argentina",
     "timeline": [
       {
-        "date": "2028-02-13",
-        "abstractDate": "2028-02-08",
-        "comment": ""
+        "date": "2028-04-28",
+        "abstractDate": "2028-04-23",
+        "comment": "Main track; author response period: June 15-18, 2027"
       }
     ],
     "acceptRates": [
@@ -38227,7 +38239,7 @@
       }
     ],
     "projected": true,
-    "projectedFrom": 2026
+    "projectedFrom": 2027
   },
   {
     "id": "ksem26-2028p",
@@ -47721,6 +47733,54 @@
     "projectedFrom": 2027
   },
   {
+    "id": "ismb27-2029p",
+    "title": "ISMB",
+    "description": "International Conference on Intelligent Systems for Molecular Biology",
+    "category": "MX",
+    "rank": "B",
+    "year": 2029,
+    "link": "https://www.iscb.org/ismbeccb2027/",
+    "timezone": "AoE",
+    "conferenceDate": "July 18-22, 2029",
+    "conferenceStart": "2029-07-18",
+    "place": "Copenhagen, Denmark",
+    "timeline": [
+      {
+        "date": "2029-01-14",
+        "abstractDate": "",
+        "comment": "Proceedings; conditional acceptance: March 2, 2027; revised papers due: March 18, 2027, 23:59 AoE; no extensions to submission or revision deadlines"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 15.9,
+        "submitted": 408,
+        "accepted": 65
+      },
+      {
+        "year": 2025,
+        "rate": 17.0,
+        "submitted": 395,
+        "accepted": 67
+      },
+      {
+        "year": 2024,
+        "rate": 18.2,
+        "submitted": 318,
+        "accepted": 58
+      },
+      {
+        "year": 2023,
+        "rate": 17.9,
+        "submitted": 336,
+        "accepted": 60
+      }
+    ],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
     "id": "ispd27-2029p",
     "title": "ISPD",
     "description": "International Symposium on Physical Design",
@@ -47901,6 +47961,54 @@
         "rate": 49.7,
         "submitted": 2207,
         "accepted": 1097
+      }
+    ],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
+    "id": "krd27-2029p",
+    "title": "KR",
+    "description": "International Conference on Principles of Knowledge Representation and Reasoning",
+    "category": "AI",
+    "rank": "B",
+    "year": 2029,
+    "link": "https://kr.org/KR2027/",
+    "timezone": "AoE",
+    "conferenceDate": "September 21-24, 2029",
+    "conferenceStart": "2029-09-21",
+    "place": "Buenos Aires, Argentina",
+    "timeline": [
+      {
+        "date": "2029-04-28",
+        "abstractDate": "2029-04-23",
+        "comment": "Main track; author response period: June 15-18, 2027"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 24.4,
+        "submitted": 459,
+        "accepted": 112
+      },
+      {
+        "year": 2025,
+        "rate": 34.7,
+        "submitted": 245,
+        "accepted": 85
+      },
+      {
+        "year": 2024,
+        "rate": 24.5,
+        "submitted": 372,
+        "accepted": 91
+      },
+      {
+        "year": 2023,
+        "rate": 23.6,
+        "submitted": 339,
+        "accepted": 80
       }
     ],
     "projected": true,
