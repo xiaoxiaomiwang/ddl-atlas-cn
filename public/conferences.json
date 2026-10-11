@@ -4056,6 +4056,27 @@
     ]
   },
   {
+    "id": "eswc26",
+    "title": "ESWC",
+    "description": "European Semantic Web Conference",
+    "category": "DB",
+    "rank": "C",
+    "year": 2026,
+    "link": "https://2026.eswc-conferences.org/",
+    "timezone": "AoE",
+    "conferenceDate": "May 12-14, 2026",
+    "conferenceStart": "2026-05-12",
+    "place": "Dubrovnik, Croatia",
+    "timeline": [
+      {
+        "date": "2025-12-04",
+        "abstractDate": "2025-11-27",
+        "comment": ""
+      }
+    ],
+    "acceptRates": []
+  },
+  {
     "id": "etaps26",
     "title": "ETAPS",
     "description": "European Joint Conferences on Theory and Practice of Software",
@@ -8904,13 +8925,8 @@
     "timeline": [
       {
         "date": "2026-05-07",
-        "abstractDate": "2026-04-11",
-        "comment": "ESWC transfer"
-      },
-      {
-        "date": "2026-05-07",
         "abstractDate": "2026-05-02",
-        "comment": "Regular route"
+        "comment": "ESWC resubmissions must be committed by April 11, 2026"
       }
     ],
     "acceptRates": [
@@ -18301,6 +18317,21 @@
     "projectedFrom": 2026
   },
   {
+    "id": "eswc27",
+    "title": "ESWC",
+    "description": "European Semantic Web Conference",
+    "category": "DB",
+    "rank": "C",
+    "year": 2027,
+    "link": "https://2027.eswc-conferences.org/",
+    "timezone": "AoE",
+    "conferenceDate": "May 23-27, 2027",
+    "conferenceStart": "2027-05-23",
+    "place": "Limassol, Cyprus",
+    "timeline": [],
+    "acceptRates": []
+  },
+  {
     "id": "etaps27",
     "title": "ETAPS",
     "description": "European Joint Conferences on Theory and Practice of Software",
@@ -23245,13 +23276,8 @@
     "timeline": [
       {
         "date": "2027-05-07",
-        "abstractDate": "2027-04-11",
-        "comment": "ESWC transfer"
-      },
-      {
-        "date": "2027-05-07",
         "abstractDate": "2027-05-02",
-        "comment": "Regular route"
+        "comment": "ESWC resubmissions must be committed by April 11, 2026"
       }
     ],
     "acceptRates": [
@@ -32904,6 +32930,29 @@
     "projectedFrom": 2026
   },
   {
+    "id": "eswc26-2028p",
+    "title": "ESWC",
+    "description": "European Semantic Web Conference",
+    "category": "DB",
+    "rank": "C",
+    "year": 2028,
+    "link": "https://2026.eswc-conferences.org/",
+    "timezone": "AoE",
+    "conferenceDate": "May 12-14, 2028",
+    "conferenceStart": "2028-05-12",
+    "place": "Dubrovnik, Croatia",
+    "timeline": [
+      {
+        "date": "2027-12-04",
+        "abstractDate": "2027-11-27",
+        "comment": ""
+      }
+    ],
+    "acceptRates": [],
+    "projected": true,
+    "projectedFrom": 2026
+  },
+  {
     "id": "etaps27-2028p",
     "title": "ETAPS",
     "description": "European Joint Conferences on Theory and Practice of Software",
@@ -37893,13 +37942,8 @@
     "timeline": [
       {
         "date": "2028-05-07",
-        "abstractDate": "2028-04-11",
-        "comment": "ESWC transfer"
-      },
-      {
-        "date": "2028-05-07",
         "abstractDate": "2028-05-02",
-        "comment": "Regular route"
+        "comment": "ESWC resubmissions must be committed by April 11, 2026"
       }
     ],
     "acceptRates": [
