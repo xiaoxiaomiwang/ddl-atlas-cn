@@ -17141,26 +17141,26 @@
     "projectedFrom": 2026
   },
   {
-    "id": "conext26-2027p",
+    "id": "conext27",
     "title": "CoNEXT",
     "description": "International Conference on Emerging Networking Experiments and Technologies",
     "category": "NW",
     "rank": "B",
     "year": 2027,
-    "link": "https://conferences.sigcomm.org/co-next/2026/#!/home",
+    "link": "https://conferences.sigcomm.org/co-next/2027/#!/home",
     "timezone": "AoE",
-    "conferenceDate": "December 7-10, 2027",
-    "conferenceStart": "2027-12-07",
-    "place": "Utrecht, The Netherlands",
+    "conferenceDate": "December 6-9, 2027 (To be confirmed)",
+    "conferenceStart": "2027-12-06",
+    "place": "Rio de Janeiro, Brazil",
     "timeline": [
       {
-        "date": "2026-12-12",
-        "abstractDate": "2026-12-05",
+        "date": "2026-12-04",
+        "abstractDate": "2026-11-27",
         "comment": "December Cycle"
       },
       {
-        "date": "2027-06-05",
-        "abstractDate": "2027-05-29",
+        "date": "2027-06-04",
+        "abstractDate": "2027-05-28",
         "comment": "June Cycle"
       }
     ],
@@ -17177,9 +17177,7 @@
         "submitted": 120,
         "accepted": 27
       }
-    ],
-    "projected": true,
-    "projectedFrom": 2026
+    ]
   },
   {
     "id": "conll26-2027p",
@@ -31666,26 +31664,26 @@
     "projectedFrom": 2026
   },
   {
-    "id": "conext26-2028p",
+    "id": "conext27-2028p",
     "title": "CoNEXT",
     "description": "International Conference on Emerging Networking Experiments and Technologies",
     "category": "NW",
     "rank": "B",
     "year": 2028,
-    "link": "https://conferences.sigcomm.org/co-next/2026/#!/home",
+    "link": "https://conferences.sigcomm.org/co-next/2027/#!/home",
     "timezone": "AoE",
-    "conferenceDate": "December 7-10, 2028",
-    "conferenceStart": "2028-12-07",
-    "place": "Utrecht, The Netherlands",
+    "conferenceDate": "December 6-9, 2028 (To be confirmed)",
+    "conferenceStart": "2028-12-06",
+    "place": "Rio de Janeiro, Brazil",
     "timeline": [
       {
-        "date": "2027-12-12",
-        "abstractDate": "2027-12-05",
+        "date": "2027-12-04",
+        "abstractDate": "2027-11-27",
         "comment": "December Cycle"
       },
       {
-        "date": "2028-06-05",
-        "abstractDate": "2028-05-29",
+        "date": "2028-06-04",
+        "abstractDate": "2028-05-28",
         "comment": "June Cycle"
       }
     ],
@@ -31704,7 +31702,7 @@
       }
     ],
     "projected": true,
-    "projectedFrom": 2026
+    "projectedFrom": 2027
   },
   {
     "id": "conll26-2028p",
@@ -44755,6 +44753,47 @@
         "rate": 25.8,
         "submitted": 9155,
         "accepted": 2359
+      }
+    ],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
+    "id": "conext27-2029p",
+    "title": "CoNEXT",
+    "description": "International Conference on Emerging Networking Experiments and Technologies",
+    "category": "NW",
+    "rank": "B",
+    "year": 2029,
+    "link": "https://conferences.sigcomm.org/co-next/2027/#!/home",
+    "timezone": "AoE",
+    "conferenceDate": "December 6-9, 2029 (To be confirmed)",
+    "conferenceStart": "2029-12-06",
+    "place": "Rio de Janeiro, Brazil",
+    "timeline": [
+      {
+        "date": "2028-12-04",
+        "abstractDate": "2028-11-27",
+        "comment": "December Cycle"
+      },
+      {
+        "date": "2029-06-04",
+        "abstractDate": "2029-05-28",
+        "comment": "June Cycle"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2023,
+        "rate": 18.5,
+        "submitted": 157,
+        "accepted": 29
+      },
+      {
+        "year": 2021,
+        "rate": 22.5,
+        "submitted": 120,
+        "accepted": 27
       }
     ],
     "projected": true,
