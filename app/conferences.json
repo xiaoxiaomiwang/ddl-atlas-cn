@@ -3228,6 +3228,34 @@
     "acceptRates": []
   },
   {
+    "id": "dexa26",
+    "title": "DEXA",
+    "description": "International Conference on Database and Expert Systems Applications",
+    "category": "DB",
+    "rank": "C",
+    "year": 2026,
+    "link": "https://www.dexa.org/2026/dexa2026.html",
+    "timezone": "AoE",
+    "conferenceDate": "August 11-13, 2026",
+    "conferenceStart": "2026-08-11",
+    "place": "Graz, Austria",
+    "timeline": [
+      {
+        "date": "2026-04-10",
+        "abstractDate": "",
+        "comment": "Final and firm main conference deadline"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 43.9,
+        "submitted": 123,
+        "accepted": 54
+      }
+    ]
+  },
+  {
     "id": "dfrws26",
     "title": "DFRWS",
     "description": "Digital Forensic Research Workshop",
@@ -17525,6 +17553,36 @@
     "acceptRates": []
   },
   {
+    "id": "dexa26-2027p",
+    "title": "DEXA",
+    "description": "International Conference on Database and Expert Systems Applications",
+    "category": "DB",
+    "rank": "C",
+    "year": 2027,
+    "link": "https://www.dexa.org/2026/dexa2026.html",
+    "timezone": "AoE",
+    "conferenceDate": "August 11-13, 2027",
+    "conferenceStart": "2027-08-11",
+    "place": "Graz, Austria",
+    "timeline": [
+      {
+        "date": "2027-04-10",
+        "abstractDate": "",
+        "comment": "Final and firm main conference deadline"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 43.9,
+        "submitted": 123,
+        "accepted": 54
+      }
+    ],
+    "projected": true,
+    "projectedFrom": 2026
+  },
+  {
     "id": "dfrws27",
     "title": "DFRWS",
     "description": "Digital Forensic Research Workshop",
@@ -21864,7 +21922,13 @@
     "conferenceDate": "June 21-24, 2027",
     "conferenceStart": "2027-06-21",
     "place": "Seattle, Washington, USA",
-    "timeline": [],
+    "timeline": [
+      {
+        "date": "2027-01-25",
+        "abstractDate": "2027-01-18",
+        "comment": "Full and Short Papers; abstract deadline includes author information"
+      }
+    ],
     "acceptRates": [
       {
         "year": 2024,
@@ -22805,12 +22869,18 @@
     "category": "DS",
     "rank": "A",
     "year": 2027,
-    "link": "https://www.iscaconf.org/",
+    "link": "https://iscaconf.org/isca2027/",
     "timezone": "AoE",
-    "conferenceDate": "TBD",
-    "conferenceStart": "",
+    "conferenceDate": "June 5-9, 2027",
+    "conferenceStart": "2027-06-05",
     "place": "Atlanta, Georgia, USA",
-    "timeline": [],
+    "timeline": [
+      {
+        "date": "2026-11-16",
+        "abstractDate": "2026-11-09",
+        "comment": "Main Track; rebuttal/revision period: February 16-March 8, 2027"
+      }
+    ],
     "acceptRates": [
       {
         "year": 2024,
@@ -25805,7 +25875,13 @@
     "conferenceDate": "August 23-27, 2027",
     "conferenceStart": "2027-08-23",
     "place": "Milan, Italy",
-    "timeline": [],
+    "timeline": [
+      {
+        "date": "2027-03-01",
+        "abstractDate": "2027-02-22",
+        "comment": "Research Papers"
+      }
+    ],
     "acceptRates": [
       {
         "year": 2026,
@@ -32058,6 +32134,36 @@
     "projectedFrom": 2027
   },
   {
+    "id": "dexa26-2028p",
+    "title": "DEXA",
+    "description": "International Conference on Database and Expert Systems Applications",
+    "category": "DB",
+    "rank": "C",
+    "year": 2028,
+    "link": "https://www.dexa.org/2026/dexa2026.html",
+    "timezone": "AoE",
+    "conferenceDate": "August 11-13, 2028",
+    "conferenceStart": "2028-08-11",
+    "place": "Graz, Austria",
+    "timeline": [
+      {
+        "date": "2028-04-10",
+        "abstractDate": "",
+        "comment": "Final and firm main conference deadline"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 43.9,
+        "submitted": 123,
+        "accepted": 54
+      }
+    ],
+    "projected": true,
+    "projectedFrom": 2026
+  },
+  {
     "id": "dfrws27-2028p",
     "title": "DFRWS",
     "description": "Digital Forensic Research Workshop",
@@ -36438,22 +36544,22 @@
     "projectedFrom": 2027
   },
   {
-    "id": "idc26-2028p",
+    "id": "idc27-2028p",
     "title": "IDC",
     "description": "ACM Interaction Design and Children Conference",
     "category": "HI",
     "rank": "C",
     "year": 2028,
-    "link": "https://idc.acm.org/2026/",
+    "link": "https://idc.acm.org/2027/",
     "timezone": "AoE",
-    "conferenceDate": "TBD",
-    "conferenceStart": "",
-    "place": "Brighton, UK",
+    "conferenceDate": "June 21-24, 2028",
+    "conferenceStart": "2028-06-21",
+    "place": "Seattle, Washington, USA",
     "timeline": [
       {
-        "date": "2028-01-28",
-        "abstractDate": "2028-01-21",
-        "comment": ""
+        "date": "2028-01-25",
+        "abstractDate": "2028-01-18",
+        "comment": "Full and Short Papers; abstract deadline includes author information"
       }
     ],
     "acceptRates": [
@@ -36471,7 +36577,7 @@
       }
     ],
     "projected": true,
-    "projectedFrom": 2026
+    "projectedFrom": 2027
   },
   {
     "id": "cec2027-2028p",
@@ -37439,22 +37545,22 @@
     "projectedFrom": 2026
   },
   {
-    "id": "isca26-2028p",
+    "id": "isca27-2028p",
     "title": "ISCA",
     "description": "International Symposium on Computer Architecture",
     "category": "DS",
     "rank": "A",
     "year": 2028,
-    "link": "https://iscaconf.org/isca2026/",
+    "link": "https://iscaconf.org/isca2027/",
     "timezone": "AoE",
-    "conferenceDate": "June 29-July 1, 2028",
-    "conferenceStart": "2028-06-29",
-    "place": "Raleigh, USA",
+    "conferenceDate": "June 5-9, 2028",
+    "conferenceStart": "2028-06-05",
+    "place": "Atlanta, Georgia, USA",
     "timeline": [
       {
-        "date": "2027-11-17",
-        "abstractDate": "2027-11-10",
-        "comment": ""
+        "date": "2027-11-16",
+        "abstractDate": "2027-11-09",
+        "comment": "Main Track; rebuttal/revision period: February 16-March 8, 2027"
       }
     ],
     "acceptRates": [
@@ -37478,7 +37584,7 @@
       }
     ],
     "projected": true,
-    "projectedFrom": 2026
+    "projectedFrom": 2027
   },
   {
     "id": "iscas27-2028p",
@@ -40524,21 +40630,21 @@
     "projectedFrom": 2026
   },
   {
-    "id": "re26-2028p",
+    "id": "re27-2028p",
     "title": "RE",
     "description": "IEEE International Requirements Engineering Conference",
     "category": "SE",
     "rank": "B",
     "year": 2028,
-    "link": "https://conf.researchr.org/home/RE-2026",
+    "link": "https://conf.researchr.org/home/RE-2027",
     "timezone": "AoE",
-    "conferenceDate": "August 17-21, 2028",
-    "conferenceStart": "2028-08-17",
-    "place": "Montreal, Canada",
+    "conferenceDate": "August 23-27, 2028",
+    "conferenceStart": "2028-08-23",
+    "place": "Milan, Italy",
     "timeline": [
       {
-        "date": "2028-02-23",
-        "abstractDate": "2028-02-16",
+        "date": "2028-03-01",
+        "abstractDate": "2028-02-22",
         "comment": "Research Papers"
       }
     ],
@@ -40569,7 +40675,7 @@
       }
     ],
     "projected": true,
-    "projectedFrom": 2026
+    "projectedFrom": 2027
   },
   {
     "id": "recomb27-2028p",
@@ -47322,6 +47428,42 @@
     "projectedFrom": 2027
   },
   {
+    "id": "idc27-2029p",
+    "title": "IDC",
+    "description": "ACM Interaction Design and Children Conference",
+    "category": "HI",
+    "rank": "C",
+    "year": 2029,
+    "link": "https://idc.acm.org/2027/",
+    "timezone": "AoE",
+    "conferenceDate": "June 21-24, 2029",
+    "conferenceStart": "2029-06-21",
+    "place": "Seattle, Washington, USA",
+    "timeline": [
+      {
+        "date": "2029-01-25",
+        "abstractDate": "2029-01-18",
+        "comment": "Full and Short Papers; abstract deadline includes author information"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 33.7,
+        "submitted": 101,
+        "accepted": 34
+      },
+      {
+        "year": 2023,
+        "rate": 35.6,
+        "submitted": 87,
+        "accepted": 31
+      }
+    ],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
     "id": "cec2027-2029p",
     "title": "IEEE CEC",
     "description": "IEEE Congress on Evolutionary Computation",
@@ -47744,6 +47886,48 @@
         "rate": 47.9,
         "submitted": 3579,
         "accepted": 1716
+      }
+    ],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
+    "id": "isca27-2029p",
+    "title": "ISCA",
+    "description": "International Symposium on Computer Architecture",
+    "category": "DS",
+    "rank": "A",
+    "year": 2029,
+    "link": "https://iscaconf.org/isca2027/",
+    "timezone": "AoE",
+    "conferenceDate": "June 5-9, 2029",
+    "conferenceStart": "2029-06-05",
+    "place": "Atlanta, Georgia, USA",
+    "timeline": [
+      {
+        "date": "2028-11-16",
+        "abstractDate": "2028-11-09",
+        "comment": "Main Track; rebuttal/revision period: February 16-March 8, 2027"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 19.6,
+        "submitted": 423,
+        "accepted": 83
+      },
+      {
+        "year": 2023,
+        "rate": 21.2,
+        "submitted": 372,
+        "accepted": 79
+      },
+      {
+        "year": 2022,
+        "rate": 16.8,
+        "submitted": 400,
+        "accepted": 67
       }
     ],
     "projected": true,
@@ -49174,6 +49358,54 @@
         "year": 2024,
         "rate": 9.5,
         "submitted": 158,
+        "accepted": 15
+      }
+    ],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
+    "id": "re27-2029p",
+    "title": "RE",
+    "description": "IEEE International Requirements Engineering Conference",
+    "category": "SE",
+    "rank": "B",
+    "year": 2029,
+    "link": "https://conf.researchr.org/home/RE-2027",
+    "timezone": "AoE",
+    "conferenceDate": "August 23-27, 2029",
+    "conferenceStart": "2029-08-23",
+    "place": "Milan, Italy",
+    "timeline": [
+      {
+        "date": "2029-03-01",
+        "abstractDate": "2029-02-22",
+        "comment": "Research Papers"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 24.0,
+        "submitted": 100,
+        "accepted": 24
+      },
+      {
+        "year": 2025,
+        "rate": 21.3,
+        "submitted": 108,
+        "accepted": 23
+      },
+      {
+        "year": 2024,
+        "rate": 19.1,
+        "submitted": 89,
+        "accepted": 17
+      },
+      {
+        "year": 2023,
+        "rate": 21.1,
+        "submitted": 71,
         "accepted": 15
       }
     ],
