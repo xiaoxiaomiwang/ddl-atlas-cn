@@ -18384,7 +18384,13 @@
     "conferenceDate": "May 23-27, 2027",
     "conferenceStart": "2027-05-23",
     "place": "Limassol, Cyprus",
-    "timeline": [],
+    "timeline": [
+      {
+        "date": "2026-12-17",
+        "abstractDate": "2026-12-10",
+        "comment": "Research track; rebuttal period January 26-29, 2027"
+      }
+    ],
     "acceptRates": []
   },
   {
@@ -22916,7 +22922,7 @@
     "place": "Bordeaux, France",
     "timeline": [
       {
-        "date": "2026-10-13",
+        "date": "2026-10-22",
         "abstractDate": "",
         "comment": ""
       }
@@ -33034,27 +33040,27 @@
     "projectedFrom": 2026
   },
   {
-    "id": "eswc26-2028p",
+    "id": "eswc27-2028p",
     "title": "ESWC",
     "description": "European Semantic Web Conference",
     "category": "DB",
     "rank": "C",
     "year": 2028,
-    "link": "https://2026.eswc-conferences.org/",
+    "link": "https://2027.eswc-conferences.org/",
     "timezone": "AoE",
-    "conferenceDate": "May 12-14, 2028",
-    "conferenceStart": "2028-05-12",
-    "place": "Dubrovnik, Croatia",
+    "conferenceDate": "May 23-27, 2028",
+    "conferenceStart": "2028-05-23",
+    "place": "Limassol, Cyprus",
     "timeline": [
       {
-        "date": "2027-12-04",
-        "abstractDate": "2027-11-27",
-        "comment": ""
+        "date": "2027-12-17",
+        "abstractDate": "2027-12-10",
+        "comment": "Research track; rebuttal period January 26-29, 2027"
       }
     ],
     "acceptRates": [],
     "projected": true,
-    "projectedFrom": 2026
+    "projectedFrom": 2027
   },
   {
     "id": "etaps27-2028p",
@@ -37600,7 +37606,7 @@
     "place": "Bordeaux, France",
     "timeline": [
       {
-        "date": "2027-10-13",
+        "date": "2027-10-22",
         "abstractDate": "",
         "comment": ""
       }
@@ -45457,6 +45463,29 @@
     "projectedFrom": 2027
   },
   {
+    "id": "eswc27-2029p",
+    "title": "ESWC",
+    "description": "European Semantic Web Conference",
+    "category": "DB",
+    "rank": "C",
+    "year": 2029,
+    "link": "https://2027.eswc-conferences.org/",
+    "timezone": "AoE",
+    "conferenceDate": "May 23-27, 2029",
+    "conferenceStart": "2029-05-23",
+    "place": "Limassol, Cyprus",
+    "timeline": [
+      {
+        "date": "2028-12-17",
+        "abstractDate": "2028-12-10",
+        "comment": "Research track; rebuttal period January 26-29, 2027"
+      }
+    ],
+    "acceptRates": [],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
     "id": "etaps27-2029p",
     "title": "ETAPS",
     "description": "European Joint Conferences on Theory and Practice of Software",
@@ -47947,7 +47976,7 @@
     "place": "Bordeaux, France",
     "timeline": [
       {
-        "date": "2028-10-13",
+        "date": "2028-10-22",
         "abstractDate": "",
         "comment": ""
       }
