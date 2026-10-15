@@ -3926,6 +3926,34 @@
     ]
   },
   {
+    "id": "er26",
+    "title": "ER",
+    "description": "International Conference on Conceptual Modeling",
+    "category": "DB",
+    "rank": "C",
+    "year": 2026,
+    "link": "https://www.er2026.org/",
+    "timezone": "AoE",
+    "conferenceDate": "October 6-8, 2026",
+    "conferenceStart": "2026-10-06",
+    "place": "St. John's, NL, Canada",
+    "timeline": [
+      {
+        "date": "2026-05-19",
+        "abstractDate": "2026-05-12",
+        "comment": "Main conference full and short papers; extended deadlines; abstract mandatory"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 31.7,
+        "submitted": 104,
+        "accepted": 33
+      }
+    ]
+  },
+  {
     "id": "esa2026",
     "title": "ESA",
     "description": "European Symposium on Algorithms",
@@ -18206,6 +18234,36 @@
         "rate": 23.3,
         "submitted": 90,
         "accepted": 21
+      }
+    ],
+    "projected": true,
+    "projectedFrom": 2026
+  },
+  {
+    "id": "er26-2027p",
+    "title": "ER",
+    "description": "International Conference on Conceptual Modeling",
+    "category": "DB",
+    "rank": "C",
+    "year": 2027,
+    "link": "https://www.er2026.org/",
+    "timezone": "AoE",
+    "conferenceDate": "October 6-8, 2027",
+    "conferenceStart": "2027-10-06",
+    "place": "St. John's, NL, Canada",
+    "timeline": [
+      {
+        "date": "2027-05-19",
+        "abstractDate": "2027-05-12",
+        "comment": "Main conference full and short papers; extended deadlines; abstract mandatory"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 31.7,
+        "submitted": 104,
+        "accepted": 33
       }
     ],
     "projected": true,
@@ -32869,6 +32927,36 @@
         "rate": 23.3,
         "submitted": 90,
         "accepted": 21
+      }
+    ],
+    "projected": true,
+    "projectedFrom": 2026
+  },
+  {
+    "id": "er26-2028p",
+    "title": "ER",
+    "description": "International Conference on Conceptual Modeling",
+    "category": "DB",
+    "rank": "C",
+    "year": 2028,
+    "link": "https://www.er2026.org/",
+    "timezone": "AoE",
+    "conferenceDate": "October 6-8, 2028",
+    "conferenceStart": "2028-10-06",
+    "place": "St. John's, NL, Canada",
+    "timeline": [
+      {
+        "date": "2028-05-19",
+        "abstractDate": "2028-05-12",
+        "comment": "Main conference full and short papers; extended deadlines; abstract mandatory"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 31.7,
+        "submitted": 104,
+        "accepted": 33
       }
     ],
     "projected": true,
