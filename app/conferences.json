@@ -20909,7 +20909,13 @@
     "conferenceDate": "July 22-26, 2027",
     "conferenceStart": "2027-07-22",
     "place": "Jinan, China",
-    "timeline": [],
+    "timeline": [
+      {
+        "date": "2027-03-15",
+        "abstractDate": "",
+        "comment": "Regular papers; rebuttal notification April 15, 2027"
+      }
+    ],
     "acceptRates": [
       {
         "year": 2026,
@@ -28107,32 +28113,19 @@
     ]
   },
   {
-    "id": "ubicomp26-2027p",
+    "id": "ubicomp27",
     "title": "UbiComp/ISWC",
     "description": "ACM International Joint Conference on Pervasive and Ubiquitous Computing",
     "category": "HI",
     "rank": "A",
     "year": 2027,
-    "link": "https://www.ubicomp.org/ubicomp-iswc-2026",
+    "link": "https://sigchi.org/events/ubicomp-2027/",
     "timezone": "AoE",
-    "conferenceDate": "October 11-15, 2027",
-    "conferenceStart": "2027-10-11",
-    "place": "Shanghai, China",
-    "timeline": [
-      {
-        "date": "2027-02-01",
-        "abstractDate": "",
-        "comment": "first round"
-      },
-      {
-        "date": "2027-05-01",
-        "abstractDate": "",
-        "comment": "second round"
-      }
-    ],
-    "acceptRates": [],
-    "projected": true,
-    "projectedFrom": 2026
+    "conferenceDate": "October 3-7, 2027",
+    "conferenceStart": "2027-10-03",
+    "place": "Seoul, Republic of Korea",
+    "timeline": [],
+    "acceptRates": []
   },
   {
     "id": "vinci2026-2027p",
@@ -35534,22 +35527,22 @@
     "projectedFrom": 2027
   },
   {
-    "id": "icic26-2028p",
+    "id": "icic27-2028p",
     "title": "ICIC",
     "description": "International Conference on Intelligent Computing",
     "category": "MX",
     "rank": "C",
     "year": 2028,
-    "link": "http://www.ic-icc.cn/2026/",
-    "timezone": "UTC+8",
+    "link": "http://ic-icc.cn/2027/index.php",
+    "timezone": "AoE",
     "conferenceDate": "July 22-26, 2028",
     "conferenceStart": "2028-07-22",
-    "place": "Toronto, Canada (Hybrid)",
+    "place": "Jinan, China",
     "timeline": [
       {
-        "date": "2028-04-04",
+        "date": "2028-03-15",
         "abstractDate": "",
-        "comment": ""
+        "comment": "Regular papers; rebuttal notification April 15, 2027"
       }
     ],
     "acceptRates": [
@@ -35579,7 +35572,7 @@
       }
     ],
     "projected": true,
-    "projectedFrom": 2026
+    "projectedFrom": 2027
   },
   {
     "id": "icics26-2028p",
@@ -47023,6 +47016,54 @@
         "rate": 33.0,
         "submitted": 106,
         "accepted": 35
+      }
+    ],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
+    "id": "icic27-2029p",
+    "title": "ICIC",
+    "description": "International Conference on Intelligent Computing",
+    "category": "MX",
+    "rank": "C",
+    "year": 2029,
+    "link": "http://ic-icc.cn/2027/index.php",
+    "timezone": "AoE",
+    "conferenceDate": "July 22-26, 2029",
+    "conferenceStart": "2029-07-22",
+    "place": "Jinan, China",
+    "timeline": [
+      {
+        "date": "2029-03-15",
+        "abstractDate": "",
+        "comment": "Regular papers; rebuttal notification April 15, 2027"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 40.4,
+        "submitted": 4561,
+        "accepted": 1844
+      },
+      {
+        "year": 2025,
+        "rate": 42.9,
+        "submitted": 4032,
+        "accepted": 1729
+      },
+      {
+        "year": 2024,
+        "rate": 39.4,
+        "submitted": 2189,
+        "accepted": 863
+      },
+      {
+        "year": 2023,
+        "rate": 40.7,
+        "submitted": 828,
+        "accepted": 337
       }
     ],
     "projected": true,
