@@ -9482,6 +9482,34 @@
     ]
   },
   {
+    "id": "mdm26",
+    "title": "MDM",
+    "description": "IEEE International Conference on Mobile Data Management",
+    "category": "DB",
+    "rank": "C",
+    "year": 2026,
+    "link": "https://mdm-2026.github.io/index.html",
+    "timezone": "AoE",
+    "conferenceDate": "June 30 - July 2, 2026",
+    "conferenceStart": "2026-06-30",
+    "place": "Athens, Greece",
+    "timeline": [
+      {
+        "date": "2026-03-06",
+        "abstractDate": "",
+        "comment": "Research track regular and short papers; extended deadline"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 30.5,
+        "submitted": 59,
+        "accepted": 18
+      }
+    ]
+  },
+  {
     "id": "miccai26",
     "title": "MICCAI",
     "description": "International Conference on Medical Image Computing and Computer Assisted Intervention",
@@ -20497,27 +20525,25 @@
     "projectedFrom": 2026
   },
   {
-    "id": "icccn26-2027p",
+    "id": "icccn27",
     "title": "ICCCN",
     "description": "IEEE International Conference on Computer Communications and Networks",
     "category": "NW",
     "rank": "C",
     "year": 2027,
-    "link": "http://www.icccn.org/ICCCN26/",
-    "timezone": "UTC-10",
-    "conferenceDate": "July 27-30, 2027",
-    "conferenceStart": "2027-07-27",
-    "place": "Honolulu, Hawaii, USA",
+    "link": "http://www.icccn.org/ICCCN27/",
+    "timezone": "AoE",
+    "conferenceDate": "July 12-15, 2027",
+    "conferenceStart": "2027-07-12",
+    "place": "Rome, Italy",
     "timeline": [
       {
-        "date": "2027-03-13",
-        "abstractDate": "2027-03-07",
+        "date": "2027-02-19",
+        "abstractDate": "2027-02-12",
         "comment": ""
       }
     ],
-    "acceptRates": [],
-    "projected": true,
-    "projectedFrom": 2026
+    "acceptRates": []
   },
   {
     "id": "iccd26-2027p",
@@ -23932,6 +23958,36 @@
     "projectedFrom": 2026
   },
   {
+    "id": "mdm26-2027p",
+    "title": "MDM",
+    "description": "IEEE International Conference on Mobile Data Management",
+    "category": "DB",
+    "rank": "C",
+    "year": 2027,
+    "link": "https://mdm-2026.github.io/index.html",
+    "timezone": "AoE",
+    "conferenceDate": "June 30 - July 2, 2027",
+    "conferenceStart": "2027-06-30",
+    "place": "Athens, Greece",
+    "timeline": [
+      {
+        "date": "2027-03-06",
+        "abstractDate": "",
+        "comment": "Research track regular and short papers; extended deadline"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 30.5,
+        "submitted": 59,
+        "accepted": 18
+      }
+    ],
+    "projected": true,
+    "projectedFrom": 2026
+  },
+  {
     "id": "miccai27",
     "title": "MICCAI",
     "description": "International Conference on Medical Image Computing and Computer Assisted Intervention",
@@ -25131,54 +25187,6 @@
         "accepted": 143
       }
     ]
-  },
-  {
-    "id": "pam26-2027p",
-    "title": "PAM",
-    "description": "Passive and Active Measurement Conference",
-    "category": "SC",
-    "rank": "C",
-    "year": 2027,
-    "link": "https://pam2026.at/",
-    "timezone": "AoE",
-    "conferenceDate": "March 23-25, 2027",
-    "conferenceStart": "2027-03-23",
-    "place": "Virtual",
-    "timeline": [
-      {
-        "date": "2026-10-15",
-        "abstractDate": "2026-10-15",
-        "comment": ""
-      }
-    ],
-    "acceptRates": [
-      {
-        "year": 2026,
-        "rate": 31.6,
-        "submitted": 57,
-        "accepted": 18
-      },
-      {
-        "year": 2025,
-        "rate": 29.9,
-        "submitted": 67,
-        "accepted": 20
-      },
-      {
-        "year": 2024,
-        "rate": 42.2,
-        "submitted": 64,
-        "accepted": 27
-      },
-      {
-        "year": 2023,
-        "rate": 33.8,
-        "submitted": 80,
-        "accepted": 27
-      }
-    ],
-    "projected": true,
-    "projectedFrom": 2026
   },
   {
     "id": "pdcat2026-2027p",
@@ -35170,27 +35178,27 @@
     "projectedFrom": 2026
   },
   {
-    "id": "icccn26-2028p",
+    "id": "icccn27-2028p",
     "title": "ICCCN",
     "description": "IEEE International Conference on Computer Communications and Networks",
     "category": "NW",
     "rank": "C",
     "year": 2028,
-    "link": "http://www.icccn.org/ICCCN26/",
-    "timezone": "UTC-10",
-    "conferenceDate": "July 27-30, 2028",
-    "conferenceStart": "2028-07-27",
-    "place": "Honolulu, Hawaii, USA",
+    "link": "http://www.icccn.org/ICCCN27/",
+    "timezone": "AoE",
+    "conferenceDate": "July 12-15, 2028",
+    "conferenceStart": "2028-07-12",
+    "place": "Rome, Italy",
     "timeline": [
       {
-        "date": "2028-03-13",
-        "abstractDate": "2028-03-07",
+        "date": "2028-02-19",
+        "abstractDate": "2028-02-12",
         "comment": ""
       }
     ],
     "acceptRates": [],
     "projected": true,
-    "projectedFrom": 2026
+    "projectedFrom": 2027
   },
   {
     "id": "iccd26-2028p",
@@ -38664,6 +38672,36 @@
         "rate": 28.7,
         "submitted": 195,
         "accepted": 56
+      }
+    ],
+    "projected": true,
+    "projectedFrom": 2026
+  },
+  {
+    "id": "mdm26-2028p",
+    "title": "MDM",
+    "description": "IEEE International Conference on Mobile Data Management",
+    "category": "DB",
+    "rank": "C",
+    "year": 2028,
+    "link": "https://mdm-2026.github.io/index.html",
+    "timezone": "AoE",
+    "conferenceDate": "June 30 - July 2, 2028",
+    "conferenceStart": "2028-06-30",
+    "place": "Athens, Greece",
+    "timeline": [
+      {
+        "date": "2028-03-06",
+        "abstractDate": "",
+        "comment": "Research track regular and short papers; extended deadline"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 30.5,
+        "submitted": 59,
+        "accepted": 18
       }
     ],
     "projected": true,
@@ -46784,6 +46822,29 @@
         "accepted": 758
       }
     ],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
+    "id": "icccn27-2029p",
+    "title": "ICCCN",
+    "description": "IEEE International Conference on Computer Communications and Networks",
+    "category": "NW",
+    "rank": "C",
+    "year": 2029,
+    "link": "http://www.icccn.org/ICCCN27/",
+    "timezone": "AoE",
+    "conferenceDate": "July 12-15, 2029",
+    "conferenceStart": "2029-07-12",
+    "place": "Rome, Italy",
+    "timeline": [
+      {
+        "date": "2029-02-19",
+        "abstractDate": "2029-02-12",
+        "comment": ""
+      }
+    ],
+    "acceptRates": [],
     "projected": true,
     "projectedFrom": 2027
   },
