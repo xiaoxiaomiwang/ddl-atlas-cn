@@ -2963,6 +2963,18 @@
         "rate": 32.8,
         "submitted": 2094,
         "accepted": 687
+      },
+      {
+        "year": 2025,
+        "rate": 35.7,
+        "submitted": 737,
+        "accepted": 263
+      },
+      {
+        "year": 2024,
+        "rate": 38.1,
+        "submitted": 693,
+        "accepted": 264
       }
     ]
   },
@@ -6833,6 +6845,12 @@
         "rate": 26.6,
         "submitted": 24661,
         "accepted": 6552
+      },
+      {
+        "year": 2025,
+        "rate": 26.9,
+        "submitted": 12107,
+        "accepted": 3260
       },
       {
         "year": 2024,
@@ -17339,6 +17357,18 @@
         "rate": 32.8,
         "submitted": 2094,
         "accepted": 687
+      },
+      {
+        "year": 2025,
+        "rate": 35.7,
+        "submitted": 737,
+        "accepted": 263
+      },
+      {
+        "year": 2024,
+        "rate": 38.1,
+        "submitted": 693,
+        "accepted": 264
       }
     ],
     "projected": true,
@@ -21281,6 +21311,12 @@
         "accepted": 6552
       },
       {
+        "year": 2025,
+        "rate": 26.9,
+        "submitted": 12107,
+        "accepted": 3260
+      },
+      {
         "year": 2024,
         "rate": 27.5,
         "submitted": 9473,
@@ -22547,12 +22583,23 @@
     "category": "NW",
     "rank": "B",
     "year": 2027,
-    "link": "https://www.sigcomm.org/news/november-2025-sigcomm-newsletter",
+    "link": "https://conferences.sigcomm.org/imc/2027/",
     "timezone": "AoE",
-    "conferenceDate": "TBD",
-    "conferenceStart": "",
+    "conferenceDate": "Oct 25-29, 2027",
+    "conferenceStart": "2027-10-25",
     "place": "Atlanta, GA, USA",
-    "timeline": [],
+    "timeline": [
+      {
+        "date": "2026-11-17",
+        "abstractDate": "2026-11-10",
+        "comment": "Cycle 1; rebuttal period January 26-February 2, 2027"
+      },
+      {
+        "date": "2027-04-07",
+        "abstractDate": "2027-03-31",
+        "comment": "Cycle 2"
+      }
+    ],
     "acceptRates": [
       {
         "year": 2024,
@@ -31926,6 +31973,18 @@
         "rate": 32.8,
         "submitted": 2094,
         "accepted": 687
+      },
+      {
+        "year": 2025,
+        "rate": 35.7,
+        "submitted": 737,
+        "accepted": 263
+      },
+      {
+        "year": 2024,
+        "rate": 38.1,
+        "submitted": 693,
+        "accepted": 264
       }
     ],
     "projected": true,
@@ -35936,6 +35995,12 @@
         "accepted": 6552
       },
       {
+        "year": 2025,
+        "rate": 26.9,
+        "submitted": 12107,
+        "accepted": 3260
+      },
+      {
         "year": 2024,
         "rate": 27.5,
         "submitted": 9473,
@@ -37236,26 +37301,26 @@
     "projectedFrom": 2027
   },
   {
-    "id": "imc26-2028p",
+    "id": "imc27-2028p",
     "title": "IMC",
     "description": "ACM Internet Measurement Conference",
     "category": "NW",
     "rank": "B",
     "year": 2028,
-    "link": "https://conferences.sigcomm.org/imc/2026/",
+    "link": "https://conferences.sigcomm.org/imc/2027/",
     "timezone": "AoE",
-    "conferenceDate": "October 13-16, 2028",
-    "conferenceStart": "2028-10-13",
-    "place": "Karlsruhe, Germany",
+    "conferenceDate": "Oct 25-29, 2028",
+    "conferenceStart": "2028-10-25",
+    "place": "Atlanta, GA, USA",
     "timeline": [
       {
-        "date": "2027-11-20",
-        "abstractDate": "2027-11-13",
-        "comment": "Cycle 1"
+        "date": "2027-11-17",
+        "abstractDate": "2027-11-10",
+        "comment": "Cycle 1; rebuttal period January 26-February 2, 2027"
       },
       {
-        "date": "2028-04-29",
-        "abstractDate": "2028-04-22",
+        "date": "2028-04-07",
+        "abstractDate": "2028-03-31",
         "comment": "Cycle 2"
       }
     ],
@@ -37286,7 +37351,7 @@
       }
     ],
     "projected": true,
-    "projectedFrom": 2026
+    "projectedFrom": 2027
   },
   {
     "id": "indocrypt26-2028p",
@@ -48017,6 +48082,59 @@
         "rate": 58.2,
         "submitted": 2032,
         "accepted": 1183
+      }
+    ],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
+    "id": "imc27-2029p",
+    "title": "IMC",
+    "description": "ACM Internet Measurement Conference",
+    "category": "NW",
+    "rank": "B",
+    "year": 2029,
+    "link": "https://conferences.sigcomm.org/imc/2027/",
+    "timezone": "AoE",
+    "conferenceDate": "Oct 25-29, 2029",
+    "conferenceStart": "2029-10-25",
+    "place": "Atlanta, GA, USA",
+    "timeline": [
+      {
+        "date": "2028-11-17",
+        "abstractDate": "2028-11-10",
+        "comment": "Cycle 1; rebuttal period January 26-February 2, 2027"
+      },
+      {
+        "date": "2029-04-07",
+        "abstractDate": "2029-03-31",
+        "comment": "Cycle 2"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 21.7,
+        "submitted": 253,
+        "accepted": 55
+      },
+      {
+        "year": 2023,
+        "rate": 25.0,
+        "submitted": 208,
+        "accepted": 52
+      },
+      {
+        "year": 2022,
+        "rate": 26.6,
+        "submitted": 143,
+        "accepted": 38
+      },
+      {
+        "year": 2021,
+        "rate": 27.9,
+        "submitted": 197,
+        "accepted": 55
       }
     ],
     "projected": true,
