@@ -21210,11 +21210,17 @@
     "rank": "B",
     "year": 2027,
     "link": "https://ieee-cas.org/event/conference/2027-ieee-international-conference-multimedia-expo-icme",
-    "timezone": "AoE",
+    "timezone": "UTC-12",
     "conferenceDate": "July 13-17, 2027",
     "conferenceStart": "2027-07-13",
     "place": "Xiamen, China",
-    "timeline": [],
+    "timeline": [
+      {
+        "date": "2026-12-30",
+        "abstractDate": "",
+        "comment": ""
+      }
+    ],
     "acceptRates": [
       {
         "year": 2025,
@@ -35879,20 +35885,20 @@
     "projectedFrom": 2027
   },
   {
-    "id": "icme26-2028p",
+    "id": "icme27-2028p",
     "title": "ICME",
     "description": "The IEEE International Conference on Multimedia & Expo",
     "category": "CG",
     "rank": "B",
     "year": 2028,
-    "link": "https://2026.ieeeicme.org/",
+    "link": "https://ieee-cas.org/event/conference/2027-ieee-international-conference-multimedia-expo-icme",
     "timezone": "UTC-12",
-    "conferenceDate": "July 5-9, 2028",
-    "conferenceStart": "2028-07-05",
-    "place": "Bangkok, Thailand",
+    "conferenceDate": "July 13-17, 2028",
+    "conferenceStart": "2028-07-13",
+    "place": "Xiamen, China",
     "timeline": [
       {
-        "date": "2027-12-31",
+        "date": "2027-12-30",
         "abstractDate": "",
         "comment": ""
       }
@@ -35924,7 +35930,7 @@
       }
     ],
     "projected": true,
-    "projectedFrom": 2026
+    "projectedFrom": 2027
   },
   {
     "id": "icmi26-2028p",
@@ -47374,6 +47380,54 @@
         "rate": 31.9,
         "submitted": 4938,
         "accepted": 1574
+      }
+    ],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
+    "id": "icme27-2029p",
+    "title": "ICME",
+    "description": "The IEEE International Conference on Multimedia & Expo",
+    "category": "CG",
+    "rank": "B",
+    "year": 2029,
+    "link": "https://ieee-cas.org/event/conference/2027-ieee-international-conference-multimedia-expo-icme",
+    "timezone": "UTC-12",
+    "conferenceDate": "July 13-17, 2029",
+    "conferenceStart": "2029-07-13",
+    "place": "Xiamen, China",
+    "timeline": [
+      {
+        "date": "2028-12-30",
+        "abstractDate": "",
+        "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 27.3,
+        "submitted": 3737,
+        "accepted": 1019
+      },
+      {
+        "year": 2024,
+        "rate": 32.5,
+        "submitted": 2049,
+        "accepted": 666
+      },
+      {
+        "year": 2023,
+        "rate": 34.5,
+        "submitted": 1415,
+        "accepted": 488
+      },
+      {
+        "year": 2022,
+        "rate": 29.6,
+        "submitted": 1285,
+        "accepted": 381
       }
     ],
     "projected": true,
