@@ -2014,6 +2014,27 @@
     ]
   },
   {
+    "id": "chiir26",
+    "title": "CHIIR",
+    "description": "ACM SIGIR Conference on Human Information Interaction and Retrieval",
+    "category": "DB",
+    "rank": "N",
+    "year": 2026,
+    "link": "https://chiir2026.github.io/",
+    "timezone": "AoE",
+    "conferenceDate": "March 22-26, 2026",
+    "conferenceStart": "2026-03-22",
+    "place": "Seattle, Washington, USA",
+    "timeline": [
+      {
+        "date": "2025-10-15",
+        "abstractDate": "2025-10-08",
+        "comment": ""
+      }
+    ],
+    "acceptRates": []
+  },
+  {
     "id": "cicai26",
     "title": "CICAI",
     "description": "CAAI International Conference on Artificial Intelligence",
@@ -7461,6 +7482,27 @@
     ]
   },
   {
+    "id": "ictir26",
+    "title": "ICTIR",
+    "description": "International ACM SIGIR Conference on Innovative Concepts and Theories in Information Retrieval",
+    "category": "DB",
+    "rank": "N",
+    "year": 2026,
+    "link": "https://sigir-ictir.github.io/ictir2026/",
+    "timezone": "AoE",
+    "conferenceDate": "July 25, 2026",
+    "conferenceStart": "2026-07-25",
+    "place": "Melbourne, Australia",
+    "timeline": [
+      {
+        "date": "2026-04-16",
+        "abstractDate": "",
+        "comment": ""
+      }
+    ],
+    "acceptRates": []
+  },
+  {
     "id": "icvrv26",
     "title": "ICVRV",
     "description": "International Conference on Virtual Reality and Visualization",
@@ -12743,6 +12785,27 @@
     ]
   },
   {
+    "id": "sigir-ap26",
+    "title": "SIGIR-AP",
+    "description": "International ACM SIGIR Conference on Information Retrieval in the Asia Pacific",
+    "category": "DB",
+    "rank": "N",
+    "year": 2026,
+    "link": "https://www.sigir-ap.org/sigir-ap-2026/",
+    "timezone": "AoE",
+    "conferenceDate": "December 13-15, 2026",
+    "conferenceStart": "2026-12-13",
+    "place": "Singapore",
+    "timeline": [
+      {
+        "date": "2026-07-29",
+        "abstractDate": "2026-07-22",
+        "comment": "Extended deadlines"
+      }
+    ],
+    "acceptRates": []
+  },
+  {
     "id": "sigkdd26",
     "title": "SIGKDD",
     "description": "ACM Knowledge Discovery and Data Mining",
@@ -16380,6 +16443,27 @@
         "accepted": 879
       }
     ]
+  },
+  {
+    "id": "chiir27",
+    "title": "CHIIR",
+    "description": "ACM SIGIR Conference on Human Information Interaction and Retrieval",
+    "category": "DB",
+    "rank": "N",
+    "year": 2027,
+    "link": "https://chiir2027.github.io/",
+    "timezone": "AoE",
+    "conferenceDate": "March 7-11, 2027",
+    "conferenceStart": "2027-03-07",
+    "place": "Berlin, Germany",
+    "timeline": [
+      {
+        "date": "2026-10-15",
+        "abstractDate": "2026-10-08",
+        "comment": ""
+      }
+    ],
+    "acceptRates": []
   },
   {
     "id": "cicai26-2027p",
@@ -21937,6 +22021,29 @@
     "projectedFrom": 2026
   },
   {
+    "id": "ictir26-2027p",
+    "title": "ICTIR",
+    "description": "International ACM SIGIR Conference on Innovative Concepts and Theories in Information Retrieval",
+    "category": "DB",
+    "rank": "N",
+    "year": 2027,
+    "link": "https://sigir-ictir.github.io/ictir2026/",
+    "timezone": "AoE",
+    "conferenceDate": "July 25, 2027",
+    "conferenceStart": "2027-07-25",
+    "place": "Melbourne, Australia",
+    "timeline": [
+      {
+        "date": "2027-04-16",
+        "abstractDate": "",
+        "comment": ""
+      }
+    ],
+    "acceptRates": [],
+    "projected": true,
+    "projectedFrom": 2026
+  },
+  {
     "id": "icvrv26-2027p",
     "title": "ICVRV",
     "description": "International Conference on Virtual Reality and Visualization",
@@ -23068,7 +23175,7 @@
     "place": "Bordeaux, France",
     "timeline": [
       {
-        "date": "2026-10-22",
+        "date": "2026-10-26",
         "abstractDate": "",
         "comment": ""
       }
@@ -26570,6 +26677,27 @@
     ]
   },
   {
+    "id": "sais27",
+    "title": "SAIS",
+    "description": "USENIX Conference on Secure Agentic-AI Systems",
+    "category": "SC",
+    "rank": "N",
+    "year": 2027,
+    "link": "https://www.usenix.org/conference/sais27",
+    "timezone": "AoE",
+    "conferenceDate": "June 7-8, 2027",
+    "conferenceStart": "2027-06-07",
+    "place": "Santa Clara, CA, USA",
+    "timeline": [
+      {
+        "date": "2027-02-04",
+        "abstractDate": "",
+        "comment": "Paper submission deadline"
+      }
+    ],
+    "acceptRates": []
+  },
+  {
     "id": "saner2027",
     "title": "SANER",
     "description": "IEEE International Conference on Software Analysis, Evolution and Reengineering",
@@ -27192,6 +27320,29 @@
         "accepted": 151
       }
     ]
+  },
+  {
+    "id": "sigir-ap26-2027p",
+    "title": "SIGIR-AP",
+    "description": "International ACM SIGIR Conference on Information Retrieval in the Asia Pacific",
+    "category": "DB",
+    "rank": "N",
+    "year": 2027,
+    "link": "https://www.sigir-ap.org/sigir-ap-2026/",
+    "timezone": "AoE",
+    "conferenceDate": "December 13-15, 2027",
+    "conferenceStart": "2027-12-13",
+    "place": "Singapore",
+    "timeline": [
+      {
+        "date": "2027-07-29",
+        "abstractDate": "2027-07-22",
+        "comment": "Extended deadlines"
+      }
+    ],
+    "acceptRates": [],
+    "projected": true,
+    "projectedFrom": 2026
   },
   {
     "id": "sigkdd27",
@@ -30985,6 +31136,29 @@
         "accepted": 879
       }
     ],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
+    "id": "chiir27-2028p",
+    "title": "CHIIR",
+    "description": "ACM SIGIR Conference on Human Information Interaction and Retrieval",
+    "category": "DB",
+    "rank": "N",
+    "year": 2028,
+    "link": "https://chiir2027.github.io/",
+    "timezone": "AoE",
+    "conferenceDate": "March 7-11, 2028",
+    "conferenceStart": "2028-03-07",
+    "place": "Berlin, Germany",
+    "timeline": [
+      {
+        "date": "2027-10-15",
+        "abstractDate": "2027-10-08",
+        "comment": ""
+      }
+    ],
+    "acceptRates": [],
     "projected": true,
     "projectedFrom": 2027
   },
@@ -36607,6 +36781,29 @@
     "projectedFrom": 2026
   },
   {
+    "id": "ictir26-2028p",
+    "title": "ICTIR",
+    "description": "International ACM SIGIR Conference on Innovative Concepts and Theories in Information Retrieval",
+    "category": "DB",
+    "rank": "N",
+    "year": 2028,
+    "link": "https://sigir-ictir.github.io/ictir2026/",
+    "timezone": "AoE",
+    "conferenceDate": "July 25, 2028",
+    "conferenceStart": "2028-07-25",
+    "place": "Melbourne, Australia",
+    "timeline": [
+      {
+        "date": "2028-04-16",
+        "abstractDate": "",
+        "comment": ""
+      }
+    ],
+    "acceptRates": [],
+    "projected": true,
+    "projectedFrom": 2026
+  },
+  {
     "id": "icvrv26-2028p",
     "title": "ICVRV",
     "description": "International Conference on Virtual Reality and Visualization",
@@ -37780,7 +37977,7 @@
     "place": "Bordeaux, France",
     "timeline": [
       {
-        "date": "2027-10-22",
+        "date": "2027-10-26",
         "abstractDate": "",
         "comment": ""
       }
@@ -41436,6 +41633,29 @@
     "projectedFrom": 2027
   },
   {
+    "id": "sais27-2028p",
+    "title": "SAIS",
+    "description": "USENIX Conference on Secure Agentic-AI Systems",
+    "category": "SC",
+    "rank": "N",
+    "year": 2028,
+    "link": "https://www.usenix.org/conference/sais27",
+    "timezone": "AoE",
+    "conferenceDate": "June 7-8, 2028",
+    "conferenceStart": "2028-06-07",
+    "place": "Santa Clara, CA, USA",
+    "timeline": [
+      {
+        "date": "2028-02-04",
+        "abstractDate": "",
+        "comment": "Paper submission deadline"
+      }
+    ],
+    "acceptRates": [],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
     "id": "saner2027-2028p",
     "title": "SANER",
     "description": "IEEE International Conference on Software Analysis, Evolution and Reengineering",
@@ -42091,6 +42311,29 @@
     ],
     "projected": true,
     "projectedFrom": 2027
+  },
+  {
+    "id": "sigir-ap26-2028p",
+    "title": "SIGIR-AP",
+    "description": "International ACM SIGIR Conference on Information Retrieval in the Asia Pacific",
+    "category": "DB",
+    "rank": "N",
+    "year": 2028,
+    "link": "https://www.sigir-ap.org/sigir-ap-2026/",
+    "timezone": "AoE",
+    "conferenceDate": "December 13-15, 2028",
+    "conferenceStart": "2028-12-13",
+    "place": "Singapore",
+    "timeline": [
+      {
+        "date": "2028-07-29",
+        "abstractDate": "2028-07-22",
+        "comment": "Extended deadlines"
+      }
+    ],
+    "acceptRates": [],
+    "projected": true,
+    "projectedFrom": 2026
   },
   {
     "id": "sigkdd27-2028p",
@@ -44712,6 +44955,29 @@
         "accepted": 879
       }
     ],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
+    "id": "chiir27-2029p",
+    "title": "CHIIR",
+    "description": "ACM SIGIR Conference on Human Information Interaction and Retrieval",
+    "category": "DB",
+    "rank": "N",
+    "year": 2029,
+    "link": "https://chiir2027.github.io/",
+    "timezone": "AoE",
+    "conferenceDate": "March 7-11, 2029",
+    "conferenceStart": "2029-03-07",
+    "place": "Berlin, Germany",
+    "timeline": [
+      {
+        "date": "2028-10-15",
+        "abstractDate": "2028-10-08",
+        "comment": ""
+      }
+    ],
+    "acceptRates": [],
     "projected": true,
     "projectedFrom": 2027
   },
@@ -48405,7 +48671,7 @@
     "place": "Bordeaux, France",
     "timeline": [
       {
-        "date": "2028-10-22",
+        "date": "2028-10-26",
         "abstractDate": "",
         "comment": ""
       }
@@ -50182,6 +50448,29 @@
         "accepted": 193
       }
     ],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
+    "id": "sais27-2029p",
+    "title": "SAIS",
+    "description": "USENIX Conference on Secure Agentic-AI Systems",
+    "category": "SC",
+    "rank": "N",
+    "year": 2029,
+    "link": "https://www.usenix.org/conference/sais27",
+    "timezone": "AoE",
+    "conferenceDate": "June 7-8, 2029",
+    "conferenceStart": "2029-06-07",
+    "place": "Santa Clara, CA, USA",
+    "timeline": [
+      {
+        "date": "2029-02-04",
+        "abstractDate": "",
+        "comment": "Paper submission deadline"
+      }
+    ],
+    "acceptRates": [],
     "projected": true,
     "projectedFrom": 2027
   },
