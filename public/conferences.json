@@ -27079,7 +27079,13 @@
     "conferenceDate": "August 8 - 12, 2027",
     "conferenceStart": "2027-08-08",
     "place": "Bangkok, Thailand",
-    "timeline": [],
+    "timeline": [
+      {
+        "date": "2027-02-02",
+        "abstractDate": "",
+        "comment": ""
+      }
+    ],
     "acceptRates": [
       {
         "year": 2024,
@@ -41955,21 +41961,21 @@
     "projectedFrom": 2026
   },
   {
-    "id": "sigcomm26-2028p",
+    "id": "sigcomm27-2028p",
     "title": "SIGCOMM",
     "description": "ACM International Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication",
     "category": "NW",
     "rank": "A",
     "year": 2028,
-    "link": "https://conferences.sigcomm.org/sigcomm/2026/",
+    "link": "https://conferences.sigcomm.org/sigcomm/2027/",
     "timezone": "AoE",
-    "conferenceDate": "August 18-21, 2028",
-    "conferenceStart": "2028-08-18",
-    "place": "Denver, Colorado, USA",
+    "conferenceDate": "August 8 - 12, 2028",
+    "conferenceStart": "2028-08-08",
+    "place": "Bangkok, Thailand",
     "timeline": [
       {
-        "date": "2028-02-06",
-        "abstractDate": "2028-01-30",
+        "date": "2028-02-02",
+        "abstractDate": "",
         "comment": ""
       }
     ],
@@ -41994,7 +42000,7 @@
       }
     ],
     "projected": true,
-    "projectedFrom": 2026
+    "projectedFrom": 2027
   },
   {
     "id": "sigcse27-2028p",
@@ -50300,6 +50306,48 @@
         "rate": 26.4,
         "submitted": 140,
         "accepted": 37
+      }
+    ],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
+    "id": "sigcomm27-2029p",
+    "title": "SIGCOMM",
+    "description": "ACM International Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication",
+    "category": "NW",
+    "rank": "A",
+    "year": 2029,
+    "link": "https://conferences.sigcomm.org/sigcomm/2027/",
+    "timezone": "AoE",
+    "conferenceDate": "August 8 - 12, 2029",
+    "conferenceStart": "2029-08-08",
+    "place": "Bangkok, Thailand",
+    "timeline": [
+      {
+        "date": "2029-02-02",
+        "abstractDate": "",
+        "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 16.9,
+        "submitted": 366,
+        "accepted": 62
+      },
+      {
+        "year": 2022,
+        "rate": 19.7,
+        "submitted": 279,
+        "accepted": 55
+      },
+      {
+        "year": 2021,
+        "rate": 22.8,
+        "submitted": 241,
+        "accepted": 55
       }
     ],
     "projected": true,
