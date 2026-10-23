@@ -2136,6 +2136,27 @@
     ]
   },
   {
+    "id": "clef26",
+    "title": "CLEF",
+    "description": "Conference and Labs of the Evaluation Forum",
+    "category": "DB",
+    "rank": "N",
+    "year": 2026,
+    "link": "https://clef2026.clef-initiative.eu/",
+    "timezone": "AoE",
+    "conferenceDate": "September 21-24, 2026",
+    "conferenceStart": "2026-09-21",
+    "place": "Jena, Germany",
+    "timeline": [
+      {
+        "date": "2026-05-25",
+        "abstractDate": "",
+        "comment": ""
+      }
+    ],
+    "acceptRates": []
+  },
+  {
     "id": "cluster26",
     "title": "CLUSTER",
     "description": "IEEE International Conference on Cluster Computing",
@@ -16569,6 +16590,21 @@
     ],
     "projected": true,
     "projectedFrom": 2026
+  },
+  {
+    "id": "clef27",
+    "title": "CLEF",
+    "description": "Conference and Labs of the Evaluation Forum",
+    "category": "DB",
+    "rank": "N",
+    "year": 2027,
+    "link": "https://clef2027.clef-initiative.eu/",
+    "timezone": "AoE",
+    "conferenceDate": "September 14-17, 2027",
+    "conferenceStart": "2027-09-14",
+    "place": "Bucharest, Romania",
+    "timeline": [],
+    "acceptRates": []
   },
   {
     "id": "cluster26-2027p",
@@ -31266,6 +31302,29 @@
         "accepted": 354
       }
     ],
+    "projected": true,
+    "projectedFrom": 2026
+  },
+  {
+    "id": "clef26-2028p",
+    "title": "CLEF",
+    "description": "Conference and Labs of the Evaluation Forum",
+    "category": "DB",
+    "rank": "N",
+    "year": 2028,
+    "link": "https://clef2026.clef-initiative.eu/",
+    "timezone": "AoE",
+    "conferenceDate": "September 21-24, 2028",
+    "conferenceStart": "2028-09-21",
+    "place": "Jena, Germany",
+    "timeline": [
+      {
+        "date": "2028-05-25",
+        "abstractDate": "",
+        "comment": ""
+      }
+    ],
+    "acceptRates": [],
     "projected": true,
     "projectedFrom": 2026
   },
