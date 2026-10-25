@@ -16753,9 +16753,9 @@
     "year": 2027,
     "link": "https://2027.coling-iccl.org/",
     "timezone": "UTC-12",
-    "conferenceDate": "May 9-14, 2027",
+    "conferenceDate": "May 9-14 (in-person) and 6-7 (virtual), 2027",
     "conferenceStart": "2027-05-09",
-    "place": "Macau SAR, China",
+    "place": "Macau SAR, China / Online",
     "timeline": [
       {
         "date": "2026-10-12",
@@ -17277,7 +17277,7 @@
     "timeline": [
       {
         "date": "2026-10-26",
-        "abstractDate": "2026-10-23",
+        "abstractDate": "2026-10-26",
         "comment": ""
       }
     ],
@@ -25925,6 +25925,11 @@
     "place": "Busan, South Korea",
     "timeline": [
       {
+        "date": "2026-09-08",
+        "abstractDate": "2026-09-01",
+        "comment": "Journal track"
+      },
+      {
         "date": "2026-11-09",
         "abstractDate": "2026-11-02",
         "comment": "Conference track"
@@ -32012,7 +32017,7 @@
     "timeline": [
       {
         "date": "2027-10-26",
-        "abstractDate": "2027-10-23",
+        "abstractDate": "2027-10-26",
         "comment": ""
       }
     ],
@@ -40876,6 +40881,11 @@
     "place": "Busan, South Korea",
     "timeline": [
       {
+        "date": "2027-09-08",
+        "abstractDate": "2027-09-01",
+        "comment": "Journal track"
+      },
+      {
         "date": "2027-11-09",
         "abstractDate": "2027-11-02",
         "comment": "Conference track"
@@ -45095,9 +45105,9 @@
     "year": 2029,
     "link": "https://2027.coling-iccl.org/",
     "timezone": "UTC-12",
-    "conferenceDate": "May 9-14, 2029",
+    "conferenceDate": "May 9-14 (in-person) and 6-7 (virtual), 2029",
     "conferenceStart": "2029-05-09",
-    "place": "Macau SAR, China",
+    "place": "Macau SAR, China / Online",
     "timeline": [
       {
         "date": "2028-10-12",
@@ -45396,7 +45406,7 @@
     "timeline": [
       {
         "date": "2028-10-26",
-        "abstractDate": "2028-10-23",
+        "abstractDate": "2028-10-26",
         "comment": ""
       }
     ],
@@ -50082,6 +50092,11 @@
     "conferenceStart": "2029-04-19",
     "place": "Busan, South Korea",
     "timeline": [
+      {
+        "date": "2028-09-08",
+        "abstractDate": "2028-09-01",
+        "comment": "Journal track"
+      },
       {
         "date": "2028-11-09",
         "abstractDate": "2028-11-02",
