@@ -427,8 +427,8 @@
     "year": 2026,
     "link": "https://www.acml-conf.org/2026/",
     "timezone": "AoE",
-    "conferenceDate": "TBD",
-    "conferenceStart": "",
+    "conferenceDate": "December 1-4, 2026",
+    "conferenceStart": "2026-12-01",
     "place": "Melbourne, Australia",
     "timeline": [
       {
@@ -14846,8 +14846,8 @@
     "year": 2027,
     "link": "https://www.acml-conf.org/2026/",
     "timezone": "AoE",
-    "conferenceDate": "TBD",
-    "conferenceStart": "",
+    "conferenceDate": "December 1-4, 2027",
+    "conferenceStart": "2027-12-01",
     "place": "Melbourne, Australia",
     "timeline": [
       {
@@ -17248,7 +17248,7 @@
         "comment": "Round 1"
       },
       {
-        "date": "2026-10-01",
+        "date": "2026-11-01",
         "abstractDate": "",
         "comment": "Round 2"
       }
@@ -29511,8 +29511,8 @@
     "year": 2028,
     "link": "https://www.acml-conf.org/2026/",
     "timezone": "AoE",
-    "conferenceDate": "TBD",
-    "conferenceStart": "",
+    "conferenceDate": "December 1-4, 2028",
+    "conferenceStart": "2028-12-01",
     "place": "Melbourne, Australia",
     "timeline": [
       {
@@ -31981,7 +31981,7 @@
         "comment": "Round 1"
       },
       {
-        "date": "2027-10-01",
+        "date": "2027-11-01",
         "abstractDate": "",
         "comment": "Round 2"
       }
@@ -45365,7 +45365,7 @@
         "comment": "Round 1"
       },
       {
-        "date": "2028-10-01",
+        "date": "2028-11-01",
         "abstractDate": "",
         "comment": "Round 2"
       }
