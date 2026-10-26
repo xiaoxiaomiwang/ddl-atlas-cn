@@ -16831,7 +16831,13 @@
     "conferenceDate": "June 28 - July 2, 2027",
     "conferenceStart": "2027-06-28",
     "place": "Tokyo, Japan",
-    "timeline": [],
+    "timeline": [
+      {
+        "date": "2027-01-29",
+        "abstractDate": "",
+        "comment": "Expected rebuttal March 29 - April 2; author notification on or before May 3."
+      }
+    ],
     "acceptRates": [
       {
         "year": 2026,
@@ -17015,8 +17021,8 @@
     "place": "Tokyo, Japan",
     "timeline": [
       {
-        "date": "2026-12-05",
-        "abstractDate": "2026-11-23",
+        "date": "2026-11-25",
+        "abstractDate": "2026-11-13",
         "comment": ""
       }
     ],
@@ -31504,22 +31510,22 @@
     "projectedFrom": 2026
   },
   {
-    "id": "colt26-2028p",
+    "id": "colt27-2028p",
     "title": "COLT",
     "description": "Annual Conference on Learning Theory",
     "category": "AI",
     "rank": "B",
     "year": 2028,
-    "link": "https://learningtheory.org/colt2026/",
+    "link": "https://learningtheory.org/colt2027/",
     "timezone": "AoE",
-    "conferenceDate": "June 30 - July 3, 2028",
-    "conferenceStart": "2028-06-30",
-    "place": "San Diego, California",
+    "conferenceDate": "June 28 - July 2, 2028",
+    "conferenceStart": "2028-06-28",
+    "place": "Tokyo, Japan",
     "timeline": [
       {
-        "date": "2028-02-04",
+        "date": "2028-01-29",
         "abstractDate": "",
-        "comment": ""
+        "comment": "Expected rebuttal March 29 - April 2; author notification on or before May 3."
       }
     ],
     "acceptRates": [
@@ -31549,7 +31555,7 @@
       }
     ],
     "projected": true,
-    "projectedFrom": 2026
+    "projectedFrom": 2027
   },
   {
     "id": "compsac27-2028p",
@@ -31709,8 +31715,8 @@
     "place": "Tokyo, Japan",
     "timeline": [
       {
-        "date": "2027-12-05",
-        "abstractDate": "2027-11-23",
+        "date": "2027-11-25",
+        "abstractDate": "2027-11-13",
         "comment": ""
       }
     ],
@@ -45144,6 +45150,54 @@
     "projectedFrom": 2027
   },
   {
+    "id": "colt27-2029p",
+    "title": "COLT",
+    "description": "Annual Conference on Learning Theory",
+    "category": "AI",
+    "rank": "B",
+    "year": 2029,
+    "link": "https://learningtheory.org/colt2027/",
+    "timezone": "AoE",
+    "conferenceDate": "June 28 - July 2, 2029",
+    "conferenceStart": "2029-06-28",
+    "place": "Tokyo, Japan",
+    "timeline": [
+      {
+        "date": "2029-01-29",
+        "abstractDate": "",
+        "comment": "Expected rebuttal March 29 - April 2; author notification on or before May 3."
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 29.1,
+        "submitted": 657,
+        "accepted": 191
+      },
+      {
+        "year": 2024,
+        "rate": 35.7,
+        "submitted": 448,
+        "accepted": 160
+      },
+      {
+        "year": 2023,
+        "rate": 34.6,
+        "submitted": 474,
+        "accepted": 164
+      },
+      {
+        "year": 2022,
+        "rate": 33.0,
+        "submitted": 470,
+        "accepted": 155
+      }
+    ],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
     "id": "compsac27-2029p",
     "title": "COMPSAC",
     "description": "International Computer Software and Applications Conference",
@@ -45205,8 +45259,8 @@
     "place": "Tokyo, Japan",
     "timeline": [
       {
-        "date": "2028-12-05",
-        "abstractDate": "2028-11-23",
+        "date": "2028-11-25",
+        "abstractDate": "2028-11-13",
         "comment": ""
       }
     ],
