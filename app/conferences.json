@@ -39910,29 +39910,18 @@
     "projectedFrom": 2027
   },
   {
-    "id": "nsdi27-2028p",
+    "id": "nsdi28",
     "title": "NSDI",
     "description": "USENIX Symposium on Networked Systems Design and Implementation",
     "category": "NW",
     "rank": "A",
     "year": 2028,
-    "link": "https://www.usenix.org/conference/nsdi27",
-    "timezone": "UTC-4",
-    "conferenceDate": "May 11-13, 2028",
-    "conferenceStart": "2028-05-11",
-    "place": "Providence, RI, USA",
-    "timeline": [
-      {
-        "date": "2027-04-23",
-        "abstractDate": "2027-04-16",
-        "comment": ""
-      },
-      {
-        "date": "2027-09-17",
-        "abstractDate": "2027-09-10",
-        "comment": ""
-      }
-    ],
+    "link": "https://www.usenix.org/conferences/byname/178",
+    "timezone": "UTC-7",
+    "conferenceDate": "May 9-11, 2028",
+    "conferenceStart": "2028-05-09",
+    "place": "Santa Clara, CA, USA",
+    "timeline": [],
     "acceptRates": [
       {
         "year": 2026,
@@ -39958,9 +39947,7 @@
         "submitted": 560,
         "accepted": 96
       }
-    ],
-    "projected": true,
-    "projectedFrom": 2027
+    ]
   },
   {
     "id": "nspw26-2028p",
