@@ -19772,7 +19772,13 @@
     "conferenceDate": "July 12-16, 2027",
     "conferenceStart": "2027-07-12",
     "place": "Kraków, Poland",
-    "timeline": [],
+    "timeline": [
+      {
+        "date": "2027-01-25",
+        "abstractDate": "2027-01-18",
+        "comment": ""
+      }
+    ],
     "acceptRates": [
       {
         "year": 2025,
@@ -20835,12 +20841,12 @@
       {
         "date": "2026-06-11",
         "abstractDate": "",
-        "comment": "first round"
+        "comment": "first round; notification date is approximate"
       },
       {
         "date": "2026-11-11",
         "abstractDate": "",
-        "comment": "second round"
+        "comment": "second round; notification date is approximate"
       }
     ],
     "acceptRates": [
@@ -28916,6 +28922,11 @@
         "date": "2026-08-24",
         "abstractDate": "2026-08-17",
         "comment": "Full Paper"
+      },
+      {
+        "date": "2026-11-17",
+        "abstractDate": "",
+        "comment": "Short Paper"
       }
     ],
     "acceptRates": [
@@ -34607,21 +34618,21 @@
     "projectedFrom": 2027
   },
   {
-    "id": "gecco26-2028p",
+    "id": "gecco27-2028p",
     "title": "GECCO",
     "description": "Genetic and Evolutionary Computation Conference",
     "category": "AI",
     "rank": "C",
     "year": 2028,
-    "link": "https://gecco-2026.sigevo.org/HomePage",
+    "link": "https://gecco-2027.sigevo.org/HomePage",
     "timezone": "AoE",
-    "conferenceDate": "July 15-17, 2028",
-    "conferenceStart": "2028-07-15",
-    "place": "San José, Costa Rica (hybrid)",
+    "conferenceDate": "July 12-16, 2028",
+    "conferenceStart": "2028-07-12",
+    "place": "Kraków, Poland",
     "timeline": [
       {
-        "date": "2028-01-26",
-        "abstractDate": "2028-01-19",
+        "date": "2028-01-25",
+        "abstractDate": "2028-01-18",
         "comment": ""
       }
     ],
@@ -34652,7 +34663,7 @@
       }
     ],
     "projected": true,
-    "projectedFrom": 2026
+    "projectedFrom": 2027
   },
   {
     "id": "gi27-2028p",
@@ -35625,12 +35636,12 @@
       {
         "date": "2027-06-11",
         "abstractDate": "",
-        "comment": "first round"
+        "comment": "first round; notification date is approximate"
       },
       {
         "date": "2027-11-11",
         "abstractDate": "",
-        "comment": "second round"
+        "comment": "second round; notification date is approximate"
       }
     ],
     "acceptRates": [
@@ -43937,6 +43948,11 @@
         "date": "2027-08-24",
         "abstractDate": "2027-08-17",
         "comment": "Full Paper"
+      },
+      {
+        "date": "2027-11-17",
+        "abstractDate": "",
+        "comment": "Short Paper"
       }
     ],
     "acceptRates": [
@@ -46840,6 +46856,54 @@
     "projectedFrom": 2027
   },
   {
+    "id": "gecco27-2029p",
+    "title": "GECCO",
+    "description": "Genetic and Evolutionary Computation Conference",
+    "category": "AI",
+    "rank": "C",
+    "year": 2029,
+    "link": "https://gecco-2027.sigevo.org/HomePage",
+    "timezone": "AoE",
+    "conferenceDate": "July 12-16, 2029",
+    "conferenceStart": "2029-07-12",
+    "place": "Kraków, Poland",
+    "timeline": [
+      {
+        "date": "2029-01-25",
+        "abstractDate": "2029-01-18",
+        "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 36.1,
+        "submitted": 501,
+        "accepted": 181
+      },
+      {
+        "year": 2023,
+        "rate": 34.7,
+        "submitted": 519,
+        "accepted": 180
+      },
+      {
+        "year": 2022,
+        "rate": 37.0,
+        "submitted": 427,
+        "accepted": 158
+      },
+      {
+        "year": 2021,
+        "rate": 37.0,
+        "submitted": 362,
+        "accepted": 134
+      }
+    ],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
     "id": "gi27-2029p",
     "title": "GI",
     "description": "Graphics Interface",
@@ -47407,12 +47471,12 @@
       {
         "date": "2028-06-11",
         "abstractDate": "",
-        "comment": "first round"
+        "comment": "first round; notification date is approximate"
       },
       {
         "date": "2028-11-11",
         "abstractDate": "",
-        "comment": "second round"
+        "comment": "second round; notification date is approximate"
       }
     ],
     "acceptRates": [
@@ -51572,6 +51636,11 @@
         "date": "2028-08-24",
         "abstractDate": "2028-08-17",
         "comment": "Full Paper"
+      },
+      {
+        "date": "2028-11-17",
+        "abstractDate": "",
+        "comment": "Short Paper"
       }
     ],
     "acceptRates": [
