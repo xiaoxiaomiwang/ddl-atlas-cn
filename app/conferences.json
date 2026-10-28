@@ -22592,20 +22592,20 @@
     ]
   },
   {
-    "id": "ijcb2026-2027p",
+    "id": "ijcb2027",
     "title": "IJCB",
     "description": "International Joint Conference on Biometrics",
     "category": "AI",
     "rank": "C",
     "year": 2027,
-    "link": "https://ijcb2026.ieee-biometrics.org/",
+    "link": "https://ijcb2027.ieee-biometrics.org/",
     "timezone": "AoE",
-    "conferenceDate": "September 1-4, 2027",
-    "conferenceStart": "2027-09-01",
-    "place": "Rome, Italy",
+    "conferenceDate": "September 13-17, 2027",
+    "conferenceStart": "2027-09-13",
+    "place": "Foz do Iguaçu, Brazil",
     "timeline": [
       {
-        "date": "2027-04-30",
+        "date": "2027-04-10",
         "abstractDate": "",
         "comment": ""
       }
@@ -22635,9 +22635,7 @@
         "submitted": 164,
         "accepted": 66
       }
-    ],
-    "projected": true,
-    "projectedFrom": 2026
+    ]
   },
   {
     "id": "ijcnlp2026-2027p",
@@ -37443,20 +37441,20 @@
     "projectedFrom": 2026
   },
   {
-    "id": "ijcb2026-2028p",
+    "id": "ijcb2027-2028p",
     "title": "IJCB",
     "description": "International Joint Conference on Biometrics",
     "category": "AI",
     "rank": "C",
     "year": 2028,
-    "link": "https://ijcb2026.ieee-biometrics.org/",
+    "link": "https://ijcb2027.ieee-biometrics.org/",
     "timezone": "AoE",
-    "conferenceDate": "September 1-4, 2028",
-    "conferenceStart": "2028-09-01",
-    "place": "Rome, Italy",
+    "conferenceDate": "September 13-17, 2028",
+    "conferenceStart": "2028-09-13",
+    "place": "Foz do Iguaçu, Brazil",
     "timeline": [
       {
-        "date": "2028-04-30",
+        "date": "2028-04-10",
         "abstractDate": "",
         "comment": ""
       }
@@ -37488,7 +37486,7 @@
       }
     ],
     "projected": true,
-    "projectedFrom": 2026
+    "projectedFrom": 2027
   },
   {
     "id": "ijcnlp2026-2028p",
@@ -48540,6 +48538,54 @@
         "rate": 15.0,
         "submitted": 4537,
         "accepted": 679
+      }
+    ],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
+    "id": "ijcb2027-2029p",
+    "title": "IJCB",
+    "description": "International Joint Conference on Biometrics",
+    "category": "AI",
+    "rank": "C",
+    "year": 2029,
+    "link": "https://ijcb2027.ieee-biometrics.org/",
+    "timezone": "AoE",
+    "conferenceDate": "September 13-17, 2029",
+    "conferenceStart": "2029-09-13",
+    "place": "Foz do Iguaçu, Brazil",
+    "timeline": [
+      {
+        "date": "2029-04-10",
+        "abstractDate": "",
+        "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 39.1,
+        "submitted": 243,
+        "accepted": 95
+      },
+      {
+        "year": 2024,
+        "rate": 32.2,
+        "submitted": 174,
+        "accepted": 56
+      },
+      {
+        "year": 2023,
+        "rate": 36.2,
+        "submitted": 199,
+        "accepted": 72
+      },
+      {
+        "year": 2021,
+        "rate": 40.2,
+        "submitted": 164,
+        "accepted": 66
       }
     ],
     "projected": true,
