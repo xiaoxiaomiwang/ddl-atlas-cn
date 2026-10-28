@@ -16760,12 +16760,7 @@
       {
         "date": "2026-10-12",
         "abstractDate": "",
-        "comment": "ARR Submission"
-      },
-      {
-        "date": "2026-12-23",
-        "abstractDate": "",
-        "comment": "COLING commitment after ARR meta-reviews; reviewed papers only"
+        "comment": ""
       }
     ],
     "acceptRates": [
@@ -23184,6 +23179,11 @@
         "date": "2026-11-16",
         "abstractDate": "2026-11-09",
         "comment": "Main Track; rebuttal/revision period: February 16-March 8, 2027"
+      },
+      {
+        "date": "2026-12-13",
+        "abstractDate": "2026-12-06",
+        "comment": "Industry Track; rebuttal period: February 15-26, 2027"
       }
     ],
     "acceptRates": [
@@ -38017,6 +38017,11 @@
         "date": "2027-11-16",
         "abstractDate": "2027-11-09",
         "comment": "Main Track; rebuttal/revision period: February 16-March 8, 2027"
+      },
+      {
+        "date": "2027-12-13",
+        "abstractDate": "2027-12-06",
+        "comment": "Industry Track; rebuttal period: February 15-26, 2027"
       }
     ],
     "acceptRates": [
@@ -45119,12 +45124,7 @@
       {
         "date": "2028-10-12",
         "abstractDate": "",
-        "comment": "ARR Submission"
-      },
-      {
-        "date": "2028-12-23",
-        "abstractDate": "",
-        "comment": "COLING commitment after ARR meta-reviews; reviewed papers only"
+        "comment": ""
       }
     ],
     "acceptRates": [
@@ -48852,6 +48852,11 @@
         "date": "2028-11-16",
         "abstractDate": "2028-11-09",
         "comment": "Main Track; rebuttal/revision period: February 16-March 8, 2027"
+      },
+      {
+        "date": "2028-12-13",
+        "abstractDate": "2028-12-06",
+        "comment": "Industry Track; rebuttal period: February 15-26, 2027"
       }
     ],
     "acceptRates": [
