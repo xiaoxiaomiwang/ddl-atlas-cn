@@ -17072,6 +17072,34 @@
     "projectedFrom": 2026
   },
   {
+    "id": "cscw27",
+    "title": "CSCW",
+    "description": "ACM Conference on Computer Supported Cooperative Work and Social Computing",
+    "category": "HI",
+    "rank": "A",
+    "year": 2027,
+    "link": "https://cscw.acm.org/2027/",
+    "timezone": "AoE",
+    "conferenceDate": "October 16-20, 2027",
+    "conferenceStart": "2027-10-16",
+    "place": "Philadelphia, USA",
+    "timeline": [],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 30.5,
+        "submitted": 637,
+        "accepted": 194
+      },
+      {
+        "year": 2018,
+        "rate": 26.1,
+        "submitted": 1107,
+        "accepted": 289
+      }
+    ]
+  },
+  {
     "id": "cscwd27",
     "title": "CSCWD",
     "description": "International Conference on Computer Supported Cooperative Work in Design",

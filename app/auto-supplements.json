@@ -1,27 +1,10 @@
 {
   "meta": {
-    "generatedAt": "2026-10-30T07:12:05Z",
-    "targetCount": 160,
+    "generatedAt": "2026-10-30T14:14:26Z",
+    "targetCount": 161,
     "scrapedCount": 33
   },
   "conferences": {
-    "FOCS-2026": {
-      "source": "https://sanjeevkhanna.org/FOCS2026_CFP.html",
-      "events": [
-        {
-          "date": "2026-04-01",
-          "label": "FOCS 2026 – Call for Papers 67th Annual Sy",
-          "type": "submission",
-          "source": "https://sanjeevkhanna.org/FOCS2026_CFP.html"
-        },
-        {
-          "date": "2026-07-03",
-          "label": "Paper notification",
-          "type": "result",
-          "source": "https://sanjeevkhanna.org/FOCS2026_CFP.html"
-        }
-      ]
-    },
     "CAV-2026": {
       "source": "https://conferences.i-cav.org/2026/cfp",
       "events": [
@@ -48,6 +31,23 @@
           "label": "Camera-ready deadline",
           "type": "camera",
           "source": "https://conferences.i-cav.org/2026/cfp"
+        }
+      ]
+    },
+    "FOCS-2026": {
+      "source": "https://sanjeevkhanna.org/FOCS2026_CFP.html",
+      "events": [
+        {
+          "date": "2026-04-01",
+          "label": "FOCS 2026 – Call for Papers 67th Annual Sy",
+          "type": "submission",
+          "source": "https://sanjeevkhanna.org/FOCS2026_CFP.html"
+        },
+        {
+          "date": "2026-07-03",
+          "label": "Paper notification",
+          "type": "result",
+          "source": "https://sanjeevkhanna.org/FOCS2026_CFP.html"
         }
       ]
     },
@@ -185,41 +185,6 @@
         }
       ]
     },
-    "SOSP-2026": {
-      "source": "https://sigops.org/s/conferences/sosp/2026/cfp.html",
-      "events": [
-        {
-          "date": "2026-04-01",
-          "label": "HotCRP Submission Site Submission deadline",
-          "type": "submission",
-          "source": "https://sigops.org/s/conferences/sosp/2026/cfp.html"
-        },
-        {
-          "date": "2026-06-22",
-          "label": "HotCRP Submission Site Reviews available f",
-          "type": "rebuttal",
-          "source": "https://sigops.org/s/conferences/sosp/2026/cfp.html"
-        },
-        {
-          "date": "2026-06-24",
-          "label": "Author response due",
-          "type": "rebuttal",
-          "source": "https://sigops.org/s/conferences/sosp/2026/cfp.html"
-        },
-        {
-          "date": "2026-08-25",
-          "label": "Author notification July 3rd, 2026 Artifac",
-          "type": "result",
-          "source": "https://sigops.org/s/conferences/sosp/2026/cfp.html"
-        },
-        {
-          "date": "2026-08-28",
-          "label": "Sysartifacts website Camera ready due",
-          "type": "camera",
-          "source": "https://sigops.org/s/conferences/sosp/2026/cfp.html"
-        }
-      ]
-    },
     "SIGOPS ATC-2026": {
       "source": "https://sigops.org/s/conferences/atc/2026/cfp.html",
       "events": [
@@ -255,32 +220,38 @@
         }
       ]
     },
-    "UIST-2026": {
-      "source": "https://uist.acm.org/2026/cfp",
+    "SOSP-2026": {
+      "source": "https://sigops.org/s/conferences/sosp/2026/cfp.html",
       "events": [
         {
-          "date": "2026-08-07",
-          "label": "Acceptance notification Friday,",
-          "type": "result",
-          "source": "https://uist.acm.org/2026/cfp"
+          "date": "2026-04-01",
+          "label": "HotCRP Submission Site Submission deadline",
+          "type": "submission",
+          "source": "https://sigops.org/s/conferences/sosp/2026/cfp.html"
         },
         {
-          "date": "2026-08-08",
-          "label": "Acceptance notification Friday,",
-          "type": "result",
-          "source": "https://uist.acm.org/2026/cfp"
+          "date": "2026-06-22",
+          "label": "HotCRP Submission Site Reviews available f",
+          "type": "rebuttal",
+          "source": "https://sigops.org/s/conferences/sosp/2026/cfp.html"
         },
         {
-          "date": "2026-08-14",
-          "label": "Acceptance notification Friday,",
-          "type": "result",
-          "source": "https://uist.acm.org/2026/cfp"
+          "date": "2026-06-24",
+          "label": "Author response due",
+          "type": "rebuttal",
+          "source": "https://sigops.org/s/conferences/sosp/2026/cfp.html"
         },
         {
-          "date": "2026-08-21",
-          "label": "Camera-ready versions due Friday,",
+          "date": "2026-08-25",
+          "label": "Author notification July 3rd, 2026 Artifac",
+          "type": "result",
+          "source": "https://sigops.org/s/conferences/sosp/2026/cfp.html"
+        },
+        {
+          "date": "2026-08-28",
+          "label": "Sysartifacts website Camera ready due",
           "type": "camera",
-          "source": "https://uist.acm.org/2026/cfp"
+          "source": "https://sigops.org/s/conferences/sosp/2026/cfp.html"
         }
       ]
     },
@@ -292,41 +263,6 @@
           "label": "ACM FAQ which describes in what situations",
           "type": "camera",
           "source": "https://conf.researchr.org/track/issta-2026/issta-2026-research-papers"
-        }
-      ]
-    },
-    "UbiComp/ISWC-2026": {
-      "source": "https://www.ubicomp.org/ubicomp-iswc-2026/author/",
-      "events": [
-        {
-          "date": "2026-06-19",
-          "label": "Author Notification",
-          "type": "result",
-          "source": "https://www.ubicomp.org/ubicomp-iswc-2026/author/"
-        },
-        {
-          "date": "2026-06-22",
-          "label": "Author Notification",
-          "type": "result",
-          "source": "https://www.ubicomp.org/ubicomp-iswc-2026/author/"
-        },
-        {
-          "date": "2026-06-28",
-          "label": "Acceptance Notification",
-          "type": "result",
-          "source": "https://www.ubicomp.org/ubicomp-iswc-2026/author/"
-        },
-        {
-          "date": "2026-07-01",
-          "label": "Author Notification",
-          "type": "result",
-          "source": "https://www.ubicomp.org/ubicomp-iswc-2026/author/"
-        },
-        {
-          "date": "2026-07-04",
-          "label": "Author Notification",
-          "type": "result",
-          "source": "https://www.ubicomp.org/ubicomp-iswc-2026/author/"
         }
       ]
     },
@@ -377,6 +313,35 @@
         }
       ]
     },
+    "UIST-2026": {
+      "source": "https://uist.acm.org/2026/cfp",
+      "events": [
+        {
+          "date": "2026-08-07",
+          "label": "Acceptance notification Friday,",
+          "type": "result",
+          "source": "https://uist.acm.org/2026/cfp"
+        },
+        {
+          "date": "2026-08-08",
+          "label": "Acceptance notification Friday,",
+          "type": "result",
+          "source": "https://uist.acm.org/2026/cfp"
+        },
+        {
+          "date": "2026-08-14",
+          "label": "Acceptance notification Friday,",
+          "type": "result",
+          "source": "https://uist.acm.org/2026/cfp"
+        },
+        {
+          "date": "2026-08-21",
+          "label": "Camera-ready versions due Friday,",
+          "type": "camera",
+          "source": "https://uist.acm.org/2026/cfp"
+        }
+      ]
+    },
     "CAV-2027": {
       "source": "https://conferences.i-cav.org/2027/cfp/",
       "events": [
@@ -412,6 +377,41 @@
         }
       ]
     },
+    "UbiComp/ISWC-2026": {
+      "source": "https://www.ubicomp.org/ubicomp-iswc-2026/author/",
+      "events": [
+        {
+          "date": "2026-06-19",
+          "label": "Author Notification",
+          "type": "result",
+          "source": "https://www.ubicomp.org/ubicomp-iswc-2026/author/"
+        },
+        {
+          "date": "2026-06-22",
+          "label": "Author Notification",
+          "type": "result",
+          "source": "https://www.ubicomp.org/ubicomp-iswc-2026/author/"
+        },
+        {
+          "date": "2026-06-28",
+          "label": "Acceptance Notification",
+          "type": "result",
+          "source": "https://www.ubicomp.org/ubicomp-iswc-2026/author/"
+        },
+        {
+          "date": "2026-07-01",
+          "label": "Author Notification",
+          "type": "result",
+          "source": "https://www.ubicomp.org/ubicomp-iswc-2026/author/"
+        },
+        {
+          "date": "2026-07-04",
+          "label": "Author Notification",
+          "type": "result",
+          "source": "https://www.ubicomp.org/ubicomp-iswc-2026/author/"
+        }
+      ]
+    },
     "OOPSLA-2026": {
       "source": "https://2026.splashcon.org/track/oopsla-2026",
       "events": [
@@ -441,6 +441,29 @@
         }
       ]
     },
+    "ASPLOS-2027": {
+      "source": "https://www.asplos-conference.org/asplos2027/cfp/",
+      "events": [
+        {
+          "date": "2026-09-09",
+          "label": "September Cycle Full paper submission —",
+          "type": "submission",
+          "source": "https://www.asplos-conference.org/asplos2027/cfp/"
+        },
+        {
+          "date": "2026-12-04",
+          "label": "Author response — December 1 —",
+          "type": "rebuttal",
+          "source": "https://www.asplos-conference.org/asplos2027/cfp/"
+        },
+        {
+          "date": "2026-12-21",
+          "label": "Notification —",
+          "type": "result",
+          "source": "https://www.asplos-conference.org/asplos2027/cfp/"
+        }
+      ]
+    },
     "DAC-2027": {
       "source": "https://dac.com/2027/program/research-manuscript-submissions",
       "events": [
@@ -467,29 +490,6 @@
           "label": "Accept/Reject Notifications Sent",
           "type": "result",
           "source": "https://dac.com/2027/program/research-manuscript-submissions"
-        }
-      ]
-    },
-    "ASPLOS-2027": {
-      "source": "https://www.asplos-conference.org/asplos2027/cfp/",
-      "events": [
-        {
-          "date": "2026-09-09",
-          "label": "September Cycle Full paper submission —",
-          "type": "submission",
-          "source": "https://www.asplos-conference.org/asplos2027/cfp/"
-        },
-        {
-          "date": "2026-12-04",
-          "label": "Author response — December 1 —",
-          "type": "rebuttal",
-          "source": "https://www.asplos-conference.org/asplos2027/cfp/"
-        },
-        {
-          "date": "2026-12-21",
-          "label": "Notification —",
-          "type": "result",
-          "source": "https://www.asplos-conference.org/asplos2027/cfp/"
         }
       ]
     },
@@ -668,23 +668,6 @@
         }
       ]
     },
-    "ICLR-2027": {
-      "source": "https://iclr.cc/Conferences/2027/CallForPapers",
-      "events": [
-        {
-          "date": "2026-11-05",
-          "label": "Reviews released",
-          "type": "rebuttal",
-          "source": "https://iclr.cc/Conferences/2027/CallForPapers"
-        },
-        {
-          "date": "2026-12-16",
-          "label": "Final decisions ",
-          "type": "result",
-          "source": "https://iclr.cc/Conferences/2027/CallForPapers"
-        }
-      ]
-    },
     "ISCA-2027": {
       "source": "https://iscaconf.org/isca2027/",
       "events": [
@@ -717,6 +700,23 @@
           "label": "ISCA 2027: Home ISCA 2027 Submit Work Subm",
           "type": "submission",
           "source": "https://iscaconf.org/isca2027/"
+        }
+      ]
+    },
+    "ICLR-2027": {
+      "source": "https://iclr.cc/Conferences/2027/CallForPapers",
+      "events": [
+        {
+          "date": "2026-11-05",
+          "label": "Reviews released",
+          "type": "rebuttal",
+          "source": "https://iclr.cc/Conferences/2027/CallForPapers"
+        },
+        {
+          "date": "2026-12-16",
+          "label": "Final decisions ",
+          "type": "result",
+          "source": "https://iclr.cc/Conferences/2027/CallForPapers"
         }
       ]
     },
@@ -1011,8 +1011,8 @@
           "source": "https://popl27.sigplan.org/dates"
         },
         {
-          "date": "2026-10-30",
-          "label": "TPSA Submission Deadline Fri",
+          "date": "2026-10-28",
+          "label": "TPSA Submission Deadline Wed",
           "type": "submission",
           "source": "https://popl27.sigplan.org/dates"
         }
