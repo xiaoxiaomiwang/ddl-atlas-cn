@@ -10296,7 +10296,7 @@
       {
         "date": "2026-06-20",
         "abstractDate": "",
-        "comment": ""
+        "comment": "Notification expected to be unchanged"
       }
     ],
     "acceptRates": [
@@ -16356,7 +16356,7 @@
     "place": "Cairns, Australia",
     "timeline": [
       {
-        "date": "2027-04-20",
+        "date": "2027-04-21",
         "abstractDate": "",
         "comment": "Regular conference papers (LNCS proceedings track)"
       }
@@ -22470,7 +22470,7 @@
     "place": "New Delhi, India",
     "timeline": [
       {
-        "date": "2026-10-10",
+        "date": "2026-10-25",
         "abstractDate": "",
         "comment": "Submission Deadline"
       }
@@ -23009,8 +23009,8 @@
     "year": 2027,
     "link": "https://2027.ieee-iros.org/",
     "timezone": "AoE",
-    "conferenceDate": "September 26 - October 1, 2027",
-    "conferenceStart": "2027-09-26",
+    "conferenceDate": "September 27 - October 1, 2027",
+    "conferenceStart": "2027-09-27",
     "place": "Florence, Italy",
     "timeline": [
       {
@@ -24874,12 +24874,12 @@
       {
         "date": "2026-05-06",
         "abstractDate": "",
-        "comment": "Summer"
+        "comment": "Summer; author rebuttal date tentative; decision is final major-revision notification"
       },
       {
         "date": "2026-08-19",
         "abstractDate": "",
-        "comment": "Fall"
+        "comment": "Fall; decision is final major-revision notification"
       }
     ],
     "acceptRates": [
@@ -24973,7 +24973,7 @@
       {
         "date": "2027-06-20",
         "abstractDate": "",
-        "comment": ""
+        "comment": "Notification expected to be unchanged"
       }
     ],
     "acceptRates": [
@@ -26691,7 +26691,7 @@
     "place": "Durham, England, United Kingdom",
     "timeline": [
       {
-        "date": "2026-10-30",
+        "date": "2026-11-04",
         "abstractDate": "",
         "comment": "First Cycle"
       },
@@ -31108,7 +31108,7 @@
     "place": "Cairns, Australia",
     "timeline": [
       {
-        "date": "2028-04-20",
+        "date": "2028-04-21",
         "abstractDate": "",
         "comment": "Regular conference papers (LNCS proceedings track)"
       }
@@ -37278,7 +37278,7 @@
     "place": "New Delhi, India",
     "timeline": [
       {
-        "date": "2027-10-10",
+        "date": "2027-10-25",
         "abstractDate": "",
         "comment": "Submission Deadline"
       }
@@ -37845,8 +37845,8 @@
     "year": 2028,
     "link": "https://2027.ieee-iros.org/",
     "timezone": "AoE",
-    "conferenceDate": "September 26 - October 1, 2028",
-    "conferenceStart": "2028-09-26",
+    "conferenceDate": "September 27 - October 1, 2028",
+    "conferenceStart": "2028-09-27",
     "place": "Florence, Italy",
     "timeline": [
       {
@@ -39722,12 +39722,12 @@
       {
         "date": "2027-05-06",
         "abstractDate": "",
-        "comment": "Summer"
+        "comment": "Summer; author rebuttal date tentative; decision is final major-revision notification"
       },
       {
         "date": "2027-08-19",
         "abstractDate": "",
-        "comment": "Fall"
+        "comment": "Fall; decision is final major-revision notification"
       }
     ],
     "acceptRates": [
@@ -39823,7 +39823,7 @@
       {
         "date": "2028-06-20",
         "abstractDate": "",
-        "comment": ""
+        "comment": "Notification expected to be unchanged"
       }
     ],
     "acceptRates": [
@@ -41668,7 +41668,7 @@
     "place": "Durham, England, United Kingdom",
     "timeline": [
       {
-        "date": "2027-10-30",
+        "date": "2027-11-04",
         "abstractDate": "",
         "comment": "First Cycle"
       },
@@ -44952,7 +44952,7 @@
     "place": "Cairns, Australia",
     "timeline": [
       {
-        "date": "2029-04-20",
+        "date": "2029-04-21",
         "abstractDate": "",
         "comment": "Regular conference papers (LNCS proceedings track)"
       }
@@ -48501,7 +48501,7 @@
     "place": "New Delhi, India",
     "timeline": [
       {
-        "date": "2028-10-10",
+        "date": "2028-10-25",
         "abstractDate": "",
         "comment": "Submission Deadline"
       }
@@ -48824,8 +48824,8 @@
     "year": 2029,
     "link": "https://2027.ieee-iros.org/",
     "timezone": "AoE",
-    "conferenceDate": "September 26 - October 1, 2029",
-    "conferenceStart": "2029-09-26",
+    "conferenceDate": "September 27 - October 1, 2029",
+    "conferenceStart": "2029-09-27",
     "place": "Florence, Italy",
     "timeline": [
       {
@@ -49620,12 +49620,12 @@
       {
         "date": "2028-05-06",
         "abstractDate": "",
-        "comment": "Summer"
+        "comment": "Summer; author rebuttal date tentative; decision is final major-revision notification"
       },
       {
         "date": "2028-08-19",
         "abstractDate": "",
-        "comment": "Fall"
+        "comment": "Fall; decision is final major-revision notification"
       }
     ],
     "acceptRates": [
@@ -50641,7 +50641,7 @@
     "place": "Durham, England, United Kingdom",
     "timeline": [
       {
-        "date": "2028-10-30",
+        "date": "2028-11-04",
         "abstractDate": "",
         "comment": "First Cycle"
       },

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-31T17:47:24Z",
+    "generatedAt": "2026-11-02T06:13:20Z",
     "targetCount": 161,
     "scrapedCount": 33
   },
@@ -319,17 +319,6 @@
         }
       ]
     },
-    "ISSTA-2026": {
-      "source": "https://conf.researchr.org/track/issta-2026/issta-2026-research-papers",
-      "events": [
-        {
-          "date": "2026-07-23",
-          "label": "ACM FAQ which describes in what situations",
-          "type": "camera",
-          "source": "https://conf.researchr.org/track/issta-2026/issta-2026-research-papers"
-        }
-      ]
-    },
     "RTSS-2026": {
       "source": "https://2026.rtss.org/",
       "events": [
@@ -374,6 +363,17 @@
           "label": "Artifact Evaluation Information Now Availa",
           "type": "rebuttal",
           "source": "https://2026.rtss.org/"
+        }
+      ]
+    },
+    "ISSTA-2026": {
+      "source": "https://conf.researchr.org/track/issta-2026/issta-2026-research-papers",
+      "events": [
+        {
+          "date": "2026-07-23",
+          "label": "ACM FAQ which describes in what situations",
+          "type": "camera",
+          "source": "https://conf.researchr.org/track/issta-2026/issta-2026-research-papers"
         }
       ]
     },
@@ -848,58 +848,6 @@
         }
       ]
     },
-    "PLDI-2027": {
-      "source": "https://pldi27.sigplan.org/dates",
-      "events": [
-        {
-          "date": "2027-02-18",
-          "label": "PLDI Research Papers Submission deadline T",
-          "type": "submission",
-          "source": "https://pldi27.sigplan.org/dates"
-        },
-        {
-          "date": "2027-03-04",
-          "label": "PLDI Research Papers Author response perio",
-          "type": "rebuttal",
-          "source": "https://pldi27.sigplan.org/dates"
-        },
-        {
-          "date": "2027-03-23",
-          "label": "PLDI Research Papers Author notification T",
-          "type": "result",
-          "source": "https://pldi27.sigplan.org/dates"
-        },
-        {
-          "date": "2027-04-15",
-          "label": "PLDI Research Papers Final acceptance noti",
-          "type": "result",
-          "source": "https://pldi27.sigplan.org/dates"
-        }
-      ]
-    },
-    "SIGIR-2027": {
-      "source": "https://sigir2027.org/",
-      "events": [
-        {
-          "date": "2027-01-21",
-          "label": "Full paper submission",
-          "type": "submission",
-          "source": "https://sigir2027.org/"
-        },
-        {
-          "date": "2027-04-05",
-          "label": "Notification",
-          "type": "result",
-          "source": "https://sigir2027.org/"
-        },
-        {
-          "date": "2027-04-30",
-          "label": "Camera-ready submission",
-          "type": "camera",
-          "source": "https://sigir2027.org/"
-        }
-      ]
-    },
     "S&P-2027": {
       "source": "https://sp2027.ieee-security.org/cfpapers.html",
       "events": [
@@ -950,6 +898,58 @@
           "label": "Camera-ready deadline",
           "type": "camera",
           "source": "https://sp2027.ieee-security.org/cfpapers.html"
+        }
+      ]
+    },
+    "SIGIR-2027": {
+      "source": "https://sigir2027.org/",
+      "events": [
+        {
+          "date": "2027-01-21",
+          "label": "Full paper submission",
+          "type": "submission",
+          "source": "https://sigir2027.org/"
+        },
+        {
+          "date": "2027-04-05",
+          "label": "Notification",
+          "type": "result",
+          "source": "https://sigir2027.org/"
+        },
+        {
+          "date": "2027-04-30",
+          "label": "Camera-ready submission",
+          "type": "camera",
+          "source": "https://sigir2027.org/"
+        }
+      ]
+    },
+    "PLDI-2027": {
+      "source": "https://pldi27.sigplan.org/dates",
+      "events": [
+        {
+          "date": "2027-02-18",
+          "label": "PLDI Research Papers Submission deadline T",
+          "type": "submission",
+          "source": "https://pldi27.sigplan.org/dates"
+        },
+        {
+          "date": "2027-03-04",
+          "label": "PLDI Research Papers Author response perio",
+          "type": "rebuttal",
+          "source": "https://pldi27.sigplan.org/dates"
+        },
+        {
+          "date": "2027-03-23",
+          "label": "PLDI Research Papers Author notification T",
+          "type": "result",
+          "source": "https://pldi27.sigplan.org/dates"
+        },
+        {
+          "date": "2027-04-15",
+          "label": "PLDI Research Papers Final acceptance noti",
+          "type": "result",
+          "source": "https://pldi27.sigplan.org/dates"
         }
       ]
     },
