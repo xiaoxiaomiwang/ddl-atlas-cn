@@ -21463,24 +21463,18 @@
     "projectedFrom": 2026
   },
   {
-    "id": "icml26-2027p",
+    "id": "icml27",
     "title": "ICML",
     "description": "International Conference on Machine Learning",
     "category": "AI",
     "rank": "A",
     "year": 2027,
-    "link": "https://icml.cc/Conferences/2026",
-    "timezone": "UTC+0",
-    "conferenceDate": "July 6-11, 2027",
-    "conferenceStart": "2027-07-06",
-    "place": "Seoul, Korea",
-    "timeline": [
-      {
-        "date": "2027-01-29",
-        "abstractDate": "2027-01-24",
-        "comment": "Paper Submissions Open on OpenReview Jan 08 2026 12:00AM UTC-0"
-      }
-    ],
+    "link": "https://icml.cc/Conferences/2027",
+    "timezone": "AoE",
+    "conferenceDate": "July 31 - August 6, 2027",
+    "conferenceStart": "2027-07-31",
+    "place": "Riocentro, Rio de Janeiro, Brazil",
+    "timeline": [],
     "acceptRates": [
       {
         "year": 2026,
@@ -21506,9 +21500,7 @@
         "submitted": 6538,
         "accepted": 1827
       }
-    ],
-    "projected": true,
-    "projectedFrom": 2026
+    ]
   },
   {
     "id": "icmla26-2027p",
@@ -27122,10 +27114,16 @@
     "year": 2027,
     "link": "https://ifipsec.org/",
     "timezone": "AoE",
-    "conferenceDate": "TBD",
-    "conferenceStart": "",
-    "place": "Linköping, Sweden",
-    "timeline": [],
+    "conferenceDate": "June 14-16, 2027",
+    "conferenceStart": "2027-06-14",
+    "place": "Linköping University, Linköping, Sweden",
+    "timeline": [
+      {
+        "date": "2026-12-15",
+        "abstractDate": "",
+        "comment": "Full papers"
+      }
+    ],
     "acceptRates": [
       {
         "year": 2026,
@@ -42106,22 +42104,22 @@
     "projectedFrom": 2026
   },
   {
-    "id": "sec2026-2028p",
+    "id": "sec27-2028p",
     "title": "SEC",
-    "description": "ACM/IEEE Symposium on Edge Computing",
-    "category": "DS",
+    "description": "IFIP International Information Security Conference",
+    "category": "SC",
     "rank": "C",
     "year": 2028,
-    "link": "https://acm-ieee-sec.org/2026/",
+    "link": "https://ifipsec.org/",
     "timezone": "AoE",
-    "conferenceDate": "Oct 13-16, 2028",
-    "conferenceStart": "2028-10-13",
-    "place": "Santa Clara University, CA, USA",
+    "conferenceDate": "June 14-16, 2028",
+    "conferenceStart": "2028-06-14",
+    "place": "Linköping University, Linköping, Sweden",
     "timeline": [
       {
-        "date": "2028-05-08",
-        "abstractDate": "2028-05-08",
-        "comment": ""
+        "date": "2027-12-15",
+        "abstractDate": "",
+        "comment": "Full papers"
       }
     ],
     "acceptRates": [
@@ -42151,7 +42149,7 @@
       }
     ],
     "projected": true,
-    "projectedFrom": 2026
+    "projectedFrom": 2027
   },
   {
     "id": "secon27-2028p",
@@ -50946,6 +50944,54 @@
         "rate": 26.3,
         "submitted": 152,
         "accepted": 40
+      }
+    ],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
+    "id": "sec27-2029p",
+    "title": "SEC",
+    "description": "IFIP International Information Security Conference",
+    "category": "SC",
+    "rank": "C",
+    "year": 2029,
+    "link": "https://ifipsec.org/",
+    "timezone": "AoE",
+    "conferenceDate": "June 14-16, 2029",
+    "conferenceStart": "2029-06-14",
+    "place": "Linköping University, Linköping, Sweden",
+    "timeline": [
+      {
+        "date": "2028-12-15",
+        "abstractDate": "",
+        "comment": "Full papers"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 23.8,
+        "submitted": 164,
+        "accepted": 39
+      },
+      {
+        "year": 2025,
+        "rate": 25.2,
+        "submitted": 111,
+        "accepted": 28
+      },
+      {
+        "year": 2024,
+        "rate": 27.9,
+        "submitted": 122,
+        "accepted": 34
+      },
+      {
+        "year": 2022,
+        "rate": 22.8,
+        "submitted": 127,
+        "accepted": 29
       }
     ],
     "projected": true,
