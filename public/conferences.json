@@ -14775,7 +14775,13 @@
     "conferenceDate": "August 8 - 12, 2027",
     "conferenceStart": "2027-08-08",
     "place": "Anaheim, California",
-    "timeline": [],
+    "timeline": [
+      {
+        "date": "2027-01-28",
+        "abstractDate": "2027-01-21",
+        "comment": "Submissions form & conflicts / paper deadline (upload deadline Jan 29)"
+      }
+    ],
     "acceptRates": [
       {
         "year": 2026,
@@ -20807,9 +20813,14 @@
     "place": "Kuala Lumpur, Malaysia",
     "timeline": [
       {
+        "date": "2026-11-15",
+        "abstractDate": "",
+        "comment": "Journal track; initial decision Jan 15, revised submission Apr 1"
+      },
+      {
         "date": "2027-02-20",
         "abstractDate": "2027-01-31",
-        "comment": ""
+        "comment": "Conference track"
       }
     ],
     "acceptRates": [
@@ -29444,22 +29455,22 @@
     "projectedFrom": 2026
   },
   {
-    "id": "siggraph26-2028p",
+    "id": "siggraph27-2028p",
     "title": "ACM SIGGRAPH",
     "description": "ACM SIGGRAPH Annual Conference",
     "category": "CG",
     "rank": "A",
     "year": 2028,
-    "link": "https://s2026.siggraph.org/",
+    "link": "https://s2027.siggraph.org/",
     "timezone": "UTC+0",
-    "conferenceDate": "July 19 - 23, 2028",
-    "conferenceStart": "2028-07-19",
-    "place": "Los Angeles, California",
+    "conferenceDate": "August 8 - 12, 2028",
+    "conferenceStart": "2028-08-08",
+    "place": "Anaheim, California",
     "timeline": [
       {
-        "date": "2028-01-22",
-        "abstractDate": "2028-01-15",
-        "comment": "Registration / full paper"
+        "date": "2028-01-28",
+        "abstractDate": "2028-01-21",
+        "comment": "Submissions form & conflicts / paper deadline (upload deadline Jan 29)"
       }
     ],
     "acceptRates": [
@@ -29489,7 +29500,7 @@
       }
     ],
     "projected": true,
-    "projectedFrom": 2026
+    "projectedFrom": 2027
   },
   {
     "id": "siggrapha26-2028p",
@@ -35595,9 +35606,14 @@
     "place": "Kuala Lumpur, Malaysia",
     "timeline": [
       {
+        "date": "2027-11-15",
+        "abstractDate": "",
+        "comment": "Journal track; initial decision Jan 15, revised submission Apr 1"
+      },
+      {
         "date": "2028-02-20",
         "abstractDate": "2028-01-31",
-        "comment": ""
+        "comment": "Conference track"
       }
     ],
     "acceptRates": [
@@ -44397,6 +44413,54 @@
     "projectedFrom": 2027
   },
   {
+    "id": "siggraph27-2029p",
+    "title": "ACM SIGGRAPH",
+    "description": "ACM SIGGRAPH Annual Conference",
+    "category": "CG",
+    "rank": "A",
+    "year": 2029,
+    "link": "https://s2027.siggraph.org/",
+    "timezone": "UTC+0",
+    "conferenceDate": "August 8 - 12, 2029",
+    "conferenceStart": "2029-08-08",
+    "place": "Anaheim, California",
+    "timeline": [
+      {
+        "date": "2029-01-28",
+        "abstractDate": "2029-01-21",
+        "comment": "Submissions form & conflicts / paper deadline (upload deadline Jan 29)"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 27.8,
+        "submitted": 1177,
+        "accepted": 327
+      },
+      {
+        "year": 2025,
+        "rate": 31.5,
+        "submitted": 972,
+        "accepted": 306
+      },
+      {
+        "year": 2024,
+        "rate": 29.9,
+        "submitted": 844,
+        "accepted": 252
+      },
+      {
+        "year": 2023,
+        "rate": 34.7,
+        "submitted": 611,
+        "accepted": 212
+      }
+    ],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
     "id": "acns27-2029p",
     "title": "ACNS",
     "description": "Applied Cryptography and Network Security",
@@ -47501,9 +47565,14 @@
     "place": "Kuala Lumpur, Malaysia",
     "timeline": [
       {
+        "date": "2028-11-15",
+        "abstractDate": "",
+        "comment": "Journal track; initial decision Jan 15, revised submission Apr 1"
+      },
+      {
         "date": "2029-02-20",
         "abstractDate": "2029-01-31",
-        "comment": ""
+        "comment": "Conference track"
       }
     ],
     "acceptRates": [
