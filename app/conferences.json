@@ -14816,7 +14816,7 @@
     "category": "CG",
     "rank": "N",
     "year": 2027,
-    "link": "https://asia.siggraph.org/2027/",
+    "link": "https://asia.siggraph.org/2026/about-the-event/siggraph-asia-2027/",
     "timezone": "UTC-12",
     "conferenceDate": "November 30 - December 3, 2027",
     "conferenceStart": "2027-11-30",
@@ -17283,7 +17283,7 @@
         "comment": "Round 1"
       },
       {
-        "date": "2026-11-01",
+        "date": "2026-11-15",
         "abstractDate": "",
         "comment": "Round 2"
       }
@@ -20166,8 +20166,8 @@
     "timeline": [
       {
         "date": "2026-11-05",
-        "abstractDate": "2026-10-29",
-        "comment": ""
+        "abstractDate": "2026-11-05",
+        "comment": "Regular papers; papers submitted by the deadline may be updated until November 6, 2026 23:59:59 AoE"
       }
     ],
     "acceptRates": []
@@ -27661,7 +27661,7 @@
     "rank": "C",
     "year": 2027,
     "link": "https://smiconf.github.io/2027/",
-    "timezone": "UTC",
+    "timezone": "AoE",
     "conferenceDate": "June 21-25, 2027",
     "conferenceStart": "2027-06-21",
     "place": "Singapore",
@@ -32044,7 +32044,7 @@
         "comment": "Round 1"
       },
       {
-        "date": "2027-11-01",
+        "date": "2027-11-15",
         "abstractDate": "",
         "comment": "Round 2"
       }
@@ -35006,8 +35006,8 @@
     "timeline": [
       {
         "date": "2027-11-05",
-        "abstractDate": "2027-10-29",
-        "comment": ""
+        "abstractDate": "2027-11-05",
+        "comment": "Regular papers; papers submitted by the deadline may be updated until November 6, 2026 23:59:59 AoE"
       }
     ],
     "acceptRates": [],
@@ -42730,7 +42730,7 @@
     "rank": "C",
     "year": 2028,
     "link": "https://smiconf.github.io/2027/",
-    "timezone": "UTC",
+    "timezone": "AoE",
     "conferenceDate": "June 21-25, 2028",
     "conferenceStart": "2028-06-21",
     "place": "Singapore",
@@ -45526,7 +45526,7 @@
         "comment": "Round 1"
       },
       {
-        "date": "2028-11-01",
+        "date": "2028-11-15",
         "abstractDate": "",
         "comment": "Round 2"
       }
@@ -47256,8 +47256,8 @@
     "timeline": [
       {
         "date": "2028-11-05",
-        "abstractDate": "2028-10-29",
-        "comment": ""
+        "abstractDate": "2028-11-05",
+        "comment": "Regular papers; papers submitted by the deadline may be updated until November 6, 2026 23:59:59 AoE"
       }
     ],
     "acceptRates": [],
@@ -51306,7 +51306,7 @@
     "rank": "C",
     "year": 2029,
     "link": "https://smiconf.github.io/2027/",
-    "timezone": "UTC",
+    "timezone": "AoE",
     "conferenceDate": "June 21-25, 2029",
     "conferenceStart": "2029-06-21",
     "place": "Singapore",
