@@ -16089,8 +16089,8 @@
     "year": 2027,
     "link": "https://conferences.i-cav.org/2027/",
     "timezone": "AoE",
-    "conferenceDate": "July 19-23, 2027",
-    "conferenceStart": "2027-07-19",
+    "conferenceDate": "July 21-23, 2027",
+    "conferenceStart": "2027-07-21",
     "place": "KIT, Amsterdam, The Netherlands",
     "timeline": [
       {
@@ -16911,24 +16911,18 @@
     ]
   },
   {
-    "id": "concur26-2027p",
+    "id": "concur27",
     "title": "CONCUR",
     "description": "International Conference on Concurrency Theory",
     "category": "CT",
     "rank": "B",
     "year": 2027,
-    "link": "https://confest-2026.github.io/concur/",
+    "link": "https://www.cs.vu.nl/~wanf/profactivities.html",
     "timezone": "AoE",
-    "conferenceDate": "Sep 1-4, 2027",
-    "conferenceStart": "2027-09-01",
-    "place": "Liverpool, UK",
-    "timeline": [
-      {
-        "date": "2027-04-27",
-        "abstractDate": "2027-04-20",
-        "comment": ""
-      }
-    ],
+    "conferenceDate": "September 6-10, 2027",
+    "conferenceStart": "2027-09-06",
+    "place": "Lucca, Italy",
+    "timeline": [],
     "acceptRates": [
       {
         "year": 2026,
@@ -16954,9 +16948,7 @@
         "submitted": 98,
         "accepted": 37
       }
-    ],
-    "projected": true,
-    "projectedFrom": 2026
+    ]
   },
   {
     "id": "cp26-2027p",
@@ -30797,8 +30789,8 @@
     "year": 2028,
     "link": "https://conferences.i-cav.org/2027/",
     "timezone": "AoE",
-    "conferenceDate": "July 19-23, 2028",
-    "conferenceStart": "2028-07-19",
+    "conferenceDate": "July 21-23, 2028",
+    "conferenceStart": "2028-07-21",
     "place": "KIT, Amsterdam, The Netherlands",
     "timeline": [
       {
@@ -44883,8 +44875,8 @@
     "year": 2029,
     "link": "https://conferences.i-cav.org/2027/",
     "timezone": "AoE",
-    "conferenceDate": "July 19-23, 2029",
-    "conferenceStart": "2029-07-19",
+    "conferenceDate": "July 21-23, 2029",
+    "conferenceStart": "2029-07-21",
     "place": "KIT, Amsterdam, The Netherlands",
     "timeline": [
       {
