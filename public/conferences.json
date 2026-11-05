@@ -15393,27 +15393,27 @@
     "projectedFrom": 2026
   },
   {
-    "id": "apweb26-2027p",
+    "id": "apweb27",
     "title": "APWeb-WAIM",
     "description": "APWeb-WAIM joint international conference on Web and Big Data",
     "category": "DB",
     "rank": "C",
     "year": 2027,
-    "link": "https://conferences.sigappfr.org/apweb2026/",
+    "link": "https://conferences.sigappfr.org/apweb2027/",
     "timezone": "AoE",
-    "conferenceDate": "September 7-9, 2027",
-    "conferenceStart": "2027-09-07",
-    "place": "Danang, Vietnam / Online",
+    "conferenceDate": "August 29-31, 2027",
+    "conferenceStart": "2027-08-29",
+    "place": "Guiyang, China / Online",
     "timeline": [
       {
-        "date": "2027-03-31",
+        "date": "2027-03-07",
         "abstractDate": "",
-        "comment": "first round"
+        "comment": ""
       },
       {
-        "date": "2027-05-24",
+        "date": "2027-05-14",
         "abstractDate": "",
-        "comment": "second round"
+        "comment": ""
       }
     ],
     "acceptRates": [
@@ -15423,9 +15423,7 @@
         "submitted": 472,
         "accepted": 136
       }
-    ],
-    "projected": true,
-    "projectedFrom": 2026
+    ]
   },
   {
     "id": "asap2026-2027p",
@@ -17530,24 +17528,18 @@
     "projectedFrom": 2026
   },
   {
-    "id": "cogsci26-2027p",
+    "id": "cogsci27",
     "title": "CogSci",
     "description": "Annual Meeting of the Cognitive Science Society",
     "category": "MX",
     "rank": "B",
     "year": 2027,
-    "link": "https://cognitivesciencesociety.org/cogsci-2026/",
+    "link": "https://cognitivesciencesociety.org/cogsci-2027/",
     "timezone": "AoE",
-    "conferenceDate": "July 23-25, 2027",
-    "conferenceStart": "2027-07-23",
-    "place": "Rio de Janeiro, Brazil (Hybrid)",
-    "timeline": [
-      {
-        "date": "2027-02-02",
-        "abstractDate": "",
-        "comment": ""
-      }
-    ],
+    "conferenceDate": "July 28-31, 2027",
+    "conferenceStart": "2027-07-28",
+    "place": "Euskalduna Bilbao Convention Centre, Bilbao, Spain",
+    "timeline": [],
     "acceptRates": [
       {
         "year": 2021,
@@ -17555,9 +17547,7 @@
         "submitted": 710,
         "accepted": 484
       }
-    ],
-    "projected": true,
-    "projectedFrom": 2026
+    ]
   },
   {
     "id": "collaboratecom26-2027p",
@@ -18322,24 +18312,18 @@
     ]
   },
   {
-    "id": "egsr2026-2027p",
+    "id": "egsr2027",
     "title": "EGSR",
     "description": "Eurographics Symposium on Rendering",
     "category": "CG",
     "rank": "B",
     "year": 2027,
-    "link": "https://egsr2026.inria.fr/",
+    "link": "https://www.egsr2027.usi.ch/",
     "timezone": "AoE",
-    "conferenceDate": "July 1-3, 2027",
-    "conferenceStart": "2027-07-01",
-    "place": "Bordeaux, France",
-    "timeline": [
-      {
-        "date": "2027-04-15",
-        "abstractDate": "2027-04-08",
-        "comment": ""
-      }
-    ],
+    "conferenceDate": "July 5-7, 2027",
+    "conferenceStart": "2027-07-05",
+    "place": "Università della Svizzera italiana, Lugano, Switzerland",
+    "timeline": [],
     "acceptRates": [
       {
         "year": 2022,
@@ -18353,9 +18337,7 @@
         "submitted": 52,
         "accepted": 33
       }
-    ],
-    "projected": true,
-    "projectedFrom": 2026
+    ]
   },
   {
     "id": "emnlp26-2027p",
@@ -23672,24 +23654,18 @@
     ]
   },
   {
-    "id": "iswc26-2027p",
+    "id": "iswc27",
     "title": "ISWC",
     "description": "International Semantic Web Conference",
     "category": "DB",
     "rank": "B",
     "year": 2027,
-    "link": "https://iswc2026.semanticweb.org/",
+    "link": "https://iswc2027.semanticweb.org/",
     "timezone": "AoE",
-    "conferenceDate": "October 27-29, 2027",
-    "conferenceStart": "2027-10-27",
-    "place": "Bari, Italy",
-    "timeline": [
-      {
-        "date": "2027-05-07",
-        "abstractDate": "2027-05-02",
-        "comment": "ESWC resubmissions must be committed by April 11, 2026"
-      }
-    ],
+    "conferenceDate": "October 24-28, 2027",
+    "conferenceStart": "2027-10-24",
+    "place": "Montevideo, Uruguay",
+    "timeline": [],
     "acceptRates": [
       {
         "year": 2025,
@@ -23715,9 +23691,7 @@
         "submitted": 156,
         "accepted": 30
       }
-    ],
-    "projected": true,
-    "projectedFrom": 2026
+    ]
   },
   {
     "id": "itc2026-2027p",
@@ -24201,22 +24175,22 @@
     "projectedFrom": 2026
   },
   {
-    "id": "mdm26-2027p",
+    "id": "mdm27",
     "title": "MDM",
     "description": "IEEE International Conference on Mobile Data Management",
     "category": "DB",
     "rank": "C",
     "year": 2027,
-    "link": "https://mdm-2026.github.io/index.html",
+    "link": "https://mdm2027.github.io/index.html",
     "timezone": "AoE",
-    "conferenceDate": "June 30 - July 2, 2027",
-    "conferenceStart": "2027-06-30",
-    "place": "Athens, Greece",
+    "conferenceDate": "June 28 - July 1, 2027",
+    "conferenceStart": "2027-06-28",
+    "place": "Hamilton, New Zealand",
     "timeline": [
       {
-        "date": "2027-03-06",
+        "date": "2027-01-25",
         "abstractDate": "",
-        "comment": "Research track regular and short papers; extended deadline"
+        "comment": ""
       }
     ],
     "acceptRates": [
@@ -24226,9 +24200,7 @@
         "submitted": 59,
         "accepted": 18
       }
-    ],
-    "projected": true,
-    "projectedFrom": 2026
+    ]
   },
   {
     "id": "miccai27",
@@ -30157,27 +30129,27 @@
     "projectedFrom": 2026
   },
   {
-    "id": "apweb26-2028p",
+    "id": "apweb27-2028p",
     "title": "APWeb-WAIM",
     "description": "APWeb-WAIM joint international conference on Web and Big Data",
     "category": "DB",
     "rank": "C",
     "year": 2028,
-    "link": "https://conferences.sigappfr.org/apweb2026/",
+    "link": "https://conferences.sigappfr.org/apweb2027/",
     "timezone": "AoE",
-    "conferenceDate": "September 7-9, 2028",
-    "conferenceStart": "2028-09-07",
-    "place": "Danang, Vietnam / Online",
+    "conferenceDate": "August 29-31, 2028",
+    "conferenceStart": "2028-08-29",
+    "place": "Guiyang, China / Online",
     "timeline": [
       {
-        "date": "2028-03-31",
+        "date": "2028-03-07",
         "abstractDate": "",
-        "comment": "first round"
+        "comment": ""
       },
       {
-        "date": "2028-05-24",
+        "date": "2028-05-14",
         "abstractDate": "",
-        "comment": "second round"
+        "comment": ""
       }
     ],
     "acceptRates": [
@@ -30189,7 +30161,7 @@
       }
     ],
     "projected": true,
-    "projectedFrom": 2026
+    "projectedFrom": 2027
   },
   {
     "id": "asap2026-2028p",
@@ -34154,29 +34126,18 @@
     "projectedFrom": 2027
   },
   {
-    "id": "fast27-2028p",
+    "id": "fast28",
     "title": "FAST",
     "description": "USENIX Conference on File and Storage Technologies",
     "category": "DS",
     "rank": "A",
     "year": 2028,
-    "link": "https://www.usenix.org/conference/fast27",
+    "link": "https://www.usenix.org/conference/fast28",
     "timezone": "AoE",
-    "conferenceDate": "FEBRUARY 23-25, 2028",
-    "conferenceStart": "2028-02-23",
-    "place": "Renton, WA, USA",
-    "timeline": [
-      {
-        "date": "2027-03-17",
-        "abstractDate": "",
-        "comment": "Spring deadline"
-      },
-      {
-        "date": "2027-09-15",
-        "abstractDate": "",
-        "comment": "Fall deadline"
-      }
-    ],
+    "conferenceDate": "February 28-March 1, 2028",
+    "conferenceStart": "2028-02-28",
+    "place": "Seattle, WA, USA",
+    "timeline": [],
     "acceptRates": [
       {
         "year": 2026,
@@ -34202,9 +34163,7 @@
         "submitted": 122,
         "accepted": 28
       }
-    ],
-    "projected": true,
-    "projectedFrom": 2027
+    ]
   },
   {
     "id": "fc27-2028p",
@@ -39084,22 +39043,22 @@
     "projectedFrom": 2026
   },
   {
-    "id": "mdm26-2028p",
+    "id": "mdm27-2028p",
     "title": "MDM",
     "description": "IEEE International Conference on Mobile Data Management",
     "category": "DB",
     "rank": "C",
     "year": 2028,
-    "link": "https://mdm-2026.github.io/index.html",
+    "link": "https://mdm2027.github.io/index.html",
     "timezone": "AoE",
-    "conferenceDate": "June 30 - July 2, 2028",
-    "conferenceStart": "2028-06-30",
-    "place": "Athens, Greece",
+    "conferenceDate": "June 28 - July 1, 2028",
+    "conferenceStart": "2028-06-28",
+    "place": "Hamilton, New Zealand",
     "timeline": [
       {
-        "date": "2028-03-06",
+        "date": "2028-01-25",
         "abstractDate": "",
-        "comment": "Research track regular and short papers; extended deadline"
+        "comment": ""
       }
     ],
     "acceptRates": [
@@ -39111,7 +39070,7 @@
       }
     ],
     "projected": true,
-    "projectedFrom": 2026
+    "projectedFrom": 2027
   },
   {
     "id": "miccai28",
@@ -44602,6 +44561,41 @@
     "projectedFrom": 2027
   },
   {
+    "id": "apweb27-2029p",
+    "title": "APWeb-WAIM",
+    "description": "APWeb-WAIM joint international conference on Web and Big Data",
+    "category": "DB",
+    "rank": "C",
+    "year": 2029,
+    "link": "https://conferences.sigappfr.org/apweb2027/",
+    "timezone": "AoE",
+    "conferenceDate": "August 29-31, 2029",
+    "conferenceStart": "2029-08-29",
+    "place": "Guiyang, China / Online",
+    "timeline": [
+      {
+        "date": "2029-03-07",
+        "abstractDate": "",
+        "comment": ""
+      },
+      {
+        "date": "2029-05-14",
+        "abstractDate": "",
+        "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2025,
+        "rate": 28.8,
+        "submitted": 472,
+        "accepted": 136
+      }
+    ],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
     "id": "aspdac27-2029p",
     "title": "ASP-DAC",
     "description": "Asia and South Pacific Design Automation Conference",
@@ -49374,6 +49368,36 @@
         "rate": 23.6,
         "submitted": 339,
         "accepted": 80
+      }
+    ],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
+    "id": "mdm27-2029p",
+    "title": "MDM",
+    "description": "IEEE International Conference on Mobile Data Management",
+    "category": "DB",
+    "rank": "C",
+    "year": 2029,
+    "link": "https://mdm2027.github.io/index.html",
+    "timezone": "AoE",
+    "conferenceDate": "June 28 - July 1, 2029",
+    "conferenceStart": "2029-06-28",
+    "place": "Hamilton, New Zealand",
+    "timeline": [
+      {
+        "date": "2029-01-25",
+        "abstractDate": "",
+        "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 30.5,
+        "submitted": 59,
+        "accepted": 18
       }
     ],
     "projected": true,
