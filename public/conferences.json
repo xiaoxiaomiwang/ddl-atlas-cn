@@ -6373,8 +6373,8 @@
     "year": 2026,
     "link": "http://icdm2026.neu.edu.cn/",
     "timezone": "AoE",
-    "conferenceDate": "November 12-15, 2026",
-    "conferenceStart": "2026-11-12",
+    "conferenceDate": "November 13-15, 2026",
+    "conferenceStart": "2026-11-13",
     "place": "Shenyang, China",
     "timeline": [
       {
@@ -18120,8 +18120,8 @@
     "year": 2027,
     "link": "https://ecir2027.co.uk/",
     "timezone": "UTC+0",
-    "conferenceDate": "March 21-25, 2027",
-    "conferenceStart": "2027-03-21",
+    "conferenceDate": "March 22-24, 2027",
+    "conferenceStart": "2027-03-22",
     "place": "Southampton, UK",
     "timeline": [
       {
@@ -20792,8 +20792,8 @@
         "comment": "Journal track; initial decision Jan 15, revised submission Apr 1"
       },
       {
-        "date": "2027-03-02",
-        "abstractDate": "2027-02-23",
+        "date": "2027-03-05",
+        "abstractDate": "2027-02-26",
         "comment": "Conference track"
       }
     ],
@@ -27663,7 +27663,13 @@
     "conferenceDate": "June 21-25, 2027",
     "conferenceStart": "2027-06-21",
     "place": "Bengaluru, India",
-    "timeline": [],
+    "timeline": [
+      {
+        "date": "2026-12-02",
+        "abstractDate": "",
+        "comment": "Submission registration: November 25, 2026, 23:59 AoE"
+      }
+    ],
     "acceptRates": [
       {
         "year": 2026,
@@ -32933,8 +32939,8 @@
     "year": 2028,
     "link": "https://ecir2027.co.uk/",
     "timezone": "UTC+0",
-    "conferenceDate": "March 21-25, 2028",
-    "conferenceStart": "2028-03-21",
+    "conferenceDate": "March 22-24, 2028",
+    "conferenceStart": "2028-03-22",
     "place": "Southampton, UK",
     "timeline": [
       {
@@ -35560,8 +35566,8 @@
         "comment": "Journal track; initial decision Jan 15, revised submission Apr 1"
       },
       {
-        "date": "2028-03-02",
-        "abstractDate": "2028-02-23",
+        "date": "2028-03-05",
+        "abstractDate": "2028-02-26",
         "comment": "Conference track"
       }
     ],
@@ -42710,22 +42716,22 @@
     "projectedFrom": 2027
   },
   {
-    "id": "socg26-2028p",
+    "id": "socg27-2028p",
     "title": "SOCG",
     "description": "International Symposium on Computational Geometry",
     "category": "CT",
     "rank": "B",
     "year": 2028,
-    "link": "https://cgweek26.computational-geometry.org/contribute/",
+    "link": "https://cgweek27.computational-geometry.org/",
     "timezone": "AoE",
-    "conferenceDate": "June 2-5, 2028",
-    "conferenceStart": "2028-06-02",
-    "place": "New Brunswick, New Jersey, USA",
+    "conferenceDate": "June 21-25, 2028",
+    "conferenceStart": "2028-06-21",
+    "place": "Bengaluru, India",
     "timeline": [
       {
         "date": "2027-12-02",
-        "abstractDate": "2027-11-25",
-        "comment": ""
+        "abstractDate": "",
+        "comment": "Submission registration: November 25, 2026, 23:59 AoE"
       }
     ],
     "acceptRates": [
@@ -42755,7 +42761,7 @@
       }
     ],
     "projected": true,
-    "projectedFrom": 2026
+    "projectedFrom": 2027
   },
   {
     "id": "soda27-2028p",
@@ -46042,8 +46048,8 @@
     "year": 2029,
     "link": "https://ecir2027.co.uk/",
     "timezone": "UTC+0",
-    "conferenceDate": "March 21-25, 2029",
-    "conferenceStart": "2029-03-21",
+    "conferenceDate": "March 22-24, 2029",
+    "conferenceStart": "2029-03-22",
     "place": "Southampton, UK",
     "timeline": [
       {
@@ -47554,8 +47560,8 @@
         "comment": "Journal track; initial decision Jan 15, revised submission Apr 1"
       },
       {
-        "date": "2029-03-02",
-        "abstractDate": "2029-02-23",
+        "date": "2029-03-05",
+        "abstractDate": "2029-02-26",
         "comment": "Conference track"
       }
     ],
@@ -51345,6 +51351,54 @@
         "rate": 35.0,
         "submitted": 40,
         "accepted": 14
+      }
+    ],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
+    "id": "socg27-2029p",
+    "title": "SOCG",
+    "description": "International Symposium on Computational Geometry",
+    "category": "CT",
+    "rank": "B",
+    "year": 2029,
+    "link": "https://cgweek27.computational-geometry.org/",
+    "timezone": "AoE",
+    "conferenceDate": "June 21-25, 2029",
+    "conferenceStart": "2029-06-21",
+    "place": "Bengaluru, India",
+    "timeline": [
+      {
+        "date": "2028-12-02",
+        "abstractDate": "",
+        "comment": "Submission registration: November 25, 2026, 23:59 AoE"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 34.9,
+        "submitted": 272,
+        "accepted": 95
+      },
+      {
+        "year": 2025,
+        "rate": 34.7,
+        "submitted": 225,
+        "accepted": 78
+      },
+      {
+        "year": 2024,
+        "rate": 34.9,
+        "submitted": 235,
+        "accepted": 82
+      },
+      {
+        "year": 2023,
+        "rate": 34.9,
+        "submitted": 175,
+        "accepted": 61
       }
     ],
     "projected": true,
