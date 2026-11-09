@@ -19340,17 +19340,17 @@
     ]
   },
   {
-    "id": "fccm26-2027p",
+    "id": "fccm27",
     "title": "FCCM",
     "description": "IEEE Symposium on Field-Programmable Custom Computing Machines",
     "category": "DS",
     "rank": "C",
     "year": 2027,
-    "link": "https://www.fccm.org/past/2026/",
-    "timezone": "AoE",
-    "conferenceDate": "May 14-15, 2027",
-    "conferenceStart": "2027-05-14",
-    "place": "Atlanta, Georgia, USA",
+    "link": "https://www.fccm.org/",
+    "timezone": "UTC-12",
+    "conferenceDate": "May 10-11, 2027",
+    "conferenceStart": "2027-05-10",
+    "place": "Provo, Utah, USA",
     "timeline": [
       {
         "date": "2027-01-17",
@@ -19358,9 +19358,7 @@
         "comment": ""
       }
     ],
-    "acceptRates": [],
-    "projected": true,
-    "projectedFrom": 2026
+    "acceptRates": []
   },
   {
     "id": "fg27",
@@ -21481,27 +21479,25 @@
     ]
   },
   {
-    "id": "icmla26-2027p",
+    "id": "icmla27",
     "title": "ICMLA",
     "description": "International Conference on Machine Learning and Applications",
     "category": "AI",
     "rank": "N",
     "year": 2027,
-    "link": "https://www.icmla-conference.org/icmla26/",
+    "link": "https://www.icmla-conference.org/icmla27/",
     "timezone": "PT",
-    "conferenceDate": "October 5-7, 2027",
-    "conferenceStart": "2027-10-05",
-    "place": "Oakland Center, Rochester, Michigan, USA",
+    "conferenceDate": "December 14-16, 2027",
+    "conferenceStart": "2027-12-14",
+    "place": "University of Miami, Coral Gables Campus, Miami, Florida, USA",
     "timeline": [
       {
-        "date": "2027-05-31",
+        "date": "2027-05-15",
         "abstractDate": "",
         "comment": "Main Conference Papers DDL."
       }
     ],
-    "acceptRates": [],
-    "projected": true,
-    "projectedFrom": 2026
+    "acceptRates": []
   },
   {
     "id": "icmr27",
@@ -28655,8 +28651,8 @@
     "year": 2027,
     "link": "https://wacv.thecvf.com/",
     "timezone": "AoE",
-    "conferenceDate": "Jan 4 - 8, 2027",
-    "conferenceStart": "2027-01-04",
+    "conferenceDate": "Jan 6 - 8, 2027",
+    "conferenceStart": "2027-01-06",
     "place": "Disney Springs, Buena Vista, FL, USA",
     "timeline": [
       {
@@ -34216,17 +34212,17 @@
     "projectedFrom": 2027
   },
   {
-    "id": "fccm26-2028p",
+    "id": "fccm27-2028p",
     "title": "FCCM",
     "description": "IEEE Symposium on Field-Programmable Custom Computing Machines",
     "category": "DS",
     "rank": "C",
     "year": 2028,
-    "link": "https://www.fccm.org/past/2026/",
-    "timezone": "AoE",
-    "conferenceDate": "May 14-15, 2028",
-    "conferenceStart": "2028-05-14",
-    "place": "Atlanta, Georgia, USA",
+    "link": "https://www.fccm.org/",
+    "timezone": "UTC-12",
+    "conferenceDate": "May 10-11, 2028",
+    "conferenceStart": "2028-05-10",
+    "place": "Provo, Utah, USA",
     "timeline": [
       {
         "date": "2028-01-17",
@@ -34236,7 +34232,7 @@
     ],
     "acceptRates": [],
     "projected": true,
-    "projectedFrom": 2026
+    "projectedFrom": 2027
   },
   {
     "id": "fg27-2028p",
@@ -36291,27 +36287,27 @@
     "projectedFrom": 2026
   },
   {
-    "id": "icmla26-2028p",
+    "id": "icmla27-2028p",
     "title": "ICMLA",
     "description": "International Conference on Machine Learning and Applications",
     "category": "AI",
     "rank": "N",
     "year": 2028,
-    "link": "https://www.icmla-conference.org/icmla26/",
+    "link": "https://www.icmla-conference.org/icmla27/",
     "timezone": "PT",
-    "conferenceDate": "October 5-7, 2028",
-    "conferenceStart": "2028-10-05",
-    "place": "Oakland Center, Rochester, Michigan, USA",
+    "conferenceDate": "December 14-16, 2028",
+    "conferenceStart": "2028-12-14",
+    "place": "University of Miami, Coral Gables Campus, Miami, Florida, USA",
     "timeline": [
       {
-        "date": "2028-05-31",
+        "date": "2028-05-15",
         "abstractDate": "",
         "comment": "Main Conference Papers DDL."
       }
     ],
     "acceptRates": [],
     "projected": true,
-    "projectedFrom": 2026
+    "projectedFrom": 2027
   },
   {
     "id": "icmr27-2028p",
@@ -43695,8 +43691,8 @@
     "year": 2028,
     "link": "https://wacv.thecvf.com/",
     "timezone": "AoE",
-    "conferenceDate": "Jan 4 - 8, 2028",
-    "conferenceStart": "2028-01-04",
+    "conferenceDate": "Jan 6 - 8, 2028",
+    "conferenceStart": "2028-01-06",
     "place": "Disney Springs, Buena Vista, FL, USA",
     "timeline": [
       {
@@ -46898,6 +46894,29 @@
     "projectedFrom": 2027
   },
   {
+    "id": "fccm27-2029p",
+    "title": "FCCM",
+    "description": "IEEE Symposium on Field-Programmable Custom Computing Machines",
+    "category": "DS",
+    "rank": "C",
+    "year": 2029,
+    "link": "https://www.fccm.org/",
+    "timezone": "UTC-12",
+    "conferenceDate": "May 10-11, 2029",
+    "conferenceStart": "2029-05-10",
+    "place": "Provo, Utah, USA",
+    "timeline": [
+      {
+        "date": "2029-01-17",
+        "abstractDate": "2029-01-10",
+        "comment": ""
+      }
+    ],
+    "acceptRates": [],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
     "id": "fg27-2029p",
     "title": "FG",
     "description": "International Conference on Automatic Face and Gesture Recognition",
@@ -48090,6 +48109,29 @@
         "accepted": 381
       }
     ],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
+    "id": "icmla27-2029p",
+    "title": "ICMLA",
+    "description": "International Conference on Machine Learning and Applications",
+    "category": "AI",
+    "rank": "N",
+    "year": 2029,
+    "link": "https://www.icmla-conference.org/icmla27/",
+    "timezone": "PT",
+    "conferenceDate": "December 14-16, 2029",
+    "conferenceStart": "2029-12-14",
+    "place": "University of Miami, Coral Gables Campus, Miami, Florida, USA",
+    "timeline": [
+      {
+        "date": "2029-05-15",
+        "abstractDate": "",
+        "comment": "Main Conference Papers DDL."
+      }
+    ],
+    "acceptRates": [],
     "projected": true,
     "projectedFrom": 2027
   },
@@ -51909,8 +51951,8 @@
     "year": 2029,
     "link": "https://wacv.thecvf.com/",
     "timezone": "AoE",
-    "conferenceDate": "Jan 4 - 8, 2029",
-    "conferenceStart": "2029-01-04",
+    "conferenceDate": "Jan 6 - 8, 2029",
+    "conferenceStart": "2029-01-06",
     "place": "Disney Springs, Buena Vista, FL, USA",
     "timeline": [
       {
