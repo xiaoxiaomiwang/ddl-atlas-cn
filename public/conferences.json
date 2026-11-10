@@ -14588,7 +14588,12 @@
       {
         "date": "2026-10-08",
         "abstractDate": "2026-10-01",
-        "comment": ""
+        "comment": "Main track"
+      },
+      {
+        "date": "2026-12-11",
+        "abstractDate": "",
+        "comment": "AAAI fast track; eligible AAAI-27 Main Technical Track resubmissions only"
       }
     ],
     "acceptRates": [
@@ -14678,8 +14683,8 @@
     "year": 2027,
     "link": "https://2027.aclweb.org/",
     "timezone": "UTC-12",
-    "conferenceDate": "August 17-22, 2027",
-    "conferenceStart": "2027-08-17",
+    "conferenceDate": "August 20-22, 2027",
+    "conferenceStart": "2027-08-20",
     "place": "Kyoto, Japan",
     "timeline": [
       {
@@ -17315,8 +17320,8 @@
     "year": 2027,
     "link": "https://cvpr.thecvf.com/Conferences/2027",
     "timezone": "UTC-12",
-    "conferenceDate": "June 20-25, 2027",
-    "conferenceStart": "2027-06-20",
+    "conferenceDate": "June 22-25, 2027",
+    "conferenceStart": "2027-06-22",
     "place": "Seattle, WA, United States",
     "timeline": [
       {
@@ -29205,7 +29210,12 @@
       {
         "date": "2027-10-08",
         "abstractDate": "2027-10-01",
-        "comment": ""
+        "comment": "Main track"
+      },
+      {
+        "date": "2027-12-11",
+        "abstractDate": "",
+        "comment": "AAAI fast track; eligible AAAI-27 Main Technical Track resubmissions only"
       }
     ],
     "acceptRates": [
@@ -29335,8 +29345,8 @@
     "year": 2028,
     "link": "https://2027.aclweb.org/",
     "timezone": "UTC-12",
-    "conferenceDate": "August 17-22, 2028",
-    "conferenceStart": "2028-08-17",
+    "conferenceDate": "August 20-22, 2028",
+    "conferenceStart": "2028-08-20",
     "place": "Kyoto, Japan",
     "timeline": [
       {
@@ -32062,8 +32072,8 @@
     "year": 2028,
     "link": "https://cvpr.thecvf.com/Conferences/2027",
     "timezone": "UTC-12",
-    "conferenceDate": "June 20-25, 2028",
-    "conferenceStart": "2028-06-20",
+    "conferenceDate": "June 22-25, 2028",
+    "conferenceStart": "2028-06-22",
     "place": "Seattle, WA, United States",
     "timeline": [
       {
@@ -44234,7 +44244,12 @@
       {
         "date": "2028-10-08",
         "abstractDate": "2028-10-01",
-        "comment": ""
+        "comment": "Main track"
+      },
+      {
+        "date": "2028-12-11",
+        "abstractDate": "",
+        "comment": "AAAI fast track; eligible AAAI-27 Main Technical Track resubmissions only"
       }
     ],
     "acceptRates": [
@@ -44328,8 +44343,8 @@
     "year": 2029,
     "link": "https://2027.aclweb.org/",
     "timezone": "UTC-12",
-    "conferenceDate": "August 17-22, 2029",
-    "conferenceStart": "2029-08-17",
+    "conferenceDate": "August 20-22, 2029",
+    "conferenceStart": "2029-08-20",
     "place": "Kyoto, Japan",
     "timeline": [
       {
@@ -45589,8 +45604,8 @@
     "year": 2029,
     "link": "https://cvpr.thecvf.com/Conferences/2027",
     "timezone": "UTC-12",
-    "conferenceDate": "June 20-25, 2029",
-    "conferenceStart": "2029-06-20",
+    "conferenceDate": "June 22-25, 2029",
+    "conferenceStart": "2029-06-22",
     "place": "Seattle, WA, United States",
     "timeline": [
       {
