@@ -19374,13 +19374,13 @@
     "year": 2027,
     "link": "https://fg2027.ieee-biometrics.org/",
     "timezone": "AoE",
-    "conferenceDate": "April 26-30, 2027",
-    "conferenceStart": "2027-04-26",
+    "conferenceDate": "April 27-29, 2027",
+    "conferenceStart": "2027-04-27",
     "place": "Marrakesh, Morocco",
     "timeline": [
       {
-        "date": "2026-10-16",
-        "abstractDate": "2026-10-09",
+        "date": "2026-10-30",
+        "abstractDate": "2026-10-23",
         "comment": ""
       }
     ],
@@ -34253,13 +34253,13 @@
     "year": 2028,
     "link": "https://fg2027.ieee-biometrics.org/",
     "timezone": "AoE",
-    "conferenceDate": "April 26-30, 2028",
-    "conferenceStart": "2028-04-26",
+    "conferenceDate": "April 27-29, 2028",
+    "conferenceStart": "2028-04-27",
     "place": "Marrakesh, Morocco",
     "timeline": [
       {
-        "date": "2027-10-16",
-        "abstractDate": "2027-10-09",
+        "date": "2027-10-30",
+        "abstractDate": "2027-10-23",
         "comment": ""
       }
     ],
@@ -46940,13 +46940,13 @@
     "year": 2029,
     "link": "https://fg2027.ieee-biometrics.org/",
     "timezone": "AoE",
-    "conferenceDate": "April 26-30, 2029",
-    "conferenceStart": "2029-04-26",
+    "conferenceDate": "April 27-29, 2029",
+    "conferenceStart": "2029-04-27",
     "place": "Marrakesh, Morocco",
     "timeline": [
       {
-        "date": "2028-10-16",
-        "abstractDate": "2028-10-09",
+        "date": "2028-10-30",
+        "abstractDate": "2028-10-23",
         "comment": ""
       }
     ],
