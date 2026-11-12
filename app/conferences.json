@@ -21819,10 +21819,10 @@
     "category": "DS",
     "rank": "B",
     "year": 2027,
-    "link": "https://ics-conference.org/index.html",
+    "link": "https://klab-ai3.github.io/ics2027/",
     "timezone": "AoE",
-    "conferenceDate": "TBD",
-    "conferenceStart": "",
+    "conferenceDate": "June 5-11, 2027",
+    "conferenceStart": "2027-06-05",
     "place": "Atlanta, Georgia, USA",
     "timeline": [
       {
@@ -23831,6 +23831,32 @@
     ],
     "projected": true,
     "projectedFrom": 2026
+  },
+  {
+    "id": "intellisys27",
+    "title": "IntelliSys",
+    "description": "Intelligent Systems Conference",
+    "category": "AI",
+    "rank": "N",
+    "year": 2027,
+    "link": "https://saiconference.com/IntelliSys",
+    "timezone": "AoE",
+    "conferenceDate": "September 2-3, 2027",
+    "conferenceStart": "2027-09-02",
+    "place": "Amsterdam, Netherlands",
+    "timeline": [
+      {
+        "date": "2026-11-15",
+        "abstractDate": "",
+        "comment": "Round 1"
+      },
+      {
+        "date": "2026-12-01",
+        "abstractDate": "",
+        "comment": "Round 2"
+      }
+    ],
+    "acceptRates": []
   },
   {
     "id": "interspeech27",
@@ -36606,10 +36632,10 @@
     "category": "DS",
     "rank": "B",
     "year": 2028,
-    "link": "https://ics-conference.org/index.html",
+    "link": "https://klab-ai3.github.io/ics2027/",
     "timezone": "AoE",
-    "conferenceDate": "TBD",
-    "conferenceStart": "",
+    "conferenceDate": "June 5-11, 2028",
+    "conferenceStart": "2028-06-05",
     "place": "Atlanta, Georgia, USA",
     "timeline": [
       {
@@ -38698,6 +38724,34 @@
     ],
     "projected": true,
     "projectedFrom": 2026
+  },
+  {
+    "id": "intellisys27-2028p",
+    "title": "IntelliSys",
+    "description": "Intelligent Systems Conference",
+    "category": "AI",
+    "rank": "N",
+    "year": 2028,
+    "link": "https://saiconference.com/IntelliSys",
+    "timezone": "AoE",
+    "conferenceDate": "September 2-3, 2028",
+    "conferenceStart": "2028-09-02",
+    "place": "Amsterdam, Netherlands",
+    "timeline": [
+      {
+        "date": "2027-11-15",
+        "abstractDate": "",
+        "comment": "Round 1"
+      },
+      {
+        "date": "2027-12-01",
+        "abstractDate": "",
+        "comment": "Round 2"
+      }
+    ],
+    "acceptRates": [],
+    "projected": true,
+    "projectedFrom": 2027
   },
   {
     "id": "interspeech27-2028p",
@@ -48331,10 +48385,10 @@
     "category": "DS",
     "rank": "B",
     "year": 2029,
-    "link": "https://ics-conference.org/index.html",
+    "link": "https://klab-ai3.github.io/ics2027/",
     "timezone": "AoE",
-    "conferenceDate": "TBD",
-    "conferenceStart": "",
+    "conferenceDate": "June 5-11, 2029",
+    "conferenceStart": "2029-06-05",
     "place": "Atlanta, Georgia, USA",
     "timeline": [
       {
@@ -49404,6 +49458,34 @@
         "accepted": 64
       }
     ],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
+    "id": "intellisys27-2029p",
+    "title": "IntelliSys",
+    "description": "Intelligent Systems Conference",
+    "category": "AI",
+    "rank": "N",
+    "year": 2029,
+    "link": "https://saiconference.com/IntelliSys",
+    "timezone": "AoE",
+    "conferenceDate": "September 2-3, 2029",
+    "conferenceStart": "2029-09-02",
+    "place": "Amsterdam, Netherlands",
+    "timeline": [
+      {
+        "date": "2028-11-15",
+        "abstractDate": "",
+        "comment": "Round 1"
+      },
+      {
+        "date": "2028-12-01",
+        "abstractDate": "",
+        "comment": "Round 2"
+      }
+    ],
+    "acceptRates": [],
     "projected": true,
     "projectedFrom": 2027
   },
