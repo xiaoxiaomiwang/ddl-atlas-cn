@@ -16176,6 +16176,27 @@
     ]
   },
   {
+    "id": "cc27",
+    "title": "CC",
+    "description": "International Conference on Compiler Construction",
+    "category": "SE",
+    "rank": "B",
+    "year": 2027,
+    "link": "https://conf.researchr.org/home/CC-2027",
+    "timezone": "AoE",
+    "conferenceDate": "March 20-21, 2027",
+    "conferenceStart": "2027-03-20",
+    "place": "Salt Lake City, Utah, USA",
+    "timeline": [
+      {
+        "date": "2026-12-03",
+        "abstractDate": "2026-12-01",
+        "comment": ""
+      }
+    ],
+    "acceptRates": []
+  },
+  {
     "id": "ccc27",
     "title": "CCC",
     "description": "Computational Complexity Conference",
@@ -30919,6 +30940,29 @@
     "projectedFrom": 2027
   },
   {
+    "id": "cc27-2028p",
+    "title": "CC",
+    "description": "International Conference on Compiler Construction",
+    "category": "SE",
+    "rank": "B",
+    "year": 2028,
+    "link": "https://conf.researchr.org/home/CC-2027",
+    "timezone": "AoE",
+    "conferenceDate": "March 20-21, 2028",
+    "conferenceStart": "2028-03-20",
+    "place": "Salt Lake City, Utah, USA",
+    "timeline": [
+      {
+        "date": "2027-12-03",
+        "abstractDate": "2027-12-01",
+        "comment": ""
+      }
+    ],
+    "acceptRates": [],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
     "id": "ccc26-2028p",
     "title": "CCC",
     "description": "Computational Complexity Conference",
@@ -45057,6 +45101,29 @@
         "accepted": 36
       }
     ],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
+    "id": "cc27-2029p",
+    "title": "CC",
+    "description": "International Conference on Compiler Construction",
+    "category": "SE",
+    "rank": "B",
+    "year": 2029,
+    "link": "https://conf.researchr.org/home/CC-2027",
+    "timezone": "AoE",
+    "conferenceDate": "March 20-21, 2029",
+    "conferenceStart": "2029-03-20",
+    "place": "Salt Lake City, Utah, USA",
+    "timeline": [
+      {
+        "date": "2028-12-03",
+        "abstractDate": "2028-12-01",
+        "comment": ""
+      }
+    ],
+    "acceptRates": [],
     "projected": true,
     "projectedFrom": 2027
   },
