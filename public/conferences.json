@@ -20465,24 +20465,18 @@
     ]
   },
   {
-    "id": "icann2026-2027p",
+    "id": "icann2027",
     "title": "ICANN",
     "description": "International Conference on Artificial Neural Networks",
     "category": "AI",
     "rank": "C",
     "year": 2027,
-    "link": "https://e-nns.org/icann2026/",
+    "link": "https://e-nns.org/icann2027/",
     "timezone": "AoE",
-    "conferenceDate": "September 15-17, 2027",
-    "conferenceStart": "2027-09-15",
-    "place": "Conference center of the School of Psychology, University of Padua, Italy",
-    "timeline": [
-      {
-        "date": "2027-03-30",
-        "abstractDate": "",
-        "comment": ""
-      }
-    ],
+    "conferenceDate": "August 24-27, 2027",
+    "conferenceStart": "2027-08-24",
+    "place": "Linköping, Sweden",
+    "timeline": [],
     "acceptRates": [
       {
         "year": 2025,
@@ -20508,9 +20502,7 @@
         "submitted": 496,
         "accepted": 265
       }
-    ],
-    "projected": true,
-    "projectedFrom": 2026
+    ]
   },
   {
     "id": "icaps27",
