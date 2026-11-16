@@ -16793,7 +16793,7 @@
       {
         "date": "2026-12-23",
         "abstractDate": "",
-        "comment": "Commitment deadline for long and short research papers reviewed by ARR"
+        "comment": "Commitment deadline for long research papers reviewed by ARR"
       }
     ],
     "acceptRates": [
@@ -21473,7 +21473,13 @@
     "conferenceDate": "August 2-4, 2027",
     "conferenceStart": "2027-08-02",
     "place": "Riocentro, Rio de Janeiro, Brazil",
-    "timeline": [],
+    "timeline": [
+      {
+        "date": "2027-01-22",
+        "abstractDate": "2027-01-14",
+        "comment": ""
+      }
+    ],
     "acceptRates": [
       {
         "year": 2026,
@@ -36316,22 +36322,22 @@
     "projectedFrom": 2026
   },
   {
-    "id": "icml26-2028p",
+    "id": "icml27-2028p",
     "title": "ICML",
     "description": "International Conference on Machine Learning",
     "category": "AI",
     "rank": "A",
     "year": 2028,
-    "link": "https://icml.cc/Conferences/2026",
-    "timezone": "UTC+0",
-    "conferenceDate": "July 6-11, 2028",
-    "conferenceStart": "2028-07-06",
-    "place": "Seoul, Korea",
+    "link": "https://icml.cc/Conferences/2027",
+    "timezone": "AoE",
+    "conferenceDate": "August 2-4, 2028",
+    "conferenceStart": "2028-08-02",
+    "place": "Riocentro, Rio de Janeiro, Brazil",
     "timeline": [
       {
-        "date": "2028-01-29",
-        "abstractDate": "2028-01-24",
-        "comment": "Paper Submissions Open on OpenReview Jan 08 2026 12:00AM UTC-0"
+        "date": "2028-01-22",
+        "abstractDate": "2028-01-14",
+        "comment": ""
       }
     ],
     "acceptRates": [
@@ -36361,7 +36367,7 @@
       }
     ],
     "projected": true,
-    "projectedFrom": 2026
+    "projectedFrom": 2027
   },
   {
     "id": "icmla27-2028p",
@@ -45373,7 +45379,7 @@
       {
         "date": "2028-12-23",
         "abstractDate": "",
-        "comment": "Commitment deadline for long and short research papers reviewed by ARR"
+        "comment": "Commitment deadline for long research papers reviewed by ARR"
       }
     ],
     "acceptRates": [
@@ -48245,6 +48251,54 @@
         "rate": 29.6,
         "submitted": 1285,
         "accepted": 381
+      }
+    ],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
+    "id": "icml27-2029p",
+    "title": "ICML",
+    "description": "International Conference on Machine Learning",
+    "category": "AI",
+    "rank": "A",
+    "year": 2029,
+    "link": "https://icml.cc/Conferences/2027",
+    "timezone": "AoE",
+    "conferenceDate": "August 2-4, 2029",
+    "conferenceStart": "2029-08-02",
+    "place": "Riocentro, Rio de Janeiro, Brazil",
+    "timeline": [
+      {
+        "date": "2029-01-22",
+        "abstractDate": "2029-01-14",
+        "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 26.6,
+        "submitted": 24661,
+        "accepted": 6552
+      },
+      {
+        "year": 2025,
+        "rate": 26.9,
+        "submitted": 12107,
+        "accepted": 3260
+      },
+      {
+        "year": 2024,
+        "rate": 27.5,
+        "submitted": 9473,
+        "accepted": 2609
+      },
+      {
+        "year": 2023,
+        "rate": 27.9,
+        "submitted": 6538,
+        "accepted": 1827
       }
     ],
     "projected": true,
