@@ -14721,24 +14721,18 @@
     ]
   },
   {
-    "id": "mm26-2027p",
+    "id": "mm27",
     "title": "ACM MM",
     "description": "ACM International Conference on Multimedia",
     "category": "CG",
     "rank": "A",
     "year": 2027,
-    "link": "https://2026.acmmm.org/",
+    "link": "https://2027.acmmm.org/",
     "timezone": "AoE",
-    "conferenceDate": "November 11-14, 2027",
-    "conferenceStart": "2027-11-11",
-    "place": "Rio de Janeiro, Brazil",
-    "timeline": [
-      {
-        "date": "2027-04-01",
-        "abstractDate": "2027-03-25",
-        "comment": ""
-      }
-    ],
+    "conferenceDate": "November 8-12, 2027",
+    "conferenceStart": "2027-11-08",
+    "place": "Hong Kong SAR, China",
+    "timeline": [],
     "acceptRates": [
       {
         "year": 2025,
@@ -14764,9 +14758,7 @@
         "submitted": 2472,
         "accepted": 691
       }
-    ],
-    "projected": true,
-    "projectedFrom": 2026
+    ]
   },
   {
     "id": "siggraph27",
