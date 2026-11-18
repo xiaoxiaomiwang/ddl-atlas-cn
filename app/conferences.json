@@ -27583,27 +27583,25 @@
     ]
   },
   {
-    "id": "atc2026-2027p",
+    "id": "atc2027",
     "title": "SIGOPS ATC",
     "description": "ACM SIGOPS Annual Technical Conference",
     "category": "DS",
     "rank": "A",
     "year": 2027,
-    "link": "https://sigops.org/s/conferences/atc/2026/index.html",
-    "timezone": "UTC+0",
-    "conferenceDate": "November 16-18, 2027",
-    "conferenceStart": "2027-11-16",
-    "place": "Hyatt Hotel, Shatin, Hong Kong, China",
+    "link": "https://atc.sigops.org/2027/",
+    "timezone": "AoE",
+    "conferenceDate": "June 28-July 1, 2027",
+    "conferenceStart": "2027-06-28",
+    "place": "Rennes, France",
     "timeline": [
       {
-        "date": "2027-06-11",
+        "date": "2027-01-19",
         "abstractDate": "",
         "comment": ""
       }
     ],
-    "acceptRates": [],
-    "projected": true,
-    "projectedFrom": 2026
+    "acceptRates": []
   },
   {
     "id": "sigspatial26-2027p",
@@ -42659,27 +42657,27 @@
     "projectedFrom": 2027
   },
   {
-    "id": "atc2026-2028p",
+    "id": "atc2027-2028p",
     "title": "SIGOPS ATC",
     "description": "ACM SIGOPS Annual Technical Conference",
     "category": "DS",
     "rank": "A",
     "year": 2028,
-    "link": "https://sigops.org/s/conferences/atc/2026/index.html",
-    "timezone": "UTC+0",
-    "conferenceDate": "November 16-18, 2028",
-    "conferenceStart": "2028-11-16",
-    "place": "Hyatt Hotel, Shatin, Hong Kong, China",
+    "link": "https://atc.sigops.org/2027/",
+    "timezone": "AoE",
+    "conferenceDate": "June 28-July 1, 2028",
+    "conferenceStart": "2028-06-28",
+    "place": "Rennes, France",
     "timeline": [
       {
-        "date": "2028-06-11",
+        "date": "2028-01-19",
         "abstractDate": "",
         "comment": ""
       }
     ],
     "acceptRates": [],
     "projected": true,
-    "projectedFrom": 2026
+    "projectedFrom": 2027
   },
   {
     "id": "sigspatial26-2028p",
@@ -51646,6 +51644,29 @@
         "accepted": 186
       }
     ],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
+    "id": "atc2027-2029p",
+    "title": "SIGOPS ATC",
+    "description": "ACM SIGOPS Annual Technical Conference",
+    "category": "DS",
+    "rank": "A",
+    "year": 2029,
+    "link": "https://atc.sigops.org/2027/",
+    "timezone": "AoE",
+    "conferenceDate": "June 28-July 1, 2029",
+    "conferenceStart": "2029-06-28",
+    "place": "Rennes, France",
+    "timeline": [
+      {
+        "date": "2029-01-19",
+        "abstractDate": "",
+        "comment": ""
+      }
+    ],
+    "acceptRates": [],
     "projected": true,
     "projectedFrom": 2027
   },
