@@ -7326,6 +7326,27 @@
     ]
   },
   {
+    "id": "icse-chase26",
+    "title": "ICSE-CHASE",
+    "description": "International Conference on Cooperative and Human Aspects of Software Engineering",
+    "category": "SE",
+    "rank": "N",
+    "year": 2026,
+    "link": "https://conf.researchr.org/home/chase-2026",
+    "timezone": "AoE",
+    "conferenceDate": "April 13-14, 2026",
+    "conferenceStart": "2026-04-13",
+    "place": "Rio De Janeiro, Brazil",
+    "timeline": [
+      {
+        "date": "2025-10-23",
+        "abstractDate": "",
+        "comment": ""
+      }
+    ],
+    "acceptRates": []
+  },
+  {
     "id": "icsme26",
     "title": "ICSME",
     "description": "International Conference on Software Maintenance and Evolution",
@@ -21913,6 +21934,27 @@
         "accepted": 208
       }
     ]
+  },
+  {
+    "id": "icse-chase27",
+    "title": "ICSE-CHASE",
+    "description": "International Conference on Cooperative and Human Aspects of Software Engineering",
+    "category": "SE",
+    "rank": "N",
+    "year": 2027,
+    "link": "https://conf.researchr.org/home/chase-2027",
+    "timezone": "AoE",
+    "conferenceDate": "April 26-27, 2027",
+    "conferenceStart": "2027-04-26",
+    "place": "Dublin, Ireland",
+    "timeline": [
+      {
+        "date": "2026-10-30",
+        "abstractDate": "2026-10-23",
+        "comment": ""
+      }
+    ],
+    "acceptRates": []
   },
   {
     "id": "icsme27",
@@ -36753,6 +36795,29 @@
     "projectedFrom": 2027
   },
   {
+    "id": "icse-chase27-2028p",
+    "title": "ICSE-CHASE",
+    "description": "International Conference on Cooperative and Human Aspects of Software Engineering",
+    "category": "SE",
+    "rank": "N",
+    "year": 2028,
+    "link": "https://conf.researchr.org/home/chase-2027",
+    "timezone": "AoE",
+    "conferenceDate": "April 26-27, 2028",
+    "conferenceStart": "2028-04-26",
+    "place": "Dublin, Ireland",
+    "timeline": [
+      {
+        "date": "2027-10-30",
+        "abstractDate": "2027-10-23",
+        "comment": ""
+      }
+    ],
+    "acceptRates": [],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
     "id": "icsme27-2028p",
     "title": "ICSME",
     "description": "International Conference on Software Maintenance and Evolution",
@@ -48578,6 +48643,29 @@
         "accepted": 208
       }
     ],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
+    "id": "icse-chase27-2029p",
+    "title": "ICSE-CHASE",
+    "description": "International Conference on Cooperative and Human Aspects of Software Engineering",
+    "category": "SE",
+    "rank": "N",
+    "year": 2029,
+    "link": "https://conf.researchr.org/home/chase-2027",
+    "timezone": "AoE",
+    "conferenceDate": "April 26-27, 2029",
+    "conferenceStart": "2029-04-26",
+    "place": "Dublin, Ireland",
+    "timeline": [
+      {
+        "date": "2028-10-30",
+        "abstractDate": "2028-10-23",
+        "comment": ""
+      }
+    ],
+    "acceptRates": [],
     "projected": true,
     "projectedFrom": 2027
   },
