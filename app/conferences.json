@@ -16755,8 +16755,8 @@
     "place": "Fort Collins, Colorado, USA",
     "timeline": [
       {
-        "date": "2026-11-23",
-        "abstractDate": "2026-11-16",
+        "date": "2026-12-07",
+        "abstractDate": "2026-11-30",
         "comment": ""
       }
     ],
@@ -21785,7 +21785,7 @@
       {
         "date": "2027-03-08",
         "abstractDate": "2027-03-01",
-        "comment": "All dates tentative; March 1 is paper registration; author rebuttal April 23 (provisional, cutoff unspecified)"
+        "comment": "All dates tentative; March 1 is paper registration; author rebuttal May 17 (provisional, cutoff unspecified)"
       }
     ],
     "acceptRates": [
@@ -24500,7 +24500,7 @@
       },
       {
         "date": "2026-11-19",
-        "abstractDate": "2026-11-12",
+        "abstractDate": "2026-11-19",
         "comment": "Research Track - Second Round"
       }
     ],
@@ -24639,32 +24639,30 @@
     "projectedFrom": 2026
   },
   {
-    "id": "middleware26-2027p",
+    "id": "middleware27",
     "title": "Middleware",
     "description": "International Middleware Conference",
     "category": "SE",
     "rank": "B",
     "year": 2027,
-    "link": "https://middleware-conf.github.io/2026/",
+    "link": "https://middleware-conf.github.io/2027/",
     "timezone": "AoE",
-    "conferenceDate": "December 14-18, 2027",
-    "conferenceStart": "2027-12-14",
-    "place": "Universitat Rovira i Virgili, Tarragona, Spain",
+    "conferenceDate": "December 13-17, 2027",
+    "conferenceStart": "2027-12-13",
+    "place": "Kyoto, Japan",
     "timeline": [
       {
-        "date": "2026-12-12",
-        "abstractDate": "2026-12-09",
-        "comment": "Round 1"
+        "date": "2026-12-04",
+        "abstractDate": "2026-11-27",
+        "comment": "Winter cycle"
       },
       {
-        "date": "2027-06-05",
-        "abstractDate": "2027-05-29",
-        "comment": "Round 2"
+        "date": "2027-06-04",
+        "abstractDate": "2027-05-28",
+        "comment": "Summer cycle"
       }
     ],
-    "acceptRates": [],
-    "projected": true,
-    "projectedFrom": 2026
+    "acceptRates": []
   },
   {
     "id": "models26-2027p",
@@ -25452,7 +25450,7 @@
     "place": "Wellington, New Zealand",
     "timeline": [
       {
-        "date": "2026-11-20",
+        "date": "2026-12-04",
         "abstractDate": "",
         "comment": ""
       }
@@ -31584,8 +31582,8 @@
     "place": "Fort Collins, Colorado, USA",
     "timeline": [
       {
-        "date": "2027-11-23",
-        "abstractDate": "2027-11-16",
+        "date": "2027-12-07",
+        "abstractDate": "2027-11-30",
         "comment": ""
       }
     ],
@@ -39457,7 +39455,7 @@
       },
       {
         "date": "2027-11-19",
-        "abstractDate": "2027-11-12",
+        "abstractDate": "2027-11-19",
         "comment": "Research Track - Second Round"
       }
     ],
@@ -39608,32 +39606,32 @@
     "projectedFrom": 2026
   },
   {
-    "id": "middleware26-2028p",
+    "id": "middleware27-2028p",
     "title": "Middleware",
     "description": "International Middleware Conference",
     "category": "SE",
     "rank": "B",
     "year": 2028,
-    "link": "https://middleware-conf.github.io/2026/",
+    "link": "https://middleware-conf.github.io/2027/",
     "timezone": "AoE",
-    "conferenceDate": "December 14-18, 2028",
-    "conferenceStart": "2028-12-14",
-    "place": "Universitat Rovira i Virgili, Tarragona, Spain",
+    "conferenceDate": "December 13-17, 2028",
+    "conferenceStart": "2028-12-13",
+    "place": "Kyoto, Japan",
     "timeline": [
       {
-        "date": "2027-12-12",
-        "abstractDate": "2027-12-09",
-        "comment": "Round 1"
+        "date": "2027-12-04",
+        "abstractDate": "2027-11-27",
+        "comment": "Winter cycle"
       },
       {
-        "date": "2028-06-05",
-        "abstractDate": "2028-05-29",
-        "comment": "Round 2"
+        "date": "2028-06-04",
+        "abstractDate": "2028-05-28",
+        "comment": "Summer cycle"
       }
     ],
     "acceptRates": [],
     "projected": true,
-    "projectedFrom": 2026
+    "projectedFrom": 2027
   },
   {
     "id": "models26-2028p",
@@ -40380,7 +40378,7 @@
     "place": "Wellington, New Zealand",
     "timeline": [
       {
-        "date": "2027-11-20",
+        "date": "2027-12-04",
         "abstractDate": "",
         "comment": ""
       }
@@ -45404,8 +45402,8 @@
     "place": "Fort Collins, Colorado, USA",
     "timeline": [
       {
-        "date": "2028-11-23",
-        "abstractDate": "2028-11-16",
+        "date": "2028-12-07",
+        "abstractDate": "2028-11-30",
         "comment": ""
       }
     ],
@@ -48488,7 +48486,7 @@
       {
         "date": "2029-03-08",
         "abstractDate": "2029-03-01",
-        "comment": "All dates tentative; March 1 is paper registration; author rebuttal April 23 (provisional, cutoff unspecified)"
+        "comment": "All dates tentative; March 1 is paper registration; author rebuttal May 17 (provisional, cutoff unspecified)"
       }
     ],
     "acceptRates": [
@@ -49926,7 +49924,7 @@
       },
       {
         "date": "2028-11-19",
-        "abstractDate": "2028-11-12",
+        "abstractDate": "2028-11-19",
         "comment": "Research Track - Second Round"
       }
     ],
@@ -50004,6 +50002,34 @@
         "accepted": 48
       }
     ],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
+    "id": "middleware27-2029p",
+    "title": "Middleware",
+    "description": "International Middleware Conference",
+    "category": "SE",
+    "rank": "B",
+    "year": 2029,
+    "link": "https://middleware-conf.github.io/2027/",
+    "timezone": "AoE",
+    "conferenceDate": "December 13-17, 2029",
+    "conferenceStart": "2029-12-13",
+    "place": "Kyoto, Japan",
+    "timeline": [
+      {
+        "date": "2028-12-04",
+        "abstractDate": "2028-11-27",
+        "comment": "Winter cycle"
+      },
+      {
+        "date": "2029-06-04",
+        "abstractDate": "2029-05-28",
+        "comment": "Summer cycle"
+      }
+    ],
+    "acceptRates": [],
     "projected": true,
     "projectedFrom": 2027
   },
@@ -50473,7 +50499,7 @@
     "place": "Wellington, New Zealand",
     "timeline": [
       {
-        "date": "2028-11-20",
+        "date": "2028-12-04",
         "abstractDate": "",
         "comment": ""
       }
