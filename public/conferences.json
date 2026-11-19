@@ -20895,7 +20895,13 @@
     "conferenceDate": "July 5-8, 2027",
     "conferenceStart": "2027-07-05",
     "place": "Melbourne, Australia",
-    "timeline": [],
+    "timeline": [
+      {
+        "date": "2027-01-13",
+        "abstractDate": "2027-01-06",
+        "comment": ""
+      }
+    ],
     "acceptRates": []
   },
   {
@@ -23388,24 +23394,18 @@
     ]
   },
   {
-    "id": "ismar2026-2027p",
+    "id": "ismar2027",
     "title": "ISMAR",
     "description": "International Symposium on Mixed and Augmented Reality",
     "category": "CG",
     "rank": "B",
     "year": 2027,
-    "link": "https://www.ieeeismar.net/2026/",
+    "link": "https://www.ieeeismar.net/2027/",
     "timezone": "AoE",
-    "conferenceDate": "October 7-9, 2027",
-    "conferenceStart": "2027-10-07",
-    "place": "Bari, Italy",
-    "timeline": [
-      {
-        "date": "2027-03-16",
-        "abstractDate": "2027-03-09",
-        "comment": ""
-      }
-    ],
+    "conferenceDate": "TBD",
+    "conferenceStart": "",
+    "place": "Kobe, Japan",
+    "timeline": [],
     "acceptRates": [
       {
         "year": 2025,
@@ -23431,9 +23431,7 @@
         "submitted": 441,
         "accepted": 93
       }
-    ],
-    "projected": true,
-    "projectedFrom": 2026
+    ]
   },
   {
     "id": "ismb27",
@@ -35758,27 +35756,27 @@
     "projectedFrom": 2027
   },
   {
-    "id": "icdcs26-2028p",
+    "id": "icdcs27-2028p",
     "title": "ICDCS",
     "description": "IEEE International Conference on Distributed Computing Systems",
     "category": "DS",
     "rank": "B",
     "year": 2028,
-    "link": "http://icdcs2026.icdcs.org/",
+    "link": "https://icdcs2027.icdcs.org/",
     "timezone": "AoE",
-    "conferenceDate": "June 22-24, 2028",
-    "conferenceStart": "2028-06-22",
-    "place": "Seoul, South Korea",
+    "conferenceDate": "July 5-8, 2028",
+    "conferenceStart": "2028-07-05",
+    "place": "Melbourne, Australia",
     "timeline": [
       {
-        "date": "2028-01-21",
-        "abstractDate": "2028-01-21",
+        "date": "2028-01-13",
+        "abstractDate": "2028-01-06",
         "comment": ""
       }
     ],
     "acceptRates": [],
     "projected": true,
-    "projectedFrom": 2026
+    "projectedFrom": 2027
   },
   {
     "id": "icde27-2028p",
@@ -47949,6 +47947,29 @@
         "accepted": 154
       }
     ],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
+    "id": "icdcs27-2029p",
+    "title": "ICDCS",
+    "description": "IEEE International Conference on Distributed Computing Systems",
+    "category": "DS",
+    "rank": "B",
+    "year": 2029,
+    "link": "https://icdcs2027.icdcs.org/",
+    "timezone": "AoE",
+    "conferenceDate": "July 5-8, 2029",
+    "conferenceStart": "2029-07-05",
+    "place": "Melbourne, Australia",
+    "timeline": [
+      {
+        "date": "2029-01-13",
+        "abstractDate": "2029-01-06",
+        "comment": ""
+      }
+    ],
+    "acceptRates": [],
     "projected": true,
     "projectedFrom": 2027
   },
