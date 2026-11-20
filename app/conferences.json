@@ -16354,21 +16354,21 @@
     ]
   },
   {
-    "id": "cf2026-2027p",
+    "id": "cf2027",
     "title": "CF",
     "description": "ACM International Conference on Computing Frontiers",
     "category": "DS",
     "rank": "C",
     "year": 2027,
-    "link": "https://www.computingfrontiers.org/2026/",
+    "link": "https://www.computingfrontiers.org/2027/",
     "timezone": "AoE",
-    "conferenceDate": "May 19-21, 2027",
-    "conferenceStart": "2027-05-19",
-    "place": "Catania, Sicily, Italy",
+    "conferenceDate": "May 25-27, 2027",
+    "conferenceStart": "2027-05-25",
+    "place": "Trento, Italy",
     "timeline": [
       {
-        "date": "2027-02-01",
-        "abstractDate": "2027-02-01",
+        "date": "2027-01-25",
+        "abstractDate": "2027-01-18",
         "comment": ""
       }
     ],
@@ -16379,9 +16379,7 @@
         "submitted": 68,
         "accepted": 24
       }
-    ],
-    "projected": true,
-    "projectedFrom": 2026
+    ]
   },
   {
     "id": "cgi27",
@@ -20151,21 +20149,21 @@
     "projectedFrom": 2026
   },
   {
-    "id": "hpdc2026-2027p",
+    "id": "hpdc2027",
     "title": "HPDC",
     "description": "ACM Symposium on High-Performance Parallel and Distributed Computing",
     "category": "DS",
     "rank": "A",
     "year": 2027,
-    "link": "https://hpdc.sci.utah.edu/2026/",
+    "link": "https://hpdc.sci.utah.edu/2027/",
     "timezone": "AoE",
-    "conferenceDate": "July 14-16, 2027",
-    "conferenceStart": "2027-07-14",
-    "place": "Cleveland, OH, USA",
+    "conferenceDate": "June 7-9, 2027",
+    "conferenceStart": "2027-06-07",
+    "place": "Atlanta, GA, USA",
     "timeline": [
       {
-        "date": "2027-02-05",
-        "abstractDate": "2027-01-29",
+        "date": "2027-01-18",
+        "abstractDate": "2027-01-11",
         "comment": ""
       }
     ],
@@ -20188,9 +20186,7 @@
         "submitted": 108,
         "accepted": 21
       }
-    ],
-    "projected": true,
-    "projectedFrom": 2026
+    ]
   },
   {
     "id": "hscc27",
@@ -21997,8 +21993,8 @@
     "place": "Toronto, Canada",
     "timeline": [
       {
-        "date": "2027-03-05",
-        "abstractDate": "",
+        "date": "2027-02-26",
+        "abstractDate": "2027-02-19",
         "comment": "Research Papers Track"
       }
     ],
@@ -23503,21 +23499,21 @@
     "projectedFrom": 2026
   },
   {
-    "id": "ispass26-2027p",
+    "id": "ispass27",
     "title": "ISPASS",
     "description": "International Symposium on Performance Analysis of Systems and Software",
     "category": "SE",
     "rank": "C",
     "year": 2027,
-    "link": "https://ispass.org/ispass2026/",
-    "timezone": "UTC-5",
-    "conferenceDate": "April 27-28, 2027",
-    "conferenceStart": "2027-04-27",
-    "place": "Seoul, South Korea",
+    "link": "https://ispass.org/2027/",
+    "timezone": "AoE",
+    "conferenceDate": "May 9-11, 2027",
+    "conferenceStart": "2027-05-09",
+    "place": "New York City, USA",
     "timeline": [
       {
-        "date": "2026-12-15",
-        "abstractDate": "2026-12-08",
+        "date": "2026-12-18",
+        "abstractDate": "2026-12-11",
         "comment": ""
       }
     ],
@@ -23546,9 +23542,7 @@
         "submitted": 83,
         "accepted": 24
       }
-    ],
-    "projected": true,
-    "projectedFrom": 2026
+    ]
   },
   {
     "id": "ispd27",
@@ -24210,7 +24204,13 @@
     "conferenceDate": "June 21-24, 2027",
     "conferenceStart": "2027-06-21",
     "place": "Montréal, Canada",
-    "timeline": [],
+    "timeline": [
+      {
+        "date": "2027-01-21",
+        "abstractDate": "2027-01-14",
+        "comment": ""
+      }
+    ],
     "acceptRates": [
       {
         "year": 2026,
@@ -25264,21 +25264,21 @@
     "projectedFrom": 2026
   },
   {
-    "id": "networking26-2027p",
+    "id": "networking27",
     "title": "Networking",
     "description": "IFIP International Conference on Networking",
     "category": "NW",
     "rank": "C",
     "year": 2027,
-    "link": "https://networking.ifip.org/2026/",
+    "link": "https://networking.ifip.org/2027/",
     "timezone": "AoE",
-    "conferenceDate": "May 25-27, 2027",
-    "conferenceStart": "2027-05-25",
-    "place": "Lugano, Switzerland",
+    "conferenceDate": "June 13-16, 2027",
+    "conferenceStart": "2027-06-13",
+    "place": "Dublin, Ireland",
     "timeline": [
       {
-        "date": "2027-02-28",
-        "abstractDate": "",
+        "date": "2027-01-22",
+        "abstractDate": "2027-01-15",
         "comment": ""
       }
     ],
@@ -25289,9 +25289,7 @@
         "submitted": 192,
         "accepted": 52
       }
-    ],
-    "projected": true,
-    "projectedFrom": 2026
+    ]
   },
   {
     "id": "nips26-2027p",
@@ -27448,8 +27446,8 @@
     "year": 2027,
     "link": "https://sigir2027.org/",
     "timezone": "AoE",
-    "conferenceDate": "July 18-24, 2027",
-    "conferenceStart": "2027-07-18",
+    "conferenceDate": "July 20-22, 2027",
+    "conferenceStart": "2027-07-20",
     "place": "San Jose, California, USA",
     "timeline": [
       {
@@ -31182,21 +31180,21 @@
     "projectedFrom": 2026
   },
   {
-    "id": "cf2026-2028p",
+    "id": "cf2027-2028p",
     "title": "CF",
     "description": "ACM International Conference on Computing Frontiers",
     "category": "DS",
     "rank": "C",
     "year": 2028,
-    "link": "https://www.computingfrontiers.org/2026/",
+    "link": "https://www.computingfrontiers.org/2027/",
     "timezone": "AoE",
-    "conferenceDate": "May 19-21, 2028",
-    "conferenceStart": "2028-05-19",
-    "place": "Catania, Sicily, Italy",
+    "conferenceDate": "May 25-27, 2028",
+    "conferenceStart": "2028-05-25",
+    "place": "Trento, Italy",
     "timeline": [
       {
-        "date": "2028-02-01",
-        "abstractDate": "2028-02-01",
+        "date": "2028-01-25",
+        "abstractDate": "2028-01-18",
         "comment": ""
       }
     ],
@@ -31209,7 +31207,7 @@
       }
     ],
     "projected": true,
-    "projectedFrom": 2026
+    "projectedFrom": 2027
   },
   {
     "id": "cgi27-2028p",
@@ -35062,21 +35060,21 @@
     "projectedFrom": 2026
   },
   {
-    "id": "hpdc2026-2028p",
+    "id": "hpdc2027-2028p",
     "title": "HPDC",
     "description": "ACM Symposium on High-Performance Parallel and Distributed Computing",
     "category": "DS",
     "rank": "A",
     "year": 2028,
-    "link": "https://hpdc.sci.utah.edu/2026/",
+    "link": "https://hpdc.sci.utah.edu/2027/",
     "timezone": "AoE",
-    "conferenceDate": "July 14-16, 2028",
-    "conferenceStart": "2028-07-14",
-    "place": "Cleveland, OH, USA",
+    "conferenceDate": "June 7-9, 2028",
+    "conferenceStart": "2028-06-07",
+    "place": "Atlanta, GA, USA",
     "timeline": [
       {
-        "date": "2028-02-05",
-        "abstractDate": "2028-01-29",
+        "date": "2028-01-18",
+        "abstractDate": "2028-01-11",
         "comment": ""
       }
     ],
@@ -35101,7 +35099,7 @@
       }
     ],
     "projected": true,
-    "projectedFrom": 2026
+    "projectedFrom": 2027
   },
   {
     "id": "hscc27-2028p",
@@ -36871,8 +36869,8 @@
     "place": "Toronto, Canada",
     "timeline": [
       {
-        "date": "2028-03-05",
-        "abstractDate": "",
+        "date": "2028-02-26",
+        "abstractDate": "2028-02-19",
         "comment": "Research Papers Track"
       }
     ],
@@ -38439,21 +38437,21 @@
     "projectedFrom": 2026
   },
   {
-    "id": "ispass26-2028p",
+    "id": "ispass27-2028p",
     "title": "ISPASS",
     "description": "International Symposium on Performance Analysis of Systems and Software",
     "category": "SE",
     "rank": "C",
     "year": 2028,
-    "link": "https://ispass.org/ispass2026/",
-    "timezone": "UTC-5",
-    "conferenceDate": "April 27-28, 2028",
-    "conferenceStart": "2028-04-27",
-    "place": "Seoul, South Korea",
+    "link": "https://ispass.org/2027/",
+    "timezone": "AoE",
+    "conferenceDate": "May 9-11, 2028",
+    "conferenceStart": "2028-05-09",
+    "place": "New York City, USA",
     "timeline": [
       {
-        "date": "2027-12-15",
-        "abstractDate": "2027-12-08",
+        "date": "2027-12-18",
+        "abstractDate": "2027-12-11",
         "comment": ""
       }
     ],
@@ -38484,7 +38482,7 @@
       }
     ],
     "projected": true,
-    "projectedFrom": 2026
+    "projectedFrom": 2027
   },
   {
     "id": "ispd27-2028p",
@@ -39163,21 +39161,21 @@
     "projectedFrom": 2026
   },
   {
-    "id": "lics26-2028p",
+    "id": "lics27-2028p",
     "title": "LICS",
     "description": "IEEE Symposium on Logic in Computer Science",
     "category": "CT",
     "rank": "A",
     "year": 2028,
-    "link": "https://lics.siglog.org/lics26/",
+    "link": "https://lics.siglog.org/lics27/",
     "timezone": "AoE",
-    "conferenceDate": "July 20-23, 2028",
-    "conferenceStart": "2028-07-20",
-    "place": "Lisbon, Portugal",
+    "conferenceDate": "June 21-24, 2028",
+    "conferenceStart": "2028-06-21",
+    "place": "Montréal, Canada",
     "timeline": [
       {
-        "date": "2028-01-22",
-        "abstractDate": "2028-01-15",
+        "date": "2028-01-21",
+        "abstractDate": "2028-01-14",
         "comment": ""
       }
     ],
@@ -39208,7 +39206,7 @@
       }
     ],
     "projected": true,
-    "projectedFrom": 2026
+    "projectedFrom": 2027
   },
   {
     "id": "log2026-2028p",
@@ -40211,21 +40209,21 @@
     "projectedFrom": 2026
   },
   {
-    "id": "networking26-2028p",
+    "id": "networking27-2028p",
     "title": "Networking",
     "description": "IFIP International Conference on Networking",
     "category": "NW",
     "rank": "C",
     "year": 2028,
-    "link": "https://networking.ifip.org/2026/",
+    "link": "https://networking.ifip.org/2027/",
     "timezone": "AoE",
-    "conferenceDate": "May 25-27, 2028",
-    "conferenceStart": "2028-05-25",
-    "place": "Lugano, Switzerland",
+    "conferenceDate": "June 13-16, 2028",
+    "conferenceStart": "2028-06-13",
+    "place": "Dublin, Ireland",
     "timeline": [
       {
-        "date": "2028-02-28",
-        "abstractDate": "",
+        "date": "2028-01-22",
+        "abstractDate": "2028-01-15",
         "comment": ""
       }
     ],
@@ -40238,7 +40236,7 @@
       }
     ],
     "projected": true,
-    "projectedFrom": 2026
+    "projectedFrom": 2027
   },
   {
     "id": "nips26-2028p",
@@ -42560,8 +42558,8 @@
     "year": 2028,
     "link": "https://sigir2027.org/",
     "timezone": "AoE",
-    "conferenceDate": "July 18-24, 2028",
-    "conferenceStart": "2028-07-18",
+    "conferenceDate": "July 20-22, 2028",
+    "conferenceStart": "2028-07-20",
     "place": "San Jose, California, USA",
     "timeline": [
       {
@@ -45256,6 +45254,36 @@
     "projectedFrom": 2027
   },
   {
+    "id": "cf2027-2029p",
+    "title": "CF",
+    "description": "ACM International Conference on Computing Frontiers",
+    "category": "DS",
+    "rank": "C",
+    "year": 2029,
+    "link": "https://www.computingfrontiers.org/2027/",
+    "timezone": "AoE",
+    "conferenceDate": "May 25-27, 2029",
+    "conferenceStart": "2029-05-25",
+    "place": "Trento, Italy",
+    "timeline": [
+      {
+        "date": "2029-01-25",
+        "abstractDate": "2029-01-18",
+        "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2022,
+        "rate": 35.3,
+        "submitted": 68,
+        "accepted": 24
+      }
+    ],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
     "id": "cgi27-2029p",
     "title": "CGI",
     "description": "Computer Graphics International",
@@ -47590,6 +47618,48 @@
     "projectedFrom": 2027
   },
   {
+    "id": "hpdc2027-2029p",
+    "title": "HPDC",
+    "description": "ACM Symposium on High-Performance Parallel and Distributed Computing",
+    "category": "DS",
+    "rank": "A",
+    "year": 2029,
+    "link": "https://hpdc.sci.utah.edu/2027/",
+    "timezone": "AoE",
+    "conferenceDate": "June 7-9, 2029",
+    "conferenceStart": "2029-06-07",
+    "place": "Atlanta, GA, USA",
+    "timeline": [
+      {
+        "date": "2029-01-18",
+        "abstractDate": "2029-01-11",
+        "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 12.5,
+        "submitted": 281,
+        "accepted": 35
+      },
+      {
+        "year": 2024,
+        "rate": 17.3,
+        "submitted": 150,
+        "accepted": 26
+      },
+      {
+        "year": 2022,
+        "rate": 19.4,
+        "submitted": 108,
+        "accepted": 21
+      }
+    ],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
     "id": "hscc27-2029p",
     "title": "HSCC",
     "description": "International Conference on Hybrid Systems: Computation and Control",
@@ -48769,8 +48839,8 @@
     "place": "Toronto, Canada",
     "timeline": [
       {
-        "date": "2029-03-05",
-        "abstractDate": "",
+        "date": "2029-02-26",
+        "abstractDate": "2029-02-19",
         "comment": "Research Papers Track"
       }
     ],
@@ -49611,6 +49681,54 @@
     "projectedFrom": 2027
   },
   {
+    "id": "ispass27-2029p",
+    "title": "ISPASS",
+    "description": "International Symposium on Performance Analysis of Systems and Software",
+    "category": "SE",
+    "rank": "C",
+    "year": 2029,
+    "link": "https://ispass.org/2027/",
+    "timezone": "AoE",
+    "conferenceDate": "May 9-11, 2029",
+    "conferenceStart": "2029-05-09",
+    "place": "New York City, USA",
+    "timeline": [
+      {
+        "date": "2028-12-18",
+        "abstractDate": "2028-12-11",
+        "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 39.1,
+        "submitted": 138,
+        "accepted": 54
+      },
+      {
+        "year": 2025,
+        "rate": 28.3,
+        "submitted": 99,
+        "accepted": 28
+      },
+      {
+        "year": 2024,
+        "rate": 34.3,
+        "submitted": 70,
+        "accepted": 24
+      },
+      {
+        "year": 2022,
+        "rate": 28.9,
+        "submitted": 83,
+        "accepted": 24
+      }
+    ],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
     "id": "ispd27-2029p",
     "title": "ISPD",
     "description": "International Symposium on Physical Design",
@@ -49867,6 +49985,54 @@
         "rate": 23.6,
         "submitted": 339,
         "accepted": 80
+      }
+    ],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
+    "id": "lics27-2029p",
+    "title": "LICS",
+    "description": "IEEE Symposium on Logic in Computer Science",
+    "category": "CT",
+    "rank": "A",
+    "year": 2029,
+    "link": "https://lics.siglog.org/lics27/",
+    "timezone": "AoE",
+    "conferenceDate": "June 21-24, 2029",
+    "conferenceStart": "2029-06-21",
+    "place": "Montréal, Canada",
+    "timeline": [
+      {
+        "date": "2029-01-21",
+        "abstractDate": "2029-01-14",
+        "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2026,
+        "rate": 28.0,
+        "submitted": 293,
+        "accepted": 82
+      },
+      {
+        "year": 2025,
+        "rate": 30.7,
+        "submitted": 215,
+        "accepted": 66
+      },
+      {
+        "year": 2023,
+        "rate": 32.8,
+        "submitted": 192,
+        "accepted": 63
+      },
+      {
+        "year": 2022,
+        "rate": 34.8,
+        "submitted": 181,
+        "accepted": 63
       }
     ],
     "projected": true,
@@ -50473,6 +50639,36 @@
         "rate": 17.1,
         "submitted": 560,
         "accepted": 96
+      }
+    ],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
+    "id": "networking27-2029p",
+    "title": "Networking",
+    "description": "IFIP International Conference on Networking",
+    "category": "NW",
+    "rank": "C",
+    "year": 2029,
+    "link": "https://networking.ifip.org/2027/",
+    "timezone": "AoE",
+    "conferenceDate": "June 13-16, 2029",
+    "conferenceStart": "2029-06-13",
+    "place": "Dublin, Ireland",
+    "timeline": [
+      {
+        "date": "2029-01-22",
+        "abstractDate": "2029-01-15",
+        "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2023,
+        "rate": 27.1,
+        "submitted": 192,
+        "accepted": 52
       }
     ],
     "projected": true,
@@ -51671,8 +51867,8 @@
     "year": 2029,
     "link": "https://sigir2027.org/",
     "timezone": "AoE",
-    "conferenceDate": "July 18-24, 2029",
-    "conferenceStart": "2029-07-18",
+    "conferenceDate": "July 20-22, 2029",
+    "conferenceStart": "2029-07-20",
     "place": "San Jose, California, USA",
     "timeline": [
       {
