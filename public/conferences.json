@@ -18304,27 +18304,19 @@
     ]
   },
   {
-    "id": "ecscw26-2027p",
+    "id": "ecscw27",
     "title": "ECSCW",
     "description": "European Conference on Computer Supported Cooperative Work",
     "category": "HI",
     "rank": "B",
     "year": 2027,
-    "link": "https://ecscw.eusset.eu/2026",
+    "link": "https://ecscw.eusset.eu/2027/",
     "timezone": "AoE",
-    "conferenceDate": "July 1-3, 2027",
-    "conferenceStart": "2027-07-01",
-    "place": "Munich, Germany",
-    "timeline": [
-      {
-        "date": "2027-03-06",
-        "abstractDate": "",
-        "comment": ""
-      }
-    ],
-    "acceptRates": [],
-    "projected": true,
-    "projectedFrom": 2026
+    "conferenceDate": "July 5-9, 2027",
+    "conferenceStart": "2027-07-05",
+    "place": "Limassol, Cyprus",
+    "timeline": [],
+    "acceptRates": []
   },
   {
     "id": "edbt27",
@@ -28462,21 +28454,21 @@
     "projectedFrom": 2026
   },
   {
-    "id": "uist2026-2027p",
+    "id": "uist2027",
     "title": "UIST",
     "description": "ACM Symposium on User Interface Software and Technology",
     "category": "HI",
     "rank": "A",
     "year": 2027,
-    "link": "https://uist.acm.org/2026/",
+    "link": "https://uist.acm.org/2027/",
     "timezone": "AoE",
-    "conferenceDate": "November 2 - 5, 2027",
-    "conferenceStart": "2027-11-02",
-    "place": "GM Renaissance Center, Detroit, MI, USA",
+    "conferenceDate": "October 27-29, 2027",
+    "conferenceStart": "2027-10-27",
+    "place": "VIECON - Vienna Congress & Convention Center, Vienna, Austria",
     "timeline": [
       {
-        "date": "2027-03-31",
-        "abstractDate": "2027-03-24",
+        "date": "2027-04-07",
+        "abstractDate": "2027-03-31",
         "comment": ""
       }
     ],
@@ -28499,9 +28491,7 @@
         "submitted": 372,
         "accepted": 98
       }
-    ],
-    "projected": true,
-    "projectedFrom": 2026
+    ]
   },
   {
     "id": "uss27",
@@ -43585,21 +43575,21 @@
     "projectedFrom": 2026
   },
   {
-    "id": "uist2026-2028p",
+    "id": "uist2027-2028p",
     "title": "UIST",
     "description": "ACM Symposium on User Interface Software and Technology",
     "category": "HI",
     "rank": "A",
     "year": 2028,
-    "link": "https://uist.acm.org/2026/",
+    "link": "https://uist.acm.org/2027/",
     "timezone": "AoE",
-    "conferenceDate": "November 2 - 5, 2028",
-    "conferenceStart": "2028-11-02",
-    "place": "GM Renaissance Center, Detroit, MI, USA",
+    "conferenceDate": "October 27-29, 2028",
+    "conferenceStart": "2028-10-27",
+    "place": "VIECON - Vienna Congress & Convention Center, Vienna, Austria",
     "timeline": [
       {
-        "date": "2028-03-31",
-        "abstractDate": "2028-03-24",
+        "date": "2028-04-07",
+        "abstractDate": "2028-03-31",
         "comment": ""
       }
     ],
@@ -43624,7 +43614,7 @@
       }
     ],
     "projected": true,
-    "projectedFrom": 2026
+    "projectedFrom": 2027
   },
   {
     "id": "uss27-2028p",
@@ -52359,6 +52349,48 @@
         "rate": 24.9,
         "submitted": 209,
         "accepted": 52
+      }
+    ],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
+    "id": "uist2027-2029p",
+    "title": "UIST",
+    "description": "ACM Symposium on User Interface Software and Technology",
+    "category": "HI",
+    "rank": "A",
+    "year": 2029,
+    "link": "https://uist.acm.org/2027/",
+    "timezone": "AoE",
+    "conferenceDate": "October 27-29, 2029",
+    "conferenceStart": "2029-10-27",
+    "place": "VIECON - Vienna Congress & Convention Center, Vienna, Austria",
+    "timeline": [
+      {
+        "date": "2029-04-07",
+        "abstractDate": "2029-03-31",
+        "comment": ""
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 24.0,
+        "submitted": 608,
+        "accepted": 146
+      },
+      {
+        "year": 2023,
+        "rate": 25.1,
+        "submitted": 483,
+        "accepted": 121
+      },
+      {
+        "year": 2022,
+        "rate": 26.3,
+        "submitted": 372,
+        "accepted": 98
       }
     ],
     "projected": true,
