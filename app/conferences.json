@@ -15638,7 +15638,7 @@
     "timezone": "AoE",
     "conferenceDate": "April 11-15, 2027",
     "conferenceStart": "2027-04-11",
-    "place": "Crete, Greece",
+    "place": "Heraklion, Crete, Greece",
     "timeline": [
       {
         "date": "2026-04-15",
@@ -18141,8 +18141,8 @@
     "year": 2027,
     "link": "https://ecai2027.org/",
     "timezone": "AoE",
-    "conferenceDate": "October 2-7, 2027",
-    "conferenceStart": "2027-10-02",
+    "conferenceDate": "October 4-7, 2027",
+    "conferenceStart": "2027-10-04",
     "place": "Athens, Greece",
     "timeline": [
       {
@@ -18221,8 +18221,8 @@
     "year": 2027,
     "link": "https://ecmlpkdd.org/2027/",
     "timezone": "AoE",
-    "conferenceDate": "September 20-24, 2027",
-    "conferenceStart": "2027-09-20",
+    "conferenceDate": "August 30 - September 3, 2027",
+    "conferenceStart": "2027-08-30",
     "place": "Eindhoven, The Netherlands",
     "timeline": [],
     "acceptRates": [
@@ -20535,8 +20535,8 @@
     "year": 2027,
     "link": "https://icaps27.icaps-conference.org/",
     "timezone": "UTC-12",
-    "conferenceDate": "June 27 - July 2, 2027",
-    "conferenceStart": "2027-06-27",
+    "conferenceDate": "June 30 - July 2, 2027",
+    "conferenceStart": "2027-06-30",
     "place": "Columbia, SC, USA",
     "timeline": [
       {
@@ -24676,27 +24676,25 @@
     "acceptRates": []
   },
   {
-    "id": "models26-2027p",
+    "id": "models27",
     "title": "MoDELS",
     "description": "International Conference on Model Driven Engineering Languages and Systems",
     "category": "SE",
     "rank": "B",
     "year": 2027,
-    "link": "https://conf.researchr.org/home/models-2026",
+    "link": "https://conf.researchr.org/home/models-2027",
     "timezone": "AoE",
-    "conferenceDate": "October 7-9, 2027",
-    "conferenceStart": "2027-10-07",
-    "place": "Málaga, Spain",
+    "conferenceDate": "TBD",
+    "conferenceStart": "",
+    "place": "Budapest, Hungary",
     "timeline": [
       {
-        "date": "2027-03-27",
-        "abstractDate": "2027-03-20",
+        "date": "2027-03-19",
+        "abstractDate": "2027-03-12",
         "comment": ""
       }
     ],
-    "acceptRates": [],
-    "projected": true,
-    "projectedFrom": 2026
+    "acceptRates": []
   },
   {
     "id": "mobicom27",
@@ -27541,7 +27539,7 @@
     "year": 2027,
     "link": "https://www.sigmetrics.org/sigmetrics2027/",
     "timezone": "AoE",
-    "conferenceDate": "June 7-11, 2027",
+    "conferenceDate": "June 7-10, 2027",
     "conferenceStart": "2027-06-07",
     "place": "Atlanta, Georgia, USA",
     "timeline": [
@@ -28864,13 +28862,13 @@
     "year": 2027,
     "link": "https://2027.worldhaptics.org/",
     "timezone": "AoE",
-    "conferenceDate": "July 12-15, 2027",
-    "conferenceStart": "2027-07-12",
+    "conferenceDate": "July 13-16, 2027",
+    "conferenceStart": "2027-07-13",
     "place": "Boston, Massachusetts, USA",
     "timeline": [
       {
-        "date": "2027-01-29",
-        "abstractDate": "",
+        "date": "2027-02-05",
+        "abstractDate": "2027-01-29",
         "comment": ""
       }
     ],
@@ -29017,8 +29015,8 @@
     "year": 2027,
     "link": "https://wsdm-conference.org/2027/",
     "timezone": "UTC-12",
-    "conferenceDate": "February 15 - 19, 2027",
-    "conferenceStart": "2027-02-15",
+    "conferenceDate": "February 16 - 18, 2027",
+    "conferenceStart": "2027-02-16",
     "place": "Cordis, Hong Kong SAR, China",
     "timeline": [
       {
@@ -30455,7 +30453,7 @@
     "timezone": "AoE",
     "conferenceDate": "April 11-15, 2028",
     "conferenceStart": "2028-04-11",
-    "place": "Crete, Greece",
+    "place": "Heraklion, Crete, Greece",
     "timeline": [
       {
         "date": "2027-04-15",
@@ -32998,8 +32996,8 @@
     "year": 2028,
     "link": "https://ecai2027.org/",
     "timezone": "AoE",
-    "conferenceDate": "October 2-7, 2028",
-    "conferenceStart": "2028-10-02",
+    "conferenceDate": "October 4-7, 2028",
+    "conferenceStart": "2028-10-04",
     "place": "Athens, Greece",
     "timeline": [
       {
@@ -35439,8 +35437,8 @@
     "year": 2028,
     "link": "https://icaps27.icaps-conference.org/",
     "timezone": "UTC-12",
-    "conferenceDate": "June 27 - July 2, 2028",
-    "conferenceStart": "2028-06-27",
+    "conferenceDate": "June 30 - July 2, 2028",
+    "conferenceStart": "2028-06-30",
     "place": "Columbia, SC, USA",
     "timeline": [
       {
@@ -39664,27 +39662,27 @@
     "projectedFrom": 2027
   },
   {
-    "id": "models26-2028p",
+    "id": "models27-2028p",
     "title": "MoDELS",
     "description": "International Conference on Model Driven Engineering Languages and Systems",
     "category": "SE",
     "rank": "B",
     "year": 2028,
-    "link": "https://conf.researchr.org/home/models-2026",
+    "link": "https://conf.researchr.org/home/models-2027",
     "timezone": "AoE",
-    "conferenceDate": "October 7-9, 2028",
-    "conferenceStart": "2028-10-07",
-    "place": "Málaga, Spain",
+    "conferenceDate": "TBD",
+    "conferenceStart": "",
+    "place": "Budapest, Hungary",
     "timeline": [
       {
-        "date": "2028-03-27",
-        "abstractDate": "2028-03-20",
+        "date": "2028-03-19",
+        "abstractDate": "2028-03-12",
         "comment": ""
       }
     ],
     "acceptRates": [],
     "projected": true,
-    "projectedFrom": 2026
+    "projectedFrom": 2027
   },
   {
     "id": "mobicom27-2028p",
@@ -42655,7 +42653,7 @@
     "year": 2028,
     "link": "https://www.sigmetrics.org/sigmetrics2027/",
     "timezone": "AoE",
-    "conferenceDate": "June 7-11, 2028",
+    "conferenceDate": "June 7-10, 2028",
     "conferenceStart": "2028-06-07",
     "place": "Atlanta, Georgia, USA",
     "timeline": [
@@ -44142,8 +44140,8 @@
     "year": 2028,
     "link": "https://wsdm-conference.org/2027/",
     "timezone": "UTC-12",
-    "conferenceDate": "February 15 - 19, 2028",
-    "conferenceStart": "2028-02-15",
+    "conferenceDate": "February 16 - 18, 2028",
+    "conferenceStart": "2028-02-16",
     "place": "Cordis, Hong Kong SAR, China",
     "timeline": [
       {
@@ -44851,7 +44849,7 @@
     "timezone": "AoE",
     "conferenceDate": "April 11-15, 2029",
     "conferenceStart": "2029-04-11",
-    "place": "Crete, Greece",
+    "place": "Heraklion, Crete, Greece",
     "timeline": [
       {
         "date": "2028-04-15",
@@ -46309,8 +46307,8 @@
     "year": 2029,
     "link": "https://ecai2027.org/",
     "timezone": "AoE",
-    "conferenceDate": "October 2-7, 2029",
-    "conferenceStart": "2029-10-02",
+    "conferenceDate": "October 4-7, 2029",
+    "conferenceStart": "2029-10-04",
     "place": "Athens, Greece",
     "timeline": [
       {
@@ -47775,8 +47773,8 @@
     "year": 2029,
     "link": "https://icaps27.icaps-conference.org/",
     "timezone": "UTC-12",
-    "conferenceDate": "June 27 - July 2, 2029",
-    "conferenceStart": "2029-06-27",
+    "conferenceDate": "June 30 - July 2, 2029",
+    "conferenceStart": "2029-06-30",
     "place": "Columbia, SC, USA",
     "timeline": [
       {
@@ -50278,6 +50276,29 @@
     "projectedFrom": 2027
   },
   {
+    "id": "models27-2029p",
+    "title": "MoDELS",
+    "description": "International Conference on Model Driven Engineering Languages and Systems",
+    "category": "SE",
+    "rank": "B",
+    "year": 2029,
+    "link": "https://conf.researchr.org/home/models-2027",
+    "timezone": "AoE",
+    "conferenceDate": "TBD",
+    "conferenceStart": "",
+    "place": "Budapest, Hungary",
+    "timeline": [
+      {
+        "date": "2029-03-19",
+        "abstractDate": "2029-03-12",
+        "comment": ""
+      }
+    ],
+    "acceptRates": [],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
     "id": "mobicom27-2029p",
     "title": "MobiCom",
     "description": "ACM Annual International Conference On Mobile Computing And Networking",
@@ -51941,7 +51962,7 @@
     "year": 2029,
     "link": "https://www.sigmetrics.org/sigmetrics2027/",
     "timezone": "AoE",
-    "conferenceDate": "June 7-11, 2029",
+    "conferenceDate": "June 7-10, 2029",
     "conferenceStart": "2029-06-07",
     "place": "Atlanta, Georgia, USA",
     "timeline": [
@@ -52703,13 +52724,13 @@
     "year": 2029,
     "link": "https://2027.worldhaptics.org/",
     "timezone": "AoE",
-    "conferenceDate": "July 12-15, 2029",
-    "conferenceStart": "2029-07-12",
+    "conferenceDate": "July 13-16, 2029",
+    "conferenceStart": "2029-07-13",
     "place": "Boston, Massachusetts, USA",
     "timeline": [
       {
-        "date": "2029-01-29",
-        "abstractDate": "",
+        "date": "2029-02-05",
+        "abstractDate": "2029-01-29",
         "comment": ""
       }
     ],
@@ -52726,8 +52747,8 @@
     "year": 2029,
     "link": "https://wsdm-conference.org/2027/",
     "timezone": "UTC-12",
-    "conferenceDate": "February 15 - 19, 2029",
-    "conferenceStart": "2029-02-15",
+    "conferenceDate": "February 16 - 18, 2029",
+    "conferenceStart": "2029-02-16",
     "place": "Cordis, Hong Kong SAR, China",
     "timeline": [
       {
