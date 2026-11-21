@@ -16203,8 +16203,8 @@
     "timeline": [
       {
         "date": "2026-12-03",
-        "abstractDate": "2026-12-01",
-        "comment": ""
+        "abstractDate": "",
+        "comment": "Optional abstract registration: December 1, 2026 (AoE)"
       }
     ],
     "acceptRates": []
@@ -17142,7 +17142,7 @@
     "category": "HI",
     "rank": "C",
     "year": 2027,
-    "link": "http://2027.cscwd.org",
+    "link": "https://cscwd2027.dailyeliteevents.com.au/",
     "timezone": "AoE",
     "conferenceDate": "May 26-28, 2027",
     "conferenceStart": "2027-05-26",
@@ -30992,8 +30992,8 @@
     "timeline": [
       {
         "date": "2027-12-03",
-        "abstractDate": "2027-12-01",
-        "comment": ""
+        "abstractDate": "",
+        "comment": "Optional abstract registration: December 1, 2026 (AoE)"
       }
     ],
     "acceptRates": [],
@@ -31955,7 +31955,7 @@
     "category": "HI",
     "rank": "C",
     "year": 2028,
-    "link": "http://2027.cscwd.org",
+    "link": "https://cscwd2027.dailyeliteevents.com.au/",
     "timezone": "AoE",
     "conferenceDate": "May 26-28, 2028",
     "conferenceStart": "2028-05-26",
@@ -45203,8 +45203,8 @@
     "timeline": [
       {
         "date": "2028-12-03",
-        "abstractDate": "2028-12-01",
-        "comment": ""
+        "abstractDate": "",
+        "comment": "Optional abstract registration: December 1, 2026 (AoE)"
       }
     ],
     "acceptRates": [],
@@ -45642,7 +45642,7 @@
     "category": "HI",
     "rank": "C",
     "year": 2029,
-    "link": "http://2027.cscwd.org",
+    "link": "https://cscwd2027.dailyeliteevents.com.au/",
     "timezone": "AoE",
     "conferenceDate": "May 26-28, 2029",
     "conferenceStart": "2029-05-26",
