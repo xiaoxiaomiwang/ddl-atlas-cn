@@ -21873,7 +21873,7 @@
     "year": 2027,
     "link": "https://klab-ai3.github.io/ics2027/",
     "timezone": "AoE",
-    "conferenceDate": "June 5-11, 2027",
+    "conferenceDate": "June 5-8, 2027",
     "conferenceStart": "2027-06-05",
     "place": "Atlanta, Georgia, USA",
     "timeline": [
@@ -24794,7 +24794,7 @@
       {
         "date": "2026-12-04",
         "abstractDate": "2026-11-27",
-        "comment": ""
+        "comment": "Acceptance is conditional on shepherding. March 6 is date-only; clock and time zone are repository defaults."
       }
     ],
     "acceptRates": [
@@ -27225,7 +27225,7 @@
       {
         "date": "2026-11-30",
         "abstractDate": "",
-        "comment": ""
+        "comment": "Acceptance results: February 15 (date-only; AoE end-of-day default converted to UTC-5)."
       }
     ],
     "acceptRates": [
@@ -36739,7 +36739,7 @@
     "year": 2028,
     "link": "https://klab-ai3.github.io/ics2027/",
     "timezone": "AoE",
-    "conferenceDate": "June 5-11, 2028",
+    "conferenceDate": "June 5-8, 2028",
     "conferenceStart": "2028-06-05",
     "place": "Atlanta, Georgia, USA",
     "timeline": [
@@ -39736,7 +39736,7 @@
       {
         "date": "2027-12-04",
         "abstractDate": "2027-11-27",
-        "comment": ""
+        "comment": "Acceptance is conditional on shepherding. March 6 is date-only; clock and time zone are repository defaults."
       }
     ],
     "acceptRates": [
@@ -42316,7 +42316,7 @@
       {
         "date": "2027-11-30",
         "abstractDate": "",
-        "comment": ""
+        "comment": "Acceptance results: February 15 (date-only; AoE end-of-day default converted to UTC-5)."
       }
     ],
     "acceptRates": [
@@ -48709,7 +48709,7 @@
     "year": 2029,
     "link": "https://klab-ai3.github.io/ics2027/",
     "timezone": "AoE",
-    "conferenceDate": "June 5-11, 2029",
+    "conferenceDate": "June 5-8, 2029",
     "conferenceStart": "2029-06-05",
     "place": "Atlanta, Georgia, USA",
     "timeline": [
@@ -50350,7 +50350,7 @@
       {
         "date": "2028-12-04",
         "abstractDate": "2028-11-27",
-        "comment": ""
+        "comment": "Acceptance is conditional on shepherding. March 6 is date-only; clock and time zone are repository defaults."
       }
     ],
     "acceptRates": [
@@ -51771,7 +51771,7 @@
       {
         "date": "2028-11-30",
         "abstractDate": "",
-        "comment": ""
+        "comment": "Acceptance results: February 15 (date-only; AoE end-of-day default converted to UTC-5)."
       }
     ],
     "acceptRates": [
