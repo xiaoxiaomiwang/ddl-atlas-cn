@@ -25338,8 +25338,8 @@
     "year": 2027,
     "link": "https://2027.splashcon.org/track/splashoopsla2027",
     "timezone": "AoE",
-    "conferenceDate": "October 10-15, 2027",
-    "conferenceStart": "2027-10-10",
+    "conferenceDate": "October 13-15, 2027",
+    "conferenceStart": "2027-10-13",
     "place": "Prague, Czechia",
     "timeline": [
       {
@@ -25855,8 +25855,8 @@
     "year": 2027,
     "link": "https://popl27.sigplan.org/",
     "timezone": "AoE",
-    "conferenceDate": "January 10-16, 2027",
-    "conferenceStart": "2027-01-10",
+    "conferenceDate": "January 13-15, 2027",
+    "conferenceStart": "2027-01-13",
     "place": "Mexico City",
     "timeline": [
       {
@@ -26852,8 +26852,8 @@
     "year": 2027,
     "link": "https://conf.researchr.org/home/saner-2027",
     "timezone": "AoE",
-    "conferenceDate": "March 9-12, 2027",
-    "conferenceStart": "2027-03-09",
+    "conferenceDate": "March 10-12, 2027",
+    "conferenceStart": "2027-03-10",
     "place": "Richmond, Virginia, United States",
     "timeline": [
       {
@@ -27339,7 +27339,7 @@
     "category": "CG",
     "rank": "B",
     "year": 2027,
-    "link": "https://igs2027singapore.github.io/",
+    "link": "https://sgp2027.github.io/",
     "timezone": "AoE",
     "conferenceDate": "June 21-25, 2027",
     "conferenceStart": "2027-06-21",
@@ -27944,12 +27944,18 @@
     "category": "CG",
     "rank": "B",
     "year": 2027,
-    "link": "https://igs2027singapore.github.io/",
+    "link": "https://spmconf2027.github.io/",
     "timezone": "AoE",
     "conferenceDate": "June 21-25, 2027",
     "conferenceStart": "2027-06-21",
     "place": "Singapore",
-    "timeline": [],
+    "timeline": [
+      {
+        "date": "2027-02-07",
+        "abstractDate": "2027-01-31",
+        "comment": "First review notification: Mar 26, 2027; revised paper due: Apr 23, 2027"
+      }
+    ],
     "acceptRates": [
       {
         "year": 2024,
@@ -40283,8 +40289,8 @@
     "year": 2028,
     "link": "https://2027.splashcon.org/track/splashoopsla2027",
     "timezone": "AoE",
-    "conferenceDate": "October 10-15, 2028",
-    "conferenceStart": "2028-10-10",
+    "conferenceDate": "October 13-15, 2028",
+    "conferenceStart": "2028-10-13",
     "place": "Prague, Czechia",
     "timeline": [
       {
@@ -40864,8 +40870,8 @@
     "year": 2028,
     "link": "https://popl27.sigplan.org/",
     "timezone": "AoE",
-    "conferenceDate": "January 10-16, 2028",
-    "conferenceStart": "2028-01-10",
+    "conferenceDate": "January 13-15, 2028",
+    "conferenceStart": "2028-01-13",
     "place": "Mexico City",
     "timeline": [
       {
@@ -41937,8 +41943,8 @@
     "year": 2028,
     "link": "https://conf.researchr.org/home/saner-2027",
     "timezone": "AoE",
-    "conferenceDate": "March 9-12, 2028",
-    "conferenceStart": "2028-03-09",
+    "conferenceDate": "March 10-12, 2028",
+    "conferenceStart": "2028-03-10",
     "place": "Richmond, Virginia, United States",
     "timeline": [
       {
@@ -43116,22 +43122,22 @@
     "projectedFrom": 2027
   },
   {
-    "id": "spm26-2028p",
+    "id": "spm27-2028p",
     "title": "SPM",
     "description": "Symposium on Solid and Physical Modeling",
     "category": "CG",
     "rank": "B",
     "year": 2028,
-    "link": "https://spmconf2026.github.io/",
+    "link": "https://spmconf2027.github.io/",
     "timezone": "AoE",
-    "conferenceDate": "July 6-9, 2028",
-    "conferenceStart": "2028-07-06",
-    "place": "Istanbul, Türkiye",
+    "conferenceDate": "June 21-25, 2028",
+    "conferenceStart": "2028-06-21",
+    "place": "Singapore",
     "timeline": [
       {
-        "date": "2028-02-15",
-        "abstractDate": "2028-02-08",
-        "comment": ""
+        "date": "2028-02-07",
+        "abstractDate": "2028-01-31",
+        "comment": "First review notification: Mar 26, 2027; revised paper due: Apr 23, 2027"
       }
     ],
     "acceptRates": [
@@ -43149,7 +43155,7 @@
       }
     ],
     "projected": true,
-    "projectedFrom": 2026
+    "projectedFrom": 2027
   },
   {
     "id": "sse26-2028p",
@@ -50694,8 +50700,8 @@
     "year": 2029,
     "link": "https://2027.splashcon.org/track/splashoopsla2027",
     "timezone": "AoE",
-    "conferenceDate": "October 10-15, 2029",
-    "conferenceStart": "2029-10-10",
+    "conferenceDate": "October 13-15, 2029",
+    "conferenceStart": "2029-10-13",
     "place": "Prague, Czechia",
     "timeline": [
       {
@@ -51073,8 +51079,8 @@
     "year": 2029,
     "link": "https://popl27.sigplan.org/",
     "timezone": "AoE",
-    "conferenceDate": "January 10-16, 2029",
-    "conferenceStart": "2029-01-10",
+    "conferenceDate": "January 13-15, 2029",
+    "conferenceStart": "2029-01-13",
     "place": "Mexico City",
     "timeline": [
       {
@@ -51620,8 +51626,8 @@
     "year": 2029,
     "link": "https://conf.researchr.org/home/saner-2027",
     "timezone": "AoE",
-    "conferenceDate": "March 9-12, 2029",
-    "conferenceStart": "2029-03-09",
+    "conferenceDate": "March 10-12, 2029",
+    "conferenceStart": "2029-03-10",
     "place": "Richmond, Virginia, United States",
     "timeline": [
       {
@@ -52236,6 +52242,42 @@
       }
     ],
     "acceptRates": [],
+    "projected": true,
+    "projectedFrom": 2027
+  },
+  {
+    "id": "spm27-2029p",
+    "title": "SPM",
+    "description": "Symposium on Solid and Physical Modeling",
+    "category": "CG",
+    "rank": "B",
+    "year": 2029,
+    "link": "https://spmconf2027.github.io/",
+    "timezone": "AoE",
+    "conferenceDate": "June 21-25, 2029",
+    "conferenceStart": "2029-06-21",
+    "place": "Singapore",
+    "timeline": [
+      {
+        "date": "2029-02-07",
+        "abstractDate": "2029-01-31",
+        "comment": "First review notification: Mar 26, 2027; revised paper due: Apr 23, 2027"
+      }
+    ],
+    "acceptRates": [
+      {
+        "year": 2024,
+        "rate": 27.1,
+        "submitted": 48,
+        "accepted": 13
+      },
+      {
+        "year": 2023,
+        "rate": 29.6,
+        "submitted": 54,
+        "accepted": 16
+      }
+    ],
     "projected": true,
     "projectedFrom": 2027
   },
